@@ -1,0 +1,12 @@
+
+depth: 0
+bnrk
+   p
+P   
+KRNB
+
+depth: 1
+bnrk
+P  p
+    
+KRNB

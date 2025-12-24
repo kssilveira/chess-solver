@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"fmt"
 	"io"
+	"time"
 )
 
 // Point contains a point.
@@ -27,6 +28,7 @@ type Core struct {
 	turn          int
 	MaxDepth      int
 	clearTerminal string
+	SleepDuration time.Duration
 }
 
 const (
@@ -82,6 +84,7 @@ func (c *Core) Solve() {
 }
 
 func (c *Core) solve(depth int) {
+	time.Sleep(c.SleepDuration)
 	fmt.Fprint(c.writer, c.clearTerminal)
 	fmt.Fprintf(c.writer, "\ndepth: %d\n", depth)
 	fmt.Fprintln(c.writer, "######")

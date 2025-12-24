@@ -37,12 +37,13 @@ var (
 	deltas = map[byte][][]int{
 		byte('P'): [][]int{{-1, 0, 1}, {-1, -1, 2}, {-1, 1, 2}},
 		byte('R'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
+		byte('B'): [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
 	}
 )
 
 // New creates a new core.
 func New(writer io.Writer) *Core {
-	return &Core{writer: writer, turn: 1, maxDepth: 10, board: [][]byte{
+	return &Core{writer: writer, turn: 1, maxDepth: 3, board: [][]byte{
 		[]byte("bnrk"),
 		[]byte("   p"),
 		[]byte("P   "),

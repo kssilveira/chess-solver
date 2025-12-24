@@ -13,11 +13,35 @@ func TestSolve(t *testing.T) {
 		board [][]byte
 	}{
 		{name: "default"},
+		{name: "empty", board: [][]byte{
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("    "),
+		}},
 		{name: "P1", board: [][]byte{
 			[]byte("    "),
 			[]byte("    "),
 			[]byte("    "),
 			[]byte("P   "),
+		}},
+		{name: "P2", board: [][]byte{
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("    "),
+			[]byte(" P  "),
+		}},
+		{name: "P3", board: [][]byte{
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("  P "),
+		}},
+		{name: "P4", board: [][]byte{
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("   P"),
 		}},
 	}
 	for _, in := range inputs {

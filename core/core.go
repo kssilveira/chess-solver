@@ -121,10 +121,7 @@ func (c *Core) solve(depth int) {
 					odx := delta[3]
 					ody := delta[4]
 					oni := i + odx
-					onj := i + ody
-					if oni < 0 || oni >= 4 || onj < 0 || onj >= 4 {
-						continue
-					}
+					onj := j + ody
 					if c.board[oni][onj] != ' ' {
 						continue
 					}

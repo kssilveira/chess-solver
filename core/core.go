@@ -115,41 +115,40 @@ func (c *Core) moves(nextTurn int) []Move {
 			if colors[piece] != c.turn {
 				continue
 			}
-			for _, delta := range deltas[piece] {
-				dx := delta[0]
-				dy := delta[1]
-				kind := 0
-				if len(delta) > 2 {
-					kind = delta[2]
-				}
-				ni := i + dx
-				nj := j + dy
-				if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
-					continue
-				}
-				if (kind == kindDefault || kind == kindOtherEmpty) && c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
-					continue
-				}
-				if kind == kindEmpty && c.board[ni][nj] != ' ' {
-					continue
-				}
-				if kind == kindEnemy && colors[c.board[ni][nj]] != nextTurn {
-					continue
-				}
-				if kind == kindOtherEmpty {
-					odx := delta[3]
-					ody := delta[4]
-					oni := i + odx
-					onj := j + ody
-					if c.board[oni][onj] != ' ' {
-						continue
-					}
-				}
-				moves = append(moves, Move{
-					From: Point{What: piece, X: i, Y: j},
-					To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
-			}
+			moves = append(moves, c.deltas(nextTurn, i, j)...)
 		}
+	}
+	return moves
+}
+
+func (c *Core) deltas(nextTurn, i, j int) []Move {
+	moves := []Move{}
+	piece := c.board[i][j]
+	for _, delta := range deltas[piece] {
+		kind := 0
+		if len(delta) > 2 {
+			kind = delta[2]
+		}
+		ni := i + delta[0]
+		nj := j + delta[1]
+		if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
+			continue
+		}
+		if (kind == kindDefault || kind == kindOtherEmpty) && c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
+			continue
+		}
+		if kind == kindEmpty && c.board[ni][nj] != ' ' {
+			continue
+		}
+		if kind == kindEnemy && colors[c.board[ni][nj]] != nextTurn {
+			continue
+		}
+		if kind == kindOtherEmpty && c.board[i+delta[3]][j+delta[4]] != ' ' {
+			continue
+		}
+		moves = append(moves, Move{
+			From: Point{What: piece, X: i, Y: j},
+			To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
 	}
 	return moves
 }

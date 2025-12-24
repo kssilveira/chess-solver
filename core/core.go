@@ -89,10 +89,7 @@ func (c *Core) Solve() {
 }
 
 func (c *Core) solve(depth int) {
-	fmt.Fprintf(c.writer, "\ndepth: %d\n", depth)
-	fmt.Fprintln(c.writer, "######")
-	fmt.Fprintln(c.writer, "#"+string(bytes.Join(c.board, []byte("#\n#")))+"#")
-	fmt.Fprintln(c.writer, "######")
+	c.print(depth)
 	time.Sleep(c.config.SleepDuration)
 	fmt.Fprint(c.writer, c.clearTerminal)
 	if depth >= c.config.MaxDepth {
@@ -143,10 +140,7 @@ func (c *Core) solve(depth int) {
 		}
 	}
 	for _, move := range moves {
-		fmt.Fprintf(c.writer, "\ndepth: %d\n", depth)
-		fmt.Fprintln(c.writer, "######")
-		fmt.Fprintln(c.writer, "#"+string(bytes.Join(c.board, []byte("#\n#")))+"#")
-		fmt.Fprintln(c.writer, "######")
+		c.print(depth)
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
 		prevTurn := c.turn
@@ -156,4 +150,11 @@ func (c *Core) solve(depth int) {
 		c.board[move.To.X][move.To.Y] = move.To.What
 		c.board[move.From.X][move.From.Y] = move.From.What
 	}
+}
+
+func (c *Core) print(depth int) {
+	fmt.Fprintf(c.writer, "\ndepth: %d\n", depth)
+	fmt.Fprintln(c.writer, "######")
+	fmt.Fprintln(c.writer, "#"+string(bytes.Join(c.board, []byte("#\n#")))+"#")
+	fmt.Fprintln(c.writer, "######")
 }

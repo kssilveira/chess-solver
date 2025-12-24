@@ -24,27 +24,23 @@ type Move struct {
 type Core struct {
 	board  [][]byte
 	writer io.Writer
+	turn   int
 }
 
 var (
-	color = map[byte]int{
+	colors = map[byte]int{
 		byte(' '): 0,
-		byte('P'): 1,
-		byte('K'): 1,
-		byte('R'): 1,
-		byte('N'): 1,
-		byte('B'): 1,
-		byte('p'): 2,
-		byte('k'): 2,
-		byte('r'): 2,
-		byte('n'): 2,
-		byte('b'): 2,
+		byte('P'): 1, byte('K'): 1, byte('R'): 1, byte('N'): 1, byte('B'): 1,
+		byte('p'): 2, byte('k'): 2, byte('r'): 2, byte('n'): 2, byte('b'): 2,
+	}
+	deltas = map[byte][][]int{
+		byte('P'): [][]int{{-1, 0, 1}, {-1, -1, 2}, {-1, 1, 2}},
 	}
 )
 
 // New creates a new core.
 func New(writer io.Writer) *Core {
-	return &Core{writer: writer, board: [][]byte{
+	return &Core{writer: writer, turn: 1, board: [][]byte{
 		[]byte("bnrk"),
 		[]byte("   p"),
 		[]byte("P   "),
@@ -65,26 +61,28 @@ func (c *Core) solve(depth int) {
 	moves := []Move{}
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
-			if c.board[i][j] == 'P' {
-				for _, delta := range [][]int{{-1, 0, 1}, {-1, -1, 2}, {-1, 1, 2}} {
-					dx := delta[0]
-					dy := delta[1]
-					kind := delta[2]
-					ni := i + dx
-					nj := j + dy
-					if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
-						continue
-					}
-					if kind == 1 && c.board[ni][nj] != ' ' {
-						continue
-					}
-					if kind == 2 && color[c.board[ni][nj]] != 2 {
-						continue
-					}
-					moves = append(moves, Move{
-						From: Point{What: c.board[i][j], X: i, Y: j},
-						To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
+			piece := c.board[i][j]
+			if colors[piece] != c.turn {
+				continue
+			}
+			for _, delta := range deltas[piece] {
+				dx := delta[0]
+				dy := delta[1]
+				kind := delta[2]
+				ni := i + dx
+				nj := j + dy
+				if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
+					continue
 				}
+				if kind == 1 && c.board[ni][nj] != ' ' {
+					continue
+				}
+				if kind == 2 && colors[c.board[ni][nj]] != 2 {
+					continue
+				}
+				moves = append(moves, Move{
+					From: Point{What: piece, X: i, Y: j},
+					To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
 			}
 		}
 	}

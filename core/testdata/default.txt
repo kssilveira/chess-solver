@@ -1,748 +1,748 @@
 
 depth: 0
-------
--bnrk-
--   p-
--P   -
--KRNB-
-------
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 0
-------
--bnrk-
--   p-
--P   -
--KRNB-
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+depth: 1
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
 ------
 
 depth: 1
-------
--bnrk-
--P  p-
--    -
--KRNB-
-------
-
-------
-
-depth: 1
-------
--bnrk-
--P  p-
--    -
--KRNB-
-------
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
-- nrk-
--Pb p-
--    -
--KRNB-
-------
+______
+| nrk|
+|Pb p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--P  p-
--    -
--KRNB-
-------
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--b rk-
--P  p-
--n   -
--KRNB-
-------
+______
+|b rk|
+|P  p|
+|n   |
+|KRNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--P  p-
--    -
--KRNB-
-------
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--b rk-
--P  p-
--  n -
--KRNB-
-------
+______
+|b rk|
+|P  p|
+|  n |
+|KRNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--P  p-
--    -
--KRNB-
-------
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bn k-
--P rp-
--    -
--KRNB-
-------
+______
+|bn k|
+|P rp|
+|    |
+|KRNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--P  p-
--    -
--KRNB-
-------
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnr -
--P kp-
--    -
--KRNB-
-------
+______
+|bnr |
+|P kp|
+|    |
+|KRNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--P  p-
--    -
--KRNB-
-------
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnrk-
--P   -
--   p-
--KRNB-
-------
+______
+|bnrk|
+|P   |
+|   p|
+|KRNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 0
-------
--bnrk-
--   p-
--P   -
--KRNB-
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+depth: 1
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PK  -
-- RNB-
-------
-
-------
-
-depth: 1
-------
--bnrk-
--   p-
--PK  -
-- RNB-
-------
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
-- nrk-
-- b p-
--PK  -
-- RNB-
-------
+______
+| nrk|
+| b p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PK  -
-- RNB-
-------
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--b rk-
--   p-
--nK  -
-- RNB-
-------
+______
+|b rk|
+|   p|
+|nK  |
+| RNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PK  -
-- RNB-
-------
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--b rk-
--   p-
--PKn -
-- RNB-
-------
+______
+|b rk|
+|   p|
+|PKn |
+| RNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PK  -
-- RNB-
-------
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bn k-
--  rp-
--PK  -
-- RNB-
-------
+______
+|bn k|
+|  rp|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PK  -
-- RNB-
-------
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnr -
--  kp-
--PK  -
-- RNB-
-------
+______
+|bnr |
+|  kp|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PK  -
-- RNB-
-------
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnrk-
--    -
--PK p-
-- RNB-
-------
+______
+|bnrk|
+|    |
+|PK p|
+| RNB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 0
-------
--bnrk-
--   p-
--P   -
--KRNB-
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+depth: 1
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PR  -
--K NB-
-------
-
-------
-
-depth: 1
-------
--bnrk-
--   p-
--PR  -
--K NB-
-------
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
 
 depth: 2
-------
-- nrk-
-- b p-
--PR  -
--K NB-
-------
+______
+| nrk|
+| b p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PR  -
--K NB-
-------
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--b rk-
--   p-
--nR  -
--K NB-
-------
+______
+|b rk|
+|   p|
+|nR  |
+|K NB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PR  -
--K NB-
-------
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--b rk-
--   p-
--PRn -
--K NB-
-------
+______
+|b rk|
+|   p|
+|PRn |
+|K NB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PR  -
--K NB-
-------
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bn k-
--  rp-
--PR  -
--K NB-
-------
+______
+|bn k|
+|  rp|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PR  -
--K NB-
-------
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnr -
--  kp-
--PR  -
--K NB-
-------
+______
+|bnr |
+|  kp|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--PR  -
--K NB-
-------
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnrk-
--    -
--PR p-
--K NB-
-------
+______
+|bnrk|
+|    |
+|PR p|
+|K NB|
+‾‾‾‾‾‾
 
 ------
 
 depth: 0
-------
--bnrk-
--   p-
--P   -
--KRNB-
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+depth: 1
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 ------
 
 depth: 1
-------
--bnrk-
-- N p-
--P   -
--KR B-
-------
-
-------
-
-depth: 1
-------
--bnrk-
-- N p-
--P   -
--KR B-
-------
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 depth: 2
-------
-- nrk-
-- b p-
--P   -
--KR B-
-------
+______
+| nrk|
+| b p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
-- N p-
--P   -
--KR B-
-------
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bn k-
-- Nrp-
--P   -
--KR B-
-------
+______
+|bn k|
+| Nrp|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
-- N p-
--P   -
--KR B-
-------
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnr -
-- Nkp-
--P   -
--KR B-
-------
+______
+|bnr |
+| Nkp|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
-- N p-
--P   -
--KR B-
-------
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnrk-
-- N  -
--P  p-
--KR B-
-------
+______
+|bnrk|
+| N  |
+|P  p|
+|KR B|
+‾‾‾‾‾‾
 
 ------
 
 depth: 0
-------
--bnrk-
--   p-
--P   -
--KRNB-
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+depth: 1
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 ------
 
 depth: 1
-------
--bnrk-
--   N-
--P   -
--KR B-
-------
-
-------
-
-depth: 1
-------
--bnrk-
--   N-
--P   -
--KR B-
-------
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 depth: 2
-------
-- nrk-
-- b N-
--P   -
--KR B-
-------
+______
+| nrk|
+| b N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   N-
--P   -
--KR B-
-------
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 depth: 2
-------
--b rk-
--   N-
--n   -
--KR B-
-------
+______
+|b rk|
+|   N|
+|n   |
+|KR B|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   N-
--P   -
--KR B-
-------
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 depth: 2
-------
--b rk-
--   N-
--P n -
--KR B-
-------
+______
+|b rk|
+|   N|
+|P n |
+|KR B|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   N-
--P   -
--KR B-
-------
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bn k-
--  rN-
--P   -
--KR B-
-------
+______
+|bn k|
+|  rN|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   N-
--P   -
--KR B-
-------
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnr -
--   k-
--P   -
--KR B-
-------
+______
+|bnr |
+|   k|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   N-
--P   -
--KR B-
-------
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnr -
--  kN-
--P   -
--KR B-
-------
+______
+|bnr |
+|  kN|
+|P   |
+|KR B|
+‾‾‾‾‾‾
 
 ------
 
 depth: 0
-------
--bnrk-
--   p-
--P   -
--KRNB-
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+depth: 1
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--P B -
--KRN -
-------
-
-------
-
-depth: 1
-------
--bnrk-
--   p-
--P B -
--KRN -
-------
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
 
 depth: 2
-------
-- nrk-
-- b p-
--P B -
--KRN -
-------
+______
+| nrk|
+| b p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--P B -
--KRN -
-------
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
 
 depth: 2
-------
--b rk-
--   p-
--n B -
--KRN -
-------
+______
+|b rk|
+|   p|
+|n B |
+|KRN |
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--P B -
--KRN -
-------
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
 
 depth: 2
-------
--b rk-
--   p-
--P n -
--KRN -
-------
+______
+|b rk|
+|   p|
+|P n |
+|KRN |
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--P B -
--KRN -
-------
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
 
 depth: 2
-------
--bn k-
--  rp-
--P B -
--KRN -
-------
+______
+|bn k|
+|  rp|
+|P B |
+|KRN |
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--P B -
--KRN -
-------
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnr -
--  kp-
--P B -
--KRN -
-------
+______
+|bnr |
+|  kp|
+|P B |
+|KRN |
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--P B -
--KRN -
-------
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnrk-
--    -
--P Bp-
--KRN -
-------
+______
+|bnrk|
+|    |
+|P Bp|
+|KRN |
+‾‾‾‾‾‾
 
 ------
 
 depth: 1
-------
--bnrk-
--   p-
--P B -
--KRN -
-------
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
 
 depth: 2
-------
--bnrk-
--    -
--P p -
--KRN -
-------
+______
+|bnrk|
+|    |
+|P p |
+|KRN |
+‾‾‾‾‾‾
 
 ------

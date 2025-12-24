@@ -102,9 +102,9 @@ func (c *Core) solve(depth int) {
 
 func (c *Core) print(depth int) {
 	fmt.Fprintf(c.writer, "\ndepth: %d\n", depth)
-	fmt.Fprintln(c.writer, "------")
-	fmt.Fprintln(c.writer, "-"+string(bytes.Join(c.board, []byte("-\n-")))+"-")
-	fmt.Fprintln(c.writer, "------")
+	fmt.Fprintln(c.writer, "______")
+	fmt.Fprintln(c.writer, "|"+string(bytes.Join(c.board, []byte("|\n|")))+"|")
+	fmt.Fprintln(c.writer, "‾‾‾‾‾‾")
 }
 
 func (c *Core) moves(nextTurn int) []Move {

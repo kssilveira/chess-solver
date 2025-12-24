@@ -9,10 +9,11 @@ import (
 
 func TestSolve(t *testing.T) {
 	inputs := []struct {
-		name  string
-		board [][]byte
+		name     string
+		board    [][]byte
+		maxDepth int
 	}{
-		{name: "default"},
+		{name: "default", maxDepth: 2},
 		{name: "empty", board: [][]byte{
 			[]byte("    "),
 			[]byte("    "),
@@ -85,6 +86,9 @@ func TestSolve(t *testing.T) {
 		core := New(&out)
 		if in.board != nil {
 			core.board = in.board
+		}
+		if in.maxDepth != 0 {
+			core.maxDepth = in.maxDepth
 		}
 		core.Solve()
 		if err := os.WriteFile(filepath.Join("testdata", in.name+".txt"), out.Bytes(), 0644); err != nil {

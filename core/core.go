@@ -26,6 +26,22 @@ type Core struct {
 	writer io.Writer
 }
 
+var (
+	color = map[byte]int{
+		byte(' '): 0,
+		byte('P'): 1,
+		byte('K'): 1,
+		byte('R'): 1,
+		byte('N'): 1,
+		byte('B'): 1,
+		byte('p'): 2,
+		byte('k'): 2,
+		byte('r'): 2,
+		byte('n'): 2,
+		byte('b'): 2,
+	}
+)
+
 // New creates a new core.
 func New(writer io.Writer) *Core {
 	return &Core{writer: writer, board: [][]byte{
@@ -50,12 +66,19 @@ func (c *Core) solve(depth int) {
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
 			if c.board[i][j] == 'P' {
-				for _, delta := range [][]int{{-1, 0}} {
+				for _, delta := range [][]int{{-1, 0, 1}, {-1, -1, 2}, {-1, 1, 2}} {
 					dx := delta[0]
 					dy := delta[1]
+					kind := delta[2]
 					ni := i + dx
 					nj := j + dy
-					if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 || c.board[ni][nj] != ' ' {
+					if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
+						continue
+					}
+					if kind == 1 && c.board[ni][nj] != ' ' {
+						continue
+					}
+					if kind == 2 && color[c.board[ni][nj]] != 2 {
 						continue
 					}
 					moves = append(moves, Move{

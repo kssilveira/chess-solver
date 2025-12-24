@@ -14,3 +14,11 @@ P  p
     
 KRNB
 ####
+
+depth: 2
+####
+bPrk
+   p
+    
+KRNB
+####

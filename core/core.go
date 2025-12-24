@@ -56,6 +56,12 @@ var (
 		byte('r'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
 		byte('b'): [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
 		byte('k'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		byte('n'): [][]int{
+			{-2, -1, kindOtherEmpty, -1, 0}, {-2, 1, kindOtherEmpty, -1, 0},
+			{-1, -2, kindOtherEmpty, 0, -1}, {1, -2, kindOtherEmpty, 0, -1},
+			{2, -1, kindOtherEmpty, 1, 0}, {2, 1, kindOtherEmpty, 1, 0},
+			{-1, 2, kindOtherEmpty, 0, 1}, {1, 2, kindOtherEmpty, 0, 1},
+		},
 	}
 )
 

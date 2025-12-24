@@ -43,18 +43,21 @@ func (c *Core) Solve() {
 
 func (c *Core) solve(depth int) {
 	fmt.Fprintf(c.writer, "\ndepth: %d\n", depth)
+	fmt.Fprintln(c.writer, "####")
 	fmt.Fprintln(c.writer, string(bytes.Join(c.board, []byte("\n"))))
+	fmt.Fprintln(c.writer, "####")
 	moves := []Move{}
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
 			if c.board[i][j] == 'P' {
 				ni := i - 1
 				nj := j
-				if c.board[ni][nj] == ' ' {
-					moves = append(moves, Move{
-						From: Point{What: c.board[i][j], X: i, Y: j},
-						To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
+				if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 || c.board[ni][nj] != ' ' {
+					continue
 				}
+				moves = append(moves, Move{
+					From: Point{What: c.board[i][j], X: i, Y: j},
+					To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
 			}
 		}
 	}

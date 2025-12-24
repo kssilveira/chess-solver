@@ -84,7 +84,7 @@ func TestSolve(t *testing.T) {
 	for _, in := range inputs {
 		var out bytes.Buffer
 		core := New(&out)
-		core.clearTerminal = ""
+		core.clearTerminal = "\n------\n"
 		if in.board != nil {
 			core.board = in.board
 		}

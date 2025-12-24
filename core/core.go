@@ -97,17 +97,7 @@ func (c *Core) solve(depth int) {
 	}
 	nextTurn := (c.turn % 2) + 1
 	moves := c.moves(nextTurn)
-	for _, move := range moves {
-		c.print(depth)
-		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
-		c.board[move.From.X][move.From.Y] = ' '
-		prevTurn := c.turn
-		c.turn = nextTurn
-		c.solve(depth + 1)
-		c.turn = prevTurn
-		c.board[move.To.X][move.To.Y] = move.To.What
-		c.board[move.From.X][move.From.Y] = move.From.What
-	}
+	c.move(depth, nextTurn, moves)
 }
 
 func (c *Core) print(depth int) {
@@ -162,4 +152,18 @@ func (c *Core) moves(nextTurn int) []Move {
 		}
 	}
 	return moves
+}
+
+func (c *Core) move(depth, nextTurn int, moves []Move) {
+	for _, move := range moves {
+		c.print(depth)
+		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
+		c.board[move.From.X][move.From.Y] = ' '
+		prevTurn := c.turn
+		c.turn = nextTurn
+		c.solve(depth + 1)
+		c.turn = prevTurn
+		c.board[move.To.X][move.To.Y] = move.To.What
+		c.board[move.From.X][move.From.Y] = move.From.What
+	}
 }

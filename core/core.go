@@ -31,14 +31,20 @@ type Core struct {
 var (
 	colors = map[byte]int{
 		byte(' '): 0,
-		byte('P'): 1, byte('K'): 1, byte('R'): 1, byte('N'): 1, byte('B'): 1,
-		byte('p'): 2, byte('k'): 2, byte('r'): 2, byte('n'): 2, byte('b'): 2,
+		byte('P'): 1, byte('K'): 1, byte('R'): 1, byte('N'): 1, byte('B'): 1, byte('X'): 1,
+		byte('p'): 2, byte('k'): 2, byte('r'): 2, byte('n'): 2, byte('b'): 2, byte('x'): 2,
 	}
 	deltas = map[byte][][]int{
 		byte('P'): [][]int{{-1, 0, 1}, {-1, -1, 2}, {-1, 1, 2}},
 		byte('R'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
 		byte('B'): [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
 		byte('K'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		byte('N'): [][]int{
+			{-2, -1, 3, -1, 0}, {-2, 1, 3, -1, 0},
+			{-1, -2, 3, 0, -1}, {1, -2, 3, 0, -1},
+			{2, -1, 3, 1, 0}, {2, 1, 3, 1, 0},
+			{-1, 2, 3, 0, 1}, {1, 2, 3, 0, 1},
+		},
 	}
 )
 
@@ -85,7 +91,7 @@ func (c *Core) solve(depth int) {
 				if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
 					continue
 				}
-				if kind == 0 && c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
+				if (kind == 0 || kind == 3) && c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
 					continue
 				}
 				if kind == 1 && c.board[ni][nj] != ' ' {
@@ -93,6 +99,18 @@ func (c *Core) solve(depth int) {
 				}
 				if kind == 2 && colors[c.board[ni][nj]] != nextTurn {
 					continue
+				}
+				if kind == 3 {
+					odx := delta[3]
+					ody := delta[4]
+					oni := i + odx
+					onj := i + ody
+					if oni < 0 || oni >= 4 || onj < 0 || onj >= 4 {
+						continue
+					}
+					if c.board[oni][onj] != ' ' {
+						continue
+					}
 				}
 				moves = append(moves, Move{
 					From: Point{What: piece, X: i, Y: j},

@@ -44,7 +44,7 @@ func TestSolve(t *testing.T) {
 			[]byte("   P"),
 		}},
 		{name: "PX", board: [][]byte{
-			[]byte("ppp "),
+			[]byte("xxx "),
 			[]byte(" P  "),
 			[]byte("    "),
 			[]byte("    "),
@@ -66,6 +66,18 @@ func TestSolve(t *testing.T) {
 			[]byte("    "),
 			[]byte("    "),
 			[]byte("K   "),
+		}},
+		{name: "NB", board: [][]byte{
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("   x"),
+			[]byte("  XN"),
+		}},
+		{name: "N", board: [][]byte{
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("  XN"),
 		}},
 	}
 	for _, in := range inputs {

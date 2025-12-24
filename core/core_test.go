@@ -49,6 +49,12 @@ func TestSolve(t *testing.T) {
 			[]byte("    "),
 			[]byte("    "),
 		}},
+		{name: "R", board: [][]byte{
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("    "),
+			[]byte("R   "),
+		}},
 	}
 	for _, in := range inputs {
 		var out bytes.Buffer

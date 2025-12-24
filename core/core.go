@@ -53,6 +53,7 @@ var (
 			{-1, 2, kindOtherEmpty, 0, 1}, {1, 2, kindOtherEmpty, 0, 1},
 		},
 		byte('p'): [][]int{{1, 0, kindEmpty}, {1, -1, kindEnemy}, {1, 1, kindEnemy}},
+		byte('r'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
 	}
 )
 

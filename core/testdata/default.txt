@@ -17,6 +17,2118 @@ depth: 1
 
 depth: 2
 ######
+#bn k#
+#P rp#
+#    #
+#KRNB#
+######
+
+depth: 3
+######
+#bP k#
+#  rp#
+#    #
+#KRNB#
+######
+
+depth: 4
+######
+#bPrk#
+#   p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+#K   #
+# RNB#
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+# R  #
+#K NB#
+######
+
+depth: 5
+######
+#bPrk#
+# N p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bPrk#
+#   N#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+#  B #
+#KRN #
+######
+
+depth: 4
+######
+#bP k#
+#   p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+#K r #
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+# Kr #
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+# Rr #
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+# N p#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+#   N#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+#  B #
+#KRN #
+######
+
+depth: 4
+######
+#bP k#
+# r p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+#K   #
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+# R  #
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+# N p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# r N#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+#  B #
+#KRN #
+######
+
+depth: 4
+######
+#bP k#
+#  r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#  Bp#
+#KRN #
+######
+
+depth: 3
+######
+#bn k#
+#P rp#
+#K   #
+# RNB#
+######
+
+depth: 4
+######
+#bnrk#
+#P  p#
+#K   #
+# RNB#
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+#K   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#PK p#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#KR  #
+#  NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#K   #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#K B #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#P  p#
+#K r #
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+#K r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Kr #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PK p#
+#  r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#KRr #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#K r #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#K r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#K r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#K B #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#Pr p#
+#K   #
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+#K   #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PK p#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#KR  #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#K   #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#K B #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PKr #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#KR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K Bp#
+# RN #
+######
+
+depth: 3
+######
+#bn k#
+#P rp#
+# K  #
+# RNB#
+######
+
+depth: 4
+######
+#bnrk#
+#P  p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#PK p#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#K   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#  K #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P Kp#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# K  #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# KB #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#P  p#
+# Kr #
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+# Kr #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PK p#
+#  r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#K r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  K #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P Kp#
+#  r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Kr #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# KB #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#Pr p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PK p#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#K   #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#  K #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#PrKp#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# K  #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# KB #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PKr #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P K #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# K p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
+######
+
+depth: 3
+######
+#bn k#
+#P rp#
+# R  #
+#K NB#
+######
+
+depth: 4
+######
+#bnrk#
+#P  p#
+# R  #
+#K NB#
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+# R  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#PR p#
+#    #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#R   #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#  R #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#KR  #
+#  NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# R  #
+# KNB#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# RB #
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+#P  p#
+# Rr #
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+# Rr #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PR p#
+#  r #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#R r #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  R #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#KRr #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Rr #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# RB #
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+#Pr p#
+# R  #
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+# R  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PR p#
+#    #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#R   #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#  R #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#KR  #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# R  #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# RB #
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PRr #
+#   p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#R  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Rp#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#KR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# R p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
+######
+
+depth: 3
+######
+#bn k#
+#PNrp#
+#    #
+#KR B#
+######
+
+depth: 4
+######
+#bnrk#
+#PN p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bPrk#
+# N p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrN#
+#P  p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#   N#
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#PN p#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# N p#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn N#
+#P  p#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  rN#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#K r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  r #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#Pr p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#PNr #
+#   p#
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# Nr #
+#   p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#K  p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# K p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# R p#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#   p#
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  Bp#
+#KR  #
+######
+
+depth: 3
+######
+#bn k#
+#P rN#
+#    #
+#KR B#
+######
+
+depth: 4
+######
+#bnrk#
+#P  N#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bPrk#
+#   N#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#P   #
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#P  N#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+#   N#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P   #
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#K r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#  r #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#Pr N#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# r N#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr  #
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#P  r#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+#   r#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#  B #
+#KR  #
+######
+
+depth: 3
+######
+#bn k#
+#P rp#
+#  B #
+#KRN #
+######
+
+depth: 4
+######
+#bnrk#
+#P  p#
+#  B #
+#KRN #
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+#  B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#PB p#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  B#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#K B #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# KB #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# RB #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#P  p#
+#  r #
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+#  r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#K r #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Kr #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Rr #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#  r #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#Pr p#
+#  B #
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+#  B #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PB p#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr B#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#K B #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# KB #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# RB #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+#  Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#  Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PBr #
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P rB#
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+#  p #
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#  p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Kp #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Rp #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#P rN#
+#  p #
+#KR  #
+######
+
+depth: 2
+######
 #bnrk#
 #P   #
 #   p#
@@ -29,6 +2141,86 @@ depth: 3
 #    #
 #   p#
 #KRNB#
+######
+
+depth: 4
+######
+#bP k#
+#  r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#  Bp#
+#KRN #
+######
+
+depth: 4
+######
+#br k#
+#    #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#br k#
+#    #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#br k#
+#    #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#br k#
+#    #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#br k#
+#    #
+#  Bp#
+#KRN #
 ######
 
 depth: 4
@@ -85,6 +2277,70 @@ depth: 3
 #P   #
 #K  p#
 # RNB#
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PKr #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#KR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K Bp#
+# RN #
 ######
 
 depth: 4
@@ -165,6 +2421,78 @@ depth: 3
 #P   #
 # K p#
 # RNB#
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PKr #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P K #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# K p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
 ######
 
 depth: 4
@@ -265,6 +2593,78 @@ depth: 3
 
 depth: 4
 ######
+#bn k#
+#P r #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PRr #
+#   p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#R  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Rp#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#KR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# R p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
+######
+
+depth: 4
+######
 #bnrk#
 #P   #
 # R  #
@@ -341,6 +2741,70 @@ depth: 3
 #P   #
 #  Bp#
 #KRN #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+#  Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#  Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PBr #
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P rB#
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
 ######
 
 depth: 4
@@ -505,6 +2969,3334 @@ depth: 1
 
 depth: 2
 ######
+#bn k#
+#  rp#
+#PK  #
+# RNB#
+######
+
+depth: 3
+######
+#bn k#
+#P rp#
+# K  #
+# RNB#
+######
+
+depth: 4
+######
+#bnrk#
+#P  p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#PK p#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#K   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#  K #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P Kp#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# K  #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# KB #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#P  p#
+# Kr #
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+# Kr #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PK p#
+#  r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#K r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  K #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P Kp#
+#  r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Kr #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# KB #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#Pr p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+# K  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PK p#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#K   #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#  K #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#PrKp#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# K  #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# KB #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PKr #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P K #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# K p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
+######
+
+depth: 3
+######
+#bn k#
+# Krp#
+#P   #
+# RNB#
+######
+
+depth: 4
+######
+#bnrk#
+# K p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bKrk#
+#   p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#K  p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#  Kp#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#Knrk#
+#   p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P K #
+# RNB#
+######
+
+depth: 5
+######
+#bnKk#
+#   p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#PK p#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+# K p#
+#PR  #
+#  NB#
+######
+
+depth: 5
+######
+#bnrk#
+# K p#
+#P   #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+# K N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+# K p#
+#P B #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+# K p#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#bK k#
+#   p#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKr #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#K  p#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  Kp#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#Kn k#
+#   p#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P K #
+# RNB#
+######
+
+depth: 5
+######
+#bnKk#
+#   p#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PK p#
+#  r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#PRr #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P r #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# K N#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P B #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+# Kr #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bK k#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#Kn k#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bnKk#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PKr #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#PR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P Bp#
+# RN #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#P K #
+# RNB#
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#P K #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#  K #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#  Kp#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P  K#
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+# K p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   K#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PRK #
+#  NB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P K #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P K #
+# R B#
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRr #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P r #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P B #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P K #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#  K #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#  K #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# rKp#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P  K#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r K#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PRK #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P K #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P K #
+# R B#
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P  K#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  rK#
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRKp#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Kp#
+#R NB#
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P p #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  p #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRp #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P p #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#P p #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P B #
+# RN #
+######
+
+depth: 3
+######
+#bn k#
+#K rp#
+#P   #
+# RNB#
+######
+
+depth: 4
+######
+#bnrk#
+#K  p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#Knrk#
+#   p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+# K p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bKrk#
+#   p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#K  p#
+#PR  #
+#  NB#
+######
+
+depth: 5
+######
+#bnrk#
+#K  p#
+#P   #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+#KN p#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#K  N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#K  p#
+#P B #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#K  p#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#Kn k#
+#   p#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKr #
+# RNB#
+######
+
+depth: 5
+######
+#bK k#
+#   p#
+#P r #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#K  p#
+#PRr #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#K  p#
+#P r #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#KN p#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#K  N#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#K  p#
+#P B #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#Kr p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#Kn k#
+# r p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bK k#
+# r p#
+#P   #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#KP p#
+#    #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#Kr p#
+#PR  #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#Kr p#
+#P   #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#KN p#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Kr N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Kr p#
+#P B #
+# RN #
+######
+
+depth: 4
+######
+#bn k#
+#K r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#Kn k#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bK k#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#PR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P Bp#
+# RN #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#P   #
+#KRNB#
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#P r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKr #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRr #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P  p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 3
+######
+#bn k#
+#  Kp#
+#P   #
+# RNB#
+######
+
+depth: 4
+######
+#bn k#
+#  K #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bnKk#
+#    #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#P Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# K  #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#   K#
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bK k#
+#    #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#P  K#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn K#
+#    #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P K #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#PR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P Bp#
+# RN #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#PK  #
+#R NB#
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#PK  #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# K  #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+# K p#
+#P   #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P   #
+#RKNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P K #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+#K  p#
+#P   #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+#  Kp#
+#P   #
+#R NB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PKB #
+#R N #
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#PKr #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Kr #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P r #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P r #
+#RKNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P K #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#K  p#
+#P r #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#  Kp#
+#P r #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKr #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKr #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKr #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKB #
+#R N #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#PK  #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# K  #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+# K  #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P   #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+#RKNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P K #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#Kr p#
+#P   #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# rKp#
+#P   #
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PKB #
+#R N #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PK p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# K p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P  p#
+#RKNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Kp#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKBp#
+#R N #
+######
+
+depth: 3
+######
+#bn k#
+# Nrp#
+#PK  #
+# R B#
+######
+
+depth: 4
+######
+#bnrk#
+# N p#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bnrN#
+#   p#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK N#
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#KN p#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+# RKB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+# NKp#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+# N p#
+#PKr #
+# R B#
+######
+
+depth: 5
+######
+#bn N#
+#   p#
+#PKr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKrN#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#KN p#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# NKp#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKr #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKr #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Kr p#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# rKp#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#PK p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# K p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Kp#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#KNr #
+#P  p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# NK #
+#P  p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PK p#
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PK p#
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKBp#
+# R  #
+######
+
+depth: 3
+######
+#bn k#
+#  rN#
+#PK  #
+# R B#
+######
+
+depth: 4
+######
+#bnrk#
+#   N#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+# K N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#K  N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+# RKB#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#  KN#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+#   N#
+#PKr #
+# R B#
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#PKr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# K N#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#K  N#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#  KN#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKr #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKr #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+# r N#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# P N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# K N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Kr N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# rKN#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+#   r#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# K r#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#K  r#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P   #
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#  Kr#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PKB #
+# R  #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#PKB #
+# RN #
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#PKB #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# KB #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+# K p#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#K  p#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#  Kp#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+# B p#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   B#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PKB #
+#R N #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#PKr #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Kr #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P r #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P K #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#K  p#
+#P r #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  Kp#
+#P r #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKr #
+#R N #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKr #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKr #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#PKB #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# KB #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+# KB #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#Kr p#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# rKp#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# B p#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r B#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PKB #
+#R N #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PKBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  rB#
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKBp#
+#R N #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PKp #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Kp #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P K #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKp #
+#R N #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKp #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#PKp #
+# R  #
+######
+
+depth: 2
+######
 #bnrk#
 #    #
 #PK p#
@@ -517,6 +6309,78 @@ depth: 3
 #P   #
 # K p#
 # RNB#
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# K p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PKr #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P K #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# K p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
 ######
 
 depth: 4
@@ -613,6 +6477,102 @@ depth: 3
 # K  #
 #P  p#
 # RNB#
+######
+
+depth: 4
+######
+#bn k#
+# Kr #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bK k#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#Kn k#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bnKk#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#PKr #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#PR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P Bp#
+# RN #
 ######
 
 depth: 4
@@ -729,6 +6689,78 @@ depth: 3
 
 depth: 4
 ######
+#bn k#
+#  r #
+#P Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Kp#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P  K#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  rK#
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRKp#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Kp#
+#R NB#
+######
+
+depth: 4
+######
 #bnrk#
 #    #
 #P K #
@@ -825,6 +6857,70 @@ depth: 3
 
 depth: 4
 ######
+#bn k#
+#K r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#Kn k#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bK k#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#PR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P Bp#
+# RN #
+######
+
+depth: 4
+######
 #bnrk#
 #K   #
 #P   #
@@ -905,6 +7001,46 @@ depth: 3
 
 depth: 4
 ######
+#bn k#
+#  r #
+#P  p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 4
+######
 #bnrk#
 #    #
 #P   #
@@ -957,6 +7093,46 @@ depth: 3
 #  K #
 #P  p#
 # RNB#
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P  p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+# RN #
 ######
 
 depth: 4
@@ -1081,6 +7257,78 @@ depth: 3
 
 depth: 4
 ######
+#bn k#
+#  r #
+#PK p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# K p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P  p#
+#RKNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Kp#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P  p#
+#R NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKBp#
+#R N #
+######
+
+depth: 4
+######
 #bnrk#
 #    #
 #PK  #
@@ -1165,6 +7413,86 @@ depth: 3
 #    #
 #PKBp#
 # RN #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PKBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  rB#
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKBp#
+#R N #
 ######
 
 depth: 4
@@ -1369,6 +7697,2406 @@ depth: 1
 
 depth: 2
 ######
+#bn k#
+#  rp#
+#PR  #
+#K NB#
+######
+
+depth: 3
+######
+#bn k#
+#P rp#
+# R  #
+#K NB#
+######
+
+depth: 4
+######
+#bnrk#
+#P  p#
+# R  #
+#K NB#
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+# R  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#PR p#
+#    #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#R   #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#  R #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#KR  #
+#  NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# R  #
+# KNB#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# RB #
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+#P  p#
+# Rr #
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+# Rr #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PR p#
+#  r #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#R r #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  R #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#KRr #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Rr #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# RB #
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+#Pr p#
+# R  #
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+# R  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PR p#
+#    #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#R   #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#  R #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#KR  #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# R  #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# RB #
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PRr #
+#   p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#R  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Rp#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#KR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# R p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
+######
+
+depth: 3
+######
+#bn k#
+# Rrp#
+#P   #
+#K NB#
+######
+
+depth: 4
+######
+#bnrk#
+# R p#
+#P   #
+#K NB#
+######
+
+depth: 5
+######
+#bRrk#
+#   p#
+#P   #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#R  p#
+#P   #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#  Rp#
+#P   #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#PR p#
+#    #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+# R p#
+#P   #
+# KNB#
+######
+
+depth: 5
+######
+#bnrk#
+# R p#
+#PK  #
+#  NB#
+######
+
+depth: 5
+######
+#bnrk#
+# R N#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+# R p#
+#P B #
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+# R p#
+#P r #
+#K NB#
+######
+
+depth: 5
+######
+#bR k#
+#   p#
+#P r #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRr #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#R  p#
+#P r #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  Rp#
+#P r #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PR p#
+#  r #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#P r #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#PKr #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# R N#
+#P r #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#P B #
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P   #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#    #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+# Rr #
+#P  p#
+#K NB#
+######
+
+depth: 5
+######
+#bR k#
+#  r #
+#P  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#R r #
+#P  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  R #
+#P  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PRr #
+#   p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P  p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#PK p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P Bp#
+#K N #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#P   #
+#KRNB#
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#P r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKr #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRr #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P  p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#P R #
+#K NB#
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#P R #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#  R #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#  Rp#
+#P   #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P  R#
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P R #
+# KNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PKR #
+#  NB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P R #
+#K  B#
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#P r #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P r #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKr #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P B #
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P R #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#  R #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#  R #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# rRp#
+#P   #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P  R#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P R #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PKR #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P R #
+#K  B#
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P Rp#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Rp#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  R #
+#P  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P  R#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Rp#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKRp#
+#  NB#
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P p #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  p #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKp #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P p #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#P p #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P B #
+#K N #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#PR  #
+# KNB#
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#PR  #
+# KNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# R  #
+# KNB#
+######
+
+depth: 5
+######
+#bnrk#
+# R p#
+#P   #
+# KNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P R #
+# KNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PRK #
+#  NB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PRB #
+# KN #
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#PRr #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Rr #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#P r #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P R #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRr #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRK #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRr #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PRr #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRB #
+# KN #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#PR  #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# R  #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+# R  #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#P   #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P R #
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PRK #
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PRB #
+# KN #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PR p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# R p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P  p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Rp#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRKp#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRBp#
+# KN #
+######
+
+depth: 3
+######
+#bn k#
+# Nrp#
+#PR  #
+#K  B#
+######
+
+depth: 4
+######
+#bnrk#
+# N p#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrN#
+#   p#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR N#
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+# N p#
+#PRr #
+#K  B#
+######
+
+depth: 5
+######
+#bn N#
+#   p#
+#PRr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRrN#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRr #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#PR p#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# R p#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Rp#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PR p#
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRBp#
+#K   #
+######
+
+depth: 3
+######
+#bn k#
+#  rN#
+#PR  #
+#K  B#
+######
+
+depth: 4
+######
+#bnrk#
+#   N#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+# R N#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+#   N#
+#PRr #
+#K  B#
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#PRr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# R N#
+#P r #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PRr #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+# r N#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# P N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# R N#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+#   r#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# R r#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PRB #
+#K   #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#PRB #
+#K N #
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#PRB #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# RB #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+# R p#
+#P B #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+# B p#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#KBN #
+######
+
+depth: 5
+######
+#bnrk#
+#   B#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PRB #
+# KN #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#PRr #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Rr #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#P r #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P R #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRr #
+# KN #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRr #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PRr #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#PRB #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# RB #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+# RB #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#P B #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# B p#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#KBN #
+######
+
+depth: 5
+######
+#bn k#
+# r B#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PRB #
+# KN #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PRBp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P Bp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PR p#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#KBN #
+######
+
+depth: 5
+######
+#bn k#
+#  rB#
+#PR p#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRBp#
+# KN #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PRp #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Rp #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P p #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P R #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRp #
+# KN #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRp #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#PRp #
+#K   #
+######
+
+depth: 2
+######
 #bnrk#
 #    #
 #PR p#
@@ -1381,6 +10109,78 @@ depth: 3
 #P   #
 # R p#
 #K NB#
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+# R p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PRr #
+#   p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#R  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Rp#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#KR p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# R p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
 ######
 
 depth: 4
@@ -1465,6 +10265,78 @@ depth: 3
 
 depth: 4
 ######
+#bn k#
+# Rr #
+#P  p#
+#K NB#
+######
+
+depth: 5
+######
+#bR k#
+#  r #
+#P  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#R r #
+#P  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  R #
+#P  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#PRr #
+#   p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P  p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#PK p#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P Bp#
+#K N #
+######
+
+depth: 4
+######
 #bnrk#
 # R  #
 #P   #
@@ -1545,6 +10417,46 @@ depth: 3
 
 depth: 4
 ######
+#bn k#
+#  r #
+#P  p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 4
+######
 #bnrk#
 #    #
 #P   #
@@ -1597,6 +10509,62 @@ depth: 3
 #    #
 #P Rp#
 #K NB#
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P Rp#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#  Rp#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  R #
+#P  p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P  R#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Rp#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKRp#
+#  NB#
 ######
 
 depth: 4
@@ -1673,6 +10641,62 @@ depth: 3
 
 depth: 4
 ######
+#bn k#
+#  r #
+#PR p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# R p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P  p#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Rp#
+# KNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRKp#
+#  NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRBp#
+# KN #
+######
+
+depth: 4
+######
 #bnrk#
 #    #
 #PR  #
@@ -1741,6 +10765,78 @@ depth: 3
 #    #
 #PRBp#
 #K N #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PRBp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P Bp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PR p#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#KBN #
+######
+
+depth: 5
+######
+#bn k#
+#  rB#
+#PR p#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRBp#
+# KN #
 ######
 
 depth: 4
@@ -1913,6 +11009,1758 @@ depth: 1
 
 depth: 2
 ######
+#bn k#
+# Nrp#
+#P   #
+#KR B#
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#P   #
+#KRNB#
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#P r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKr #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRr #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P  p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 3
+######
+#bn k#
+#PNrp#
+#    #
+#KR B#
+######
+
+depth: 4
+######
+#bnrk#
+#PN p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bPrk#
+# N p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrN#
+#P  p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#   N#
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#PN p#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# N p#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn N#
+#P  p#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  rN#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#K r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  r #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#Pr p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#PNr #
+#   p#
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# Nr #
+#   p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#K  p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# K p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# R p#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#   p#
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  Bp#
+#KR  #
+######
+
+depth: 3
+######
+#bn k#
+# Nrp#
+#PK  #
+# R B#
+######
+
+depth: 4
+######
+#bnrk#
+# N p#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bnrN#
+#   p#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK N#
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#KN p#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+# RKB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+# NKp#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+# N p#
+#PKr #
+# R B#
+######
+
+depth: 5
+######
+#bn N#
+#   p#
+#PKr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKrN#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#KN p#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# NKp#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKr #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKr #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Kr p#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# rKp#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#PK p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# K p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Kp#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#KNr #
+#P  p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# NK #
+#P  p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PK p#
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PK p#
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKBp#
+# R  #
+######
+
+depth: 3
+######
+#bn k#
+# Nrp#
+#PR  #
+#K  B#
+######
+
+depth: 4
+######
+#bnrk#
+# N p#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrN#
+#   p#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR N#
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+# N p#
+#PRr #
+#K  B#
+######
+
+depth: 5
+######
+#bn N#
+#   p#
+#PRr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRrN#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRr #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#PR p#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# R p#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Rp#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PR p#
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRBp#
+#K   #
+######
+
+depth: 3
+######
+#bn k#
+# Nrp#
+#P   #
+#K RB#
+######
+
+depth: 4
+######
+#bnrk#
+# N p#
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bnrN#
+#   p#
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P  N#
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+# KRB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# N p#
+#P r #
+#K RB#
+######
+
+depth: 5
+######
+#bn N#
+#   p#
+#P r #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P rN#
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  r #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+# KRB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKr #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+# KRB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#P  p#
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#   p#
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+# KRB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PK p#
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Rp#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Bp#
+#K R #
+######
+
+depth: 3
+######
+#bn k#
+# Nrp#
+#P B #
+#KR  #
+######
+
+depth: 4
+######
+#bnrk#
+# N p#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrN#
+#   p#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P BN#
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+# N B#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# N p#
+#P r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn N#
+#   p#
+#P r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P rN#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKr #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRr #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# B p#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r B#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#P Bp#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  Bp#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# NrB#
+#P  p#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKBp#
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRBp#
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Bp#
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#P p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKp #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRp #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P p #
+#K R #
+######
+
+depth: 2
+######
 #bnrk#
 # N  #
 #P  p#
@@ -1925,6 +12773,46 @@ depth: 3
 #    #
 #P  p#
 #KRNB#
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P  p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
 ######
 
 depth: 4
@@ -1983,12 +12871,172 @@ depth: 3
 #KR B#
 ######
 
+depth: 4
+######
+#bn N#
+#  r #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn  #
+#  r #
+#P Np#
+#KR B#
+######
+
+depth: 5
+######
+#bn N#
+#P r #
+#   p#
+#KR B#
+######
+
+depth: 5
+######
+#bn N#
+#  r #
+#PK p#
+# R B#
+######
+
+depth: 5
+######
+#bn N#
+#  r #
+#PR p#
+#K  B#
+######
+
+depth: 5
+######
+#bn N#
+#  r #
+#P  p#
+#K RB#
+######
+
+depth: 5
+######
+#bn N#
+#  r #
+#P Bp#
+#KR  #
+######
+
+depth: 4
+######
+#bn r#
+#    #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn r#
+#P   #
+#   p#
+#KR B#
+######
+
+depth: 5
+######
+#bn r#
+#    #
+#PK p#
+# R B#
+######
+
+depth: 5
+######
+#bn r#
+#    #
+#PR p#
+#K  B#
+######
+
+depth: 5
+######
+#bn r#
+#    #
+#P  p#
+#K RB#
+######
+
+depth: 5
+######
+#bn r#
+#    #
+#P Bp#
+#KR  #
+######
+
 depth: 3
 ######
 #bnrk#
 #    #
 #P  N#
 #KR B#
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P  N#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   N#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK N#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR N#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P  N#
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P BN#
+#KR  #
 ######
 
 depth: 3
@@ -1999,12 +13047,156 @@ depth: 3
 #KR B#
 ######
 
+depth: 4
+######
+#bn k#
+#PNr #
+#   p#
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# Nr #
+#   p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#K  p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# K p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# R p#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#   p#
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  Bp#
+#KR  #
+######
+
 depth: 3
 ######
 #bnrk#
 # N  #
 #PK p#
 # R B#
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#PK p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# K p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Kp#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#KNr #
+#P  p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# NK #
+#P  p#
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PK p#
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PK p#
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKBp#
+# R  #
 ######
 
 depth: 3
@@ -2015,12 +13207,116 @@ depth: 3
 #K  B#
 ######
 
+depth: 4
+######
+#bn k#
+# Nr #
+#PR p#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+# R p#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Rp#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PR p#
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRBp#
+#K   #
+######
+
 depth: 3
 ######
 #bnrk#
 # N  #
 #P  p#
 #K RB#
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#P  p#
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#   p#
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+# KRB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PK p#
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Rp#
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Bp#
+#K R #
 ######
 
 depth: 4
@@ -2093,6 +13389,70 @@ depth: 3
 # N  #
 #P Bp#
 #KR  #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#P Bp#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  Bp#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# NrB#
+#P  p#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKBp#
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRBp#
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Bp#
+#K R #
 ######
 
 depth: 4
@@ -2183,12 +13543,4780 @@ depth: 1
 #KR B#
 ######
 
+depth: 2
+######
+#bn k#
+#  rN#
+#P   #
+#KR B#
+######
+
+depth: 3
+######
+#bN k#
+#  r #
+#P   #
+#KR B#
+######
+
+depth: 4
+######
+#bNrk#
+#    #
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#b rk#
+#    #
+#P N #
+#KR B#
+######
+
+depth: 5
+######
+#bNrk#
+#P   #
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#P B #
+#KR  #
+######
+
+depth: 4
+######
+#bN k#
+#    #
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#b  k#
+#    #
+#P N #
+#KR B#
+######
+
+depth: 5
+######
+#bN k#
+#P   #
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#PKr #
+# R B#
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#PRr #
+#K  B#
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#P r #
+#K RB#
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#P B #
+#KR  #
+######
+
+depth: 4
+######
+#bN k#
+# r  #
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#b  k#
+# r  #
+#P N #
+#KR B#
+######
+
+depth: 5
+######
+#bN k#
+#Pr  #
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bN k#
+# P  #
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#P B #
+#KR  #
+######
+
+depth: 4
+######
+#bN k#
+#   r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#b  k#
+#   r#
+#P N #
+#KR B#
+######
+
+depth: 5
+######
+#bN k#
+#P  r#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bN k#
+#   r#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bN k#
+#   r#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bN k#
+#   r#
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bN k#
+#   r#
+#P B #
+#KR  #
+######
+
+depth: 3
+######
+#bn k#
+#  r #
+#PN  #
+#KR B#
+######
+
+depth: 4
+######
+#bnrk#
+#    #
+#PN  #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#P   #
+# N  #
+#KR B#
+######
+
+depth: 5
+######
+#Nnrk#
+#    #
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnNk#
+#    #
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#PN  #
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#PNB #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#    #
+#PNr #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P   #
+# Nr #
+#KR B#
+######
+
+depth: 5
+######
+#Nn k#
+#    #
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bnNk#
+#    #
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#PNr #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#PNB #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+# r  #
+#PN  #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr  #
+# N  #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# P  #
+# N  #
+#KR B#
+######
+
+depth: 5
+######
+#Nn k#
+# r  #
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnNk#
+# r  #
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#PN  #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#PNB #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#   r#
+#PN  #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+# N  #
+#KR B#
+######
+
+depth: 5
+######
+#Nn k#
+#   r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnNk#
+#   r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PN  #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PNB #
+#KR  #
+######
+
+depth: 3
+######
+#bn k#
+#  r #
+#P   #
+#KRNB#
+######
+
+depth: 4
+######
+#bnrk#
+#    #
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P   #
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+# N  #
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+#    #
+#P r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P   #
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#PKr #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#PRr #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N  #
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+# r  #
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr  #
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+# P  #
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N  #
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+#   r#
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P B #
+#KRN #
+######
+
+depth: 3
+######
+#bn k#
+#P rN#
+#    #
+#KR B#
+######
+
+depth: 4
+######
+#bnrk#
+#P  N#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bPrk#
+#   N#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#P   #
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#P  N#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+#   N#
+#  r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P   #
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#K r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#  r #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#Pr N#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+# r N#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr  #
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#P  r#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bP k#
+#   r#
+#    #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#K   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#  B #
+#KR  #
+######
+
+depth: 3
+######
+#bn k#
+#  rN#
+#PK  #
+# R B#
+######
+
+depth: 4
+######
+#bnrk#
+#   N#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+# K N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#K  N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+# RKB#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#  KN#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+#   N#
+#PKr #
+# R B#
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#PKr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Kr #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# K N#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#K  N#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#  KN#
+#P r #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKr #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKr #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+# r N#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# P N#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# K N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#Kr N#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# rKN#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+#   r#
+#PK  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+# K  #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+# K r#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P K #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#K  r#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P   #
+# RKB#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#  Kr#
+#P   #
+# R B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PK  #
+#R  B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PKB #
+# R  #
+######
+
+depth: 3
+######
+#bn k#
+#  rN#
+#PR  #
+#K  B#
+######
+
+depth: 4
+######
+#bnrk#
+#   N#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+# R N#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+#   N#
+#PRr #
+#K  B#
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#PRr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+# Rr #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# R N#
+#P r #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PRr #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+# r N#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# P N#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# R N#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+#   r#
+#PR  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+# R  #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# R r#
+#P   #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PR  #
+# K B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PRB #
+#K   #
+######
+
+depth: 3
+######
+#bn k#
+#  rN#
+#P   #
+#K RB#
+######
+
+depth: 4
+######
+#bnrk#
+#   N#
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#PN  #
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+# KRB#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+#   N#
+#P r #
+#K RB#
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#P r #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#PNr #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#  r #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+# KRB#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKr #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# r N#
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#PN  #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+# P N#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+# KRB#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+#   r#
+#P   #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#    #
+#K RB#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P   #
+# KRB#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PK  #
+#  RB#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P R #
+#K  B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P B #
+#K R #
+######
+
+depth: 3
+######
+#bn k#
+#  rN#
+#P B #
+#KR  #
+######
+
+depth: 4
+######
+#bnrk#
+#   N#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#PNB #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+# B N#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+#   N#
+#P r #
+#KR  #
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#P r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#PNr #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#  r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKr #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PRr #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# r N#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#PNB #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# P N#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# B N#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+#   r#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# B r#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   B#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P B #
+#K R #
+######
+
 depth: 1
 ######
 #bnrk#
 #   p#
 #P B #
 #KRN #
+######
+
+depth: 2
+######
+#bn k#
+#  rp#
+#P B #
+#KRN #
+######
+
+depth: 3
+######
+#bn k#
+#P rp#
+#  B #
+#KRN #
+######
+
+depth: 4
+######
+#bnrk#
+#P  p#
+#  B #
+#KRN #
+######
+
+depth: 5
+######
+#bPrk#
+#   p#
+#  B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#PB p#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  B#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#K B #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# KB #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# RB #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#P  p#
+#  r #
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+#   p#
+#  r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#K r #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Kr #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Rr #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#  r #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#Pr p#
+#  B #
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+# r p#
+#  B #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PB p#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr B#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#K B #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# KB #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# RB #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#  B #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+#  Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#  Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PBr #
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P rB#
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+#  p #
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#  p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Kp #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Rp #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#P rN#
+#  p #
+#KR  #
+######
+
+depth: 3
+######
+#bn k#
+# Brp#
+#P   #
+#KRN #
+######
+
+depth: 4
+######
+#bnrk#
+# B p#
+#P   #
+#KRN #
+######
+
+depth: 5
+######
+#Bnrk#
+#   p#
+#P   #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnBk#
+#   p#
+#P   #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#PB p#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+# B p#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+# B p#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+# B N#
+#P   #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+# B p#
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#Bn k#
+#   p#
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnBk#
+#   p#
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PB p#
+#  r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# B p#
+#PKr #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# B p#
+#PRr #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# B N#
+#P r #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P   #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+# Br #
+#P  p#
+#KRN #
+######
+
+depth: 5
+######
+#Bn k#
+#  r #
+#P  p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bnBk#
+#  r #
+#P  p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PBr #
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PR p#
+#K N #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#P   #
+#KRNB#
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#P r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+#  r #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKr #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRr #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P   #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#    #
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#KRN #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#P  p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 3
+######
+#bn k#
+#  rB#
+#P   #
+#KRN #
+######
+
+depth: 4
+######
+#bnrk#
+#   B#
+#P   #
+#KRN #
+######
+
+depth: 5
+######
+#bnBk#
+#    #
+#P   #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  B#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#   B#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#   B#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+# N B#
+#P   #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#   B#
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bnBk#
+#    #
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P  B#
+#  r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#   B#
+#PKr #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#   B#
+#PRr #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# N B#
+#P r #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+# r B#
+#P   #
+#KRN #
+######
+
+depth: 5
+######
+#bnBk#
+# r  #
+#P   #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr B#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# P B#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# r B#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# r B#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# N B#
+#P   #
+#KR  #
+######
+
+depth: 4
+######
+#bn k#
+#   r#
+#P   #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#    #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# N r#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P   #
+#KR  #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#PKB #
+# RN #
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#PKB #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# KB #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+# K p#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#K  p#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#  Kp#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+# B p#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bnrk#
+#   B#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PKB #
+#R N #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#PKr #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Kr #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P r #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P K #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#K  p#
+#P r #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  Kp#
+#P r #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PKr #
+#R N #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKr #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKr #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#PKB #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# KB #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+# KB #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# K p#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#Kr p#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# rKp#
+#P B #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# B p#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PK  #
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+# r B#
+#PK  #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PKB #
+#R N #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PKB #
+# R  #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PKBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  rB#
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKBp#
+#R N #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PKp #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Kp #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P K #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKp #
+#R N #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKp #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#PKp #
+# R  #
+######
+
+depth: 3
+######
+#bn k#
+#  rp#
+#PRB #
+#K N #
+######
+
+depth: 4
+######
+#bnrk#
+#   p#
+#PRB #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+#P  p#
+# RB #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+# R p#
+#P B #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+# B p#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PR  #
+#KBN #
+######
+
+depth: 5
+######
+#bnrk#
+#   B#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#PRB #
+# KN #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+#   p#
+#PRr #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#P  p#
+# Rr #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#P r #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P R #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#PRr #
+# KN #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRr #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PRr #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#PRB #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+# RB #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+# RB #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# R p#
+#P B #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# B p#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PR  #
+#KBN #
+######
+
+depth: 5
+######
+#bn k#
+# r B#
+#PR  #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PRB #
+# KN #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PRB #
+#K   #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PRBp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P Bp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PR p#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#KBN #
+######
+
+depth: 5
+######
+#bn k#
+#  rB#
+#PR p#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRBp#
+# KN #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PRp #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Rp #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P p #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P R #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRp #
+# KN #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRp #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#PRp #
+#K   #
+######
+
+depth: 3
+######
+#bn k#
+# Nrp#
+#P B #
+#KR  #
+######
+
+depth: 4
+######
+#bnrk#
+# N p#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrN#
+#   p#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#   p#
+#P BN#
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#PN p#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+# N B#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bnrk#
+# N p#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# N p#
+#P r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn N#
+#   p#
+#P r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   p#
+#P rN#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#PN p#
+#  r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PKr #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#PRr #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# N p#
+#P r #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# r p#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#Pr p#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# P p#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# B p#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r B#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# r p#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#P Bp#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  Bp#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P  p#
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# NrB#
+#P  p#
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKBp#
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRBp#
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P Bp#
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#P p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKp #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRp #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P p #
+#K R #
+######
+
+depth: 3
+######
+#bn k#
+#  rN#
+#P B #
+#KR  #
+######
+
+depth: 4
+######
+#bnrk#
+#   N#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bNrk#
+#    #
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#PNB #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#    #
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bnrk#
+#P  N#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+# B N#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bnrk#
+#   N#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+#   N#
+#P r #
+#KR  #
+######
+
+depth: 5
+######
+#bN k#
+#    #
+#P r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#PNr #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#    #
+#P r #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P  N#
+#  r #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PKr #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#PRr #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+#   N#
+#P r #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+# r N#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bN k#
+# r  #
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#PNB #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r  #
+#P B #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#Pr N#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# P N#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# B N#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# r N#
+#P B #
+#K R #
+######
+
+depth: 4
+######
+#bn k#
+#   r#
+#P B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#P  r#
+#  B #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# B r#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P   #
+#KR B#
+######
+
+depth: 5
+######
+#bn k#
+#   B#
+#P   #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PKB #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#PRB #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+#   r#
+#P B #
+#K R #
 ######
 
 depth: 2
@@ -2205,6 +18333,70 @@ depth: 3
 #P   #
 #  Bp#
 #KRN #
+######
+
+depth: 4
+######
+#bn k#
+#P r #
+#  Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#  Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PBr #
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P rB#
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
 ######
 
 depth: 4
@@ -2365,6 +18557,62 @@ depth: 3
 # B  #
 #P  p#
 #KRN #
+######
+
+depth: 4
+######
+#bn k#
+# Br #
+#P  p#
+#KRN #
+######
+
+depth: 5
+######
+#Bn k#
+#  r #
+#P  p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bnBk#
+#  r #
+#P  p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PBr #
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PR p#
+#K N #
 ######
 
 depth: 4
@@ -2505,6 +18753,46 @@ depth: 3
 
 depth: 4
 ######
+#bn k#
+#  r #
+#P  p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#   p#
+#KRNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 4
+######
 #bnrk#
 #    #
 #P   #
@@ -2557,6 +18845,54 @@ depth: 3
 #   B#
 #P  p#
 #KRN #
+######
+
+depth: 4
+######
+#bn k#
+#  rB#
+#P  p#
+#KRN #
+######
+
+depth: 5
+######
+#bnBk#
+#  r #
+#P  p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P rB#
+#   p#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  rB#
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  rB#
+#PR p#
+#K N #
 ######
 
 depth: 4
@@ -2677,6 +19013,86 @@ depth: 3
 #    #
 #PKBp#
 # RN #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PKBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# KBp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P Bp#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PK p#
+# RNB#
+######
+
+depth: 5
+######
+#bn k#
+#  rB#
+#PK p#
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKBp#
+#R N #
 ######
 
 depth: 4
@@ -2877,6 +19293,78 @@ depth: 3
 #    #
 #PRBp#
 #K N #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PRBp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# RBp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P Bp#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P Bp#
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+# Br #
+#PR p#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#K NB#
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PR p#
+#KBN #
+######
+
+depth: 5
+######
+#bn k#
+#  rB#
+#PR p#
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRBp#
+# KN #
 ######
 
 depth: 4
@@ -3057,6 +19545,62 @@ depth: 3
 
 depth: 4
 ######
+#bn k#
+#P r #
+#  p #
+#KRN #
+######
+
+depth: 5
+######
+#bP k#
+#  r #
+#  p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+#K p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Kp #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Rp #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#P rN#
+#  p #
+#KR  #
+######
+
+depth: 4
+######
 #bnrk#
 #P   #
 #    #
@@ -3117,6 +19661,86 @@ depth: 3
 #    #
 #PKp #
 # RN #
+######
+
+depth: 4
+######
+#bn k#
+#  r #
+#PKp #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Kp #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+# Kr #
+#P p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P K #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#K r #
+#P p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  K #
+#P p #
+# RN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PKp #
+#R N #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKp #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#PKp #
+# R  #
 ######
 
 depth: 4
@@ -3207,12 +19831,124 @@ depth: 3
 #K N #
 ######
 
+depth: 4
+######
+#bn k#
+#  r #
+#PRp #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#P r #
+# Rp #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+# Rr #
+#P p #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P R #
+#K N #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PRp #
+# KN #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRp #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#PRp #
+#K   #
+######
+
 depth: 3
 ######
 #bnrk#
 # N  #
 #P p #
 #KR  #
+######
+
+depth: 4
+######
+#bn k#
+# Nr #
+#P p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#PNr #
+#  p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PKp #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#PRp #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+# Nr #
+#P p #
+#K R #
 ######
 
 depth: 4
@@ -3341,6 +20077,70 @@ depth: 3
 #   N#
 #P p #
 #KR  #
+######
+
+depth: 4
+######
+#bn k#
+#  rN#
+#P p #
+#KR  #
+######
+
+depth: 5
+######
+#bN k#
+#  r #
+#P p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#PNp #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#  r #
+#P p #
+#KRN #
+######
+
+depth: 5
+######
+#bn k#
+#P rN#
+#  p #
+#KR  #
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#PKp #
+# R  #
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#PRp #
+#K   #
+######
+
+depth: 5
+######
+#bn k#
+#  rN#
+#P p #
+#K R #
 ######
 
 depth: 4

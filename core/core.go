@@ -58,7 +58,7 @@ var (
 
 // New creates a new core.
 func New(writer io.Writer) *Core {
-	return &Core{writer: writer, turn: 1, maxDepth: 3, board: [][]byte{
+	return &Core{writer: writer, turn: 1, maxDepth: 5, board: [][]byte{
 		[]byte("bnrk"),
 		[]byte("   p"),
 		[]byte("P   "),

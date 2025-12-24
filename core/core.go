@@ -95,8 +95,30 @@ func (c *Core) solve(depth int) {
 	if depth >= c.config.MaxDepth {
 		return
 	}
-	moves := []Move{}
 	nextTurn := (c.turn % 2) + 1
+	moves := c.moves(nextTurn)
+	for _, move := range moves {
+		c.print(depth)
+		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
+		c.board[move.From.X][move.From.Y] = ' '
+		prevTurn := c.turn
+		c.turn = nextTurn
+		c.solve(depth + 1)
+		c.turn = prevTurn
+		c.board[move.To.X][move.To.Y] = move.To.What
+		c.board[move.From.X][move.From.Y] = move.From.What
+	}
+}
+
+func (c *Core) print(depth int) {
+	fmt.Fprintf(c.writer, "\ndepth: %d\n", depth)
+	fmt.Fprintln(c.writer, "######")
+	fmt.Fprintln(c.writer, "#"+string(bytes.Join(c.board, []byte("#\n#")))+"#")
+	fmt.Fprintln(c.writer, "######")
+}
+
+func (c *Core) moves(nextTurn int) []Move {
+	moves := []Move{}
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
 			piece := c.board[i][j]
@@ -139,22 +161,5 @@ func (c *Core) solve(depth int) {
 			}
 		}
 	}
-	for _, move := range moves {
-		c.print(depth)
-		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
-		c.board[move.From.X][move.From.Y] = ' '
-		prevTurn := c.turn
-		c.turn = nextTurn
-		c.solve(depth + 1)
-		c.turn = prevTurn
-		c.board[move.To.X][move.To.Y] = move.To.What
-		c.board[move.From.X][move.From.Y] = move.From.What
-	}
-}
-
-func (c *Core) print(depth int) {
-	fmt.Fprintf(c.writer, "\ndepth: %d\n", depth)
-	fmt.Fprintln(c.writer, "######")
-	fmt.Fprintln(c.writer, "#"+string(bytes.Join(c.board, []byte("#\n#")))+"#")
-	fmt.Fprintln(c.writer, "######")
+	return moves
 }

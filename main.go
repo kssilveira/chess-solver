@@ -13,8 +13,6 @@ func main() {
 	maxDepth := flag.Int("max_depth", 2, "max depth")
 	sleepDuration := flag.Duration("sleep_duration", time.Second, "sleep duration")
 	flag.Parse()
-	core := core.New(os.Stdout)
-	core.MaxDepth = *maxDepth
-	core.SleepDuration = *sleepDuration
+	core := core.New(os.Stdout, core.Config{MaxDepth: *maxDepth, SleepDuration: *sleepDuration})
 	core.Solve()
 }

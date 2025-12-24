@@ -21,14 +21,19 @@ type Move struct {
 	To   Point
 }
 
+// Config contains configuration.
+type Config struct {
+	MaxDepth      int
+	SleepDuration time.Duration
+}
+
 // Core contains the core logic.
 type Core struct {
-	board         [][]byte
 	writer        io.Writer
+	config        Config
+	board         [][]byte
 	turn          int
-	MaxDepth      int
 	clearTerminal string
-	SleepDuration time.Duration
 }
 
 const (
@@ -69,8 +74,8 @@ var (
 )
 
 // New creates a new core.
-func New(writer io.Writer) *Core {
-	return &Core{writer: writer, turn: 1, MaxDepth: 5, board: [][]byte{
+func New(writer io.Writer, config Config) *Core {
+	return &Core{writer: writer, config: config, turn: 1, board: [][]byte{
 		[]byte("bnrk"),
 		[]byte("   p"),
 		[]byte("P   "),
@@ -88,9 +93,9 @@ func (c *Core) solve(depth int) {
 	fmt.Fprintln(c.writer, "######")
 	fmt.Fprintln(c.writer, "#"+string(bytes.Join(c.board, []byte("#\n#")))+"#")
 	fmt.Fprintln(c.writer, "######")
-	time.Sleep(c.SleepDuration)
+	time.Sleep(c.config.SleepDuration)
 	fmt.Fprint(c.writer, c.clearTerminal)
-	if depth >= c.MaxDepth {
+	if depth >= c.config.MaxDepth {
 		return
 	}
 	moves := []Move{}

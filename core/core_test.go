@@ -84,11 +84,12 @@ func TestSolve(t *testing.T) {
 	for _, in := range inputs {
 		var out bytes.Buffer
 		core := New(&out)
+		core.clearTerminal = ""
 		if in.board != nil {
 			core.board = in.board
 		}
 		if in.maxDepth != 0 {
-			core.maxDepth = in.maxDepth
+			core.MaxDepth = in.maxDepth
 		}
 		core.Solve()
 		if err := os.WriteFile(filepath.Join("testdata", in.name+".txt"), out.Bytes(), 0644); err != nil {

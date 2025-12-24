@@ -52,6 +52,7 @@ var (
 			{2, -1, kindOtherEmpty, 1, 0}, {2, 1, kindOtherEmpty, 1, 0},
 			{-1, 2, kindOtherEmpty, 0, 1}, {1, 2, kindOtherEmpty, 0, 1},
 		},
+		byte('p'): [][]int{{1, 0, kindEmpty}, {1, -1, kindEnemy}, {1, 1, kindEnemy}},
 	}
 )
 
@@ -128,7 +129,10 @@ func (c *Core) solve(depth int) {
 	for _, move := range moves {
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
+		prevTurn := c.turn
+		c.turn = nextTurn
 		c.solve(depth + 1)
+		c.turn = prevTurn
 		c.board[move.To.X][move.To.Y] = move.To.What
 		c.board[move.From.X][move.From.Y] = move.From.What
 	}

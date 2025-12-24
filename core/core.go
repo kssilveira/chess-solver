@@ -50,14 +50,18 @@ func (c *Core) solve(depth int) {
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
 			if c.board[i][j] == 'P' {
-				ni := i - 1
-				nj := j
-				if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 || c.board[ni][nj] != ' ' {
-					continue
+				for _, delta := range [][]int{{-1, 0}} {
+					dx := delta[0]
+					dy := delta[1]
+					ni := i + dx
+					nj := j + dy
+					if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 || c.board[ni][nj] != ' ' {
+						continue
+					}
+					moves = append(moves, Move{
+						From: Point{What: c.board[i][j], X: i, Y: j},
+						To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
 				}
-				moves = append(moves, Move{
-					From: Point{What: c.board[i][j], X: i, Y: j},
-					To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
 			}
 		}
 	}

@@ -28,6 +28,13 @@ type Core struct {
 	maxDepth int
 }
 
+const (
+	kindDefault = iota
+	kindEmpty
+	kindEnemy
+	kindOtherEmpty
+)
+
 var (
 	colors = map[byte]int{
 		byte(' '): 0,
@@ -35,15 +42,15 @@ var (
 		byte('p'): 2, byte('k'): 2, byte('r'): 2, byte('n'): 2, byte('b'): 2, byte('x'): 2,
 	}
 	deltas = map[byte][][]int{
-		byte('P'): [][]int{{-1, 0, 1}, {-1, -1, 2}, {-1, 1, 2}},
+		byte('P'): [][]int{{-1, 0, kindEmpty}, {-1, -1, kindEnemy}, {-1, 1, kindEnemy}},
 		byte('R'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
 		byte('B'): [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
 		byte('K'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
 		byte('N'): [][]int{
-			{-2, -1, 3, -1, 0}, {-2, 1, 3, -1, 0},
-			{-1, -2, 3, 0, -1}, {1, -2, 3, 0, -1},
-			{2, -1, 3, 1, 0}, {2, 1, 3, 1, 0},
-			{-1, 2, 3, 0, 1}, {1, 2, 3, 0, 1},
+			{-2, -1, kindOtherEmpty, -1, 0}, {-2, 1, kindOtherEmpty, -1, 0},
+			{-1, -2, kindOtherEmpty, 0, -1}, {1, -2, kindOtherEmpty, 0, -1},
+			{2, -1, kindOtherEmpty, 1, 0}, {2, 1, kindOtherEmpty, 1, 0},
+			{-1, 2, kindOtherEmpty, 0, 1}, {1, 2, kindOtherEmpty, 0, 1},
 		},
 	}
 )
@@ -91,16 +98,16 @@ func (c *Core) solve(depth int) {
 				if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
 					continue
 				}
-				if (kind == 0 || kind == 3) && c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
+				if (kind == kindDefault || kind == kindOtherEmpty) && c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
 					continue
 				}
-				if kind == 1 && c.board[ni][nj] != ' ' {
+				if kind == kindEmpty && c.board[ni][nj] != ' ' {
 					continue
 				}
-				if kind == 2 && colors[c.board[ni][nj]] != nextTurn {
+				if kind == kindEnemy && colors[c.board[ni][nj]] != nextTurn {
 					continue
 				}
-				if kind == 3 {
+				if kind == kindOtherEmpty {
 					odx := delta[3]
 					ody := delta[4]
 					oni := i + odx

@@ -159,6 +159,11 @@ func (c *Core) deltas(nextTurn, i, j int) []Move {
 
 func (c *Core) move(depth, nextTurn int, moves []Move) int {
 	res := c.minInt
+	if len(moves) == 0 {
+		res = 0
+		fmt.Fprintf(c.writer, "\nres: %d\n", res)
+		return res
+	}
 	for _, move := range moves {
 		if move.To.What == 'k' || move.To.What == 'K' {
 			res = c.maxInt - depth

@@ -185,7 +185,7 @@ func (c *Core) move(depth, nextTurn int, moves []Move) int {
 	res := c.minInt
 	if len(moves) == 0 {
 		res = 0
-		fmt.Fprintf(c.writer, "\nres: %d\n", res)
+		c.print(depth, res)
 		return res
 	}
 	for _, move := range moves {

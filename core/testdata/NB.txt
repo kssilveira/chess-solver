@@ -1,5 +1,6 @@
 
 after move
+turn: 0
 depth: 0
 res: -1000
 ______
@@ -12,6 +13,7 @@ ______
 ------
 
 stalemate
+turn: 0
 depth: 0
 res: 0
 ______
@@ -22,8 +24,9 @@ ______
 ‾‾‾‾‾‾
 
 show
+turn: 0
 depth: 0
-res: 0
+res: 123456789
 ______
 |nx  |
 |X   |

@@ -9,9 +9,10 @@ import (
 
 func TestSolve(t *testing.T) {
 	inputs := []struct {
-		name     string
-		board    [][]byte
-		maxDepth int
+		name          string
+		board         [][]byte
+		maxDepth      int
+		maxPrintDepth int
 	}{
 		{name: "default", maxDepth: 2},
 		{name: "empty", board: [][]byte{
@@ -98,7 +99,7 @@ func TestSolve(t *testing.T) {
 			[]byte("RR  "),
 			[]byte("   N"),
 		}},
-		{name: "RNk", maxDepth: 500000, board: [][]byte{
+		{name: "RNk", maxDepth: 500000, maxPrintDepth: 2, board: [][]byte{
 			[]byte("  R "),
 			[]byte("k   "),
 			[]byte(" R  "),
@@ -109,6 +110,9 @@ func TestSolve(t *testing.T) {
 		config := Config{MaxDepth: 5, MaxPrintDepth: 5}
 		if in.maxDepth != 0 {
 			config.MaxDepth = in.maxDepth
+		}
+		if in.maxPrintDepth != 0 {
+			config.MaxPrintDepth = in.maxPrintDepth
 		}
 		var out bytes.Buffer
 		core := New(&out, config)

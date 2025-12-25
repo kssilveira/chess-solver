@@ -133,6 +133,7 @@ func (c *Core) print(message string, res int, cfg PrintConfig) {
 		return
 	}
 	fmt.Fprintf(c.writer, "\n%s\n", message)
+	fmt.Fprintf(c.writer, "turn: %d\n", c.turn)
 	fmt.Fprintf(c.writer, "depth: %d\n", c.depth)
 	fmt.Fprintf(c.writer, "res: %d\n", res)
 	if cfg.Move != (Move{}) {
@@ -220,7 +221,6 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		c.print("stalemate", res, PrintConfig{})
 		return res
 	}
-	key := string(bytes.Join(c.board, nil))
 	for _, move := range moves {
 		if move.To.What == 'k' || move.To.What == 'K' {
 			res = c.maxInt - c.depth
@@ -230,6 +230,7 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		c.print("before move", res, PrintConfig{Move: move})
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
+		key := string(bytes.Join(c.board, nil))
 		c.visited[c.turn][key]++
 		next := 0
 		if _, ok := c.solved[c.turn][key]; ok {
@@ -243,6 +244,10 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 			c.depth--
 			c.turn = prevTurn
 			c.print("solve()", next, PrintConfig{Move: move})
+			c.solved[c.turn][key] = next
+			c.solvedMove[c.turn][key] = move
+		} else {
+			c.print("repeated", next, PrintConfig{Move: move})
 		}
 		c.visited[c.turn][key]--
 		c.board[move.To.X][move.To.Y] = move.To.What
@@ -261,13 +266,15 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		}
 	}
 	c.print("final res", res, PrintConfig{Move: resMove})
-	c.solved[c.turn][key] = res
-	c.solvedMove[c.turn][key] = resMove
+	// key := string(bytes.Join(c.board, nil))
+	// c.solved[nextTurn][key] = res
+	// c.solvedMove[nextTurn][key] = resMove
 	return res
 }
 
 func (c *Core) show() {
-	c.print("show", 0, PrintConfig{})
+	c.print("show", 123456789, PrintConfig{})
+	c.turn = 0
 	for {
 		key := string(bytes.Join(c.board, nil))
 		res := c.solved[c.turn][key]

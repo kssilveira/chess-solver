@@ -1,5 +1,6 @@
 
 after move
+turn: 0
 depth: 0
 res: -1000
 ______
@@ -12,6 +13,7 @@ ______
 ------
 
 before move
+turn: 0
 depth: 0
 res: -1000
 move: P (1, 1) => x (0, 2)
@@ -23,6 +25,7 @@ ______
 ‾‾‾‾‾‾
 
 after move
+turn: 1
 depth: 1
 res: -1000
 ______
@@ -35,6 +38,7 @@ ______
 ------
 
 stalemate
+turn: 1
 depth: 1
 res: 0
 ______
@@ -45,6 +49,7 @@ ______
 ‾‾‾‾‾‾
 
 solve()
+turn: 0
 depth: 0
 res: 0
 move: P (1, 1) => x (0, 2)
@@ -56,6 +61,7 @@ ______
 ‾‾‾‾‾‾
 
 updated res
+turn: 0
 depth: 0
 res: 0
 move: P (1, 1) => x (0, 2)
@@ -67,6 +73,7 @@ ______
 ‾‾‾‾‾‾
 
 before move
+turn: 0
 depth: 0
 res: 0
 move: P (1, 1) => x (0, 0)
@@ -78,6 +85,7 @@ ______
 ‾‾‾‾‾‾
 
 after move
+turn: 1
 depth: 1
 res: -1000
 ______
@@ -90,6 +98,7 @@ ______
 ------
 
 stalemate
+turn: 1
 depth: 1
 res: 0
 ______
@@ -100,6 +109,7 @@ ______
 ‾‾‾‾‾‾
 
 solve()
+turn: 0
 depth: 0
 res: 0
 move: P (1, 1) => x (0, 0)
@@ -111,6 +121,7 @@ ______
 ‾‾‾‾‾‾
 
 final res
+turn: 0
 depth: 0
 res: 0
 move: P (1, 1) => x (0, 2)
@@ -122,35 +133,12 @@ ______
 ‾‾‾‾‾‾
 
 show
+turn: 0
 depth: 0
-res: 0
+res: 123456789
 ______
 |xxx |
 | P  |
 |    |
 |    |
 ‾‾‾‾‾‾
-
-before move
-depth: 0
-res: 0
-move: P (1, 1) => x (0, 2)
-______
-|xxx |
-| P  |
-|    |
-|    |
-‾‾‾‾‾‾
-
-after move
-depth: 1
-res: 0
-move: P (1, 1) => x (0, 2)
-______
-|xxP |
-|    |
-|    |
-|    |
-‾‾‾‾‾‾
-
-------

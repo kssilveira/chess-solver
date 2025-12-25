@@ -990,7 +990,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
-show
+show search
 turn: 0
 depth: 0
 res: 123456789
@@ -1002,10 +1002,106 @@ ______
 ‾‾‾‾‾‾
 
 before move
-turn: 1
+turn: 0
+depth: 0
+res: -1000
+move: P (2, 0) =>   (1, 0)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 0
+res: 0
+move: P (2, 0) =>   (1, 0)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: K (3, 0) =>   (2, 1)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: R (3, 1) =>   (2, 1)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: N (3, 2) =>   (1, 1)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 0
 depth: 0
 res: 0
 move: N (3, 2) => p (1, 3)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: B (3, 3) =>   (2, 2)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+show final res
+turn: 0
+depth: 0
+res: 0
+move: P (2, 0) =>   (1, 0)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: P (2, 0) =>   (1, 0)
 ______
 |bnrk|
 |   p|
@@ -1017,38 +1113,38 @@ after move
 turn: 0
 depth: 1
 res: 0
-move: N (3, 2) => p (1, 3)
+move: P (2, 0) =>   (1, 0)
 ______
 |bnrk|
-|   N|
-|P   |
-|KR B|
+|P  p|
+|    |
+|KRNB|
 ‾‾‾‾‾‾
 
 ------
 
 before move
-turn: 0
+turn: 1
 depth: 1
 res: 0
-move: k (0, 3) => N (1, 3)
+move: P (2, 0) =>   (1, 0)
 ______
 |bnrk|
-|   N|
-|P   |
-|KR B|
+|P  p|
+|    |
+|KRNB|
 ‾‾‾‾‾‾
 
 after move
 turn: 1
 depth: 2
 res: 0
-move: k (0, 3) => N (1, 3)
+move: P (2, 0) =>   (1, 0)
 ______
-|bnr |
-|   k|
-|P   |
-|KR B|
+|bnrk|
+|   p|
+|    |
+|KRNB|
 ‾‾‾‾‾‾
 
 ------

@@ -1187,7 +1187,7 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-show
+show search
 turn: 0
 depth: 0
 res: 123456789
@@ -1199,7 +1199,43 @@ ______
 ‾‾‾‾‾‾
 
 before move
-turn: 1
+turn: 0
+depth: 0
+res: -1000
+move: N (3, 3) =>   (1, 2)
+______
+|nx  |
+|    |
+|    |
+|  XN|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 0
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+|nx  |
+|    |
+|    |
+|  XN|
+‾‾‾‾‾‾
+
+show final res
+turn: 0
+depth: 0
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+|nx  |
+|    |
+|    |
+|  XN|
+‾‾‾‾‾‾
+
+before move
+turn: 0
 depth: 0
 res: 0
 move: N (3, 3) =>   (1, 2)
@@ -1225,10 +1261,10 @@ ______
 ------
 
 before move
-turn: 0
+turn: 1
 depth: 1
 res: 0
-move: n (0, 0) =>   (2, 1)
+move: N (3, 3) =>   (1, 2)
 ______
 |nx  |
 |  N |
@@ -1240,61 +1276,35 @@ after move
 turn: 1
 depth: 2
 res: 0
-move: n (0, 0) =>   (2, 1)
+move: N (3, 3) =>   (1, 2)
 ______
-| x  |
-|  N |
-| n  |
+|nx  |
+|    |
+|    |
 |  X |
 ‾‾‾‾‾‾
 
 ------
 
 before move
-turn: 1
+turn: 0
 depth: 2
-res: 0
-move: N (1, 2) =>   (0, 0)
-______
-| x  |
-|  N |
-| n  |
-|  X |
-‾‾‾‾‾‾
-
-after move
-turn: 0
-depth: 3
-res: 0
-move: N (1, 2) =>   (0, 0)
-______
-|Nx  |
-|    |
-| n  |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 0
-depth: 3
-res: 0
-move: n (2, 1) => N (0, 0)
-______
-|Nx  |
-|    |
-| n  |
-|  X |
-‾‾‾‾‾‾
-
-after move
-turn: 1
-depth: 4
 res: 0
 move: n (2, 1) => N (0, 0)
 ______
 |nx  |
+|    |
+|    |
+|  X |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 3
+res: 0
+move: n (2, 1) => N (0, 0)
+______
+| x  |
 |    |
 |    |
 |  X |

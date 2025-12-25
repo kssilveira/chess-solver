@@ -132,7 +132,7 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-show
+show search
 turn: 0
 depth: 0
 res: 123456789
@@ -144,10 +144,58 @@ ______
 ‾‾‾‾‾‾
 
 before move
-turn: 1
+turn: 0
+depth: 0
+res: -1000
+move: P (1, 1) => x (0, 0)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 0)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+turn: 0
 depth: 0
 res: 0
 move: P (1, 1) => x (0, 2)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+show final res
+turn: 0
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 0)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 0)
 ______
 |xxx |
 | P  |
@@ -159,9 +207,35 @@ after move
 turn: 0
 depth: 1
 res: 0
-move: P (1, 1) => x (0, 2)
+move: P (1, 1) => x (0, 0)
 ______
-|xxP |
+|Pxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: P (1, 1) => x (0, 0)
+______
+|Pxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 2
+res: 0
+move: P (1, 1) => x (0, 0)
+______
+| xx |
 |    |
 |    |
 |    |

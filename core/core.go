@@ -221,7 +221,6 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		c.print("stalemate", res, PrintConfig{})
 		return res
 	}
-	key := string(bytes.Join(c.board, nil))
 	for _, move := range moves {
 		if move.To.What == 'k' || move.To.What == 'K' {
 			res = c.maxInt - c.depth
@@ -231,13 +230,13 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		c.print("before move", res, PrintConfig{Move: move})
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
-		nextKey := string(bytes.Join(c.board, nil))
-		c.visited[c.turn][nextKey]++
+		key := string(bytes.Join(c.board, nil))
+		c.visited[c.turn][key]++
 		next := 0
-		if _, ok := c.solved[c.turn][nextKey]; ok {
-			next = c.solved[c.turn][nextKey]
+		if _, ok := c.solved[c.turn][key]; ok {
+			next = c.solved[c.turn][key]
 			c.print("solved[]", next, PrintConfig{Move: move})
-		} else if c.visited[c.turn][nextKey] < 3 {
+		} else if c.visited[c.turn][key] < 3 {
 			prevTurn := c.turn
 			c.turn = nextTurn
 			c.depth++
@@ -245,7 +244,8 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 			c.depth--
 			c.turn = prevTurn
 			c.print("solve()", next, PrintConfig{Move: move})
-			c.solved[c.turn][nextKey] = next
+			c.solved[c.turn][key] = next
+			c.solvedMove[c.turn][key] = move
 		} else {
 			c.print("repeated", next, PrintConfig{Move: move})
 		}
@@ -255,7 +255,6 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		if next > res {
 			res = next
 			resMove = move
-			c.solvedMove[nextTurn][key] = move
 			c.print("updated res", res, PrintConfig{Move: resMove})
 		}
 		if next > alpha {
@@ -271,20 +270,37 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 }
 
 func (c *Core) show() {
-	c.print("show", 123456789, PrintConfig{})
-	c.turn = 1
-	for {
-		key := string(bytes.Join(c.board, nil))
-		res := c.solved[c.turn][key]
-		move := c.solvedMove[c.turn][key]
-		if move == (Move{}) {
-			break
-		}
+	c.print("show search", 123456789, PrintConfig{})
+	nextTurn := (c.turn + 1) % 2
+	moves := c.moves(nextTurn)
+	res := c.minInt
+	resMove := Move{}
+	for _, move := range moves {
 		c.print("before move", res, PrintConfig{Move: move})
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
-		c.turn = (c.turn + 1) % 2
+		key := string(bytes.Join(c.board, nil))
+		next := c.solved[c.turn][key]
+		c.visited[c.turn][key]--
+		c.board[move.To.X][move.To.Y] = move.To.What
+		c.board[move.From.X][move.From.Y] = move.From.What
+		if next > res {
+			res = next
+			resMove = move
+			c.print("updated res", res, PrintConfig{Move: resMove})
+		}
+	}
+	c.print("show final res", res, PrintConfig{Move: resMove})
+	move := resMove
+	for move != (Move{}) {
+		c.print("before move", res, PrintConfig{Move: move})
+		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
+		c.board[move.From.X][move.From.Y] = ' '
 		c.depth++
 		c.print("after move", res, PrintConfig{Move: move, ClearTerminal: true})
+		key := string(bytes.Join(c.board, nil))
+		res = c.solved[c.turn][key]
+		move = c.solvedMove[c.turn][key]
+		c.turn = (c.turn + 1) % 2
 	}
 }

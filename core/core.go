@@ -112,6 +112,7 @@ func New(writer io.Writer, config Config) *Core {
 func (c *Core) Solve() {
 	c.depth = 0
 	c.solve(c.minInt, c.maxInt)
+	c.show()
 }
 
 func (c *Core) solve(alpha, beta int) int {
@@ -219,6 +220,7 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		c.print("stalemate", res, PrintConfig{})
 		return res
 	}
+	key := string(bytes.Join(c.board, nil))
 	for _, move := range moves {
 		if move.To.What == 'k' || move.To.What == 'K' {
 			res = c.maxInt - c.depth
@@ -228,11 +230,11 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		c.print("before move", res, PrintConfig{Move: move})
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
-		key := string(bytes.Join(c.board, nil))
 		c.visited[c.turn][key]++
 		next := 0
 		if _, ok := c.solved[c.turn][key]; ok {
 			next = c.solved[c.turn][key]
+			c.print("solved[]", next, PrintConfig{Move: move})
 		} else if c.visited[c.turn][key] < 3 {
 			prevTurn := c.turn
 			c.turn = nextTurn
@@ -240,8 +242,7 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 			next = -c.solve(-beta, -alpha)
 			c.depth--
 			c.turn = prevTurn
-			c.solved[c.turn][key] = next
-			c.solvedMove[c.turn][key] = move
+			c.print("solve()", next, PrintConfig{Move: move})
 		}
 		c.visited[c.turn][key]--
 		c.board[move.To.X][move.To.Y] = move.To.What
@@ -260,5 +261,25 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		}
 	}
 	c.print("final res", res, PrintConfig{Move: resMove})
+	c.solved[c.turn][key] = res
+	c.solvedMove[c.turn][key] = resMove
 	return res
+}
+
+func (c *Core) show() {
+	c.print("show", 0, PrintConfig{})
+	for {
+		key := string(bytes.Join(c.board, nil))
+		res := c.solved[c.turn][key]
+		move := c.solvedMove[c.turn][key]
+		if move == (Move{}) {
+			break
+		}
+		c.print("before move", res, PrintConfig{Move: move})
+		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
+		c.board[move.From.X][move.From.Y] = ' '
+		c.turn = (c.turn + 1) % 2
+		c.depth++
+		c.print("after move", res, PrintConfig{Move: move, ClearTerminal: true})
+	}
 }

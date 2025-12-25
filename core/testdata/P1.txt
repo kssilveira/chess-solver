@@ -136,6 +136,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 4
+res: 0
+move: P (1, 0) =>   (0, 0)
+______
+|P   |
+|    |
+|   p|
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
 res: 0
@@ -151,6 +162,17 @@ final res
 depth: 4
 res: 0
 move: P (1, 0) =>   (0, 0)
+______
+|    |
+|P   |
+|   p|
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 3
+res: 0
+move: p (1, 3) =>   (2, 3)
 ______
 |    |
 |P   |
@@ -180,6 +202,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 2
+res: 0
+move: P (2, 0) =>   (1, 0)
+______
+|    |
+|P  p|
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 2
 res: 0
@@ -195,6 +228,17 @@ final res
 depth: 2
 res: 0
 move: P (2, 0) =>   (1, 0)
+______
+|    |
+|   p|
+|P   |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 1
+res: 0
+move: p (0, 3) =>   (1, 3)
 ______
 |    |
 |   p|
@@ -224,6 +268,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 0
+res: 0
+move: P (3, 0) =>   (2, 0)
+______
+|   p|
+|    |
+|P   |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 0
 res: 0
@@ -245,3 +300,133 @@ ______
 |    |
 |P   |
 ‾‾‾‾‾‾
+
+show
+depth: 0
+res: 0
+______
+|   p|
+|    |
+|    |
+|P   |
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+move: P (3, 0) =>   (2, 0)
+______
+|   p|
+|    |
+|    |
+|P   |
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: 0
+move: P (3, 0) =>   (2, 0)
+______
+|   p|
+|    |
+|P   |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: 0
+move: p (0, 3) =>   (1, 3)
+______
+|   p|
+|    |
+|P   |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: 0
+move: p (0, 3) =>   (1, 3)
+______
+|    |
+|   p|
+|P   |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: 0
+move: P (2, 0) =>   (1, 0)
+______
+|    |
+|   p|
+|P   |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: 0
+move: P (2, 0) =>   (1, 0)
+______
+|    |
+|P  p|
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 3
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|    |
+|P  p|
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|    |
+|P   |
+|   p|
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: 0
+move: P (1, 0) =>   (0, 0)
+______
+|    |
+|P   |
+|   p|
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: 0
+move: P (1, 0) =>   (0, 0)
+______
+|P   |
+|    |
+|   p|
+|    |
+‾‾‾‾‾‾
+
+------

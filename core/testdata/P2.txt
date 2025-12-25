@@ -90,6 +90,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 2
+res: 0
+move: P (2, 1) => p (1, 2)
+______
+|    |
+|  P |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 2
 res: 0
@@ -180,6 +191,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 4
+res: 0
+move: P (1, 1) =>   (0, 1)
+______
+| P  |
+|    |
+|  p |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
 res: 0
@@ -195,6 +217,17 @@ final res
 depth: 4
 res: 0
 move: P (1, 1) =>   (0, 1)
+______
+|    |
+| P  |
+|  p |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 3
+res: 0
+move: p (1, 2) =>   (2, 2)
 ______
 |    |
 | P  |
@@ -235,6 +268,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 2
+res: 0
+move: P (2, 1) =>   (1, 1)
+______
+|    |
+| Pp |
+|    |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 2
 res: 0
@@ -246,6 +290,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: p (0, 2) =>   (1, 2)
+______
+|    |
+|  p |
+| P  |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 1
 res: 0
@@ -261,6 +316,17 @@ final res
 depth: 1
 res: 0
 move: p (0, 2) =>   (1, 2)
+______
+|  p |
+|    |
+| P  |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 0
+res: 0
+move: P (3, 1) =>   (2, 1)
 ______
 |  p |
 |    |
@@ -289,3 +355,85 @@ ______
 |    |
 | P  |
 ‾‾‾‾‾‾
+
+show
+depth: 0
+res: 0
+______
+|  p |
+|    |
+|    |
+| P  |
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+move: P (3, 1) =>   (2, 1)
+______
+|  p |
+|    |
+|    |
+| P  |
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: 0
+move: P (3, 1) =>   (2, 1)
+______
+|  p |
+|    |
+| P  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: 0
+move: p (0, 2) =>   (1, 2)
+______
+|  p |
+|    |
+| P  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: 0
+move: p (0, 2) =>   (1, 2)
+______
+|    |
+|  p |
+| P  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: 0
+move: P (2, 1) => p (1, 2)
+______
+|    |
+|  p |
+| P  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: 0
+move: P (2, 1) => p (1, 2)
+______
+|    |
+|  P |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------

@@ -44,6 +44,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 2)
+______
+|xxP |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 0
 res: 0
@@ -88,6 +99,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 0)
+______
+|Pxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 0
 res: 0
@@ -98,3 +120,37 @@ ______
 |    |
 |    |
 ‾‾‾‾‾‾
+
+show
+depth: 0
+res: 0
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 2)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: 0
+move: P (1, 1) => x (0, 2)
+______
+|xxP |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------

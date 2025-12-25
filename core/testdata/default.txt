@@ -67,6 +67,17 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: k (0, 3) => N (1, 3)
+______
+|bnr |
+|   k|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 updated res
 depth: 1
 res: 0
@@ -111,6 +122,17 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|b rk|
+|   N|
+|n   |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 depth: 1
 res: 0
@@ -137,6 +159,17 @@ ______
 max depth
 depth: 2
 res: 0
+______
+| nrk|
+| b N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+solve()
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
 ______
 | nrk|
 | b N|
@@ -177,6 +210,17 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: n (0, 1) =>   (2, 2)
+______
+|b rk|
+|   N|
+|P n |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 depth: 1
 res: 0
@@ -203,6 +247,17 @@ ______
 max depth
 depth: 2
 res: 0
+______
+|bn k|
+|  rN|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+solve()
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
 ______
 |bn k|
 |  rN|
@@ -243,10 +298,32 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnr |
+|  kN|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 final res
 depth: 1
 res: 0
 move: k (0, 3) => N (1, 3)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+solve()
+depth: 0
+res: 0
+move: N (3, 2) => p (1, 3)
 ______
 |bnrk|
 |   N|
@@ -321,6 +398,17 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+| nrk|
+|Pb p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
 updated res
 depth: 1
 res: 0
@@ -347,6 +435,17 @@ final res
 depth: 1
 res: 0
 move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+solve()
+depth: 0
+res: 0
+move: P (2, 0) =>   (1, 0)
 ______
 |bnrk|
 |P  p|
@@ -410,6 +509,17 @@ ______
 | RNB|
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|b rk|
+|   p|
+|nK  |
+| RNB|
+‾‾‾‾‾‾
+
 updated res
 depth: 1
 res: 0
@@ -436,6 +546,17 @@ final res
 depth: 1
 res: 0
 move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+solve()
+depth: 0
+res: 0
+move: K (3, 0) =>   (2, 1)
 ______
 |bnrk|
 |   p|
@@ -499,6 +620,17 @@ ______
 |K NB|
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|b rk|
+|   p|
+|nR  |
+|K NB|
+‾‾‾‾‾‾
+
 updated res
 depth: 1
 res: 0
@@ -525,6 +657,17 @@ final res
 depth: 1
 res: 0
 move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+solve()
+depth: 0
+res: 0
+move: R (3, 1) =>   (2, 1)
 ______
 |bnrk|
 |   p|
@@ -588,6 +731,17 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: b (0, 0) => N (1, 1)
+______
+| nrk|
+| b p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 updated res
 depth: 1
 res: 0
@@ -614,6 +768,17 @@ final res
 depth: 1
 res: 0
 move: b (0, 0) => N (1, 1)
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+solve()
+depth: 0
+res: 0
+move: N (3, 2) =>   (1, 1)
 ______
 |bnrk|
 | N p|
@@ -677,6 +842,17 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: p (1, 3) => B (2, 2)
+______
+|bnrk|
+|    |
+|P p |
+|KRN |
+‾‾‾‾‾‾
+
 updated res
 depth: 1
 res: 0
@@ -710,6 +886,17 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+solve()
+depth: 0
+res: 0
+move: B (3, 3) =>   (2, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
 final res
 depth: 0
 res: 0
@@ -720,3 +907,61 @@ ______
 |P   |
 |KRNB|
 ‾‾‾‾‾‾
+
+show
+depth: 0
+res: 0
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+move: N (3, 2) => p (1, 3)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: 0
+move: N (3, 2) => p (1, 3)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: 0
+move: k (0, 3) => N (1, 3)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: 0
+move: k (0, 3) => N (1, 3)
+______
+|bnr |
+|   k|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+------

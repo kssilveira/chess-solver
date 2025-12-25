@@ -136,6 +136,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|R  r|
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
 res: 0
@@ -180,6 +191,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 4
+res: 0
+move: R (1, 0) =>   (2, 0)
+______
+|   r|
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 4
 res: 0
@@ -213,10 +235,32 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 4
+res: 0
+move: R (1, 0) =>   (1, 1)
+______
+|   r|
+| R  |
+|    |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 4
 res: 0
 move: R (1, 0) =>   (0, 0)
+______
+|   r|
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 3
+res: 0
+move: r (1, 3) =>   (0, 3)
 ______
 |   r|
 |R   |
@@ -291,6 +335,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|R   |
+|    |
+|   r|
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
 res: 0
@@ -317,6 +372,17 @@ final res
 depth: 4
 res: 0
 move: R (1, 0) =>   (0, 0)
+______
+|    |
+|R   |
+|   r|
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 3
+res: 0
+move: r (1, 3) =>   (2, 3)
 ______
 |    |
 |R   |
@@ -380,6 +446,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|R   |
+|  r |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
 res: 0
@@ -413,10 +490,32 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 3
+res: 0
+move: r (1, 3) =>   (1, 2)
+______
+|    |
+|R r |
+|    |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 3
 res: 0
 move: r (1, 3) =>   (0, 3)
+______
+|    |
+|R  r|
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 2
+res: 0
+move: R (2, 0) =>   (1, 0)
 ______
 |    |
 |R  r|
@@ -492,6 +591,39 @@ ______
 |R   |
 ‾‾‾‾‾‾
 
+after move
+depth: 5
+res: -1000
+______
+|   r|
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|   r|
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 4
+res: 0
+move: R (3, 0) =>   (2, 0)
+______
+|   r|
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
 res: 0
@@ -536,10 +668,32 @@ ______
 | R  |
 ‾‾‾‾‾‾
 
+solve()
+depth: 4
+res: 0
+move: R (3, 0) =>   (3, 1)
+______
+|   r|
+|    |
+|    |
+| R  |
+‾‾‾‾‾‾
+
 final res
 depth: 4
 res: 0
 move: R (3, 0) =>   (2, 0)
+______
+|   r|
+|    |
+|    |
+|R   |
+‾‾‾‾‾‾
+
+solve()
+depth: 3
+res: 0
+move: r (1, 3) =>   (0, 3)
 ______
 |   r|
 |    |
@@ -573,6 +727,17 @@ final res
 depth: 3
 res: 0
 move: r (1, 3) =>   (0, 3)
+______
+|    |
+|   r|
+|    |
+|R   |
+‾‾‾‾‾‾
+
+solve()
+depth: 2
+res: 0
+move: R (2, 0) =>   (3, 0)
 ______
 |    |
 |   r|
@@ -637,6 +802,39 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 5
+res: -1000
+______
+|   r|
+| R  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|   r|
+| R  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 4
+res: 0
+move: R (2, 1) =>   (1, 1)
+______
+|   r|
+| R  |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
 res: 0
@@ -659,6 +857,39 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 5
+res: -1000
+______
+|   r|
+|    |
+|    |
+| R  |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|   r|
+|    |
+|    |
+| R  |
+‾‾‾‾‾‾
+
+solve()
+depth: 4
+res: 0
+move: R (2, 1) =>   (3, 1)
+______
+|   r|
+|    |
+|    |
+| R  |
+‾‾‾‾‾‾
+
 before move
 depth: 4
 res: 0
@@ -667,6 +898,39 @@ ______
 |   r|
 |    |
 | R  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|   r|
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|   r|
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 4
+res: 0
+move: R (2, 1) =>   (2, 0)
+______
+|   r|
+|    |
+|R   |
 |    |
 ‾‾‾‾‾‾
 
@@ -703,10 +967,32 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 4
+res: 0
+move: R (2, 1) =>   (2, 2)
+______
+|   r|
+|    |
+|  R |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 4
 res: 0
 move: R (2, 1) =>   (1, 1)
+______
+|   r|
+|    |
+| R  |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 3
+res: 0
+move: r (1, 3) =>   (0, 3)
 ______
 |   r|
 |    |
@@ -747,10 +1033,32 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 2
+res: 0
+move: R (2, 0) =>   (2, 1)
+______
+|    |
+|   r|
+| R  |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 2
 res: 0
 move: R (2, 0) =>   (1, 0)
+______
+|    |
+|   r|
+|R   |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 1
+res: 0
+move: r (0, 3) =>   (1, 3)
 ______
 |    |
 |   r|
@@ -826,6 +1134,84 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|    |
+|R r |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: R (1, 0) =>   (0, 0)
+______
+|    |
+|R r |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solved[]
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|R   |
+|  r |
+|    |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|    |
+|R r |
+|    |
+|    |
+‾‾‾‾‾‾
+
+pruned
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|    |
+|R r |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|    |
+|R r |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 3
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|    |
+|R r |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 3
 res: 0
@@ -893,6 +1279,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|Rr  |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
 res: 0
@@ -919,6 +1316,17 @@ final res
 depth: 4
 res: 0
 move: R (1, 0) =>   (0, 0)
+______
+| r  |
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 3
+res: 0
+move: r (0, 2) =>   (0, 1)
 ______
 | r  |
 |R   |
@@ -937,10 +1345,99 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|   r|
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: R (1, 0) =>   (0, 0)
+______
+|   r|
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solved[]
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|R  r|
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|   r|
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+pruned
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|   r|
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|   r|
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 3
+res: 0
+move: r (0, 2) =>   (0, 3)
+______
+|   r|
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 3
 res: 0
 move: r (0, 2) =>   (1, 2)
+______
+|  r |
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 2
+res: 0
+move: R (2, 0) =>   (1, 0)
 ______
 |  r |
 |R   |
@@ -981,10 +1478,32 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+solve()
+depth: 1
+res: 0
+move: r (0, 3) =>   (0, 2)
+______
+|  r |
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 1
 res: 0
 move: r (0, 3) =>   (1, 3)
+______
+|   r|
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
+solve()
+depth: 0
+res: 0
+move: R (3, 0) =>   (2, 0)
 ______
 |   r|
 |    |
@@ -1014,6 +1533,17 @@ ______
 |R   |
 ‾‾‾‾‾‾
 
+solved[]
+depth: 0
+res: 0
+move: R (3, 0) =>   (3, 1)
+______
+|   r|
+|    |
+|    |
+| R  |
+‾‾‾‾‾‾
+
 final res
 depth: 0
 res: 0
@@ -1024,3 +1554,133 @@ ______
 |    |
 |R   |
 ‾‾‾‾‾‾
+
+show
+depth: 0
+res: 0
+______
+|   r|
+|    |
+|    |
+|R   |
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+move: R (3, 0) =>   (2, 0)
+______
+|   r|
+|    |
+|    |
+|R   |
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: 0
+move: R (3, 0) =>   (2, 0)
+______
+|   r|
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: 0
+move: r (0, 3) =>   (1, 3)
+______
+|   r|
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: 0
+move: r (0, 3) =>   (1, 3)
+______
+|    |
+|   r|
+|R   |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: 0
+move: R (2, 0) =>   (1, 0)
+______
+|    |
+|   r|
+|R   |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: 0
+move: R (2, 0) =>   (1, 0)
+______
+|    |
+|R  r|
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 3
+res: 0
+move: r (1, 3) =>   (0, 3)
+______
+|    |
+|R  r|
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: 0
+move: r (1, 3) =>   (0, 3)
+______
+|   r|
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|   r|
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: 0
+move: R (1, 0) =>   (0, 0)
+______
+|R  r|
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------

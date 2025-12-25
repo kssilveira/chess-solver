@@ -102,7 +102,7 @@ func (c *Core) Solve() {
 }
 
 func (c *Core) solve(depth int) int {
-	c.print(depth)
+	c.print(depth, c.minInt)
 	time.Sleep(c.config.SleepDuration)
 	fmt.Fprint(c.writer, c.clearTerminal)
 	if depth >= c.config.MaxDepth {
@@ -114,8 +114,9 @@ func (c *Core) solve(depth int) int {
 	return c.move(depth, nextTurn, moves)
 }
 
-func (c *Core) print(depth int) {
+func (c *Core) print(depth, res int) {
 	fmt.Fprintf(c.writer, "\ndepth: %d\n", depth)
+	fmt.Fprintf(c.writer, "res: %d\n", res)
 	fmt.Fprintln(c.writer, "______")
 	fmt.Fprintln(c.writer, "|"+string(bytes.Join(c.board, []byte("|\n|")))+"|")
 	fmt.Fprintln(c.writer, "‾‾‾‾‾‾")
@@ -193,7 +194,7 @@ func (c *Core) move(depth, nextTurn int, moves []Move) int {
 			fmt.Fprintf(c.writer, "\nres: %d\n", res)
 			return res
 		}
-		c.print(depth)
+		c.print(depth, res)
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
 		key := string(bytes.Join(c.board, nil))

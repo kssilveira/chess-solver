@@ -1742,6 +1742,238 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: K (2, 1) =>   (1, 1)
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 1)
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (3, 1)
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (2, 0)
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (2, 2)
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|   k|
+|    |
+|  K |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|   k|
+|    |
+|  K |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 0)
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|   k|
+|K   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|   k|
+|K   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (3, 2)
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|   k|
+|    |
+|    |
+|  K |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|   k|
+|    |
+|    |
+|  K |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (3, 0)
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|   k|
+|    |
+|    |
+|K   |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|   k|
+|    |
+|    |
+|K   |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 2)
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|   k|
+|  K |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|   k|
+|  K |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 1)
+______
+|   k|
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 3
 res: 0
@@ -1764,6 +1996,238 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: K (2, 1) =>   (1, 1)
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 1)
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (3, 1)
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (2, 0)
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (2, 2)
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|    |
+|    |
+|  Kk|
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|    |
+|    |
+|  Kk|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 0)
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|    |
+|K   |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|    |
+|K   |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (3, 2)
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|    |
+|    |
+|   k|
+|  K |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|    |
+|    |
+|   k|
+|  K |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (3, 0)
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|    |
+|    |
+|   k|
+|K   |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|    |
+|    |
+|   k|
+|K   |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 2)
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|    |
+|  K |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|    |
+|  K |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 1)
+______
+|    |
+|    |
+| K k|
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
 res: 0
@@ -1771,6 +2235,29 @@ move: k (1, 3) =>   (1, 2)
 ______
 |    |
 |   k|
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+|    |
+|  k |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 4
+res: 996
+move: K (2, 1) => k (1, 2)
+______
+|    |
+|  k |
 | K  |
 |    |
 ‾‾‾‾‾‾
@@ -1786,6 +2273,238 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: K (2, 1) =>   (1, 1)
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 1)
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (3, 1)
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (2, 0)
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (2, 2)
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|  k |
+|    |
+|  K |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|  k |
+|    |
+|  K |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 0)
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|  k |
+|K   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|  k |
+|K   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (3, 2)
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|  k |
+|    |
+|    |
+|  K |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|  k |
+|    |
+|    |
+|  K |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (3, 0)
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|  k |
+|    |
+|    |
+|K   |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|  k |
+|    |
+|    |
+|K   |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 2)
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|  k |
+|  K |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|  k |
+|  K |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: K (2, 1) =>   (1, 1)
+______
+|  k |
+|    |
+| K  |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
 res: 0
@@ -1794,6 +2513,29 @@ ______
 |    |
 |   k|
 | K  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+|    |
+|    |
+| Kk |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 4
+res: 996
+move: K (2, 1) => k (2, 2)
+______
+|    |
+|    |
+| Kk |
 |    |
 ‾‾‾‾‾‾
 
@@ -1842,6 +2584,95 @@ ______
 | K  |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|   k|
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: K (3, 1) =>   (2, 1)
+______
+|   k|
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 1)
+______
+|   k|
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (3, 0)
+______
+|   k|
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (3, 2)
+______
+|   k|
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 0)
+______
+|   k|
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 2)
+______
+|   k|
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 1)
+______
+|   k|
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
 updated res
 depth: 3
 res: 0
@@ -1864,6 +2695,95 @@ ______
 | K  |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|    |
+|    |
+|   k|
+| K  |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: K (3, 1) =>   (2, 1)
+______
+|    |
+|    |
+|   k|
+| K  |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 1)
+______
+|    |
+|    |
+|   k|
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (3, 0)
+______
+|    |
+|    |
+|   k|
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (3, 2)
+______
+|    |
+|    |
+|   k|
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 0)
+______
+|    |
+|    |
+|   k|
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 2)
+______
+|    |
+|    |
+|   k|
+| K  |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 1)
+______
+|    |
+|    |
+|   k|
+| K  |
+‾‾‾‾‾‾
+
 before move
 depth: 3
 res: 0
@@ -1871,6 +2791,161 @@ move: k (1, 3) =>   (1, 2)
 ______
 |    |
 |   k|
+|    |
+| K  |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+|    |
+|  k |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: K (3, 1) =>   (2, 1)
+______
+|    |
+|  k |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 1)
+______
+|    |
+|  k |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (3, 0)
+______
+|    |
+|  k |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|    |
+|  k |
+|    |
+|K   |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|    |
+|  k |
+|    |
+|K   |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (3, 2)
+______
+|    |
+|  k |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|    |
+|  k |
+|    |
+|  K |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|    |
+|  k |
+|    |
+|  K |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 0)
+______
+|    |
+|  k |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 2)
+______
+|    |
+|  k |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|    |
+|  k |
+|  K |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|    |
+|  k |
+|  K |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 1)
+______
+|    |
+|  k |
 |    |
 | K  |
 ‾‾‾‾‾‾
@@ -1886,6 +2961,95 @@ ______
 | K  |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|  k |
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: K (3, 1) =>   (2, 1)
+______
+|  k |
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 1)
+______
+|  k |
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (3, 0)
+______
+|  k |
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (3, 2)
+______
+|  k |
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 0)
+______
+|  k |
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 2)
+______
+|  k |
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: K (3, 1) =>   (2, 1)
+______
+|  k |
+|    |
+|    |
+| K  |
+‾‾‾‾‾‾
+
 before move
 depth: 3
 res: 0
@@ -1894,6 +3058,29 @@ ______
 |    |
 |   k|
 |    |
+| K  |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+|    |
+|    |
+|  k |
+| K  |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 4
+res: 996
+move: K (3, 1) => k (2, 2)
+______
+|    |
+|    |
+|  k |
 | K  |
 ‾‾‾‾‾‾
 
@@ -1942,6 +3129,150 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: K (1, 1) =>   (0, 1)
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: K (1, 1) =>   (0, 1)
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (2, 1)
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (1, 0)
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (1, 2)
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (0, 0)
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (2, 2)
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (2, 0)
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (0, 2)
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|  Kk|
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|  Kk|
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: K (1, 1) =>   (0, 1)
+______
+|   k|
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 3
 res: 0
@@ -1964,6 +3295,150 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: K (1, 1) =>   (0, 1)
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: K (1, 1) =>   (0, 1)
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (2, 1)
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (1, 0)
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (1, 2)
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (0, 0)
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (2, 2)
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (2, 0)
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 1) =>   (0, 2)
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|  K |
+|    |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|  K |
+|    |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: K (1, 1) =>   (0, 1)
+______
+|    |
+| K  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
 res: 0
@@ -1971,6 +3446,29 @@ move: k (1, 3) =>   (1, 2)
 ______
 |    |
 | K k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+|    |
+| Kk |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 4
+res: 996
+move: K (1, 1) => k (1, 2)
+______
+|    |
+| Kk |
 |    |
 |    |
 ‾‾‾‾‾‾
@@ -1986,6 +3484,29 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 4
+res: -1000
+______
+|  k |
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 4
+res: 996
+move: K (1, 1) => k (0, 2)
+______
+|  k |
+| K  |
+|    |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
 res: 0
@@ -1994,6 +3515,29 @@ ______
 |    |
 | K k|
 |    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+|    |
+| K  |
+|  k |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 4
+res: 996
+move: K (1, 1) => k (2, 2)
+______
+|    |
+| K  |
+|  k |
 |    |
 ‾‾‾‾‾‾
 
@@ -2041,6 +3585,95 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+after move
+depth: 2
+res: -1000
+______
+|  k |
+|    |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: -1000
+move: K (2, 0) =>   (1, 0)
+______
+|  k |
+|    |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+move: K (2, 0) =>   (1, 0)
+______
+|  k |
+|    |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+move: K (2, 0) =>   (3, 0)
+______
+|  k |
+|    |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+move: K (2, 0) =>   (2, 1)
+______
+|  k |
+|    |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+move: K (2, 0) =>   (3, 1)
+______
+|  k |
+|    |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+move: K (2, 0) =>   (1, 1)
+______
+|  k |
+|    |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 0
+move: K (2, 0) =>   (1, 0)
+______
+|  k |
+|    |
+|K   |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 1
 res: 0
@@ -2048,6 +3681,441 @@ move: k (0, 3) =>   (1, 2)
 ______
 |   k|
 |    |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|    |
+|  k |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: -1000
+move: K (2, 0) =>   (1, 0)
+______
+|    |
+|  k |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 3
+res: -1000
+move: k (1, 2) =>   (0, 2)
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 3
+res: 0
+move: k (1, 2) =>   (0, 2)
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 3
+res: 0
+move: k (1, 2) =>   (2, 2)
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 3
+res: 0
+move: k (1, 2) =>   (1, 1)
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+|    |
+|Kk  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 4
+res: 996
+move: K (1, 0) => k (1, 1)
+______
+|    |
+|Kk  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 3
+res: 0
+move: k (1, 2) =>   (1, 3)
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+|    |
+|K  k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 4
+res: -1000
+move: K (1, 0) =>   (0, 0)
+______
+|    |
+|K  k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|K   |
+|   k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|K   |
+|   k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 4
+res: 0
+move: K (1, 0) =>   (0, 0)
+______
+|    |
+|K  k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 0) =>   (2, 0)
+______
+|    |
+|K  k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+|    |
+|   k|
+|K   |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+|    |
+|   k|
+|K   |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 0) =>   (1, 1)
+______
+|    |
+|K  k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 0) =>   (2, 1)
+______
+|    |
+|K  k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 4
+res: 0
+move: K (1, 0) =>   (0, 1)
+______
+|    |
+|K  k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+| K  |
+|   k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+| K  |
+|   k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: K (1, 0) =>   (0, 0)
+______
+|    |
+|K  k|
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 3
+res: 0
+move: k (1, 2) =>   (0, 1)
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+| k  |
+|K   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 4
+res: 996
+move: K (1, 0) => k (0, 1)
+______
+| k  |
+|K   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 3
+res: 0
+move: k (1, 2) =>   (2, 3)
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 3
+res: 0
+move: k (1, 2) =>   (2, 1)
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+|    |
+|K   |
+| k  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 4
+res: 996
+move: K (1, 0) => k (2, 1)
+______
+|    |
+|K   |
+| k  |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 3
+res: 0
+move: k (1, 2) =>   (0, 3)
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 3
+res: 0
+move: k (1, 2) =>   (0, 2)
+______
+|    |
+|K k |
+|    |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+move: K (2, 0) =>   (1, 0)
+______
+|    |
+|  k |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+move: K (2, 0) =>   (3, 0)
+______
+|    |
+|  k |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+move: K (2, 0) =>   (2, 1)
+______
+|    |
+|  k |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+move: K (2, 0) =>   (3, 1)
+______
+|    |
+|  k |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+move: K (2, 0) =>   (1, 1)
+______
+|    |
+|  k |
+|K   |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 0
+move: K (2, 0) =>   (1, 0)
+______
+|    |
+|  k |
 |K   |
 |    |
 ‾‾‾‾‾‾

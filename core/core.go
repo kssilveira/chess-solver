@@ -39,8 +39,8 @@ type Core struct {
 	clearTerminal string
 	maxInt        int
 	minInt        int
-	visited       map[string]int
-	solved        map[string]int
+	visited       []map[string]int
+	solved        []map[string]int
 }
 
 const (
@@ -87,7 +87,7 @@ func New(writer io.Writer, config Config) *Core {
 		[]byte("   p"),
 		[]byte("P   "),
 		[]byte("KRNB"),
-	}, visited: map[string]int{}, solved: map[string]int{}, clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt, minInt: math.MinInt}
+	}, visited: []map[string]int{{}, {}, {}}, solved: []map[string]int{{}, {}, {}}, clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt, minInt: math.MinInt}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
 			res.board[i] = []byte(row)
@@ -205,18 +205,18 @@ func (c *Core) move(depth, nextTurn int, moves []Move) int {
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
 		key := string(bytes.Join(c.board, nil))
-		c.visited[key]++
+		c.visited[c.turn][key]++
 		next := 0
-		if _, ok := c.solved[key]; ok {
-			next = c.solved[key]
-		} else if c.visited[key] < 3 {
+		if _, ok := c.solved[c.turn][key]; ok {
+			next = c.solved[c.turn][key]
+		} else if c.visited[c.turn][key] < 3 {
 			prevTurn := c.turn
 			c.turn = nextTurn
 			next = -c.solve(depth + 1)
-			c.solved[key] = next
 			c.turn = prevTurn
+			c.solved[c.turn][key] = next
 		}
-		c.visited[key]--
+		c.visited[c.turn][key]--
 		c.board[move.To.X][move.To.Y] = move.To.What
 		c.board[move.From.X][move.From.Y] = move.From.What
 		if next > res {

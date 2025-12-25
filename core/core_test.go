@@ -98,6 +98,12 @@ func TestSolve(t *testing.T) {
 			[]byte("RR  "),
 			[]byte("   N"),
 		}},
+		{name: "RNk", maxDepth: 500000, board: [][]byte{
+			[]byte("  R "),
+			[]byte("k   "),
+			[]byte(" R  "),
+			[]byte("R  N"),
+		}},
 	}
 	for _, in := range inputs {
 		config := Config{MaxDepth: 5}
@@ -109,6 +115,10 @@ func TestSolve(t *testing.T) {
 		core.clearTerminal = "\n------\n"
 		core.maxInt = 1000
 		core.minInt = -1000
+		if in.maxDepth > core.maxInt {
+			core.maxInt = 2 * in.maxDepth
+			core.minInt = -2 * in.maxDepth
+		}
 		if in.board != nil {
 			core.board = in.board
 		}

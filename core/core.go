@@ -102,7 +102,7 @@ func (c *Core) Solve() {
 }
 
 func (c *Core) solve(depth int) int {
-	c.print(depth, c.minInt)
+	c.print("after move", depth, c.minInt)
 	time.Sleep(c.config.SleepDuration)
 	fmt.Fprint(c.writer, c.clearTerminal)
 	if depth >= c.config.MaxDepth {
@@ -114,8 +114,9 @@ func (c *Core) solve(depth int) int {
 	return c.move(depth, nextTurn, moves)
 }
 
-func (c *Core) print(depth, res int) {
-	fmt.Fprintf(c.writer, "\ndepth: %d\n", depth)
+func (c *Core) print(message string, depth, res int) {
+	fmt.Fprintf(c.writer, "\n%s\n", message)
+	fmt.Fprintf(c.writer, "depth: %d\n", depth)
 	fmt.Fprintf(c.writer, "res: %d\n", res)
 	fmt.Fprintln(c.writer, "______")
 	fmt.Fprintln(c.writer, "|"+string(bytes.Join(c.board, []byte("|\n|")))+"|")
@@ -185,16 +186,16 @@ func (c *Core) move(depth, nextTurn int, moves []Move) int {
 	res := c.minInt
 	if len(moves) == 0 {
 		res = 0
-		c.print(depth, res)
+		c.print("stalemate", depth, res)
 		return res
 	}
 	for _, move := range moves {
 		if move.To.What == 'k' || move.To.What == 'K' {
 			res = c.maxInt - depth
-			c.print(depth, res)
+			c.print("dead king", depth, res)
 			return res
 		}
-		c.print(depth, res)
+		c.print("before move", depth, res)
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
 		key := string(bytes.Join(c.board, nil))
@@ -211,7 +212,7 @@ func (c *Core) move(depth, nextTurn int, moves []Move) int {
 		}
 		if next > res {
 			res = next
-			c.print(depth, res)
+			c.print("updated res", depth, res)
 		}
 		c.visited[key]--
 		c.board[move.To.X][move.To.Y] = move.To.What

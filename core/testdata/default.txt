@@ -1,4 +1,5 @@
 
+after move
 depth: 0
 res: -1000
 ______
@@ -10,6 +11,7 @@ ______
 
 ------
 
+before move
 depth: 0
 res: -1000
 ______
@@ -19,6 +21,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 1
 res: -1000
 ______
@@ -30,6 +33,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: -1000
 ______
@@ -39,6 +43,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -50,6 +55,7 @@ ______
 
 ------
 
+updated res
 depth: 1
 res: 1000
 ______
@@ -59,6 +65,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+before move
 depth: 1
 res: 1000
 ______
@@ -68,6 +75,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -79,6 +87,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -88,6 +97,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -99,6 +109,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -108,6 +119,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -119,6 +131,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -128,6 +141,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -139,6 +153,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -148,6 +163,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -159,6 +175,7 @@ ______
 
 ------
 
+before move
 depth: 0
 res: -1000
 ______
@@ -168,6 +185,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 1
 res: -1000
 ______
@@ -179,6 +197,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: -1000
 ______
@@ -188,6 +207,7 @@ ______
 | RNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -199,6 +219,7 @@ ______
 
 ------
 
+updated res
 depth: 1
 res: 1000
 ______
@@ -208,6 +229,7 @@ ______
 | RNB|
 ‾‾‾‾‾‾
 
+before move
 depth: 1
 res: 1000
 ______
@@ -217,6 +239,7 @@ ______
 | RNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -228,6 +251,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -237,6 +261,7 @@ ______
 | RNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -248,6 +273,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -257,6 +283,7 @@ ______
 | RNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -268,6 +295,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -277,6 +305,7 @@ ______
 | RNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -288,6 +317,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -297,6 +327,7 @@ ______
 | RNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -308,6 +339,7 @@ ______
 
 ------
 
+before move
 depth: 0
 res: -1000
 ______
@@ -317,6 +349,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 1
 res: -1000
 ______
@@ -328,6 +361,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: -1000
 ______
@@ -337,6 +371,7 @@ ______
 |K NB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -348,6 +383,7 @@ ______
 
 ------
 
+updated res
 depth: 1
 res: 1000
 ______
@@ -357,6 +393,7 @@ ______
 |K NB|
 ‾‾‾‾‾‾
 
+before move
 depth: 1
 res: 1000
 ______
@@ -366,6 +403,7 @@ ______
 |K NB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -377,6 +415,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -386,6 +425,7 @@ ______
 |K NB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -397,6 +437,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -406,6 +447,7 @@ ______
 |K NB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -417,6 +459,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -426,6 +469,7 @@ ______
 |K NB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -437,6 +481,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -446,6 +491,7 @@ ______
 |K NB|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -457,6 +503,7 @@ ______
 
 ------
 
+before move
 depth: 0
 res: -1000
 ______
@@ -466,6 +513,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 1
 res: -1000
 ______
@@ -477,6 +525,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: -1000
 ______
@@ -486,6 +535,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -497,6 +547,7 @@ ______
 
 ------
 
+updated res
 depth: 1
 res: 1000
 ______
@@ -506,6 +557,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+before move
 depth: 1
 res: 1000
 ______
@@ -515,6 +567,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -526,6 +579,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -535,6 +589,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -546,6 +601,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -555,6 +611,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -566,6 +623,7 @@ ______
 
 ------
 
+before move
 depth: 0
 res: -1000
 ______
@@ -575,6 +633,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 1
 res: -1000
 ______
@@ -586,6 +645,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: -1000
 ______
@@ -595,6 +655,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -606,6 +667,7 @@ ______
 
 ------
 
+updated res
 depth: 1
 res: 1000
 ______
@@ -615,6 +677,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+before move
 depth: 1
 res: 1000
 ______
@@ -624,6 +687,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -635,6 +699,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -644,6 +709,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -655,6 +721,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -664,6 +731,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -675,6 +743,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -684,6 +753,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -695,6 +765,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -704,6 +775,7 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -715,6 +787,7 @@ ______
 
 ------
 
+before move
 depth: 0
 res: -1000
 ______
@@ -724,6 +797,7 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+after move
 depth: 1
 res: -1000
 ______
@@ -735,6 +809,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: -1000
 ______
@@ -744,6 +819,7 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -755,6 +831,7 @@ ______
 
 ------
 
+updated res
 depth: 1
 res: 1000
 ______
@@ -764,6 +841,7 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+before move
 depth: 1
 res: 1000
 ______
@@ -773,6 +851,7 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -784,6 +863,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -793,6 +873,7 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -804,6 +885,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -813,6 +895,7 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -824,6 +907,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -833,6 +917,7 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -844,6 +929,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -853,6 +939,7 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______
@@ -864,6 +951,7 @@ ______
 
 ------
 
+before move
 depth: 1
 res: 1000
 ______
@@ -873,6 +961,7 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+after move
 depth: 2
 res: -1000
 ______

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 	"math"
-	"sort"
+	"slices"
 	"time"
 )
 
@@ -193,20 +193,20 @@ func (c *Core) deltas(moves *[]Move, nextTurn, i, j int) {
 }
 
 func (c *Core) sort(moves *[]Move) {
-	sort.Slice(*moves, func(i, j int) bool {
-		if (*moves)[i].To.What == 'k' || (*moves)[i].To.What == 'K' {
-			return true
+	slices.SortFunc(*moves, func(i, j Move) int {
+		if i.To.What == 'k' || i.To.What == 'K' {
+			return -1
 		}
-		if (*moves)[j].To.What == 'k' || (*moves)[j].To.What == 'K' {
-			return false
+		if j.To.What == 'k' || j.To.What == 'K' {
+			return 1
 		}
-		if (*moves)[i].To.What != ' ' {
-			return true
+		if i.To.What != ' ' {
+			return -1
 		}
-		if (*moves)[j].To.What != ' ' {
-			return false
+		if j.To.What != ' ' {
+			return 1
 		}
-		return i < j
+		return 0
 	})
 }
 

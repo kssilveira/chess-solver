@@ -272,7 +272,12 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) Result {
 			c.depth--
 			c.turn = prevTurn
 			c.print("solve()", next, PrintConfig{Move: move})
-			c.solved[c.turn][nextResult.Kind][key] = nextResult
+			if existing, ok := c.solved[c.turn][nextResult.Kind][key]; !ok ||
+				(nextResult.Kind == resultExact && nextResult.Value > existing.Value) ||
+				(nextResult.Kind == resultUpperBound && nextResult.Value < existing.Value) ||
+				(nextResult.Kind == resultLowerBound && nextResult.Value > existing.Value) {
+				c.solved[c.turn][nextResult.Kind][key] = nextResult
+			}
 		} else {
 			c.print("repeated", next, PrintConfig{Move: move})
 		}
@@ -290,7 +295,7 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) Result {
 		}
 		if alpha >= beta {
 			c.print("not pruned", next, PrintConfig{Move: move, Alpha: alpha, Beta: beta})
-			// break
+			break
 		}
 	}
 	c.print("final res", res, PrintConfig{Move: resMove})

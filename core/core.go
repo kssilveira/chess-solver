@@ -41,14 +41,14 @@ type PrintConfig struct {
 type Core struct {
 	writer        io.Writer
 	config        Config
-	board         [][]byte
+	board         [4][4]byte
 	turn          int
 	clearTerminal string
 	maxInt        int
 	minInt        int
-	visited       []map[string]int
-	solved        []map[string]int
-	solvedMove    []map[string]Move
+	visited       []map[[4][4]byte]int
+	solved        []map[[4][4]byte]int
+	solvedMove    []map[[4][4]byte]Move
 	depth         int
 }
 
@@ -91,18 +91,18 @@ var (
 
 // New creates a new core.
 func New(writer io.Writer, config Config) *Core {
-	res := &Core{writer: writer, config: config, board: [][]byte{
-		[]byte("bnrk"),
-		[]byte("   p"),
-		[]byte("P   "),
-		[]byte("KRNB"),
+	res := &Core{writer: writer, config: config, board: [4][4]byte{
+		[4]byte([]byte("bnrk")),
+		[4]byte([]byte("   p")),
+		[4]byte([]byte("P   ")),
+		[4]byte([]byte("KRNB")),
 	},
-		visited: []map[string]int{{}, {}},
-		solved:  []map[string]int{{}, {}}, solvedMove: []map[string]Move{{}, {}},
+		visited: []map[[4][4]byte]int{{}, {}},
+		solved:  []map[[4][4]byte]int{{}, {}}, solvedMove: []map[[4][4]byte]Move{{}, {}},
 		clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt - 1, minInt: math.MinInt + 1}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
-			res.board[i] = []byte(row)
+			res.board[i] = [4]byte([]byte(row))
 		}
 	}
 	return res
@@ -142,12 +142,24 @@ func (c *Core) print(message string, res int, cfg PrintConfig) {
 		fmt.Fprintf(c.writer, "move: %s (%d, %d) => %s (%d, %d)\n", string(cfg.Move.From.What), cfg.Move.From.X, cfg.Move.From.Y, string(cfg.Move.To.What), cfg.Move.To.X, cfg.Move.To.Y)
 	}
 	fmt.Fprintln(c.writer, "______")
-	fmt.Fprintln(c.writer, "|"+string(bytes.Join(c.board, []byte("|\n|")))+"|")
+	fmt.Fprintln(c.writer, "|"+string(bytes.Join(toBytes(c.board), []byte("|\n|")))+"|")
 	fmt.Fprintln(c.writer, "‾‾‾‾‾‾")
 	if cfg.ClearTerminal {
 		time.Sleep(c.config.SleepDuration)
 		fmt.Fprint(c.writer, c.clearTerminal)
 	}
+}
+
+func toBytes(board [4][4]byte) [][]byte {
+	res := [][]byte{}
+	for _, row := range board {
+		one := []byte{}
+		for _, v := range row {
+			one = append(one, v)
+		}
+		res = append(res, one)
+	}
+	return res
 }
 
 func (c *Core) moves(moves *[]Move, nextTurn int) {
@@ -227,7 +239,7 @@ func (c *Core) move(nextTurn int, moves []Move) int {
 		c.print("before move", res, PrintConfig{Move: move})
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
-		key := string(bytes.Join(c.board, nil))
+		key := c.board
 		c.visited[c.turn][key]++
 		next := 0
 		if nextResult, ok := c.solved[c.turn][key]; ok {
@@ -255,7 +267,7 @@ func (c *Core) move(nextTurn int, moves []Move) int {
 		}
 	}
 	c.print("final res", res, PrintConfig{Move: resMove})
-	key := string(bytes.Join(c.board, nil))
+	key := c.board
 	c.solvedMove[c.turn][key] = resMove
 	return res
 }
@@ -263,7 +275,7 @@ func (c *Core) move(nextTurn int, moves []Move) int {
 func (c *Core) show() {
 	res := 123456789
 	c.print("show", res, PrintConfig{})
-	key := string(bytes.Join(c.board, nil))
+	key := c.board
 	for i := 0; i < 10; i++ {
 		move := c.solvedMove[c.turn][key]
 		if move == (Move{}) {
@@ -274,7 +286,7 @@ func (c *Core) show() {
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
 		// c.depth++
-		key = string(bytes.Join(c.board, nil))
+		key = c.board
 		res = c.solved[c.turn][key]
 		c.turn = (c.turn + 1) % 2
 		c.print("after move", res, PrintConfig{Move: move, ClearTerminal: true})

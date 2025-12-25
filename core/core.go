@@ -124,7 +124,7 @@ func (c *Core) solve() int {
 		return res
 	}
 	nextTurn := (c.turn + 1) % 2
-	var moves []Move
+	moves := make([]Move, 0, 10)
 	c.moves(&moves, nextTurn)
 	c.sort(&moves)
 	return c.move(nextTurn, moves)

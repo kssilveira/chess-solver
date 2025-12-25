@@ -206,12 +206,12 @@ func (c *Core) move(depth, nextTurn int, moves []Move) int {
 			prevTurn := c.turn
 			c.turn = nextTurn
 			next = -c.solve(depth + 1)
-			c.print(depth, next)
 			c.solved[key] = next
 			c.turn = prevTurn
 		}
 		if next > res {
 			res = next
+			c.print(depth, res)
 		}
 		c.visited[key]--
 		c.board[move.To.X][move.To.Y] = move.To.What

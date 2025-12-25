@@ -32,7 +32,8 @@ type Config struct {
 
 // PrintConfig contains print configuration.
 type PrintConfig struct {
-	Move Move
+	Move          Move
+	ClearTerminal bool
 }
 
 // Core contains the core logic.
@@ -110,9 +111,7 @@ func (c *Core) Solve() {
 }
 
 func (c *Core) solve() int {
-	c.print("after move", c.minInt, PrintConfig{})
-	time.Sleep(c.config.SleepDuration)
-	fmt.Fprint(c.writer, c.clearTerminal)
+	c.print("after move", c.minInt, PrintConfig{ClearTerminal: true})
 	if c.depth >= c.config.MaxDepth {
 		res := 0
 		c.print("max depth", res, PrintConfig{})
@@ -137,6 +136,10 @@ func (c *Core) print(message string, res int, cfg PrintConfig) {
 	fmt.Fprintln(c.writer, "______")
 	fmt.Fprintln(c.writer, "|"+string(bytes.Join(c.board, []byte("|\n|")))+"|")
 	fmt.Fprintln(c.writer, "‾‾‾‾‾‾")
+	if cfg.ClearTerminal {
+		time.Sleep(c.config.SleepDuration)
+		fmt.Fprint(c.writer, c.clearTerminal)
+	}
 }
 
 func (c *Core) moves(nextTurn int) []Move {

@@ -37,6 +37,7 @@ type Core struct {
 	clearTerminal string
 	maxInt        int
 	minInt        int
+	visited       map[string]int
 }
 
 const (
@@ -83,7 +84,7 @@ func New(writer io.Writer, config Config) *Core {
 		[]byte("   p"),
 		[]byte("P   "),
 		[]byte("KRNB"),
-	}, clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt, minInt: math.MinInt}
+	}, visited: map[string]int{}, clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt, minInt: math.MinInt}
 }
 
 // Solve solves the board.
@@ -167,13 +168,19 @@ func (c *Core) move(depth, nextTurn int, moves []Move) int {
 		c.print(depth)
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
-		prevTurn := c.turn
-		c.turn = nextTurn
-		next := -c.solve(depth + 1)
+		key := string(bytes.Join(c.board, nil))
+		c.visited[key]++
+		next := 0
+		if c.visited[key] < 3 {
+			prevTurn := c.turn
+			c.turn = nextTurn
+			next = -c.solve(depth + 1)
+			c.turn = prevTurn
+		}
 		if next > res {
 			res = next
 		}
-		c.turn = prevTurn
+		c.visited[key]--
 		c.board[move.To.X][move.To.Y] = move.To.What
 		c.board[move.From.X][move.From.Y] = move.From.What
 	}

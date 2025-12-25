@@ -121,9 +121,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|R  r|
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |R   |
@@ -133,7 +143,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |R   |
@@ -153,9 +163,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|   r|
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |R   |
@@ -175,9 +195,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|   r|
+| R  |
+|    |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |R   |
@@ -185,9 +215,19 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+updated res
+depth: 3
+res: 0
+______
+|    |
+|R  r|
+|    |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |    |
 |R  r|
@@ -229,9 +269,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|R   |
+|    |
+|   r|
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |R   |
@@ -241,7 +291,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |R   |
@@ -261,9 +311,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|    |
+|    |
+|R  r|
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |R   |
@@ -283,9 +343,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|    |
+| R  |
+|   r|
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |R   |
@@ -295,7 +365,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |    |
 |R  r|
@@ -337,9 +407,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|R   |
+|  r |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |R r |
@@ -349,7 +429,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |R r |
@@ -369,9 +449,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|    |
+|  r |
+|R   |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |R r |
@@ -391,9 +481,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|    |
+| Rr |
+|    |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |R r |
@@ -403,7 +503,7 @@ ______
 
 final res
 depth: 3
-res: -1000
+res: 0
 ______
 |    |
 |R  r|
@@ -413,7 +513,7 @@ ______
 
 updated res
 depth: 2
-res: 1000
+res: 0
 ______
 |    |
 |   r|
@@ -423,7 +523,7 @@ ______
 
 before move
 depth: 2
-res: 1000
+res: 0
 ______
 |    |
 |   r|
@@ -477,7 +577,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |    |
@@ -487,7 +587,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |    |
@@ -507,9 +607,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|   r|
+|    |
+|    |
+| R  |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |    |
@@ -517,9 +627,19 @@ ______
 |R   |
 ‾‾‾‾‾‾
 
+updated res
+depth: 3
+res: 0
+______
+|    |
+|   r|
+|    |
+|R   |
+‾‾‾‾‾‾
+
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |    |
 |   r|
@@ -551,7 +671,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |    |
@@ -561,7 +681,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |    |
@@ -581,9 +701,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|    |
+|    |
+|   r|
+| R  |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |    |
@@ -593,7 +723,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |    |
 |   r|
@@ -625,7 +755,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |  r |
@@ -635,7 +765,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |  r |
@@ -655,9 +785,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|    |
+|  r |
+|    |
+| R  |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |  r |
@@ -667,7 +807,7 @@ ______
 
 final res
 depth: 3
-res: -1000
+res: 0
 ______
 |    |
 |   r|
@@ -677,7 +817,7 @@ ______
 
 before move
 depth: 2
-res: 1000
+res: 0
 ______
 |    |
 |   r|
@@ -731,7 +871,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |    |
@@ -741,7 +881,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |    |
@@ -751,7 +891,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |    |
@@ -761,7 +901,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |    |
@@ -781,9 +921,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|   r|
+|    |
+|  R |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |   r|
 |    |
@@ -791,9 +941,19 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+updated res
+depth: 3
+res: 0
+______
+|    |
+|   r|
+| R  |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |    |
 |   r|
@@ -825,7 +985,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |    |
@@ -835,7 +995,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |    |
@@ -845,7 +1005,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |    |
@@ -855,7 +1015,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |    |
@@ -875,9 +1035,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|    |
+|    |
+|  Rr|
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |    |
@@ -887,7 +1057,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |    |
 |   r|
@@ -919,7 +1089,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |  r |
@@ -929,7 +1099,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |  r |
@@ -939,7 +1109,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |  r |
@@ -949,7 +1119,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |  r |
@@ -969,9 +1139,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|    |
+|  r |
+|  R |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |  r |
@@ -981,7 +1161,7 @@ ______
 
 final res
 depth: 3
-res: -1000
+res: 0
 ______
 |    |
 |   r|
@@ -991,17 +1171,27 @@ ______
 
 final res
 depth: 2
-res: 1000
+res: 0
 ______
 |    |
 |   r|
+|R   |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+______
+|   r|
+|    |
 |R   |
 |    |
 ‾‾‾‾‾‾
 
 before move
 depth: 1
-res: -1000
+res: 0
 ______
 |   r|
 |    |
@@ -1053,9 +1243,19 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+updated res
+depth: 3
+res: 0
+______
+|  r |
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |  r |
 |R   |
@@ -1097,9 +1297,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|Rr  |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |R   |
@@ -1109,7 +1319,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |R   |
@@ -1129,9 +1339,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| r  |
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |R   |
@@ -1151,9 +1371,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| r  |
+| R  |
+|    |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |R   |
@@ -1163,7 +1393,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |  r |
 |R   |
@@ -1173,7 +1403,7 @@ ______
 
 final res
 depth: 3
-res: -1000
+res: 0
 ______
 |  r |
 |R   |
@@ -1183,7 +1413,7 @@ ______
 
 updated res
 depth: 2
-res: 1000
+res: 0
 ______
 |  r |
 |    |
@@ -1193,7 +1423,7 @@ ______
 
 before move
 depth: 2
-res: 1000
+res: 0
 ______
 |  r |
 |    |
@@ -1223,9 +1453,19 @@ ______
 |R   |
 ‾‾‾‾‾‾
 
+updated res
+depth: 3
+res: 0
+______
+|  r |
+|    |
+|    |
+|R   |
+‾‾‾‾‾‾
+
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |  r |
 |    |
@@ -1257,7 +1497,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |    |
@@ -1267,7 +1507,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |    |
@@ -1287,9 +1527,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| r  |
+|    |
+|    |
+| R  |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |    |
@@ -1299,7 +1549,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |  r |
 |    |
@@ -1309,7 +1559,7 @@ ______
 
 final res
 depth: 3
-res: -1000
+res: 0
 ______
 |  r |
 |    |
@@ -1319,7 +1569,7 @@ ______
 
 before move
 depth: 2
-res: 1000
+res: 0
 ______
 |  r |
 |    |
@@ -1349,9 +1599,19 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+updated res
+depth: 3
+res: 0
+______
+|  r |
+|    |
+| R  |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |  r |
 |    |
@@ -1383,7 +1643,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |    |
@@ -1393,7 +1653,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |    |
@@ -1403,7 +1663,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |    |
@@ -1413,7 +1673,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |    |
@@ -1433,9 +1693,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| r  |
+|    |
+|  R |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | r  |
 |    |
@@ -1445,7 +1715,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 |  r |
 |    |
@@ -1455,7 +1725,7 @@ ______
 
 final res
 depth: 3
-res: -1000
+res: 0
 ______
 |  r |
 |    |
@@ -1465,7 +1735,7 @@ ______
 
 final res
 depth: 2
-res: 1000
+res: 0
 ______
 |  r |
 |    |
@@ -1475,7 +1745,7 @@ ______
 
 final res
 depth: 1
-res: -1000
+res: 0
 ______
 |   r|
 |    |
@@ -1485,7 +1755,7 @@ ______
 
 updated res
 depth: 0
-res: 1000
+res: 0
 ______
 |   r|
 |    |
@@ -1495,7 +1765,7 @@ ______
 
 before move
 depth: 0
-res: 1000
+res: 0
 ______
 |   r|
 |    |
@@ -1505,7 +1775,7 @@ ______
 
 final res
 depth: 0
-res: 1000
+res: 0
 ______
 |   r|
 |    |

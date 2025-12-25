@@ -1,0 +1,3640 @@
+
+after move
+depth: 0
+res: -1000
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 0
+res: -1000
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|k   |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: -1000
+______
+|k   |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|    |
+|k R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|    |
+|k R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: -998
+______
+|k   |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|k   |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: -1000
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| kR |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| kR |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|    |
+|RRR |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|    |
+|RRR |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+| R  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+| R  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|   R|
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|   R|
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|R R |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|R R |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+| RR |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+| RR |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|  R |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|  R |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|  R |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|  R |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 0
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+______
+|k   |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+______
+|k   |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|    |
+| kR |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|    |
+| kR |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: 0
+______
+|k   |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 0
+res: 0
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|kR  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: -1000
+______
+|kR  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| R  |
+|k   |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+| R  |
+|k   |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: -998
+______
+|kR  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|kR  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| k  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: -1000
+______
+| k  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+______
+| k  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k  |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k  |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 0
+______
+| k  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+______
+|kR  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+______
+|kR  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| R  |
+| k  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+| R  |
+| k  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: 0
+______
+|kR  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|k  R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: -1000
+______
+|k  R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|   R|
+|k   |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|   R|
+|k   |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: -998
+______
+|k  R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|k  R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: -1000
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k R|
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k R|
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k R|
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k R|
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k R|
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k R|
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k R|
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k R|
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k R|
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k R|
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| k R|
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| k R|
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 0
+______
+| k R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+______
+|k  R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+______
+|k  R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|   R|
+| k  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|   R|
+| k  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: 0
+______
+|k  R|
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|k R |
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: -1000
+______
+|k R |
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: -1000
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|    |
+|k R |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|    |
+|k R |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| R  |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| R  |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|   R|
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|   R|
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|kR  |
+|    |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|kR  |
+|    |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|k   |
+|    |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|k   |
+|    |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|k   |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|k   |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|k   |
+|  R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|k   |
+|  R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|k N |
+| R  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|k N |
+| R  |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+______
+|k R |
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+______
+|k R |
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| kR |
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+| kR |
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+______
+|k R |
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+|Rk  |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|  R |
+|Rk  |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: 0
+______
+|k R |
+|R   |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|k R |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: -1000
+______
+|k R |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: -1000
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|    |
+|k R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|    |
+|k R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|   R|
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|   R|
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|kR  |
+|    |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|kR  |
+|    |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|k   |
+|  R |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|k   |
+|  R |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|k   |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|k   |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|k   |
+| R  |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|k   |
+| R  |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|k N |
+| R  |
+|R   |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|k N |
+| R  |
+|R   |
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 0
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+______
+|k R |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+______
+|k R |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| kR |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+| kR |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+______
+|k R |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+| k  |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|  R |
+| k  |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: 0
+______
+|k R |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|k R |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: -1000
+______
+|k R |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+|kR  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|  R |
+|kR  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: -998
+______
+|k R |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|k R |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| kR |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+| kR |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|k R |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: -1000
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|    |
+| kR |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|    |
+| kR |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| R  |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| R  |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|   R|
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|   R|
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|Rk  |
+|    |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|Rk  |
+|    |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+|    |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+|    |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+| R  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| kN |
+|R   |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| kN |
+|R   |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+|RN  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+|RN  |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+______
+|k R |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: 0
+______
+|k R |
+| R  |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|k R |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: -1000
+______
+|k R |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+|k   |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|  R |
+|k   |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: -998
+______
+|k R |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|k R |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| kR |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+| kR |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|k R |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: -1000
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|    |
+| kR |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|    |
+| kR |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| R  |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| R  |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|   R|
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|   R|
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|Rk  |
+|    |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|Rk  |
+|    |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+| R  |
+| R N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+| R  |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+|R   |
+|  RN|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+|R   |
+|  RN|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| kN |
+|R   |
+| R  |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| kN |
+|R   |
+| R  |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+|RN  |
+| R  |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+|RN  |
+| R  |
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+______
+|k R |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: 0
+______
+|k R |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|k R |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: -1000
+______
+|k R |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+|k   |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|  R |
+|k   |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: -998
+______
+|k R |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|k R |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| kR |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+| kR |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|k R |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 2
+res: -1000
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|    |
+| kR |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|    |
+| kR |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+| R  |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+| R  |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|   R|
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|   R|
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+|Rk  |
+|  R |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+|Rk  |
+|  R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+|  R |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+|  R |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+| RR |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+| RR |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| kR |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| kR |
+|R   |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+|R  R|
+|   N|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+|R  R|
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| kN |
+|R R |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| kN |
+|R R |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|  R |
+| k  |
+|RNR |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 3
+res: 0
+______
+|  R |
+| k  |
+|RNR |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 0
+______
+|  R |
+| k  |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+______
+|k R |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: 0
+______
+|k R |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|k R |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: -1000
+______
+|k R |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+|k N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|  R |
+|k N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: -998
+______
+|k R |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|k R |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| kR |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+| kR |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -998
+______
+|k R |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|  R |
+| kN |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 998
+______
+|  R |
+| kN |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: -998
+______
+|k R |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 0
+res: 998
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+final res
+depth: 0
+res: 998
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾

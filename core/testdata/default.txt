@@ -55,9 +55,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+| nrk|
+|Pb p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
 updated res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |P  p|
@@ -67,7 +77,7 @@ ______
 
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |P  p|
@@ -87,9 +97,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|P  p|
+|n   |
+|KRNB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |P  p|
@@ -109,9 +129,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|P  p|
+|  n |
+|KRNB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |P  p|
@@ -131,9 +161,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bn k|
+|P rp|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |P  p|
@@ -153,9 +193,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnr |
+|P kp|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |P  p|
@@ -175,9 +225,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnrk|
+|P   |
+|   p|
+|KRNB|
+‾‾‾‾‾‾
+
 final res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |P  p|
@@ -185,9 +245,19 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+updated res
+depth: 0
+res: 0
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
 before move
 depth: 0
-res: -1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -229,9 +299,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+| nrk|
+| b p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
 updated res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -241,7 +321,7 @@ ______
 
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -261,9 +341,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|nK  |
+| RNB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -283,9 +373,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|PKn |
+| RNB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -305,9 +405,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bn k|
+|  rp|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -327,9 +437,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnr |
+|  kp|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -349,9 +469,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnrk|
+|    |
+|PK p|
+| RNB|
+‾‾‾‾‾‾
+
 final res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -361,7 +491,7 @@ ______
 
 before move
 depth: 0
-res: -1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -403,9 +533,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+| nrk|
+| b p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
 updated res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -415,7 +555,7 @@ ______
 
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -435,9 +575,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|nR  |
+|K NB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -457,9 +607,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|PRn |
+|K NB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -479,9 +639,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bn k|
+|  rp|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -501,9 +671,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnr |
+|  kp|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -523,9 +703,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnrk|
+|    |
+|PR p|
+|K NB|
+‾‾‾‾‾‾
+
 final res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -535,7 +725,7 @@ ______
 
 before move
 depth: 0
-res: -1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -577,9 +767,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+| nrk|
+| b p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 updated res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 | N p|
@@ -589,7 +789,7 @@ ______
 
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 | N p|
@@ -609,9 +809,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bn k|
+| Nrp|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 | N p|
@@ -631,9 +841,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnr |
+| Nkp|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 | N p|
@@ -653,9 +873,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnrk|
+| N  |
+|P  p|
+|KR B|
+‾‾‾‾‾‾
+
 final res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 | N p|
@@ -665,7 +895,7 @@ ______
 
 before move
 depth: 0
-res: -1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -707,9 +937,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+| nrk|
+| b N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 updated res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   N|
@@ -719,7 +959,7 @@ ______
 
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   N|
@@ -739,9 +979,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   N|
+|n   |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   N|
@@ -761,9 +1011,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   N|
+|P n |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   N|
@@ -783,9 +1043,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bn k|
+|  rN|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   N|
@@ -805,9 +1075,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnr |
+|   k|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   N|
@@ -827,9 +1107,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnr |
+|  kN|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 final res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   N|
@@ -839,7 +1129,7 @@ ______
 
 before move
 depth: 0
-res: -1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -881,9 +1171,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+| nrk|
+| b p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
 updated res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -893,7 +1193,7 @@ ______
 
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -913,9 +1213,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|n B |
+|KRN |
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -935,9 +1245,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|P n |
+|KRN |
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -957,9 +1277,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bn k|
+|  rp|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -979,9 +1309,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnr |
+|  kp|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -1001,9 +1341,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnrk|
+|    |
+|P Bp|
+|KRN |
+‾‾‾‾‾‾
+
 before move
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -1023,9 +1373,19 @@ ______
 
 ------
 
+max depth
+depth: 2
+res: 0
+______
+|bnrk|
+|    |
+|P p |
+|KRN |
+‾‾‾‾‾‾
+
 final res
 depth: 1
-res: 1000
+res: 0
 ______
 |bnrk|
 |   p|
@@ -1035,7 +1395,7 @@ ______
 
 final res
 depth: 0
-res: -1000
+res: 0
 ______
 |bnrk|
 |   p|

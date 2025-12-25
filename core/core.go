@@ -106,7 +106,9 @@ func (c *Core) solve(depth int) int {
 	time.Sleep(c.config.SleepDuration)
 	fmt.Fprint(c.writer, c.clearTerminal)
 	if depth >= c.config.MaxDepth {
-		return c.minInt
+		res := 0
+		c.print("max depth", depth, res)
+		return res
 	}
 	nextTurn := (c.turn % 2) + 1
 	moves := c.moves(nextTurn)

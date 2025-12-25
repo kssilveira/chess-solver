@@ -92,6 +92,12 @@ func TestSolve(t *testing.T) {
 			[]byte("    "),
 			[]byte("  XN"),
 		}},
+		{name: "Nk", maxDepth: 3, board: [][]byte{
+			[]byte("k R "),
+			[]byte("    "),
+			[]byte("RR  "),
+			[]byte("   N"),
+		}},
 	}
 	for _, in := range inputs {
 		config := Config{MaxDepth: 5}

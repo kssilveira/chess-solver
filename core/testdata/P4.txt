@@ -121,9 +121,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|   P|
+|    |
+|p   |
+|    |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |   P|
@@ -133,17 +143,27 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |    |
 |   P|
 |p   |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 3
+res: 0
+______
+|    |
+|p  P|
+|    |
 |    |
 ‾‾‾‾‾‾
 
 final res
 depth: 3
-res: -1000
+res: 0
 ______
 |    |
 |p  P|
@@ -153,7 +173,7 @@ ______
 
 updated res
 depth: 2
-res: 1000
+res: 0
 ______
 |    |
 |p   |
@@ -163,7 +183,7 @@ ______
 
 final res
 depth: 2
-res: 1000
+res: 0
 ______
 |    |
 |p   |
@@ -171,9 +191,19 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+updated res
+depth: 1
+res: 0
+______
+|p   |
+|    |
+|   P|
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 1
-res: -1000
+res: 0
 ______
 |p   |
 |    |
@@ -183,7 +213,7 @@ ______
 
 updated res
 depth: 0
-res: 1000
+res: 0
 ______
 |p   |
 |    |
@@ -193,7 +223,7 @@ ______
 
 final res
 depth: 0
-res: 1000
+res: 0
 ______
 |p   |
 |    |

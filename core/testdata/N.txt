@@ -163,9 +163,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| xn |
+|    |
+| N  |
+|  X |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |Nxn |
 |    |
@@ -175,7 +185,7 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |Nxn |
 |    |
@@ -227,9 +237,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| x  |
+|   n|
+| N  |
+|  X |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |Nx  |
 |   n|
@@ -239,7 +259,7 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |Nx  |
 |   n|
@@ -291,9 +311,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| x  |
+|    |
+| N  |
+|  Xn|
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |Nx  |
 |    |
@@ -303,7 +333,7 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |Nx  |
 |    |
@@ -397,9 +427,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|nN  |
+|    |
+|    |
+|  X |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |nx  |
 |    |
@@ -409,7 +449,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |nx  |
 |    |
@@ -429,9 +469,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|nx  |
+|  N |
+|    |
+|  X |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |nx  |
 |    |
@@ -439,9 +489,19 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
+updated res
+depth: 3
+res: 0
+______
+| x  |
+|    |
+|Nn  |
+|  X |
+‾‾‾‾‾‾
+
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -483,9 +543,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| Nn |
+|    |
+|    |
+|  X |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | xn |
 |    |
@@ -495,7 +565,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | xn |
 |    |
@@ -515,9 +585,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| xn |
+|  N |
+|    |
+|  X |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | xn |
 |    |
@@ -527,7 +607,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -569,9 +649,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| N  |
+|   n|
+|    |
+|  X |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |   n|
@@ -581,7 +671,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |   n|
@@ -601,9 +691,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| x  |
+|  Nn|
+|    |
+|  X |
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |   n|
@@ -613,7 +713,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -655,9 +755,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| N  |
+|    |
+|    |
+|  Xn|
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |    |
@@ -667,7 +777,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |    |
@@ -687,9 +797,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| x  |
+|  N |
+|    |
+|  Xn|
+‾‾‾‾‾‾
+
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |    |
@@ -699,7 +819,7 @@ ______
 
 final res
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -707,19 +827,9 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
-updated res
-depth: 2
-res: 1000
-______
-| x  |
-|  N |
-| n  |
-|  X |
-‾‾‾‾‾‾
-
 before move
 depth: 2
-res: 1000
+res: 0
 ______
 | x  |
 |  N |
@@ -783,9 +893,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+|nx  |
+|N   |
+|    |
+|  X |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |nx  |
 |    |
@@ -795,7 +915,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 |nx  |
 |    |
@@ -805,7 +925,7 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |nx  |
 |    |
@@ -813,9 +933,19 @@ ______
 | NX |
 ‾‾‾‾‾‾
 
+updated res
+depth: 3
+res: 0
+______
+| x  |
+|    |
+| n  |
+| NX |
+‾‾‾‾‾‾
+
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -857,9 +987,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| xn |
+|N   |
+|    |
+|  X |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | xn |
 |    |
@@ -869,7 +1009,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | xn |
 |    |
@@ -879,7 +1019,7 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | xn |
 |    |
@@ -889,7 +1029,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -931,9 +1071,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| x  |
+|N  n|
+|    |
+|  X |
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |   n|
@@ -943,7 +1093,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |   n|
@@ -953,7 +1103,7 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |   n|
@@ -963,7 +1113,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -1005,9 +1155,19 @@ ______
 
 ------
 
+max depth
+depth: 5
+res: 0
+______
+| x  |
+|N   |
+|    |
+|  Xn|
+‾‾‾‾‾‾
+
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |    |
@@ -1017,7 +1177,7 @@ ______
 
 before move
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |    |
@@ -1027,7 +1187,7 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |    |
@@ -1037,7 +1197,7 @@ ______
 
 final res
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -1047,7 +1207,7 @@ ______
 
 before move
 depth: 2
-res: 1000
+res: 0
 ______
 | x  |
 |  N |
@@ -1101,7 +1261,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 |nx  |
 |    |
@@ -1111,7 +1271,7 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 |nx  |
 |    |
@@ -1119,9 +1279,19 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
+updated res
+depth: 3
+res: 0
+______
+| x  |
+|    |
+| n  |
+|  XN|
+‾‾‾‾‾‾
+
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -1153,7 +1323,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | xn |
 |    |
@@ -1163,7 +1333,7 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | xn |
 |    |
@@ -1173,7 +1343,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -1205,7 +1375,7 @@ ______
 
 updated res
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |   n|
@@ -1215,7 +1385,7 @@ ______
 
 final res
 depth: 4
-res: 1000
+res: 0
 ______
 | x  |
 |   n|
@@ -1225,7 +1395,7 @@ ______
 
 before move
 depth: 3
-res: -1000
+res: 0
 ______
 | x  |
 |    |
@@ -1255,16 +1425,6 @@ ______
 |  Xn|
 ‾‾‾‾‾‾
 
-updated res
-depth: 3
-res: 0
-______
-| x  |
-|    |
-| n  |
-|  XN|
-‾‾‾‾‾‾
-
 final res
 depth: 3
 res: 0
@@ -1277,7 +1437,7 @@ ______
 
 final res
 depth: 2
-res: 1000
+res: 0
 ______
 | x  |
 |  N |
@@ -1285,9 +1445,19 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
+updated res
+depth: 1
+res: 0
+______
+|nx  |
+|  N |
+|    |
+|  X |
+‾‾‾‾‾‾
+
 final res
 depth: 1
-res: -1000
+res: 0
 ______
 |nx  |
 |  N |
@@ -1297,7 +1467,7 @@ ______
 
 updated res
 depth: 0
-res: 1000
+res: 0
 ______
 |nx  |
 |    |
@@ -1307,7 +1477,7 @@ ______
 
 final res
 depth: 0
-res: 1000
+res: 0
 ______
 |nx  |
 |    |

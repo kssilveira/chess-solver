@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"math"
+	"sort"
 	"time"
 )
 
@@ -101,6 +102,7 @@ func (c *Core) solve(depth int) int {
 	}
 	nextTurn := (c.turn % 2) + 1
 	moves := c.moves(nextTurn)
+	moves = c.sort(moves)
 	return c.move(depth, nextTurn, moves)
 }
 
@@ -154,6 +156,13 @@ func (c *Core) deltas(nextTurn, i, j int) []Move {
 			From: Point{What: piece, X: i, Y: j},
 			To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
 	}
+	return moves
+}
+
+func (c *Core) sort(moves []Move) []Move {
+	sort.Slice(moves, func(i, j int) bool {
+		return i < j
+	})
 	return moves
 }
 

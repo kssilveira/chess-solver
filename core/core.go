@@ -224,7 +224,6 @@ func (c *Core) sort(moves *[]Move) {
 
 func (c *Core) move(nextTurn int, moves []Move) int {
 	res := c.minInt
-	resMove := Move{}
 	if len(moves) == 0 {
 		res = 0
 		c.print("stalemate", res, PrintConfig{})
@@ -239,13 +238,12 @@ func (c *Core) move(nextTurn int, moves []Move) int {
 		c.print("before move", res, PrintConfig{Move: move})
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
-		key := c.board
-		c.visited[c.turn][key]++
+		c.visited[c.turn][c.board]++
 		next := 0
-		if nextResult, ok := c.solved[c.turn][key]; ok {
+		if nextResult, ok := c.solved[c.turn][c.board]; ok {
 			next = nextResult
 			c.print("solved[]", next, PrintConfig{Move: move})
-		} else if c.visited[c.turn][key] < 3 {
+		} else if c.visited[c.turn][c.board] < 3 {
 			prevTurn := c.turn
 			c.turn = nextTurn
 			c.depth++
@@ -253,31 +251,28 @@ func (c *Core) move(nextTurn int, moves []Move) int {
 			c.depth--
 			c.turn = prevTurn
 			c.print("solve()", next, PrintConfig{Move: move})
-			c.solved[c.turn][key] = next
+			c.solved[c.turn][c.board] = next
 		} else {
 			c.print("repeated", next, PrintConfig{Move: move})
 		}
-		c.visited[c.turn][key]--
+		c.visited[c.turn][c.board]--
 		c.board[move.To.X][move.To.Y] = move.To.What
 		c.board[move.From.X][move.From.Y] = move.From.What
 		if next > res {
 			res = next
-			resMove = move
-			c.print("updated res", res, PrintConfig{Move: resMove})
+			c.solvedMove[c.turn][c.board] = move
+			c.print("updated res", res, PrintConfig{Move: move})
 		}
 	}
-	c.print("final res", res, PrintConfig{Move: resMove})
-	key := c.board
-	c.solvedMove[c.turn][key] = resMove
+	c.print("final res", res, PrintConfig{Move: c.solvedMove[c.turn][c.board]})
 	return res
 }
 
 func (c *Core) show() {
 	res := 123456789
 	c.print("show", res, PrintConfig{})
-	key := c.board
 	for i := 0; i < 10; i++ {
-		move := c.solvedMove[c.turn][key]
+		move := c.solvedMove[c.turn][c.board]
 		if move == (Move{}) {
 			break
 		}
@@ -286,8 +281,7 @@ func (c *Core) show() {
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
 		// c.depth++
-		key = c.board
-		res = c.solved[c.turn][key]
+		res = c.solved[c.turn][c.board]
 		c.turn = (c.turn + 1) % 2
 		c.print("after move", res, PrintConfig{Move: move, ClearTerminal: true})
 	}

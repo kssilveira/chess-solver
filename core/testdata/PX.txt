@@ -178,7 +178,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 123456789
+res: 0
 move: P (1, 1) => x (0, 2)
 ______
 |xxP |

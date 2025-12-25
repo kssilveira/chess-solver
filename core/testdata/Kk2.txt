@@ -231,7 +231,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 123456789
+res: -999
 move: K (3, 0) =>   (2, 0)
 ______
 |    |

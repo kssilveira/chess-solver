@@ -18,7 +18,8 @@ func main() {
 	flag.Parse()
 	core := core.New(os.Stdout, core.Config{
 		MaxDepth: *maxDepth, SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth,
-		Board: strings.Split(*board, ","),
+		Board:       strings.Split(*board, ","),
+		EnablePrint: true,
 	})
 	core.Solve()
 }

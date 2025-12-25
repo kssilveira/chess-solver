@@ -161,6 +161,12 @@ func (c *Core) deltas(nextTurn, i, j int) []Move {
 
 func (c *Core) sort(moves []Move) []Move {
 	sort.Slice(moves, func(i, j int) bool {
+		if moves[i].To.What == 'k' || moves[i].To.What == 'K' {
+			return true
+		}
+		if moves[j].To.What == 'k' || moves[j].To.What == 'K' {
+			return false
+		}
 		return i < j
 	})
 	return moves

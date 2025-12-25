@@ -113,7 +113,9 @@ func (c *Core) Solve() {
 	c.depth = 0
 	c.turn = 0
 	c.solve()
-	c.show()
+	if c.config.MaxPrintDepth > 0 {
+		c.show()
+	}
 }
 
 func (c *Core) solve() int {

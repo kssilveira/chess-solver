@@ -68,6 +68,12 @@ func TestSolve(t *testing.T) {
 			[]byte("    "),
 			[]byte("K   "),
 		}},
+		{name: "Kk", board: [][]byte{
+			[]byte("    "),
+			[]byte("  k "),
+			[]byte(" K  "),
+			[]byte("    "),
+		}},
 		{name: "NB", board: [][]byte{
 			[]byte("nx  "),
 			[]byte("X   "),

@@ -27,6 +27,7 @@ type Move struct {
 type Config struct {
 	MaxDepth      int
 	SleepDuration time.Duration
+	Board         []string
 }
 
 // Core contains the core logic.
@@ -80,12 +81,18 @@ var (
 
 // New creates a new core.
 func New(writer io.Writer, config Config) *Core {
-	return &Core{writer: writer, config: config, turn: 1, board: [][]byte{
+	res := &Core{writer: writer, config: config, turn: 1, board: [][]byte{
 		[]byte("bnrk"),
 		[]byte("   p"),
 		[]byte("P   "),
 		[]byte("KRNB"),
 	}, visited: map[string]int{}, clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt, minInt: math.MinInt}
+	if len(config.Board) > 1 {
+		for i, row := range config.Board {
+			res.board[i] = []byte(row)
+		}
+	}
+	return res
 }
 
 // Solve solves the board.

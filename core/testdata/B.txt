@@ -800,7 +800,7 @@ ______
 |B   |
 ‾‾‾‾‾‾
 
-show search
+show
 turn: 0
 depth: 0
 res: 123456789
@@ -814,43 +814,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: -1000
-move: B (3, 0) =>   (2, 1)
-______
-|   b|
-|    |
-|    |
-|B   |
-‾‾‾‾‾‾
-
-updated res
-turn: 0
-depth: 0
-res: 0
-move: B (3, 0) =>   (2, 1)
-______
-|   b|
-|    |
-|    |
-|B   |
-‾‾‾‾‾‾
-
-show final res
-turn: 0
-depth: 0
-res: 0
-move: B (3, 0) =>   (2, 1)
-______
-|   b|
-|    |
-|    |
-|B   |
-‾‾‾‾‾‾
-
-before move
-turn: 0
-depth: 0
-res: 0
+res: 123456789
 move: B (3, 0) =>   (2, 1)
 ______
 |   b|
@@ -860,8 +824,8 @@ ______
 ‾‾‾‾‾‾
 
 after move
-turn: 0
-depth: 1
+turn: 1
+depth: 0
 res: 0
 move: B (3, 0) =>   (2, 1)
 ______
@@ -875,9 +839,9 @@ ______
 
 before move
 turn: 1
-depth: 1
+depth: 0
 res: 0
-move: B (3, 0) =>   (2, 1)
+move: b (0, 3) =>   (1, 2)
 ______
 |   b|
 |    |
@@ -886,13 +850,39 @@ ______
 ‾‾‾‾‾‾
 
 after move
-turn: 1
-depth: 2
+turn: 0
+depth: 0
 res: 0
-move: B (3, 0) =>   (2, 1)
+move: b (0, 3) =>   (1, 2)
 ______
-|   b|
 |    |
+|  b |
+| B  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: B (2, 1) => b (1, 2)
+______
+|    |
+|  b |
+| B  |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 0
+res: 0
+move: B (2, 1) => b (1, 2)
+______
+|    |
+|  B |
 |    |
 |    |
 ‾‾‾‾‾‾

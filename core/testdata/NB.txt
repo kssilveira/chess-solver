@@ -23,21 +23,10 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-show search
+show
 turn: 0
 depth: 0
 res: 123456789
-______
-|nx  |
-|X   |
-|   x|
-|  XN|
-‾‾‾‾‾‾
-
-show final res
-turn: 0
-depth: 0
-res: -1000
 ______
 |nx  |
 |X   |

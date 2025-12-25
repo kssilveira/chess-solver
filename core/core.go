@@ -111,6 +111,7 @@ func New(writer io.Writer, config Config) *Core {
 // Solve solves the board.
 func (c *Core) Solve() {
 	c.depth = 0
+	c.turn = 0
 	c.solve(c.minInt, c.maxInt)
 	c.show()
 }
@@ -245,7 +246,6 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 			c.turn = prevTurn
 			c.print("solve()", next, PrintConfig{Move: move})
 			c.solved[c.turn][key] = next
-			c.solvedMove[c.turn][key] = move
 		} else {
 			c.print("repeated", next, PrintConfig{Move: move})
 		}
@@ -266,41 +266,28 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		}
 	}
 	c.print("final res", res, PrintConfig{Move: resMove})
+	key := string(bytes.Join(c.board, nil))
+	c.solvedMove[c.turn][key] = resMove
 	return res
 }
 
 func (c *Core) show() {
-	c.print("show search", 123456789, PrintConfig{})
-	nextTurn := (c.turn + 1) % 2
-	moves := c.moves(nextTurn)
-	res := c.minInt
-	resMove := Move{}
-	for _, move := range moves {
-		c.print("before move", res, PrintConfig{Move: move})
-		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
-		c.board[move.From.X][move.From.Y] = ' '
+	res := 123456789
+	c.print("show", res, PrintConfig{})
+	for i := 0; i < 10; i++ {
 		key := string(bytes.Join(c.board, nil))
-		next := c.solved[c.turn][key]
-		c.visited[c.turn][key]--
-		c.board[move.To.X][move.To.Y] = move.To.What
-		c.board[move.From.X][move.From.Y] = move.From.What
-		if next > res {
-			res = next
-			resMove = move
-			c.print("updated res", res, PrintConfig{Move: resMove})
+		move := c.solvedMove[c.turn][key]
+		if move == (Move{}) {
+			break
 		}
-	}
-	c.print("show final res", res, PrintConfig{Move: resMove})
-	move := resMove
-	for move != (Move{}) {
 		c.print("before move", res, PrintConfig{Move: move})
+
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
-		c.depth++
-		c.print("after move", res, PrintConfig{Move: move, ClearTerminal: true})
-		key := string(bytes.Join(c.board, nil))
+		// c.depth++
+		key = string(bytes.Join(c.board, nil))
 		res = c.solved[c.turn][key]
-		move = c.solvedMove[c.turn][key]
 		c.turn = (c.turn + 1) % 2
+		c.print("after move", res, PrintConfig{Move: move, ClearTerminal: true})
 	}
 }

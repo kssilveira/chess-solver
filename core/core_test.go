@@ -99,7 +99,7 @@ func TestSolve(t *testing.T) {
 			[]byte("RR  "),
 			[]byte("   N"),
 		}},
-		{name: "RNk", maxDepth: 500000, maxPrintDepth: 5, board: [][]byte{
+		{name: "RNk", maxDepth: 500000, maxPrintDepth: 2, board: [][]byte{
 			[]byte("  R "),
 			[]byte("k   "),
 			[]byte(" R  "),

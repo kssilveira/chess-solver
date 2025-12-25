@@ -3,6 +3,8 @@ after move
 turn: 0
 depth: 0
 res: -1000
+alpha: -1000
+beta: 1000
 ______
 |    |
 | k  |
@@ -28,6 +30,8 @@ after move
 turn: 1
 depth: 1
 res: -1000
+alpha: -1000
+beta: 1000
 ______
 |    |
 | k  |
@@ -73,6 +77,20 @@ ______
 |K k |
 ‾‾‾‾‾‾
 
+updated alpha
+turn: 0
+depth: 0
+res: -999
+alpha: -999
+beta: 1000
+move: K (3, 0) =>   (2, 0)
+______
+|    |
+| k  |
+|    |
+|K k |
+‾‾‾‾‾‾
+
 before move
 turn: 0
 depth: 0
@@ -89,6 +107,8 @@ after move
 turn: 1
 depth: 1
 res: -1000
+alpha: -1000
+beta: 999
 ______
 |    |
 | k  |
@@ -138,6 +158,8 @@ after move
 turn: 1
 depth: 1
 res: -1000
+alpha: -1000
+beta: 999
 ______
 |    |
 | k  |

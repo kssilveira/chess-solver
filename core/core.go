@@ -35,6 +35,8 @@ type Config struct {
 type PrintConfig struct {
 	Move          Move
 	ClearTerminal bool
+	Alpha         int
+	Beta          int
 }
 
 // Core contains the core logic.
@@ -117,7 +119,7 @@ func (c *Core) Solve() {
 }
 
 func (c *Core) solve(alpha, beta int) int {
-	c.print("after move", c.minInt, PrintConfig{ClearTerminal: true})
+	c.print("after move", c.minInt, PrintConfig{ClearTerminal: true, Alpha: alpha, Beta: beta})
 	if c.depth >= c.config.MaxDepth {
 		res := 0
 		c.print("max depth", res, PrintConfig{})
@@ -137,6 +139,10 @@ func (c *Core) print(message string, res int, cfg PrintConfig) {
 	fmt.Fprintf(c.writer, "turn: %d\n", c.turn)
 	fmt.Fprintf(c.writer, "depth: %d\n", c.depth)
 	fmt.Fprintf(c.writer, "res: %d\n", res)
+	if cfg.Alpha != 0 || cfg.Beta != 0 {
+		fmt.Fprintf(c.writer, "alpha: %d\n", cfg.Alpha)
+		fmt.Fprintf(c.writer, "beta: %d\n", cfg.Beta)
+	}
 	if cfg.Move != (Move{}) {
 		fmt.Fprintf(c.writer, "move: %s (%d, %d) => %s (%d, %d)\n", string(cfg.Move.From.What), cfg.Move.From.X, cfg.Move.From.Y, string(cfg.Move.To.What), cfg.Move.To.X, cfg.Move.To.Y)
 	}
@@ -259,9 +265,10 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		}
 		if next > alpha {
 			alpha = next
+			c.print("updated alpha", next, PrintConfig{Move: move, Alpha: alpha, Beta: beta})
 		}
 		if alpha >= beta {
-			c.print("not pruned", res, PrintConfig{Move: resMove})
+			c.print("not pruned", next, PrintConfig{Move: move, Alpha: alpha, Beta: beta})
 			// break
 		}
 	}

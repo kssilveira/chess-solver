@@ -3,6 +3,8 @@ after move
 turn: 0
 depth: 0
 res: -1000
+alpha: -1000
+beta: 1000
 ______
 |bnrk|
 |   p|
@@ -28,6 +30,8 @@ after move
 turn: 1
 depth: 1
 res: -1000
+alpha: -1000
+beta: 1000
 ______
 |bnrk|
 |   N|
@@ -53,6 +57,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: -1000
+beta: 1000
 ______
 |bnr |
 |   k|
@@ -97,6 +103,20 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+updated alpha
+turn: 1
+depth: 1
+res: 0
+alpha: 0
+beta: 1000
+move: k (0, 3) => N (1, 3)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 turn: 1
 depth: 1
@@ -113,6 +133,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: -1000
+beta: 0
 ______
 |b rk|
 |   N|
@@ -161,6 +183,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: -1000
+beta: 0
 ______
 | nrk|
 | b N|
@@ -209,6 +233,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: -1000
+beta: 0
 ______
 |b rk|
 |   N|
@@ -257,6 +283,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: -1000
+beta: 0
 ______
 |bn k|
 |  rN|
@@ -305,6 +333,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: -1000
+beta: 0
 ______
 |bnr |
 |  kN|
@@ -373,6 +403,20 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+updated alpha
+turn: 0
+depth: 0
+res: 0
+alpha: 0
+beta: 1000
+move: N (3, 2) => p (1, 3)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
 before move
 turn: 0
 depth: 0
@@ -389,6 +433,8 @@ after move
 turn: 1
 depth: 1
 res: -1000
+alpha: -1000
+beta: 0
 ______
 |bnrk|
 |P  p|
@@ -414,6 +460,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: 0
+beta: 1000
 ______
 | nrk|
 |Pb p|
@@ -458,6 +506,18 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
+updated alpha
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
 not pruned
 turn: 1
 depth: 1
@@ -522,7 +582,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: b (0, 0) =>   (1, 1)
+move: n (0, 1) =>   (2, 0)
 ______
 |bnrk|
 |P  p|
@@ -582,7 +642,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: b (0, 0) =>   (1, 1)
+move: n (0, 1) =>   (2, 2)
 ______
 |bnrk|
 |P  p|
@@ -642,7 +702,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: b (0, 0) =>   (1, 1)
+move: r (0, 2) =>   (1, 2)
 ______
 |bnrk|
 |P  p|
@@ -702,7 +762,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: b (0, 0) =>   (1, 1)
+move: k (0, 3) =>   (1, 2)
 ______
 |bnrk|
 |P  p|
@@ -762,7 +822,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: b (0, 0) =>   (1, 1)
+move: p (1, 3) =>   (2, 3)
 ______
 |bnrk|
 |P  p|
@@ -810,6 +870,8 @@ after move
 turn: 1
 depth: 1
 res: -1000
+alpha: -1000
+beta: 0
 ______
 |bnrk|
 |   p|
@@ -835,6 +897,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: 0
+beta: 1000
 ______
 |b rk|
 |   p|
@@ -879,6 +943,18 @@ ______
 | RNB|
 ‾‾‾‾‾‾
 
+updated alpha
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
 not pruned
 turn: 1
 depth: 1
@@ -943,7 +1019,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: n (0, 1) => P (2, 0)
+move: b (0, 0) =>   (1, 1)
 ______
 |bnrk|
 |   p|
@@ -1003,7 +1079,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: n (0, 1) => P (2, 0)
+move: n (0, 1) =>   (2, 2)
 ______
 |bnrk|
 |   p|
@@ -1063,7 +1139,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: n (0, 1) => P (2, 0)
+move: r (0, 2) =>   (1, 2)
 ______
 |bnrk|
 |   p|
@@ -1123,7 +1199,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: n (0, 1) => P (2, 0)
+move: k (0, 3) =>   (1, 2)
 ______
 |bnrk|
 |   p|
@@ -1183,7 +1259,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: n (0, 1) => P (2, 0)
+move: p (1, 3) =>   (2, 3)
 ______
 |bnrk|
 |   p|
@@ -1231,6 +1307,8 @@ after move
 turn: 1
 depth: 1
 res: -1000
+alpha: -1000
+beta: 0
 ______
 |bnrk|
 |   p|
@@ -1256,6 +1334,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: 0
+beta: 1000
 ______
 |b rk|
 |   p|
@@ -1300,6 +1380,18 @@ ______
 |K NB|
 ‾‾‾‾‾‾
 
+updated alpha
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
 not pruned
 turn: 1
 depth: 1
@@ -1364,7 +1456,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: n (0, 1) => P (2, 0)
+move: b (0, 0) =>   (1, 1)
 ______
 |bnrk|
 |   p|
@@ -1424,7 +1516,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: n (0, 1) => P (2, 0)
+move: n (0, 1) =>   (2, 2)
 ______
 |bnrk|
 |   p|
@@ -1484,7 +1576,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: n (0, 1) => P (2, 0)
+move: r (0, 2) =>   (1, 2)
 ______
 |bnrk|
 |   p|
@@ -1544,7 +1636,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: n (0, 1) => P (2, 0)
+move: k (0, 3) =>   (1, 2)
 ______
 |bnrk|
 |   p|
@@ -1604,7 +1696,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: n (0, 1) => P (2, 0)
+move: p (1, 3) =>   (2, 3)
 ______
 |bnrk|
 |   p|
@@ -1652,6 +1744,8 @@ after move
 turn: 1
 depth: 1
 res: -1000
+alpha: -1000
+beta: 0
 ______
 |bnrk|
 | N p|
@@ -1677,6 +1771,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: 0
+beta: 1000
 ______
 | nrk|
 | b p|
@@ -1721,6 +1817,18 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
+updated alpha
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) => N (1, 1)
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 not pruned
 turn: 1
 depth: 1
@@ -1785,7 +1893,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: b (0, 0) => N (1, 1)
+move: r (0, 2) =>   (1, 2)
 ______
 |bnrk|
 | N p|
@@ -1845,7 +1953,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: b (0, 0) => N (1, 1)
+move: k (0, 3) =>   (1, 2)
 ______
 |bnrk|
 | N p|
@@ -1905,7 +2013,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: b (0, 0) => N (1, 1)
+move: p (1, 3) =>   (2, 3)
 ______
 |bnrk|
 | N p|
@@ -1953,6 +2061,8 @@ after move
 turn: 1
 depth: 1
 res: -1000
+alpha: -1000
+beta: 0
 ______
 |bnrk|
 |   p|
@@ -1978,6 +2088,8 @@ after move
 turn: 0
 depth: 2
 res: -1000
+alpha: 0
+beta: 1000
 ______
 |bnrk|
 |    |
@@ -2022,6 +2134,18 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
+updated alpha
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) => B (2, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
 not pruned
 turn: 1
 depth: 1
@@ -2086,7 +2210,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: p (1, 3) => B (2, 2)
+move: n (0, 1) => B (2, 2)
 ______
 |bnrk|
 |   p|
@@ -2146,7 +2270,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: p (1, 3) => B (2, 2)
+move: n (0, 1) => P (2, 0)
 ______
 |bnrk|
 |   p|
@@ -2206,7 +2330,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: p (1, 3) => B (2, 2)
+move: b (0, 0) =>   (1, 1)
 ______
 |bnrk|
 |   p|
@@ -2266,7 +2390,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: p (1, 3) => B (2, 2)
+move: r (0, 2) =>   (1, 2)
 ______
 |bnrk|
 |   p|
@@ -2326,7 +2450,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: p (1, 3) => B (2, 2)
+move: k (0, 3) =>   (1, 2)
 ______
 |bnrk|
 |   p|
@@ -2386,7 +2510,7 @@ not pruned
 turn: 1
 depth: 1
 res: 0
-move: p (1, 3) => B (2, 2)
+move: p (1, 3) =>   (2, 3)
 ______
 |bnrk|
 |   p|

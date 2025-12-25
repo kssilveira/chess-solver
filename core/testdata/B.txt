@@ -810,3 +810,81 @@ ______
 |    |
 |B   |
 ‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: B (3, 0) =>   (2, 1)
+______
+|   b|
+|    |
+|    |
+|B   |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 1
+res: 0
+move: B (3, 0) =>   (2, 1)
+______
+|   b|
+|    |
+| B  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: b (0, 3) =>   (1, 2)
+______
+|   b|
+|    |
+| B  |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: 0
+move: b (0, 3) =>   (1, 2)
+______
+|    |
+|  b |
+| B  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: B (2, 1) => b (1, 2)
+______
+|    |
+|  b |
+| B  |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 3
+res: 0
+move: B (2, 1) => b (1, 2)
+______
+|    |
+|  B |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------

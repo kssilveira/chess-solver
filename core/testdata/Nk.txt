@@ -5077,3 +5077,55 @@ ______
 |RR  |
 |   N|
 ‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 1
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+|k R |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (0, 0) =>   (1, 0)
+______
+|k R |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: 0
+move: k (0, 0) =>   (1, 0)
+______
+|  R |
+|k N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+------

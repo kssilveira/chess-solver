@@ -255,7 +255,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solve()
 turn: 0
 depth: 2
 res: 0
@@ -329,10 +329,10 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solve()
 turn: 0
 depth: 2
-res: 0
+res: 926662
 move: R (2, 1) =>   (3, 1)
 ______
 |k   |
@@ -404,7 +404,7 @@ ______
 solved[]
 turn: 0
 depth: 2
-res: 925622
+res: 926662
 move: R (3, 0) =>   (2, 0)
 ______
 |k   |
@@ -573,10 +573,357 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
+after move
+turn: 0
+depth: 2
+res: -1000000
+alpha: -1000000
+beta: 927786
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 0
+depth: 2
+res: -1000000
+move: R (1, 2) =>   (0, 2)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
 solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (1, 2) =>   (0, 2)
+______
+| kR |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 2
+res: 0
+move: R (1, 2) =>   (0, 2)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated alpha
+turn: 0
+depth: 2
+res: 0
+alpha: 0
+beta: 927786
+move: R (1, 2) =>   (0, 2)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (1, 2) =>   (2, 2)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (1, 2) =>   (2, 2)
+______
+| k  |
+|    |
+| RR |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (1, 2) =>   (1, 1)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (1, 2) =>   (1, 1)
+______
+| k  |
+| R  |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (1, 2) =>   (1, 3)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (1, 2) =>   (1, 3)
+______
+| k  |
+|   R|
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (1, 1)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (1, 1)
+______
+| k  |
+| RR |
+|    |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (3, 1)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (3, 1)
+______
+| k  |
+|  R |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (2, 0)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (2, 0)
+______
+| k  |
+|  R |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (2, 2)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (2, 2)
+______
+| k  |
+|  R |
+|  R |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (2, 0)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 2
+res: 946284
+move: R (3, 0) =>   (2, 0)
+______
+| k  |
+|  R |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 2
+res: 946284
+move: R (3, 0) =>   (2, 0)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated alpha
+turn: 0
+depth: 2
+res: 946284
+alpha: 946284
+beta: 927786
+move: R (3, 0) =>   (2, 0)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 946284
+alpha: 946284
+beta: 927786
+move: R (3, 0) =>   (2, 0)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 946284
+move: R (3, 0) =>   (3, 1)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (3, 1)
+______
+| k  |
+|  R |
+| R  |
+| R N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 946284
+beta: 927786
+move: R (3, 0) =>   (3, 1)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+final res
+turn: 0
+depth: 2
+res: 946284
+move: R (3, 0) =>   (2, 0)
+______
+| k  |
+|  R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solve()
 turn: 1
 depth: 1
-res: 0
+res: -946284
 move: k (1, 0) =>   (0, 1)
 ______
 | k  |
@@ -585,37 +932,11 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-updated res
-turn: 1
-depth: 1
-res: 0
-move: k (1, 0) =>   (0, 1)
-______
-|    |
-|k R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-updated alpha
-turn: 1
-depth: 1
-res: 0
-alpha: 0
-beta: 1000000
-move: k (1, 0) =>   (0, 1)
-______
-|    |
-|k R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
 final res
 turn: 1
 depth: 1
-res: 0
-move: k (1, 0) =>   (0, 1)
+res: -927786
+move: k (1, 0) =>   (1, 1)
 ______
 |    |
 |k R |
@@ -626,7 +947,7 @@ ______
 solve()
 turn: 0
 depth: 0
-res: 0
+res: 927786
 move: R (0, 2) =>   (1, 2)
 ______
 |    |
@@ -638,7 +959,7 @@ ______
 updated res
 turn: 0
 depth: 0
-res: 0
+res: 927786
 move: R (0, 2) =>   (1, 2)
 ______
 |  R |
@@ -650,8 +971,8 @@ ______
 updated alpha
 turn: 0
 depth: 0
-res: 0
-alpha: 0
+res: 927786
+alpha: 927786
 beta: 1000000
 move: R (0, 2) =>   (1, 2)
 ______
@@ -664,7 +985,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 0
+res: 927786
 move: R (0, 2) =>   (0, 1)
 ______
 |  R |
@@ -673,7 +994,457 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
+after move
+turn: 1
+depth: 1
+res: -1000000
+alpha: -1000000
+beta: -927786
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 1
+depth: 1
+res: -1000000
+move: k (1, 0) => R (0, 1)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000000
+alpha: 927786
+beta: 1000000
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 0
+depth: 2
+res: -1000000
+move: R (2, 1) =>   (1, 1)
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (1, 1)
+______
+| k  |
+| R  |
+|    |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (1, 1)
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (3, 1)
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
 solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (3, 1)
+______
+| k  |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (2, 0)
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (2, 0)
+______
+| k  |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (2, 2)
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (2, 2)
+______
+| k  |
+|    |
+|  R |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (2, 0)
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (2, 0)
+______
+| k  |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (3, 1)
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (3, 1)
+______
+| k  |
+|    |
+| R  |
+| R N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+| k  |
+|  N |
+| R  |
+|R   |
+‾‾‾‾‾‾
+
+final res
+turn: 0
+depth: 2
+res: 0
+move: R (2, 1) =>   (1, 1)
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) => R (0, 1)
+______
+| k  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) => R (0, 1)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated alpha
+turn: 1
+depth: 1
+res: 0
+alpha: 0
+beta: -927786
+move: k (1, 0) => R (0, 1)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+alpha: 0
+beta: -927786
+move: k (1, 0) => R (0, 1)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) => R (2, 1)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 1
+depth: 1
+res: -999142
+move: k (1, 0) => R (2, 1)
+______
+| R  |
+|    |
+| k  |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -999142
+alpha: 0
+beta: -927786
+move: k (1, 0) => R (2, 1)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (0, 0)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 1
+depth: 1
+res: -999990
+move: k (1, 0) =>   (0, 0)
+______
+|kR  |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -999990
+alpha: 0
+beta: -927786
+move: k (1, 0) =>   (0, 0)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (2, 0)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 1
+depth: 1
+res: -999990
+move: k (1, 0) =>   (2, 0)
+______
+| R  |
+|    |
+|kR  |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -999990
+alpha: 0
+beta: -927786
+move: k (1, 0) =>   (2, 0)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (1, 1)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 1
+depth: 1
+res: -999990
+move: k (1, 0) =>   (1, 1)
+______
+| R  |
+| k  |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -999990
+alpha: 0
+beta: -927786
+move: k (1, 0) =>   (1, 1)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+final res
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) => R (0, 1)
+______
+| R  |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+solve()
 turn: 0
 depth: 0
 res: 0
@@ -688,7 +1459,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 0
+res: 927786
 move: R (0, 2) =>   (0, 3)
 ______
 |  R |
@@ -700,7 +1471,7 @@ ______
 solved[]
 turn: 0
 depth: 0
-res: 0
+res: 939320
 move: R (0, 2) =>   (0, 3)
 ______
 |   R|
@@ -709,10 +1480,36 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
+updated res
+turn: 0
+depth: 0
+res: 939320
+move: R (0, 2) =>   (0, 3)
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated alpha
+turn: 0
+depth: 0
+res: 939320
+alpha: 939320
+beta: 1000000
+move: R (0, 2) =>   (0, 3)
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
 before move
 turn: 0
 depth: 0
-res: 0
+res: 939320
 move: R (2, 1) =>   (1, 1)
 ______
 |  R |
@@ -736,7 +1533,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 0
+res: 939320
 move: R (2, 1) =>   (3, 1)
 ______
 |  R |
@@ -745,7 +1542,862 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
+after move
+turn: 1
+depth: 1
+res: -1000000
+alpha: -1000000
+beta: -939320
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 1
+depth: 1
+res: -1000000
+move: k (1, 0) =>   (0, 0)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000000
+alpha: 939320
+beta: 1000000
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 0
+depth: 2
+res: -1000000
+move: R (0, 2) =>   (1, 2)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 2
+res: 926662
+move: R (0, 2) =>   (1, 2)
+______
+|k   |
+|  R |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 2
+res: 926662
+move: R (0, 2) =>   (1, 2)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 926662
+move: R (0, 2) =>   (0, 1)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
 solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 1)
+______
+|kR  |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 926662
+move: R (0, 2) =>   (0, 3)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 3)
+______
+|k  R|
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 926662
+move: R (3, 0) =>   (2, 0)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (2, 0)
+______
+|k R |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 926662
+move: R (3, 1) =>   (2, 1)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 939320
+move: R (3, 1) =>   (2, 1)
+______
+|k R |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 2
+res: 939320
+move: R (3, 1) =>   (2, 1)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 939320
+move: R (3, 1) =>   (3, 2)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (3, 1) =>   (3, 2)
+______
+|k R |
+|    |
+|    |
+|R RN|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 939320
+move: N (3, 3) =>   (1, 2)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+|k R |
+|  N |
+|    |
+|RR  |
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 939320
+move: N (3, 3) =>   (2, 1)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (2, 1)
+______
+|k R |
+|    |
+| N  |
+|RR  |
+‾‾‾‾‾‾
+
+final res
+turn: 0
+depth: 2
+res: 939320
+move: R (3, 1) =>   (2, 1)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: -939320
+move: k (1, 0) =>   (0, 0)
+______
+|k R |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+updated res
+turn: 1
+depth: 1
+res: -939320
+move: k (1, 0) =>   (0, 0)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+updated alpha
+turn: 1
+depth: 1
+res: -939320
+alpha: -939320
+beta: -939320
+move: k (1, 0) =>   (0, 0)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -939320
+alpha: -939320
+beta: -939320
+move: k (1, 0) =>   (0, 0)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: -939320
+move: k (1, 0) =>   (2, 0)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 1
+depth: 1
+res: -941606
+move: k (1, 0) =>   (2, 0)
+______
+|  R |
+|    |
+|k   |
+|RR N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -941606
+alpha: -939320
+beta: -939320
+move: k (1, 0) =>   (2, 0)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: -939320
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000000
+alpha: 939320
+beta: 939320
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 0
+depth: 2
+res: -1000000
+move: R (0, 2) =>   (1, 2)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (1, 2)
+______
+|    |
+| kR |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (1, 2)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (0, 2) =>   (1, 2)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 1)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 1)
+______
+| R  |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (0, 2) =>   (0, 1)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 3)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 3)
+______
+|   R|
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (0, 2) =>   (0, 3)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (2, 0)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (2, 0)
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (3, 0) =>   (2, 0)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (3, 1) =>   (2, 1)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (3, 1) =>   (2, 1)
+______
+|  R |
+| k  |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (3, 1) =>   (2, 1)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (3, 1) =>   (3, 2)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (3, 1) =>   (3, 2)
+______
+|  R |
+| k  |
+|    |
+|R RN|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (3, 1) =>   (3, 2)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+|  R |
+| kN |
+|    |
+|RR  |
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: N (3, 3) =>   (1, 2)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (2, 1)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (2, 1)
+______
+|  R |
+| k  |
+| N  |
+|RR  |
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: N (3, 3) =>   (2, 1)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+final res
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (1, 2)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+| k  |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+updated res
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+updated alpha
+turn: 1
+depth: 1
+res: 0
+alpha: 0
+beta: -939320
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+alpha: 0
+beta: -939320
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (2, 1)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 1
+depth: 1
+res: -967462
+move: k (1, 0) =>   (2, 1)
+______
+|  R |
+|    |
+| k  |
+|RR N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -967462
+alpha: 0
+beta: -939320
+move: k (1, 0) =>   (2, 1)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (0, 1)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 1
+depth: 1
+res: -941606
+move: k (1, 0) =>   (0, 1)
+______
+| kR |
+|    |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -941606
+alpha: 0
+beta: -939320
+move: k (1, 0) =>   (0, 1)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+final res
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+|k   |
+|    |
+|RR N|
+‾‾‾‾‾‾
+
+solve()
 turn: 0
 depth: 0
 res: 0
@@ -760,7 +2412,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 0
+res: 939320
 move: R (2, 1) =>   (2, 0)
 ______
 |  R |
@@ -769,7 +2421,874 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
+after move
+turn: 1
+depth: 1
+res: -1000000
+alpha: -1000000
+beta: -939320
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 1
+depth: 1
+res: -1000000
+move: k (1, 0) => R (2, 0)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
 solved[]
+turn: 1
+depth: 1
+res: -962792
+move: k (1, 0) => R (2, 0)
+______
+|  R |
+|    |
+|k   |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+turn: 1
+depth: 1
+res: -962792
+move: k (1, 0) => R (2, 0)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+updated alpha
+turn: 1
+depth: 1
+res: -962792
+alpha: -962792
+beta: -939320
+move: k (1, 0) => R (2, 0)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: -962792
+move: k (1, 0) =>   (0, 0)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000000
+alpha: 939320
+beta: 962792
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 0
+depth: 2
+res: -1000000
+move: R (0, 2) =>   (1, 2)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (1, 2)
+______
+|k   |
+|  R |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (1, 2)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 1)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 1)
+______
+|kR  |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 3)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 3)
+______
+|k  R|
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 0) =>   (1, 0)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (2, 0) =>   (1, 0)
+______
+|k R |
+|R   |
+|    |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 0) =>   (2, 1)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 939320
+move: R (2, 0) =>   (2, 1)
+______
+|k R |
+|    |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 2
+res: 939320
+move: R (2, 0) =>   (2, 1)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 939320
+move: R (3, 0) =>   (3, 1)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (3, 1)
+______
+|k R |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 939320
+move: N (3, 3) =>   (1, 2)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+|k R |
+|  N |
+|R   |
+|R   |
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 939320
+move: N (3, 3) =>   (2, 1)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (2, 1)
+______
+|k R |
+|    |
+|RN  |
+|R   |
+‾‾‾‾‾‾
+
+final res
+turn: 0
+depth: 2
+res: 939320
+move: R (2, 0) =>   (2, 1)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: -939320
+move: k (1, 0) =>   (0, 0)
+______
+|k R |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+turn: 1
+depth: 1
+res: -939320
+move: k (1, 0) =>   (0, 0)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+updated alpha
+turn: 1
+depth: 1
+res: -939320
+alpha: -939320
+beta: -939320
+move: k (1, 0) =>   (0, 0)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -939320
+alpha: -939320
+beta: -939320
+move: k (1, 0) =>   (0, 0)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: -939320
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000000
+alpha: 939320
+beta: 939320
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 0
+depth: 2
+res: -1000000
+move: R (0, 2) =>   (1, 2)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (1, 2)
+______
+|    |
+| kR |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (1, 2)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (0, 2) =>   (1, 2)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 1)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 1)
+______
+| R  |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (0, 2) =>   (0, 1)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 3)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (0, 3)
+______
+|   R|
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (0, 2) =>   (0, 3)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 0) =>   (1, 0)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (2, 0) =>   (1, 0)
+______
+|  R |
+|Rk  |
+|    |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (2, 0) =>   (1, 0)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (2, 0) =>   (2, 1)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (2, 0) =>   (2, 1)
+______
+|  R |
+| k  |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (2, 0) =>   (2, 1)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (3, 1)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: R (3, 0) =>   (3, 1)
+______
+|  R |
+| k  |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: R (3, 0) =>   (3, 1)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (1, 2)
+______
+|  R |
+| kN |
+|R   |
+|R   |
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: N (3, 3) =>   (1, 2)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (2, 1)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 0
+depth: 2
+res: 0
+move: N (3, 3) =>   (2, 1)
+______
+|  R |
+| k  |
+|RN  |
+|R   |
+‾‾‾‾‾‾
+
+not pruned
+turn: 0
+depth: 2
+res: 0
+alpha: 939320
+beta: 939320
+move: N (3, 3) =>   (2, 1)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+final res
+turn: 0
+depth: 2
+res: 0
+move: R (0, 2) =>   (1, 2)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+| k  |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+updated alpha
+turn: 1
+depth: 1
+res: 0
+alpha: 0
+beta: -939320
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+alpha: 0
+beta: -939320
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (2, 1)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 1
+depth: 1
+res: -889170
+move: k (1, 0) =>   (2, 1)
+______
+|  R |
+|    |
+|Rk  |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -889170
+alpha: 0
+beta: -939320
+move: k (1, 0) =>   (2, 1)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (0, 1)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solved[]
+turn: 1
+depth: 1
+res: -981086
+move: k (1, 0) =>   (0, 1)
+______
+| kR |
+|    |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: -981086
+alpha: 0
+beta: -939320
+move: k (1, 0) =>   (0, 1)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+final res
+turn: 1
+depth: 1
+res: 0
+move: k (1, 0) =>   (1, 1)
+______
+|  R |
+|k   |
+|R   |
+|R  N|
+‾‾‾‾‾‾
+
+solve()
 turn: 0
 depth: 0
 res: 0
@@ -784,7 +3303,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 0
+res: 939320
 move: R (2, 1) =>   (2, 2)
 ______
 |  R |
@@ -808,7 +3327,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 0
+res: 939320
 move: R (3, 0) =>   (2, 0)
 ______
 |  R |

@@ -49,7 +49,7 @@ type Core struct {
 	maxInt        int
 	minInt        int
 	visited       []map[string]int
-	solved        []map[string]int
+	solved        []map[string]Result
 	solvedMove    []map[string]Move
 	depth         int
 }
@@ -112,7 +112,7 @@ func New(writer io.Writer, config Config) *Core {
 		[]byte("KRNB"),
 	},
 		visited: []map[string]int{{}, {}},
-		solved:  []map[string]int{{}, {}}, solvedMove: []map[string]Move{{}, {}},
+		solved:  []map[string]Result{{}, {}}, solvedMove: []map[string]Move{{}, {}},
 		clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt - 1, minInt: math.MinInt + 1}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
@@ -253,19 +253,23 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) Result {
 		key := string(bytes.Join(c.board, nil))
 		c.visited[c.turn][key]++
 		next := 0
-		if _, ok := c.solved[c.turn][key]; ok {
-			next = c.solved[c.turn][key]
+		if nextResult, ok := c.solved[c.turn][key]; ok &&
+			(nextResult.Kind == resultExact ||
+				(nextResult.Kind == resultLowerBound && nextResult.Value >= beta) ||
+				(nextResult.Kind == resultUpperBound && nextResult.Value <= alpha)) {
+			next = nextResult.Value
 			c.print("solved[]", next, PrintConfig{Move: move})
 		} else if c.visited[c.turn][key] < 3 {
 			prevTurn := c.turn
 			c.turn = nextTurn
 			c.depth++
 			nextResult := c.solve(-beta, -alpha)
-			next = -nextResult.Value
+			nextResult.Value = -nextResult.Value
+			next = nextResult.Value
 			c.depth--
 			c.turn = prevTurn
 			c.print("solve()", next, PrintConfig{Move: move})
-			c.solved[c.turn][key] = next
+			c.solved[c.turn][key] = nextResult
 		} else {
 			c.print("repeated", next, PrintConfig{Move: move})
 		}
@@ -313,7 +317,8 @@ func (c *Core) show() {
 		c.board[move.From.X][move.From.Y] = ' '
 		// c.depth++
 		key = string(bytes.Join(c.board, nil))
-		res = c.solved[c.turn][key]
+		result := c.solved[c.turn][key]
+		res = result.Value
 		c.turn = (c.turn + 1) % 2
 		c.print("after move", res, PrintConfig{Move: move, ClearTerminal: true})
 	}

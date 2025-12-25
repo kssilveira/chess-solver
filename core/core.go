@@ -285,6 +285,6 @@ func (c *Core) show() {
 		// c.depth++
 		res = c.solved[c.turn][c.board]
 		c.turn = (c.turn + 1) % 2
-		c.print("after move", res, PrintConfig{Move: move, ClearTerminal: true})
+		c.print("after move", res, PrintConfig{Move: move})
 	}
 }

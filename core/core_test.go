@@ -143,7 +143,6 @@ func BenchmarkSolve(b *testing.B) {
 		config := Config{MaxDepth: 5, MaxPrintDepth: -1}
 		var out bytes.Buffer
 		core := New(&out, config)
-		core.clearTerminal = ""
 		b.Run(in.name, func(b *testing.B) {
 			for b.Loop() {
 				core.Solve()

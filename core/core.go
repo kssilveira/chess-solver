@@ -124,8 +124,9 @@ func (c *Core) solve() int {
 		return res
 	}
 	nextTurn := (c.turn + 1) % 2
-	moves := c.moves(nextTurn)
-	moves = c.sort(moves)
+	var moves []Move
+	c.moves(&moves, nextTurn)
+	c.sort(&moves)
 	return c.move(nextTurn, moves)
 }
 
@@ -149,22 +150,19 @@ func (c *Core) print(message string, res int, cfg PrintConfig) {
 	}
 }
 
-func (c *Core) moves(nextTurn int) []Move {
-	moves := []Move{}
+func (c *Core) moves(moves *[]Move, nextTurn int) {
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
 			piece := c.board[i][j]
 			if colors[piece] != c.turn {
 				continue
 			}
-			moves = append(moves, c.deltas(nextTurn, i, j)...)
+			c.deltas(moves, nextTurn, i, j)
 		}
 	}
-	return moves
 }
 
-func (c *Core) deltas(nextTurn, i, j int) []Move {
-	moves := []Move{}
+func (c *Core) deltas(moves *[]Move, nextTurn, i, j int) {
 	piece := c.board[i][j]
 	for _, delta := range deltas[piece] {
 		kind := 0
@@ -188,30 +186,28 @@ func (c *Core) deltas(nextTurn, i, j int) []Move {
 		if kind == deltaOtherEmpty && c.board[i+delta[3]][j+delta[4]] != ' ' {
 			continue
 		}
-		moves = append(moves, Move{
+		*moves = append(*moves, Move{
 			From: Point{What: piece, X: i, Y: j},
 			To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
 	}
-	return moves
 }
 
-func (c *Core) sort(moves []Move) []Move {
-	sort.Slice(moves, func(i, j int) bool {
-		if moves[i].To.What == 'k' || moves[i].To.What == 'K' {
+func (c *Core) sort(moves *[]Move) {
+	sort.Slice(*moves, func(i, j int) bool {
+		if (*moves)[i].To.What == 'k' || (*moves)[i].To.What == 'K' {
 			return true
 		}
-		if moves[j].To.What == 'k' || moves[j].To.What == 'K' {
+		if (*moves)[j].To.What == 'k' || (*moves)[j].To.What == 'K' {
 			return false
 		}
-		if moves[i].To.What != ' ' {
+		if (*moves)[i].To.What != ' ' {
 			return true
 		}
-		if moves[j].To.What != ' ' {
+		if (*moves)[j].To.What != ' ' {
 			return false
 		}
 		return i < j
 	})
-	return moves
 }
 
 func (c *Core) move(nextTurn int, moves []Move) int {

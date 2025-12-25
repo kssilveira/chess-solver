@@ -14,6 +14,7 @@ ______
 before move
 depth: 0
 res: -1000
+move: N (3, 3) =>   (1, 2)
 ______
 |nx  |
 |    |
@@ -36,6 +37,7 @@ ______
 before move
 depth: 1
 res: -1000
+move: n (0, 0) =>   (2, 1)
 ______
 |nx  |
 |  N |
@@ -58,6 +60,7 @@ ______
 before move
 depth: 2
 res: -1000
+move: N (1, 2) =>   (0, 0)
 ______
 | x  |
 |  N |
@@ -80,6 +83,7 @@ ______
 before move
 depth: 3
 res: -1000
+move: n (2, 1) => N (0, 0)
 ______
 |Nx  |
 |    |
@@ -112,6 +116,7 @@ ______
 updated res
 depth: 3
 res: 0
+move: n (2, 1) => N (0, 0)
 ______
 |Nx  |
 |    |
@@ -122,6 +127,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (0, 2)
 ______
 |Nx  |
 |    |
@@ -144,6 +150,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (0, 0) =>   (2, 1)
 ______
 |Nxn |
 |    |
@@ -176,6 +183,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (0, 0) =>   (2, 1)
 ______
 |Nxn |
 |    |
@@ -186,6 +194,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (0, 0) =>   (2, 1)
 ______
 |Nxn |
 |    |
@@ -196,6 +205,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (1, 3)
 ______
 |Nx  |
 |    |
@@ -218,6 +228,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (0, 0) =>   (2, 1)
 ______
 |Nx  |
 |   n|
@@ -250,6 +261,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (0, 0) =>   (2, 1)
 ______
 |Nx  |
 |   n|
@@ -260,6 +272,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (0, 0) =>   (2, 1)
 ______
 |Nx  |
 |   n|
@@ -270,6 +283,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (3, 3)
 ______
 |Nx  |
 |    |
@@ -292,6 +306,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (0, 0) =>   (2, 1)
 ______
 |Nx  |
 |    |
@@ -324,6 +339,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (0, 0) =>   (2, 1)
 ______
 |Nx  |
 |    |
@@ -334,6 +350,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (0, 0) =>   (2, 1)
 ______
 |Nx  |
 |    |
@@ -344,6 +361,7 @@ ______
 final res
 depth: 3
 res: 0
+move: n (2, 1) => N (0, 0)
 ______
 |Nx  |
 |    |
@@ -354,6 +372,7 @@ ______
 updated res
 depth: 2
 res: 0
+move: N (1, 2) =>   (0, 0)
 ______
 | x  |
 |  N |
@@ -364,6 +383,7 @@ ______
 before move
 depth: 2
 res: 0
+move: N (1, 2) =>   (2, 0)
 ______
 | x  |
 |  N |
@@ -386,6 +406,7 @@ ______
 before move
 depth: 3
 res: -1000
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
@@ -408,6 +429,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (2, 0) => x (0, 1)
 ______
 |nx  |
 |    |
@@ -440,6 +462,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (2, 0) => x (0, 1)
 ______
 |nx  |
 |    |
@@ -450,6 +473,7 @@ ______
 before move
 depth: 4
 res: 0
+move: N (2, 0) =>   (1, 2)
 ______
 |nx  |
 |    |
@@ -482,6 +506,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (2, 0) => x (0, 1)
 ______
 |nx  |
 |    |
@@ -492,6 +517,7 @@ ______
 updated res
 depth: 3
 res: 0
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
@@ -502,6 +528,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (0, 2)
 ______
 | x  |
 |    |
@@ -524,6 +551,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (2, 0) => x (0, 1)
 ______
 | xn |
 |    |
@@ -556,6 +584,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (2, 0) => x (0, 1)
 ______
 | xn |
 |    |
@@ -566,6 +595,7 @@ ______
 before move
 depth: 4
 res: 0
+move: N (2, 0) =>   (1, 2)
 ______
 | xn |
 |    |
@@ -598,6 +628,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (2, 0) => x (0, 1)
 ______
 | xn |
 |    |
@@ -608,6 +639,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (1, 3)
 ______
 | x  |
 |    |
@@ -630,6 +662,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (2, 0) => x (0, 1)
 ______
 | x  |
 |   n|
@@ -662,6 +695,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (2, 0) => x (0, 1)
 ______
 | x  |
 |   n|
@@ -672,6 +706,7 @@ ______
 before move
 depth: 4
 res: 0
+move: N (2, 0) =>   (1, 2)
 ______
 | x  |
 |   n|
@@ -704,6 +739,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (2, 0) => x (0, 1)
 ______
 | x  |
 |   n|
@@ -714,6 +750,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (3, 3)
 ______
 | x  |
 |    |
@@ -736,6 +773,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (2, 0) => x (0, 1)
 ______
 | x  |
 |    |
@@ -768,6 +806,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (2, 0) => x (0, 1)
 ______
 | x  |
 |    |
@@ -778,6 +817,7 @@ ______
 before move
 depth: 4
 res: 0
+move: N (2, 0) =>   (1, 2)
 ______
 | x  |
 |    |
@@ -810,6 +850,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (2, 0) => x (0, 1)
 ______
 | x  |
 |    |
@@ -820,6 +861,7 @@ ______
 final res
 depth: 3
 res: 0
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
@@ -830,6 +872,7 @@ ______
 before move
 depth: 2
 res: 0
+move: N (1, 2) =>   (3, 1)
 ______
 | x  |
 |  N |
@@ -852,6 +895,7 @@ ______
 before move
 depth: 3
 res: -1000
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
@@ -874,6 +918,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (3, 1) =>   (1, 0)
 ______
 |nx  |
 |    |
@@ -906,6 +951,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 0)
 ______
 |nx  |
 |    |
@@ -916,6 +962,7 @@ ______
 before move
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 2)
 ______
 |nx  |
 |    |
@@ -926,6 +973,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 0)
 ______
 |nx  |
 |    |
@@ -936,6 +984,7 @@ ______
 updated res
 depth: 3
 res: 0
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
@@ -946,6 +995,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (0, 2)
 ______
 | x  |
 |    |
@@ -968,6 +1018,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (3, 1) =>   (1, 0)
 ______
 | xn |
 |    |
@@ -1000,6 +1051,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 0)
 ______
 | xn |
 |    |
@@ -1010,6 +1062,7 @@ ______
 before move
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 2)
 ______
 | xn |
 |    |
@@ -1020,6 +1073,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 0)
 ______
 | xn |
 |    |
@@ -1030,6 +1084,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (1, 3)
 ______
 | x  |
 |    |
@@ -1052,6 +1107,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (3, 1) =>   (1, 0)
 ______
 | x  |
 |   n|
@@ -1084,6 +1140,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 0)
 ______
 | x  |
 |   n|
@@ -1094,6 +1151,7 @@ ______
 before move
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 2)
 ______
 | x  |
 |   n|
@@ -1104,6 +1162,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 0)
 ______
 | x  |
 |   n|
@@ -1114,6 +1173,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (3, 3)
 ______
 | x  |
 |    |
@@ -1136,6 +1196,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (3, 1) =>   (1, 0)
 ______
 | x  |
 |    |
@@ -1168,6 +1229,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 0)
 ______
 | x  |
 |    |
@@ -1178,6 +1240,7 @@ ______
 before move
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 2)
 ______
 | x  |
 |    |
@@ -1188,6 +1251,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (3, 1) =>   (1, 0)
 ______
 | x  |
 |    |
@@ -1198,6 +1262,7 @@ ______
 final res
 depth: 3
 res: 0
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
@@ -1208,6 +1273,7 @@ ______
 before move
 depth: 2
 res: 0
+move: N (1, 2) =>   (3, 3)
 ______
 | x  |
 |  N |
@@ -1230,6 +1296,7 @@ ______
 before move
 depth: 3
 res: -1000
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
@@ -1252,6 +1319,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (3, 3) =>   (1, 2)
 ______
 |nx  |
 |    |
@@ -1262,6 +1330,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (3, 3) =>   (1, 2)
 ______
 |nx  |
 |    |
@@ -1272,6 +1341,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (3, 3) =>   (1, 2)
 ______
 |nx  |
 |    |
@@ -1282,6 +1352,7 @@ ______
 updated res
 depth: 3
 res: 0
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
@@ -1292,6 +1363,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (0, 2)
 ______
 | x  |
 |    |
@@ -1314,6 +1386,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (3, 3) =>   (1, 2)
 ______
 | xn |
 |    |
@@ -1324,6 +1397,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (3, 3) =>   (1, 2)
 ______
 | xn |
 |    |
@@ -1334,6 +1408,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (3, 3) =>   (1, 2)
 ______
 | xn |
 |    |
@@ -1344,6 +1419,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) =>   (1, 3)
 ______
 | x  |
 |    |
@@ -1366,6 +1442,7 @@ ______
 before move
 depth: 4
 res: -1000
+move: N (3, 3) =>   (1, 2)
 ______
 | x  |
 |   n|
@@ -1376,6 +1453,7 @@ ______
 updated res
 depth: 4
 res: 0
+move: N (3, 3) =>   (1, 2)
 ______
 | x  |
 |   n|
@@ -1386,6 +1464,7 @@ ______
 final res
 depth: 4
 res: 0
+move: N (3, 3) =>   (1, 2)
 ______
 | x  |
 |   n|
@@ -1396,6 +1475,7 @@ ______
 before move
 depth: 3
 res: 0
+move: n (2, 1) => N (3, 3)
 ______
 | x  |
 |    |
@@ -1428,6 +1508,7 @@ ______
 final res
 depth: 3
 res: 0
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
@@ -1438,6 +1519,7 @@ ______
 final res
 depth: 2
 res: 0
+move: N (1, 2) =>   (0, 0)
 ______
 | x  |
 |  N |
@@ -1448,6 +1530,7 @@ ______
 updated res
 depth: 1
 res: 0
+move: n (0, 0) =>   (2, 1)
 ______
 |nx  |
 |  N |
@@ -1458,6 +1541,7 @@ ______
 final res
 depth: 1
 res: 0
+move: n (0, 0) =>   (2, 1)
 ______
 |nx  |
 |  N |
@@ -1468,6 +1552,7 @@ ______
 updated res
 depth: 0
 res: 0
+move: N (3, 3) =>   (1, 2)
 ______
 |nx  |
 |    |
@@ -1478,6 +1563,7 @@ ______
 final res
 depth: 0
 res: 0
+move: N (3, 3) =>   (1, 2)
 ______
 |nx  |
 |    |

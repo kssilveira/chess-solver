@@ -102,12 +102,12 @@ func (c *Core) Solve() {
 }
 
 func (c *Core) solve(depth int) int {
-	c.print("after move", depth, c.minInt)
+	c.print("after move", depth, c.minInt, Move{})
 	time.Sleep(c.config.SleepDuration)
 	fmt.Fprint(c.writer, c.clearTerminal)
 	if depth >= c.config.MaxDepth {
 		res := 0
-		c.print("max depth", depth, res)
+		c.print("max depth", depth, res, Move{})
 		return res
 	}
 	nextTurn := (c.turn % 2) + 1
@@ -116,10 +116,13 @@ func (c *Core) solve(depth int) int {
 	return c.move(depth, nextTurn, moves)
 }
 
-func (c *Core) print(message string, depth, res int) {
+func (c *Core) print(message string, depth, res int, move Move) {
 	fmt.Fprintf(c.writer, "\n%s\n", message)
 	fmt.Fprintf(c.writer, "depth: %d\n", depth)
 	fmt.Fprintf(c.writer, "res: %d\n", res)
+	if move != (Move{}) {
+		fmt.Fprintf(c.writer, "move: %s (%d, %d) => %s (%d, %d)\n", string(move.From.What), move.From.X, move.From.Y, string(move.To.What), move.To.X, move.To.Y)
+	}
 	fmt.Fprintln(c.writer, "______")
 	fmt.Fprintln(c.writer, "|"+string(bytes.Join(c.board, []byte("|\n|")))+"|")
 	fmt.Fprintln(c.writer, "‾‾‾‾‾‾")
@@ -186,18 +189,19 @@ func (c *Core) sort(moves []Move) []Move {
 
 func (c *Core) move(depth, nextTurn int, moves []Move) int {
 	res := c.minInt
+	resMove := Move{}
 	if len(moves) == 0 {
 		res = 0
-		c.print("stalemate", depth, res)
+		c.print("stalemate", depth, res, Move{})
 		return res
 	}
 	for _, move := range moves {
 		if move.To.What == 'k' || move.To.What == 'K' {
 			res = c.maxInt - depth
-			c.print("dead king", depth, res)
+			c.print("dead king", depth, res, move)
 			return res
 		}
-		c.print("before move", depth, res)
+		c.print("before move", depth, res, move)
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
 		key := string(bytes.Join(c.board, nil))
@@ -217,9 +221,10 @@ func (c *Core) move(depth, nextTurn int, moves []Move) int {
 		c.board[move.From.X][move.From.Y] = move.From.What
 		if next > res {
 			res = next
-			c.print("updated res", depth, res)
+			resMove = move
+			c.print("updated res", depth, res, resMove)
 		}
 	}
-	c.print("final res", depth, res)
+	c.print("final res", depth, res, resMove)
 	return res
 }

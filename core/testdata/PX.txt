@@ -144,7 +144,7 @@ ______
 ‾‾‾‾‾‾
 
 before move
-turn: 0
+turn: 1
 depth: 0
 res: 0
 move: P (1, 1) => x (0, 2)
@@ -156,7 +156,7 @@ ______
 ‾‾‾‾‾‾
 
 after move
-turn: 1
+turn: 0
 depth: 1
 res: 0
 move: P (1, 1) => x (0, 2)

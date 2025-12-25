@@ -138,7 +138,7 @@ ______
 solve()
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (1, 2) =>   (0, 2)
 ______
 |k R |
@@ -150,7 +150,7 @@ ______
 updated res
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (1, 2) =>   (0, 2)
 ______
 |k   |
@@ -162,7 +162,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (1, 2) =>   (2, 2)
 ______
 |k   |
@@ -174,7 +174,7 @@ ______
 solved[]
 turn: 0
 depth: 2
-res: 998150
+res: 999174
 move: R (1, 2) =>   (2, 2)
 ______
 |k   |
@@ -186,7 +186,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (1, 2) =>   (1, 1)
 ______
 |k   |
@@ -198,7 +198,7 @@ ______
 solved[]
 turn: 0
 depth: 2
-res: 997838
+res: 998906
 move: R (1, 2) =>   (1, 1)
 ______
 |k   |
@@ -210,7 +210,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (1, 2) =>   (1, 3)
 ______
 |k   |
@@ -222,7 +222,7 @@ ______
 solved[]
 turn: 0
 depth: 2
-res: 998112
+res: 997460
 move: R (1, 2) =>   (1, 3)
 ______
 |k   |
@@ -234,7 +234,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (2, 1) =>   (1, 1)
 ______
 |k   |
@@ -246,7 +246,7 @@ ______
 solved[]
 turn: 0
 depth: 2
-res: 998102
+res: 998886
 move: R (2, 1) =>   (1, 1)
 ______
 |k   |
@@ -258,7 +258,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (2, 1) =>   (3, 1)
 ______
 |k   |
@@ -270,7 +270,7 @@ ______
 solved[]
 turn: 0
 depth: 2
-res: 998150
+res: 999240
 move: R (2, 1) =>   (3, 1)
 ______
 |k   |
@@ -282,7 +282,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (2, 1) =>   (2, 0)
 ______
 |k   |
@@ -294,7 +294,7 @@ ______
 solved[]
 turn: 0
 depth: 2
-res: 998150
+res: 998520
 move: R (2, 1) =>   (2, 0)
 ______
 |k   |
@@ -306,7 +306,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (2, 1) =>   (2, 2)
 ______
 |k   |
@@ -318,7 +318,7 @@ ______
 solved[]
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (2, 1) =>   (2, 2)
 ______
 |k   |
@@ -330,7 +330,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (3, 0) =>   (2, 0)
 ______
 |k   |
@@ -342,7 +342,7 @@ ______
 solved[]
 turn: 0
 depth: 2
-res: 997842
+res: 999422
 move: R (3, 0) =>   (2, 0)
 ______
 |k   |
@@ -354,7 +354,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (3, 0) =>   (3, 1)
 ______
 |k   |
@@ -366,7 +366,7 @@ ______
 solved[]
 turn: 0
 depth: 2
-res: 998080
+res: 999240
 move: R (3, 0) =>   (3, 1)
 ______
 |k   |
@@ -378,7 +378,7 @@ ______
 final res
 turn: 0
 depth: 2
-res: 998150
+res: 999422
 move: R (1, 2) =>   (0, 2)
 ______
 |k   |
@@ -390,7 +390,7 @@ ______
 solve()
 turn: 1
 depth: 1
-res: -998150
+res: -999422
 move: k (1, 0) =>   (0, 0)
 ______
 |k   |
@@ -402,7 +402,7 @@ ______
 updated res
 turn: 1
 depth: 1
-res: -998150
+res: -999422
 move: k (1, 0) =>   (0, 0)
 ______
 |    |
@@ -414,7 +414,7 @@ ______
 before move
 turn: 1
 depth: 1
-res: -998150
+res: -999422
 move: k (1, 0) =>   (2, 0)
 ______
 |    |
@@ -426,7 +426,7 @@ ______
 solved[]
 turn: 1
 depth: 1
-res: -999994
+res: -998522
 move: k (1, 0) =>   (2, 0)
 ______
 |    |
@@ -435,10 +435,22 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
+updated res
+turn: 1
+depth: 1
+res: -998522
+move: k (1, 0) =>   (2, 0)
+______
+|    |
+|k R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
 before move
 turn: 1
 depth: 1
-res: -998150
+res: -998522
 move: k (1, 0) =>   (1, 1)
 ______
 |    |
@@ -462,7 +474,7 @@ ______
 before move
 turn: 1
 depth: 1
-res: -998150
+res: -998522
 move: k (1, 0) =>   (0, 1)
 ______
 |    |
@@ -474,7 +486,7 @@ ______
 solved[]
 turn: 1
 depth: 1
-res: -998112
+res: -998996
 move: k (1, 0) =>   (0, 1)
 ______
 | k  |
@@ -483,23 +495,11 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-updated res
-turn: 1
-depth: 1
-res: -998112
-move: k (1, 0) =>   (0, 1)
-______
-|    |
-|k R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
 final res
 turn: 1
 depth: 1
-res: -998112
-move: k (1, 0) =>   (0, 1)
+res: -998522
+move: k (1, 0) =>   (2, 0)
 ______
 |    |
 |k R |
@@ -510,7 +510,7 @@ ______
 solve()
 turn: 0
 depth: 0
-res: 998112
+res: 998522
 move: R (0, 2) =>   (1, 2)
 ______
 |    |
@@ -522,7 +522,7 @@ ______
 updated res
 turn: 0
 depth: 0
-res: 998112
+res: 998522
 move: R (0, 2) =>   (1, 2)
 ______
 |  R |
@@ -534,7 +534,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 998112
+res: 998522
 move: R (0, 2) =>   (0, 1)
 ______
 |  R |
@@ -546,7 +546,7 @@ ______
 solved[]
 turn: 0
 depth: 0
-res: 997450
+res: 999170
 move: R (0, 2) =>   (0, 1)
 ______
 | R  |
@@ -555,10 +555,22 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
+updated res
+turn: 0
+depth: 0
+res: 999170
+move: R (0, 2) =>   (0, 1)
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
 before move
 turn: 0
 depth: 0
-res: 998112
+res: 999170
 move: R (0, 2) =>   (0, 3)
 ______
 |  R |
@@ -570,7 +582,7 @@ ______
 solved[]
 turn: 0
 depth: 0
-res: 997598
+res: 998458
 move: R (0, 2) =>   (0, 3)
 ______
 |   R|
@@ -582,7 +594,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 998112
+res: 999170
 move: R (2, 1) =>   (1, 1)
 ______
 |  R |
@@ -594,7 +606,7 @@ ______
 solved[]
 turn: 0
 depth: 0
-res: 997670
+res: 999134
 move: R (2, 1) =>   (1, 1)
 ______
 |  R |
@@ -606,7 +618,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 998112
+res: 999170
 move: R (2, 1) =>   (3, 1)
 ______
 |  R |
@@ -618,7 +630,7 @@ ______
 solved[]
 turn: 0
 depth: 0
-res: 998150
+res: 998538
 move: R (2, 1) =>   (3, 1)
 ______
 |  R |
@@ -627,22 +639,10 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-updated res
-turn: 0
-depth: 0
-res: 998150
-move: R (2, 1) =>   (3, 1)
-______
-|  R |
-|k   |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
 before move
 turn: 0
 depth: 0
-res: 998150
+res: 999170
 move: R (2, 1) =>   (2, 0)
 ______
 |  R |
@@ -654,7 +654,7 @@ ______
 solved[]
 turn: 0
 depth: 0
-res: 998008
+res: 999178
 move: R (2, 1) =>   (2, 0)
 ______
 |  R |
@@ -663,10 +663,22 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
+updated res
+turn: 0
+depth: 0
+res: 999178
+move: R (2, 1) =>   (2, 0)
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
 before move
 turn: 0
 depth: 0
-res: 998150
+res: 999178
 move: R (2, 1) =>   (2, 2)
 ______
 |  R |
@@ -678,7 +690,7 @@ ______
 solved[]
 turn: 0
 depth: 0
-res: 998150
+res: 999422
 move: R (2, 1) =>   (2, 2)
 ______
 |  R |
@@ -687,10 +699,22 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
+updated res
+turn: 0
+depth: 0
+res: 999422
+move: R (2, 1) =>   (2, 2)
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
 before move
 turn: 0
 depth: 0
-res: 998150
+res: 999422
 move: R (3, 0) =>   (2, 0)
 ______
 |  R |
@@ -702,7 +726,7 @@ ______
 solved[]
 turn: 0
 depth: 0
-res: 996936
+res: 999250
 move: R (3, 0) =>   (2, 0)
 ______
 |  R |
@@ -714,7 +738,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 998150
+res: 999422
 move: R (3, 0) =>   (3, 1)
 ______
 |  R |
@@ -726,7 +750,7 @@ ______
 solved[]
 turn: 0
 depth: 0
-res: 997594
+res: 998474
 move: R (3, 0) =>   (3, 1)
 ______
 |  R |
@@ -738,7 +762,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 998150
+res: 999422
 move: N (3, 3) =>   (1, 2)
 ______
 |  R |
@@ -750,7 +774,7 @@ ______
 solved[]
 turn: 0
 depth: 0
-res: 0
+res: 998894
 move: N (3, 3) =>   (1, 2)
 ______
 |  R |
@@ -762,8 +786,8 @@ ______
 final res
 turn: 0
 depth: 0
-res: 998150
-move: R (2, 1) =>   (3, 1)
+res: 999422
+move: R (2, 1) =>   (2, 2)
 ______
 |  R |
 |k   |
@@ -783,10 +807,10 @@ ______
 ‾‾‾‾‾‾
 
 before move
-turn: 0
+turn: 1
 depth: 0
-res: 997908
-move: R (1, 2) =>   (0, 2)
+res: -999422
+move: k (1, 0) => R (2, 1)
 ______
 |  R |
 |k   |
@@ -795,40 +819,14 @@ ______
 ‾‾‾‾‾‾
 
 after move
-turn: 1
-depth: 1
-res: 997908
-move: R (1, 2) =>   (0, 2)
-______
-|    |
-|k   |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 1
-depth: 1
-res: -998392
-move: k (0, 0) =>   (1, 0)
-______
-|    |
-|k   |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-after move
 turn: 0
-depth: 2
-res: -998392
-move: k (0, 0) =>   (1, 0)
+depth: 1
+res: -999422
+move: k (1, 0) => R (2, 1)
 ______
+|  R |
 |    |
-|    |
-| R  |
+| k  |
 |R  N|
 ‾‾‾‾‾‾
 

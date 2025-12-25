@@ -255,7 +255,7 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 		if next > res {
 			res = next
 			resMove = move
-			c.solvedMove[c.turn][key] = move
+			c.solvedMove[nextTurn][key] = move
 			c.print("updated res", res, PrintConfig{Move: resMove})
 		}
 		if next > alpha {
@@ -272,6 +272,7 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 
 func (c *Core) show() {
 	c.print("show", 123456789, PrintConfig{})
+	c.turn = 1
 	for {
 		key := string(bytes.Join(c.board, nil))
 		res := c.solved[c.turn][key]

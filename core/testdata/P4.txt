@@ -340,7 +340,7 @@ ______
 ‾‾‾‾‾‾
 
 before move
-turn: 0
+turn: 1
 depth: 0
 res: 0
 move: P (3, 3) =>   (2, 3)
@@ -352,7 +352,7 @@ ______
 ‾‾‾‾‾‾
 
 after move
-turn: 1
+turn: 0
 depth: 1
 res: 0
 move: P (3, 3) =>   (2, 3)
@@ -366,7 +366,7 @@ ______
 ------
 
 before move
-turn: 1
+turn: 0
 depth: 1
 res: 0
 move: p (0, 0) =>   (1, 0)
@@ -378,7 +378,7 @@ ______
 ‾‾‾‾‾‾
 
 after move
-turn: 0
+turn: 1
 depth: 2
 res: 0
 move: p (0, 0) =>   (1, 0)
@@ -392,7 +392,7 @@ ______
 ------
 
 before move
-turn: 0
+turn: 1
 depth: 2
 res: 0
 move: P (2, 3) =>   (1, 3)
@@ -404,7 +404,7 @@ ______
 ‾‾‾‾‾‾
 
 after move
-turn: 1
+turn: 0
 depth: 3
 res: 0
 move: P (2, 3) =>   (1, 3)
@@ -418,7 +418,7 @@ ______
 ------
 
 before move
-turn: 1
+turn: 0
 depth: 3
 res: 0
 move: p (1, 0) =>   (2, 0)
@@ -430,7 +430,7 @@ ______
 ‾‾‾‾‾‾
 
 after move
-turn: 0
+turn: 1
 depth: 4
 res: 0
 move: p (1, 0) =>   (2, 0)
@@ -444,7 +444,7 @@ ______
 ------
 
 before move
-turn: 0
+turn: 1
 depth: 4
 res: 0
 move: P (1, 3) =>   (0, 3)
@@ -456,7 +456,7 @@ ______
 ‾‾‾‾‾‾
 
 after move
-turn: 1
+turn: 0
 depth: 5
 res: 0
 move: P (1, 3) =>   (0, 3)

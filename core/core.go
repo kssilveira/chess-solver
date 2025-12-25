@@ -30,6 +30,11 @@ type Config struct {
 	Board         []string
 }
 
+// PrintConfig contains print configuration.
+type PrintConfig struct {
+	Move Move
+}
+
 // Core contains the core logic.
 type Core struct {
 	writer        io.Writer
@@ -105,12 +110,12 @@ func (c *Core) Solve() {
 }
 
 func (c *Core) solve() int {
-	c.print("after move", c.minInt, Move{})
+	c.print("after move", c.minInt, PrintConfig{})
 	time.Sleep(c.config.SleepDuration)
 	fmt.Fprint(c.writer, c.clearTerminal)
 	if c.depth >= c.config.MaxDepth {
 		res := 0
-		c.print("max depth", res, Move{})
+		c.print("max depth", res, PrintConfig{})
 		return res
 	}
 	nextTurn := (c.turn % 2) + 1
@@ -119,15 +124,15 @@ func (c *Core) solve() int {
 	return c.move(nextTurn, moves)
 }
 
-func (c *Core) print(message string, res int, move Move) {
+func (c *Core) print(message string, res int, cfg PrintConfig) {
 	if c.maxPrintDepth > 0 && c.depth > c.maxPrintDepth {
 		return
 	}
 	fmt.Fprintf(c.writer, "\n%s\n", message)
 	fmt.Fprintf(c.writer, "depth: %d\n", c.depth)
 	fmt.Fprintf(c.writer, "res: %d\n", res)
-	if move != (Move{}) {
-		fmt.Fprintf(c.writer, "move: %s (%d, %d) => %s (%d, %d)\n", string(move.From.What), move.From.X, move.From.Y, string(move.To.What), move.To.X, move.To.Y)
+	if cfg.Move != (Move{}) {
+		fmt.Fprintf(c.writer, "move: %s (%d, %d) => %s (%d, %d)\n", string(cfg.Move.From.What), cfg.Move.From.X, cfg.Move.From.Y, string(cfg.Move.To.What), cfg.Move.To.X, cfg.Move.To.Y)
 	}
 	fmt.Fprintln(c.writer, "______")
 	fmt.Fprintln(c.writer, "|"+string(bytes.Join(c.board, []byte("|\n|")))+"|")
@@ -198,16 +203,16 @@ func (c *Core) move(nextTurn int, moves []Move) int {
 	resMove := Move{}
 	if len(moves) == 0 {
 		res = 0
-		c.print("stalemate", res, Move{})
+		c.print("stalemate", res, PrintConfig{})
 		return res
 	}
 	for _, move := range moves {
 		if move.To.What == 'k' || move.To.What == 'K' {
 			res = c.maxInt - c.depth
-			c.print("dead king", res, move)
+			c.print("dead king", res, PrintConfig{Move: move})
 			return res
 		}
-		c.print("before move", res, move)
+		c.print("before move", res, PrintConfig{Move: move})
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
 		key := string(bytes.Join(c.board, nil))
@@ -230,9 +235,9 @@ func (c *Core) move(nextTurn int, moves []Move) int {
 		if next > res {
 			res = next
 			resMove = move
-			c.print("updated res", res, resMove)
+			c.print("updated res", res, PrintConfig{Move: resMove})
 		}
 	}
-	c.print("final res", res, resMove)
+	c.print("final res", res, PrintConfig{Move: resMove})
 	return res
 }

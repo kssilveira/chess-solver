@@ -1296,6 +1296,50 @@ ______
 before move
 depth: 3
 res: -1000
+move: n (2, 1) => N (3, 3)
+______
+| x  |
+|    |
+| n  |
+|  XN|
+‾‾‾‾‾‾
+
+after move
+depth: 4
+res: -1000
+______
+| x  |
+|    |
+|    |
+|  Xn|
+‾‾‾‾‾‾
+
+------
+
+stalemate
+depth: 4
+res: 0
+______
+| x  |
+|    |
+|    |
+|  Xn|
+‾‾‾‾‾‾
+
+updated res
+depth: 3
+res: 0
+move: n (2, 1) => N (3, 3)
+______
+| x  |
+|    |
+| n  |
+|  XN|
+‾‾‾‾‾‾
+
+before move
+depth: 3
+res: 0
 move: n (2, 1) =>   (0, 0)
 ______
 | x  |
@@ -1346,17 +1390,6 @@ ______
 |nx  |
 |    |
 |    |
-|  XN|
-‾‾‾‾‾‾
-
-updated res
-depth: 3
-res: 0
-move: n (2, 1) =>   (0, 0)
-______
-| x  |
-|    |
-| n  |
 |  XN|
 ‾‾‾‾‾‾
 
@@ -1472,43 +1505,10 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-before move
-depth: 3
-res: 0
-move: n (2, 1) => N (3, 3)
-______
-| x  |
-|    |
-| n  |
-|  XN|
-‾‾‾‾‾‾
-
-after move
-depth: 4
-res: -1000
-______
-| x  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-stalemate
-depth: 4
-res: 0
-______
-| x  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
 final res
 depth: 3
 res: 0
-move: n (2, 1) =>   (0, 0)
+move: n (2, 1) => N (3, 3)
 ______
 | x  |
 |    |

@@ -196,6 +196,12 @@ func (c *Core) sort(moves []Move) []Move {
 		if moves[j].To.What == 'k' || moves[j].To.What == 'K' {
 			return false
 		}
+		if moves[i].To.What != ' ' {
+			return true
+		}
+		if moves[j].To.What != ' ' {
+			return false
+		}
 		return i < j
 	})
 	return moves

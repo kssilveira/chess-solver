@@ -37,6 +37,51 @@ ______
 before move
 depth: 1
 res: -1000000
+move: k (1, 0) => R (2, 1)
+______
+|    |
+|k R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000000
+______
+|    |
+|  R |
+| k  |
+|R  N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+depth: 2
+res: 999998
+move: N (3, 3) => k (2, 1)
+______
+|    |
+|  R |
+| k  |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: -999998
+move: k (1, 0) => R (2, 1)
+______
+|    |
+|k R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: -999998
 move: k (1, 0) =>   (0, 0)
 ______
 |    |
@@ -129,6 +174,28 @@ ______
 before move
 depth: 5
 res: -1000000
+move: k (1, 0) => R (2, 1)
+______
+|    |
+|k R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+updated res
+depth: 5
+res: -999998
+move: k (1, 0) => R (2, 1)
+______
+|    |
+|k R |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+before move
+depth: 5
+res: -999998
 move: k (1, 0) =>   (0, 0)
 ______
 |    |
@@ -174,17 +241,6 @@ updated res
 depth: 5
 res: -927786
 move: k (1, 0) =>   (1, 1)
-______
-|    |
-|k R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-before move
-depth: 5
-res: -927786
-move: k (1, 0) => R (2, 1)
 ______
 |    |
 |k R |
@@ -581,17 +637,6 @@ updated res
 depth: 1
 res: -927786
 move: k (1, 0) =>   (1, 1)
-______
-|    |
-|k R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: -927786
-move: k (1, 0) => R (2, 1)
 ______
 |    |
 |k R |

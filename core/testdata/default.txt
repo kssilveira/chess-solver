@@ -14,6 +14,260 @@ ______
 before move
 depth: 0
 res: -1000
+move: N (3, 2) => p (1, 3)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+before move
+depth: 1
+res: -1000
+move: k (0, 3) => N (1, 3)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|bnr |
+|   k|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 2
+res: 0
+______
+|bnr |
+|   k|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+move: k (0, 3) => N (1, 3)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|b rk|
+|   N|
+|n   |
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   N|
+|n   |
+|KR B|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| nrk|
+| b N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 2
+res: 0
+______
+| nrk|
+| b N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+move: n (0, 1) =>   (2, 2)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|b rk|
+|   N|
+|P n |
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   N|
+|P n |
+|KR B|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|bn k|
+|  rN|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 2
+res: 0
+______
+|bn k|
+|  rN|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|bnr |
+|  kN|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 2
+res: 0
+______
+|bnr |
+|  kN|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: 0
+move: k (0, 3) => N (1, 3)
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+updated res
+depth: 0
+res: 0
+move: N (3, 2) => p (1, 3)
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+depth: 0
+res: 0
 move: P (2, 0) =>   (1, 0)
 ______
 |bnrk|
@@ -254,17 +508,6 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
-updated res
-depth: 0
-res: 0
-move: P (2, 0) =>   (1, 0)
-______
-|bnrk|
-|   p|
-|P   |
-|KRNB|
-‾‾‾‾‾‾
-
 before move
 depth: 0
 res: 0
@@ -291,50 +534,6 @@ ______
 before move
 depth: 1
 res: -1000
-move: b (0, 0) =>   (1, 1)
-______
-|bnrk|
-|   p|
-|PK  |
-| RNB|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-| nrk|
-| b p|
-|PK  |
-| RNB|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 2
-res: 0
-______
-| nrk|
-| b p|
-|PK  |
-| RNB|
-‾‾‾‾‾‾
-
-updated res
-depth: 1
-res: 0
-move: b (0, 0) =>   (1, 1)
-______
-|bnrk|
-|   p|
-|PK  |
-| RNB|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
 move: n (0, 1) => P (2, 0)
 ______
 |bnrk|
@@ -362,6 +561,50 @@ ______
 |b rk|
 |   p|
 |nK  |
+| RNB|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| nrk|
+| b p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 2
+res: 0
+______
+| nrk|
+| b p|
+|PK  |
 | RNB|
 ‾‾‾‾‾‾
 
@@ -500,7 +743,7 @@ ______
 final res
 depth: 1
 res: 0
-move: b (0, 0) =>   (1, 1)
+move: n (0, 1) => P (2, 0)
 ______
 |bnrk|
 |   p|
@@ -534,50 +777,6 @@ ______
 before move
 depth: 1
 res: -1000
-move: b (0, 0) =>   (1, 1)
-______
-|bnrk|
-|   p|
-|PR  |
-|K NB|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-| nrk|
-| b p|
-|PR  |
-|K NB|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 2
-res: 0
-______
-| nrk|
-| b p|
-|PR  |
-|K NB|
-‾‾‾‾‾‾
-
-updated res
-depth: 1
-res: 0
-move: b (0, 0) =>   (1, 1)
-______
-|bnrk|
-|   p|
-|PR  |
-|K NB|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
 move: n (0, 1) => P (2, 0)
 ______
 |bnrk|
@@ -605,6 +804,50 @@ ______
 |b rk|
 |   p|
 |nR  |
+|K NB|
+‾‾‾‾‾‾
+
+updated res
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| nrk|
+| b p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 2
+res: 0
+______
+| nrk|
+| b p|
+|PR  |
 |K NB|
 ‾‾‾‾‾‾
 
@@ -743,7 +986,7 @@ ______
 final res
 depth: 1
 res: 0
-move: b (0, 0) =>   (1, 1)
+move: n (0, 1) => P (2, 0)
 ______
 |bnrk|
 |   p|
@@ -931,249 +1174,6 @@ ______
 before move
 depth: 0
 res: 0
-move: N (3, 2) => p (1, 3)
-______
-|bnrk|
-|   p|
-|P   |
-|KRNB|
-‾‾‾‾‾‾
-
-after move
-depth: 1
-res: -1000
-______
-|bnrk|
-|   N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-------
-
-before move
-depth: 1
-res: -1000
-move: b (0, 0) =>   (1, 1)
-______
-|bnrk|
-|   N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-| nrk|
-| b N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 2
-res: 0
-______
-| nrk|
-| b N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-updated res
-depth: 1
-res: 0
-move: b (0, 0) =>   (1, 1)
-______
-|bnrk|
-|   N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
-move: n (0, 1) => P (2, 0)
-______
-|bnrk|
-|   N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-|b rk|
-|   N|
-|n   |
-|KR B|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 2
-res: 0
-______
-|b rk|
-|   N|
-|n   |
-|KR B|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
-move: n (0, 1) =>   (2, 2)
-______
-|bnrk|
-|   N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-|b rk|
-|   N|
-|P n |
-|KR B|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 2
-res: 0
-______
-|b rk|
-|   N|
-|P n |
-|KR B|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
-move: r (0, 2) =>   (1, 2)
-______
-|bnrk|
-|   N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-|bn k|
-|  rN|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 2
-res: 0
-______
-|bn k|
-|  rN|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
-move: k (0, 3) => N (1, 3)
-______
-|bnrk|
-|   N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-|bnr |
-|   k|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 2
-res: 0
-______
-|bnr |
-|   k|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
-move: k (0, 3) =>   (1, 2)
-______
-|bnrk|
-|   N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-|bnr |
-|  kN|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 2
-res: 0
-______
-|bnr |
-|  kN|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-final res
-depth: 1
-res: 0
-move: b (0, 0) =>   (1, 1)
-______
-|bnrk|
-|   N|
-|P   |
-|KR B|
-‾‾‾‾‾‾
-
-before move
-depth: 0
-res: 0
 move: B (3, 3) =>   (2, 2)
 ______
 |bnrk|
@@ -1197,7 +1197,7 @@ ______
 before move
 depth: 1
 res: -1000
-move: b (0, 0) =>   (1, 1)
+move: p (1, 3) => B (2, 2)
 ______
 |bnrk|
 |   p|
@@ -1209,9 +1209,9 @@ after move
 depth: 2
 res: -1000
 ______
-| nrk|
-| b p|
-|P B |
+|bnrk|
+|    |
+|P p |
 |KRN |
 ‾‾‾‾‾‾
 
@@ -1221,53 +1221,20 @@ max depth
 depth: 2
 res: 0
 ______
-| nrk|
-| b p|
-|P B |
+|bnrk|
+|    |
+|P p |
 |KRN |
 ‾‾‾‾‾‾
 
 updated res
 depth: 1
 res: 0
-move: b (0, 0) =>   (1, 1)
+move: p (1, 3) => B (2, 2)
 ______
 |bnrk|
 |   p|
 |P B |
-|KRN |
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
-move: n (0, 1) => P (2, 0)
-______
-|bnrk|
-|   p|
-|P B |
-|KRN |
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-|b rk|
-|   p|
-|n B |
-|KRN |
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 2
-res: 0
-______
-|b rk|
-|   p|
-|n B |
 |KRN |
 ‾‾‾‾‾‾
 
@@ -1301,6 +1268,72 @@ ______
 |b rk|
 |   p|
 |P n |
+|KRN |
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+|b rk|
+|   p|
+|n B |
+|KRN |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|n B |
+|KRN |
+‾‾‾‾‾‾
+
+before move
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+after move
+depth: 2
+res: -1000
+______
+| nrk|
+| b p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 2
+res: 0
+______
+| nrk|
+| b p|
+|P B |
 |KRN |
 ‾‾‾‾‾‾
 
@@ -1403,7 +1436,7 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
-before move
+final res
 depth: 1
 res: 0
 move: p (1, 3) => B (2, 2)
@@ -1414,43 +1447,10 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
-after move
-depth: 2
-res: -1000
-______
-|bnrk|
-|    |
-|P p |
-|KRN |
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 2
-res: 0
-______
-|bnrk|
-|    |
-|P p |
-|KRN |
-‾‾‾‾‾‾
-
-final res
-depth: 1
-res: 0
-move: b (0, 0) =>   (1, 1)
-______
-|bnrk|
-|   p|
-|P B |
-|KRN |
-‾‾‾‾‾‾
-
 final res
 depth: 0
 res: 0
-move: P (2, 0) =>   (1, 0)
+move: N (3, 2) => p (1, 3)
 ______
 |bnrk|
 |   p|

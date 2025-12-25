@@ -60,6 +60,50 @@ ______
 before move
 depth: 2
 res: -1000
+move: B (2, 1) => b (1, 2)
+______
+|    |
+|  b |
+| B  |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 3
+res: -1000
+______
+|    |
+|  B |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+stalemate
+depth: 3
+res: 0
+______
+|    |
+|  B |
+|    |
+|    |
+‾‾‾‾‾‾
+
+updated res
+depth: 2
+res: 0
+move: B (2, 1) => b (1, 2)
+______
+|    |
+|  b |
+| B  |
+|    |
+‾‾‾‾‾‾
+
+before move
+depth: 2
+res: 0
 move: B (2, 1) =>   (1, 0)
 ______
 |    |
@@ -106,50 +150,6 @@ ______
 before move
 depth: 4
 res: -1000
-move: B (1, 0) =>   (2, 1)
-______
-| b  |
-|B   |
-|    |
-|    |
-‾‾‾‾‾‾
-
-after move
-depth: 5
-res: -1000
-______
-| b  |
-|    |
-| B  |
-|    |
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 5
-res: 0
-______
-| b  |
-|    |
-| B  |
-|    |
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: B (1, 0) =>   (2, 1)
-______
-| b  |
-|B   |
-|    |
-|    |
-‾‾‾‾‾‾
-
-before move
-depth: 4
-res: 0
 move: B (1, 0) => b (0, 1)
 ______
 | b  |
@@ -180,10 +180,54 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-final res
+updated res
+depth: 4
+res: 0
+move: B (1, 0) => b (0, 1)
+______
+| b  |
+|B   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
 depth: 4
 res: 0
 move: B (1, 0) =>   (2, 1)
+______
+| b  |
+|B   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 5
+res: -1000
+______
+| b  |
+|    |
+| B  |
+|    |
+‾‾‾‾‾‾
+
+------
+
+max depth
+depth: 5
+res: 0
+______
+| b  |
+|    |
+| B  |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: B (1, 0) => b (0, 1)
 ______
 | b  |
 |B   |
@@ -546,17 +590,6 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-updated res
-depth: 2
-res: 0
-move: B (2, 1) =>   (1, 0)
-______
-|    |
-|  b |
-| B  |
-|    |
-‾‾‾‾‾‾
-
 before move
 depth: 2
 res: 0
@@ -706,28 +739,6 @@ ______
 before move
 depth: 4
 res: -1000
-move: B (3, 2) =>   (2, 1)
-______
-|    |
-|    |
-|   b|
-|  B |
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: B (3, 2) =>   (2, 1)
-______
-|    |
-|    |
-|   b|
-|  B |
-‾‾‾‾‾‾
-
-before move
-depth: 4
-res: 0
 move: B (3, 2) => b (2, 3)
 ______
 |    |
@@ -758,10 +769,32 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-final res
+updated res
+depth: 4
+res: 0
+move: B (3, 2) => b (2, 3)
+______
+|    |
+|    |
+|   b|
+|  B |
+‾‾‾‾‾‾
+
+before move
 depth: 4
 res: 0
 move: B (3, 2) =>   (2, 1)
+______
+|    |
+|    |
+|   b|
+|  B |
+‾‾‾‾‾‾
+
+final res
+depth: 4
+res: 0
+move: B (3, 2) => b (2, 3)
 ______
 |    |
 |    |
@@ -1227,43 +1260,10 @@ ______
 |B   |
 ‾‾‾‾‾‾
 
-before move
-depth: 2
-res: 0
-move: B (2, 1) => b (1, 2)
-______
-|    |
-|  b |
-| B  |
-|    |
-‾‾‾‾‾‾
-
-after move
-depth: 3
-res: -1000
-______
-|    |
-|  B |
-|    |
-|    |
-‾‾‾‾‾‾
-
-------
-
-stalemate
-depth: 3
-res: 0
-______
-|    |
-|  B |
-|    |
-|    |
-‾‾‾‾‾‾
-
 final res
 depth: 2
 res: 0
-move: B (2, 1) =>   (1, 0)
+move: B (2, 1) => b (1, 2)
 ______
 |    |
 |  b |

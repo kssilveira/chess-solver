@@ -14,50 +14,6 @@ ______
 before move
 depth: 0
 res: -1000
-move: P (1, 1) => x (0, 0)
-______
-|xxx |
-| P  |
-|    |
-|    |
-‾‾‾‾‾‾
-
-after move
-depth: 1
-res: -1000
-______
-|Pxx |
-|    |
-|    |
-|    |
-‾‾‾‾‾‾
-
-------
-
-stalemate
-depth: 1
-res: 0
-______
-|Pxx |
-|    |
-|    |
-|    |
-‾‾‾‾‾‾
-
-updated res
-depth: 0
-res: 0
-move: P (1, 1) => x (0, 0)
-______
-|xxx |
-| P  |
-|    |
-|    |
-‾‾‾‾‾‾
-
-before move
-depth: 0
-res: 0
 move: P (1, 1) => x (0, 2)
 ______
 |xxx |
@@ -88,10 +44,54 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-final res
+updated res
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 2)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
 depth: 0
 res: 0
 move: P (1, 1) => x (0, 0)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+depth: 1
+res: -1000
+______
+|Pxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+stalemate
+depth: 1
+res: 0
+______
+|Pxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 2)
 ______
 |xxx |
 | P  |

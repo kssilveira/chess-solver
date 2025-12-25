@@ -28,6 +28,7 @@ type Config struct {
 	MaxDepth      int
 	SleepDuration time.Duration
 	Board         []string
+	MaxPrintDepth int
 }
 
 // PrintConfig contains print configuration.
@@ -47,7 +48,6 @@ type Core struct {
 	minInt        int
 	visited       []map[string]int
 	solved        []map[string]int
-	maxPrintDepth int
 	depth         int
 }
 
@@ -124,7 +124,7 @@ func (c *Core) solve() int {
 }
 
 func (c *Core) print(message string, res int, cfg PrintConfig) {
-	if c.maxPrintDepth > 0 && c.depth > c.maxPrintDepth {
+	if c.config.MaxPrintDepth > 0 && c.depth > c.config.MaxPrintDepth {
 		return
 	}
 	fmt.Fprintf(c.writer, "\n%s\n", message)

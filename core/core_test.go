@@ -106,7 +106,7 @@ func TestSolve(t *testing.T) {
 		}},
 	}
 	for _, in := range inputs {
-		config := Config{MaxDepth: 5}
+		config := Config{MaxDepth: 5, MaxPrintDepth: 5}
 		if in.maxDepth != 0 {
 			config.MaxDepth = in.maxDepth
 		}
@@ -122,7 +122,6 @@ func TestSolve(t *testing.T) {
 		if in.board != nil {
 			core.board = in.board
 		}
-		core.maxPrintDepth = 5
 		core.Solve()
 		if err := os.WriteFile(filepath.Join("testdata", in.name+".txt"), out.Bytes(), 0644); err != nil {
 			t.Errorf("Solve %v got err %v", in, err)

@@ -14,7 +14,11 @@ func main() {
 	maxDepth := flag.Int("max_depth", 2, "max depth")
 	sleepDuration := flag.Duration("sleep_duration", time.Second, "sleep duration")
 	board := flag.String("board", "", "board")
+	maxPrintDepth := flag.Int("max_print_depth", 2, "max depth")
 	flag.Parse()
-	core := core.New(os.Stdout, core.Config{MaxDepth: *maxDepth, SleepDuration: *sleepDuration, Board: strings.Split(*board, ",")})
+	core := core.New(os.Stdout, core.Config{
+		MaxDepth: *maxDepth, SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth,
+		Board: strings.Split(*board, ","),
+	})
 	core.Solve()
 }

@@ -41,6 +41,7 @@ type Core struct {
 	minInt        int
 	visited       []map[string]int
 	solved        []map[string]int
+	maxPrintDepth int
 }
 
 const (
@@ -117,6 +118,9 @@ func (c *Core) solve(depth int) int {
 }
 
 func (c *Core) print(message string, depth, res int, move Move) {
+	if c.maxPrintDepth > 0 && depth > c.maxPrintDepth {
+		return
+	}
 	fmt.Fprintf(c.writer, "\n%s\n", message)
 	fmt.Fprintf(c.writer, "depth: %d\n", depth)
 	fmt.Fprintf(c.writer, "res: %d\n", res)

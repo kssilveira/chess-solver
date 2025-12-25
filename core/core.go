@@ -210,13 +210,14 @@ func (c *Core) move(depth, nextTurn int, moves []Move) int {
 			c.solved[key] = next
 			c.turn = prevTurn
 		}
+		c.visited[key]--
+		c.board[move.To.X][move.To.Y] = move.To.What
+		c.board[move.From.X][move.From.Y] = move.From.What
 		if next > res {
 			res = next
 			c.print("updated res", depth, res)
 		}
-		c.visited[key]--
-		c.board[move.To.X][move.To.Y] = move.To.What
-		c.board[move.From.X][move.From.Y] = move.From.What
 	}
+	c.print("final res", depth, res)
 	return res
 }

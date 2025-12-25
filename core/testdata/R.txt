@@ -125,8 +125,8 @@ updated res
 depth: 4
 res: 1000
 ______
-|R  r|
-|    |
+|   r|
+|R   |
 |    |
 |    |
 ‾‾‾‾‾‾
@@ -174,6 +174,16 @@ ______
 ‾‾‾‾‾‾
 
 ------
+
+final res
+depth: 4
+res: 1000
+______
+|   r|
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
 
 before move
 depth: 3
@@ -223,8 +233,8 @@ updated res
 depth: 4
 res: 1000
 ______
-|R   |
 |    |
+|R   |
 |   r|
 |    |
 ‾‾‾‾‾‾
@@ -272,6 +282,16 @@ ______
 ‾‾‾‾‾‾
 
 ------
+
+final res
+depth: 4
+res: 1000
+______
+|    |
+|R   |
+|   r|
+|    |
+‾‾‾‾‾‾
 
 before move
 depth: 3
@@ -321,8 +341,8 @@ updated res
 depth: 4
 res: 1000
 ______
-|R   |
-|  r |
+|    |
+|R r |
 |    |
 |    |
 ‾‾‾‾‾‾
@@ -371,9 +391,19 @@ ______
 
 ------
 
-updated res
-depth: 2
+final res
+depth: 4
 res: 1000
+______
+|    |
+|R r |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 3
+res: -1000
 ______
 |    |
 |R  r|
@@ -381,6 +411,16 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+updated res
+depth: 2
+res: 1000
+______
+|    |
+|   r|
+|R   |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 2
 res: 1000
@@ -441,8 +481,8 @@ res: 1000
 ______
 |   r|
 |    |
-|R   |
 |    |
+|R   |
 ‾‾‾‾‾‾
 
 before move
@@ -466,6 +506,16 @@ ______
 ‾‾‾‾‾‾
 
 ------
+
+final res
+depth: 4
+res: 1000
+______
+|   r|
+|    |
+|    |
+|R   |
+‾‾‾‾‾‾
 
 before move
 depth: 3
@@ -505,8 +555,8 @@ res: 1000
 ______
 |    |
 |    |
-|R  r|
-|    |
+|   r|
+|R   |
 ‾‾‾‾‾‾
 
 before move
@@ -530,6 +580,16 @@ ______
 ‾‾‾‾‾‾
 
 ------
+
+final res
+depth: 4
+res: 1000
+______
+|    |
+|    |
+|   r|
+|R   |
+‾‾‾‾‾‾
 
 before move
 depth: 3
@@ -569,8 +629,8 @@ res: 1000
 ______
 |    |
 |  r |
-|R   |
 |    |
+|R   |
 ‾‾‾‾‾‾
 
 before move
@@ -594,6 +654,26 @@ ______
 ‾‾‾‾‾‾
 
 ------
+
+final res
+depth: 4
+res: 1000
+______
+|    |
+|  r |
+|    |
+|R   |
+‾‾‾‾‾‾
+
+final res
+depth: 3
+res: -1000
+______
+|    |
+|   r|
+|    |
+|R   |
+‾‾‾‾‾‾
 
 before move
 depth: 2
@@ -654,8 +734,8 @@ depth: 4
 res: 1000
 ______
 |   r|
-| R  |
 |    |
+| R  |
 |    |
 ‾‾‾‾‾‾
 
@@ -701,6 +781,16 @@ ______
 
 ------
 
+final res
+depth: 4
+res: 1000
+______
+|   r|
+|    |
+| R  |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
 res: -1000
@@ -738,8 +828,8 @@ depth: 4
 res: 1000
 ______
 |    |
-| R  |
-|   r|
+|    |
+| R r|
 |    |
 ‾‾‾‾‾‾
 
@@ -785,6 +875,16 @@ ______
 
 ------
 
+final res
+depth: 4
+res: 1000
+______
+|    |
+|    |
+| R r|
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
 res: -1000
@@ -822,8 +922,8 @@ depth: 4
 res: 1000
 ______
 |    |
-| Rr |
-|    |
+|  r |
+| R  |
 |    |
 ‾‾‾‾‾‾
 
@@ -868,6 +968,36 @@ ______
 ‾‾‾‾‾‾
 
 ------
+
+final res
+depth: 4
+res: 1000
+______
+|    |
+|  r |
+| R  |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 3
+res: -1000
+______
+|    |
+|   r|
+| R  |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 2
+res: 1000
+______
+|    |
+|   r|
+|R   |
+|    |
+‾‾‾‾‾‾
 
 before move
 depth: 1
@@ -971,8 +1101,8 @@ updated res
 depth: 4
 res: 1000
 ______
-|Rr  |
-|    |
+| r  |
+|R   |
 |    |
 |    |
 ‾‾‾‾‾‾
@@ -1021,7 +1151,27 @@ ______
 
 ------
 
+final res
+depth: 4
+res: 1000
+______
+| r  |
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
 before move
+depth: 3
+res: -1000
+______
+|  r |
+|R   |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
 depth: 3
 res: -1000
 ______
@@ -1036,8 +1186,8 @@ depth: 2
 res: 1000
 ______
 |  r |
-|R   |
 |    |
+|R   |
 |    |
 ‾‾‾‾‾‾
 
@@ -1111,8 +1261,8 @@ res: 1000
 ______
 | r  |
 |    |
-|R   |
 |    |
+|R   |
 ‾‾‾‾‾‾
 
 before move
@@ -1137,7 +1287,27 @@ ______
 
 ------
 
+final res
+depth: 4
+res: 1000
+______
+| r  |
+|    |
+|    |
+|R   |
+‾‾‾‾‾‾
+
 before move
+depth: 3
+res: -1000
+______
+|  r |
+|    |
+|    |
+|R   |
+‾‾‾‾‾‾
+
+final res
 depth: 3
 res: -1000
 ______
@@ -1216,8 +1386,8 @@ depth: 4
 res: 1000
 ______
 | r  |
-| R  |
 |    |
+| R  |
 |    |
 ‾‾‾‾‾‾
 
@@ -1263,6 +1433,16 @@ ______
 
 ------
 
+final res
+depth: 4
+res: 1000
+______
+| r  |
+|    |
+| R  |
+|    |
+‾‾‾‾‾‾
+
 before move
 depth: 3
 res: -1000
@@ -1273,9 +1453,29 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-updated res
-depth: 0
+final res
+depth: 3
+res: -1000
+______
+|  r |
+|    |
+| R  |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 2
 res: 1000
+______
+|  r |
+|    |
+|R   |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 1
+res: -1000
 ______
 |   r|
 |    |
@@ -1283,7 +1483,27 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+updated res
+depth: 0
+res: 1000
+______
+|   r|
+|    |
+|    |
+|R   |
+‾‾‾‾‾‾
+
 before move
+depth: 0
+res: 1000
+______
+|   r|
+|    |
+|    |
+|R   |
+‾‾‾‾‾‾
+
+final res
 depth: 0
 res: 1000
 ______

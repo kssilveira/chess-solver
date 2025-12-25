@@ -59,8 +59,8 @@ updated res
 depth: 1
 res: 1000
 ______
-| nrk|
-|Pb p|
+|bnrk|
+|P  p|
 |    |
 |KRNB|
 ‾‾‾‾‾‾
@@ -175,6 +175,16 @@ ______
 
 ------
 
+final res
+depth: 1
+res: 1000
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
 before move
 depth: 0
 res: -1000
@@ -223,8 +233,8 @@ updated res
 depth: 1
 res: 1000
 ______
-| nrk|
-| b p|
+|bnrk|
+|   p|
 |PK  |
 | RNB|
 ‾‾‾‾‾‾
@@ -339,6 +349,16 @@ ______
 
 ------
 
+final res
+depth: 1
+res: 1000
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
 before move
 depth: 0
 res: -1000
@@ -387,8 +407,8 @@ updated res
 depth: 1
 res: 1000
 ______
-| nrk|
-| b p|
+|bnrk|
+|   p|
 |PR  |
 |K NB|
 ‾‾‾‾‾‾
@@ -503,6 +523,16 @@ ______
 
 ------
 
+final res
+depth: 1
+res: 1000
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
 before move
 depth: 0
 res: -1000
@@ -551,8 +581,8 @@ updated res
 depth: 1
 res: 1000
 ______
-| nrk|
-| b p|
+|bnrk|
+| N p|
 |P   |
 |KR B|
 ‾‾‾‾‾‾
@@ -623,6 +653,16 @@ ______
 
 ------
 
+final res
+depth: 1
+res: 1000
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 depth: 0
 res: -1000
@@ -671,8 +711,8 @@ updated res
 depth: 1
 res: 1000
 ______
-| nrk|
-| b N|
+|bnrk|
+|   N|
 |P   |
 |KR B|
 ‾‾‾‾‾‾
@@ -787,6 +827,16 @@ ______
 
 ------
 
+final res
+depth: 1
+res: 1000
+______
+|bnrk|
+|   N|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
 before move
 depth: 0
 res: -1000
@@ -835,8 +885,8 @@ updated res
 depth: 1
 res: 1000
 ______
-| nrk|
-| b p|
+|bnrk|
+|   p|
 |P B |
 |KRN |
 ‾‾‾‾‾‾
@@ -972,3 +1022,23 @@ ______
 ‾‾‾‾‾‾
 
 ------
+
+final res
+depth: 1
+res: 1000
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+final res
+depth: 0
+res: -1000
+______
+|bnrk|
+|   p|
+|P   |
+|KRNB|
+‾‾‾‾‾‾

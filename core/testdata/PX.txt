@@ -47,8 +47,8 @@ updated res
 depth: 0
 res: 0
 ______
-|Pxx |
-|    |
+|xxx |
+| P  |
 |    |
 |    |
 ‾‾‾‾‾‾
@@ -81,6 +81,16 @@ res: 0
 ______
 |xxP |
 |    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+depth: 0
+res: 0
+______
+|xxx |
+| P  |
 |    |
 |    |
 ‾‾‾‾‾‾

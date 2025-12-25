@@ -261,8 +261,8 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 			alpha = next
 		}
 		if alpha >= beta {
-			c.print("pruned", res, PrintConfig{Move: resMove})
-			break
+			c.print("not pruned", res, PrintConfig{Move: resMove})
+			// break
 		}
 	}
 	c.print("final res", res, PrintConfig{Move: resMove})

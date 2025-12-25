@@ -458,7 +458,307 @@ ______
 |KRNB|
 ‾‾‾‾‾‾
 
-pruned
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) =>   (2, 0)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|b rk|
+|P  p|
+|n   |
+|KRNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|b rk|
+|P  p|
+|n   |
+|KRNB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) =>   (2, 0)
+______
+|b rk|
+|P  p|
+|n   |
+|KRNB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) =>   (2, 2)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|b rk|
+|P  p|
+|  n |
+|KRNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|b rk|
+|P  p|
+|  n |
+|KRNB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) =>   (2, 2)
+______
+|b rk|
+|P  p|
+|  n |
+|KRNB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bn k|
+|P rp|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bn k|
+|P rp|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bn k|
+|P rp|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bnr |
+|P kp|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bnr |
+|P kp|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnr |
+|P kp|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|bnrk|
+|P  p|
+|    |
+|KRNB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bnrk|
+|P   |
+|   p|
+|KRNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bnrk|
+|P   |
+|   p|
+|KRNB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|bnrk|
+|P   |
+|   p|
+|KRNB|
+‾‾‾‾‾‾
+
+not pruned
 turn: 1
 depth: 1
 res: 0
@@ -579,7 +879,307 @@ ______
 | RNB|
 ‾‾‾‾‾‾
 
-pruned
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+| nrk|
+| b p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+| nrk|
+| b p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+| nrk|
+| b p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) =>   (2, 2)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|b rk|
+|   p|
+|PKn |
+| RNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|PKn |
+| RNB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) =>   (2, 2)
+______
+|b rk|
+|   p|
+|PKn |
+| RNB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bn k|
+|  rp|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bn k|
+|  rp|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bn k|
+|  rp|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bnr |
+|  kp|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bnr |
+|  kp|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnr |
+|  kp|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|bnrk|
+|   p|
+|PK  |
+| RNB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bnrk|
+|    |
+|PK p|
+| RNB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bnrk|
+|    |
+|PK p|
+| RNB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|bnrk|
+|    |
+|PK p|
+| RNB|
+‾‾‾‾‾‾
+
+not pruned
 turn: 1
 depth: 1
 res: 0
@@ -700,7 +1300,307 @@ ______
 |K NB|
 ‾‾‾‾‾‾
 
-pruned
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+| nrk|
+| b p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+| nrk|
+| b p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+| nrk|
+| b p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) =>   (2, 2)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|b rk|
+|   p|
+|PRn |
+|K NB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|PRn |
+|K NB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) =>   (2, 2)
+______
+|b rk|
+|   p|
+|PRn |
+|K NB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bn k|
+|  rp|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bn k|
+|  rp|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bn k|
+|  rp|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bnr |
+|  kp|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bnr |
+|  kp|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnr |
+|  kp|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|bnrk|
+|   p|
+|PR  |
+|K NB|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bnrk|
+|    |
+|PR p|
+|K NB|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bnrk|
+|    |
+|PR p|
+|K NB|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|bnrk|
+|    |
+|PR p|
+|K NB|
+‾‾‾‾‾‾
+
+not pruned
 turn: 1
 depth: 1
 res: 0
@@ -821,7 +1721,187 @@ ______
 |KR B|
 ‾‾‾‾‾‾
 
-pruned
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) => N (1, 1)
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bn k|
+| Nrp|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bn k|
+| Nrp|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bn k|
+| Nrp|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) => N (1, 1)
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bnr |
+| Nkp|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bnr |
+| Nkp|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnr |
+| Nkp|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) => N (1, 1)
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|bnrk|
+| N p|
+|P   |
+|KR B|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bnrk|
+| N  |
+|P  p|
+|KR B|
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bnrk|
+| N  |
+|P  p|
+|KR B|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|bnrk|
+| N  |
+|P  p|
+|KR B|
+‾‾‾‾‾‾
+
+not pruned
 turn: 1
 depth: 1
 res: 0
@@ -942,7 +2022,367 @@ ______
 |KRN |
 ‾‾‾‾‾‾
 
-pruned
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) => B (2, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => B (2, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|b rk|
+|   p|
+|P n |
+|KRN |
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|P n |
+|KRN |
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => B (2, 2)
+______
+|b rk|
+|   p|
+|P n |
+|KRN |
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) => B (2, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|b rk|
+|   p|
+|n B |
+|KRN |
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|b rk|
+|   p|
+|n B |
+|KRN |
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: n (0, 1) => P (2, 0)
+______
+|b rk|
+|   p|
+|n B |
+|KRN |
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) => B (2, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+| nrk|
+| b p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+| nrk|
+| b p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: b (0, 0) =>   (1, 1)
+______
+| nrk|
+| b p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) => B (2, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bn k|
+|  rp|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bn k|
+|  rp|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: r (0, 2) =>   (1, 2)
+______
+|bn k|
+|  rp|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) => B (2, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bnr |
+|  kp|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bnr |
+|  kp|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: k (0, 3) =>   (1, 2)
+______
+|bnr |
+|  kp|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+not pruned
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) => B (2, 2)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|bnrk|
+|   p|
+|P B |
+|KRN |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1000
+______
+|bnrk|
+|    |
+|P Bp|
+|KRN |
+‾‾‾‾‾‾
+
+------
+
+max depth
+turn: 0
+depth: 2
+res: 0
+______
+|bnrk|
+|    |
+|P Bp|
+|KRN |
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: 0
+move: p (1, 3) =>   (2, 3)
+______
+|bnrk|
+|    |
+|P Bp|
+|KRN |
+‾‾‾‾‾‾
+
+not pruned
 turn: 1
 depth: 1
 res: 0

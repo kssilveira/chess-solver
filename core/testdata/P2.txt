@@ -268,7 +268,7 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-pruned
+not pruned
 turn: 1
 depth: 3
 res: 0

@@ -130,7 +130,7 @@ func (c *Core) solve() int {
 }
 
 func (c *Core) print(message string, res int, cfg PrintConfig) {
-	if c.config.MaxPrintDepth > 0 && c.depth > c.config.MaxPrintDepth {
+	if c.config.MaxPrintDepth != 0 && c.depth > c.config.MaxPrintDepth {
 		return
 	}
 	fmt.Fprintf(c.writer, "\n%s\n", message)

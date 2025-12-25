@@ -54,11 +54,23 @@ type Core struct {
 	depth         int
 }
 
+// Result contains one result.
+type Result struct {
+	Value int
+	Kind  int
+}
+
 const (
-	kindDefault = iota
-	kindEmpty
-	kindEnemy
-	kindOtherEmpty
+	deltaDefault = iota
+	deltaEmpty
+	deltaEnemy
+	deltaOtherEmpty
+)
+
+const (
+	resultExact = iota
+	resultLowerBound
+	resultUpperBound
 )
 
 var (
@@ -68,25 +80,25 @@ var (
 		byte('p'): 1, byte('k'): 1, byte('r'): 1, byte('n'): 1, byte('b'): 1, byte('x'): 1,
 	}
 	deltas = map[byte][][]int{
-		byte('P'): [][]int{{-1, 0, kindEmpty}, {-1, -1, kindEnemy}, {-1, 1, kindEnemy}},
+		byte('P'): [][]int{{-1, 0, deltaEmpty}, {-1, -1, deltaEnemy}, {-1, 1, deltaEnemy}},
 		byte('R'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
 		byte('B'): [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
 		byte('K'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
 		byte('N'): [][]int{
-			{-2, -1, kindOtherEmpty, -1, 0}, {-2, 1, kindOtherEmpty, -1, 0},
-			{-1, -2, kindOtherEmpty, 0, -1}, {1, -2, kindOtherEmpty, 0, -1},
-			{2, -1, kindOtherEmpty, 1, 0}, {2, 1, kindOtherEmpty, 1, 0},
-			{-1, 2, kindOtherEmpty, 0, 1}, {1, 2, kindOtherEmpty, 0, 1},
+			{-2, -1, deltaOtherEmpty, -1, 0}, {-2, 1, deltaOtherEmpty, -1, 0},
+			{-1, -2, deltaOtherEmpty, 0, -1}, {1, -2, deltaOtherEmpty, 0, -1},
+			{2, -1, deltaOtherEmpty, 1, 0}, {2, 1, deltaOtherEmpty, 1, 0},
+			{-1, 2, deltaOtherEmpty, 0, 1}, {1, 2, deltaOtherEmpty, 0, 1},
 		},
-		byte('p'): [][]int{{1, 0, kindEmpty}, {1, -1, kindEnemy}, {1, 1, kindEnemy}},
+		byte('p'): [][]int{{1, 0, deltaEmpty}, {1, -1, deltaEnemy}, {1, 1, deltaEnemy}},
 		byte('r'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
 		byte('b'): [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
 		byte('k'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
 		byte('n'): [][]int{
-			{-2, -1, kindOtherEmpty, -1, 0}, {-2, 1, kindOtherEmpty, -1, 0},
-			{-1, -2, kindOtherEmpty, 0, -1}, {1, -2, kindOtherEmpty, 0, -1},
-			{2, -1, kindOtherEmpty, 1, 0}, {2, 1, kindOtherEmpty, 1, 0},
-			{-1, 2, kindOtherEmpty, 0, 1}, {1, 2, kindOtherEmpty, 0, 1},
+			{-2, -1, deltaOtherEmpty, -1, 0}, {-2, 1, deltaOtherEmpty, -1, 0},
+			{-1, -2, deltaOtherEmpty, 0, -1}, {1, -2, deltaOtherEmpty, 0, -1},
+			{2, -1, deltaOtherEmpty, 1, 0}, {2, 1, deltaOtherEmpty, 1, 0},
+			{-1, 2, deltaOtherEmpty, 0, 1}, {1, 2, deltaOtherEmpty, 0, 1},
 		},
 	}
 )
@@ -118,12 +130,12 @@ func (c *Core) Solve() {
 	c.show()
 }
 
-func (c *Core) solve(alpha, beta int) int {
+func (c *Core) solve(alpha, beta int) Result {
 	c.print("after move", c.minInt, PrintConfig{ClearTerminal: true, Alpha: alpha, Beta: beta})
 	if c.depth >= c.config.MaxDepth {
 		res := 0
 		c.print("max depth", res, PrintConfig{})
-		return res
+		return Result{Value: res}
 	}
 	nextTurn := (c.turn + 1) % 2
 	moves := c.moves(nextTurn)
@@ -182,16 +194,16 @@ func (c *Core) deltas(nextTurn, i, j int) []Move {
 		if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
 			continue
 		}
-		if (kind == kindDefault || kind == kindOtherEmpty) && c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
+		if (kind == deltaDefault || kind == deltaOtherEmpty) && c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
 			continue
 		}
-		if kind == kindEmpty && c.board[ni][nj] != ' ' {
+		if kind == deltaEmpty && c.board[ni][nj] != ' ' {
 			continue
 		}
-		if kind == kindEnemy && colors[c.board[ni][nj]] != nextTurn {
+		if kind == deltaEnemy && colors[c.board[ni][nj]] != nextTurn {
 			continue
 		}
-		if kind == kindOtherEmpty && c.board[i+delta[3]][j+delta[4]] != ' ' {
+		if kind == deltaOtherEmpty && c.board[i+delta[3]][j+delta[4]] != ' ' {
 			continue
 		}
 		moves = append(moves, Move{
@@ -220,19 +232,20 @@ func (c *Core) sort(moves []Move) []Move {
 	return moves
 }
 
-func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
+func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) Result {
 	res := c.minInt
 	resMove := Move{}
+	alphaOrig := alpha
 	if len(moves) == 0 {
 		res = 0
 		c.print("stalemate", res, PrintConfig{})
-		return res
+		return Result{Value: res}
 	}
 	for _, move := range moves {
 		if move.To.What == 'k' || move.To.What == 'K' {
 			res = c.maxInt - c.depth
 			c.print("dead king", res, PrintConfig{Move: move})
-			return res
+			return Result{Value: res}
 		}
 		c.print("before move", res, PrintConfig{Move: move})
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
@@ -247,7 +260,8 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 			prevTurn := c.turn
 			c.turn = nextTurn
 			c.depth++
-			next = -c.solve(-beta, -alpha)
+			nextResult := c.solve(-beta, -alpha)
+			next = -nextResult.Value
 			c.depth--
 			c.turn = prevTurn
 			c.print("solve()", next, PrintConfig{Move: move})
@@ -275,7 +289,13 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 	c.print("final res", res, PrintConfig{Move: resMove})
 	key := string(bytes.Join(c.board, nil))
 	c.solvedMove[c.turn][key] = resMove
-	return res
+	result := Result{Value: res, Kind: resultExact}
+	if res <= alphaOrig {
+		result.Kind = resultUpperBound
+	} else if res >= beta {
+		result.Kind = resultLowerBound
+	}
+	return result
 }
 
 func (c *Core) show() {

@@ -60,9 +60,9 @@ const (
 
 var (
 	colors = map[byte]int{
-		byte(' '): 0,
-		byte('P'): 1, byte('K'): 1, byte('R'): 1, byte('N'): 1, byte('B'): 1, byte('X'): 1,
-		byte('p'): 2, byte('k'): 2, byte('r'): 2, byte('n'): 2, byte('b'): 2, byte('x'): 2,
+		byte(' '): -1,
+		byte('P'): 0, byte('K'): 0, byte('R'): 0, byte('N'): 0, byte('B'): 0, byte('X'): 0,
+		byte('p'): 1, byte('k'): 1, byte('r'): 1, byte('n'): 1, byte('b'): 1, byte('x'): 1,
 	}
 	deltas = map[byte][][]int{
 		byte('P'): [][]int{{-1, 0, kindEmpty}, {-1, -1, kindEnemy}, {-1, 1, kindEnemy}},
@@ -90,12 +90,12 @@ var (
 
 // New creates a new core.
 func New(writer io.Writer, config Config) *Core {
-	res := &Core{writer: writer, config: config, turn: 1, board: [][]byte{
+	res := &Core{writer: writer, config: config, board: [][]byte{
 		[]byte("bnrk"),
 		[]byte("   p"),
 		[]byte("P   "),
 		[]byte("KRNB"),
-	}, visited: []map[string]int{{}, {}, {}}, solved: []map[string]int{{}, {}, {}}, clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt, minInt: math.MinInt}
+	}, visited: []map[string]int{{}, {}}, solved: []map[string]int{{}, {}}, clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt, minInt: math.MinInt}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
 			res.board[i] = []byte(row)
@@ -117,7 +117,7 @@ func (c *Core) solve() int {
 		c.print("max depth", res, PrintConfig{})
 		return res
 	}
-	nextTurn := (c.turn % 2) + 1
+	nextTurn := (c.turn + 1) % 2
 	moves := c.moves(nextTurn)
 	moves = c.sort(moves)
 	return c.move(nextTurn, moves)

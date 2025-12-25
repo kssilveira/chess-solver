@@ -52,7 +52,7 @@ solve()
 turn: 0
 depth: 0
 res: 0
-move: P (1, 1) => x (0, 2)
+move:   (1, 1) => P (0, 2)
 ______
 |xxP |
 |    |
@@ -112,7 +112,7 @@ solve()
 turn: 0
 depth: 0
 res: 0
-move: P (1, 1) => x (0, 0)
+move:   (1, 1) => P (0, 0)
 ______
 |Pxx |
 |    |
@@ -159,7 +159,7 @@ after move
 turn: 1
 depth: 0
 res: 0
-move: P (1, 1) => x (0, 2)
+move:   (1, 1) => P (0, 2)
 ______
 |xxP |
 |    |

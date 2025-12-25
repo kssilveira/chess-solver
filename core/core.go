@@ -10,17 +10,31 @@ import (
 	"time"
 )
 
-// Point contains a point.
-type Point struct {
-	X    int8
-	Y    int8
-	What byte
+// Move contains a move.
+type Move int16
+
+func NewMove(fx, fy, tx, ty Move, isKing, isCapture bool) Move {
+	res := Move(0)
+	res |= (fx & 0b11) | ((fy & 0b11) << 2) | ((tx & 0b11) << 4) | ((ty & 0b11) << 6)
+	if isKing {
+		res |= 1 << 8
+	}
+	if isCapture {
+		res |= 1 << 9
+	}
+	return res
 }
 
-// Move contains a move.
-type Move struct {
-	From Point
-	To   Point
+func (m Move) Get() (Move, Move, Move, Move) {
+	return m & 0b11, (m & 0b1100) >> 2, (m & 0b110000) >> 4, (m & 0b11000000) >> 6
+}
+
+func (m Move) IsKing() bool {
+	return m&(1<<8) != 0
+}
+
+func (m Move) IsCapture() bool {
+	return m&(1<<9) != 0
 }
 
 // Config contains configuration.
@@ -140,8 +154,9 @@ func (c *Core) print(message string, res int, cfg PrintConfig) {
 	fmt.Fprintf(c.writer, "turn: %d\n", c.turn)
 	fmt.Fprintf(c.writer, "depth: %d\n", c.depth)
 	fmt.Fprintf(c.writer, "res: %d\n", res)
-	if cfg.Move != (Move{}) {
-		fmt.Fprintf(c.writer, "move: %s (%d, %d) => %s (%d, %d)\n", string(cfg.Move.From.What), cfg.Move.From.X, cfg.Move.From.Y, string(cfg.Move.To.What), cfg.Move.To.X, cfg.Move.To.Y)
+	if cfg.Move != 0 {
+		fx, fy, tx, ty := cfg.Move.Get()
+		fmt.Fprintf(c.writer, "move: %s (%d, %d) => %s (%d, %d)\n", c.what(fx, fy), fx, fy, c.what(tx, ty), tx, ty)
 	}
 	fmt.Fprintln(c.writer, "______")
 	fmt.Fprintln(c.writer, "|"+string(bytes.Join(toBytes(c.board), []byte("|\n|")))+"|")
@@ -150,6 +165,10 @@ func (c *Core) print(message string, res int, cfg PrintConfig) {
 		time.Sleep(c.config.SleepDuration)
 		fmt.Fprint(c.writer, c.clearTerminal)
 	}
+}
+
+func (c *Core) what(x, y Move) string {
+	return string(c.board[x][y])
 }
 
 func toBytes(board [4][4]byte) [][]byte {
@@ -200,24 +219,22 @@ func (c *Core) deltas(moves *[]Move, nextTurn, i, j int8) {
 		if kind == deltaOtherEmpty && c.board[i+delta[3]][j+delta[4]] != ' ' {
 			continue
 		}
-		*moves = append(*moves, Move{
-			From: Point{What: piece, X: i, Y: j},
-			To:   Point{What: c.board[ni][nj], X: ni, Y: nj}})
+		*moves = append(*moves, NewMove(Move(i), Move(j), Move(ni), Move(nj), c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K', c.board[ni][nj] != ' '))
 	}
 }
 
 func (c *Core) sort(moves *[]Move) {
 	slices.SortFunc(*moves, func(i, j Move) int {
-		if i.To.What == 'k' || i.To.What == 'K' {
+		if i.IsKing() {
 			return -1
 		}
-		if j.To.What == 'k' || j.To.What == 'K' {
+		if j.IsKing() {
 			return 1
 		}
-		if i.To.What != ' ' {
+		if i.IsCapture() {
 			return -1
 		}
-		if j.To.What != ' ' {
+		if j.IsCapture() {
 			return 1
 		}
 		return 0
@@ -232,14 +249,16 @@ func (c *Core) move(nextTurn int8, moves []Move) int {
 		return res
 	}
 	for _, move := range moves {
-		if move.To.What == 'k' || move.To.What == 'K' {
+		if move.IsKing() {
 			res = c.maxInt - c.depth
 			c.print("dead king", res, PrintConfig{Move: move})
 			return res
 		}
 		c.print("before move", res, PrintConfig{Move: move})
-		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
-		c.board[move.From.X][move.From.Y] = ' '
+		fx, fy, tx, ty := move.Get()
+		what := c.board[tx][ty]
+		c.board[tx][ty] = c.board[fx][fy]
+		c.board[fx][fy] = ' '
 		c.visited[c.turn][c.board]++
 		next := 0
 		if nextResult, ok := c.solved[c.turn][c.board]; ok {
@@ -258,8 +277,8 @@ func (c *Core) move(nextTurn int8, moves []Move) int {
 			c.print("repeated", next, PrintConfig{Move: move})
 		}
 		c.visited[c.turn][c.board]--
-		c.board[move.To.X][move.To.Y] = move.To.What
-		c.board[move.From.X][move.From.Y] = move.From.What
+		c.board[fx][fy] = c.board[tx][ty]
+		c.board[tx][ty] = what
 		if next > res {
 			res = next
 			c.solvedMove[c.turn][c.board] = move
@@ -275,13 +294,14 @@ func (c *Core) show() {
 	c.print("show", res, PrintConfig{})
 	for i := 0; i < 10; i++ {
 		move := c.solvedMove[c.turn][c.board]
-		if move == (Move{}) {
+		if move == 0 {
 			break
 		}
 		c.print("before move", res, PrintConfig{Move: move})
 
-		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
-		c.board[move.From.X][move.From.Y] = ' '
+		fx, fy, tx, ty := move.Get()
+		c.board[tx][ty] = c.board[fx][fy]
+		c.board[fx][fy] = ' '
 		// c.depth++
 		res = c.solved[c.turn][c.board]
 		c.turn = (c.turn + 1) % 2

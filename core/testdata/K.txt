@@ -152,7 +152,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 0)
+move:   (1, 0) => K (0, 0)
 ______
 |K  k|
 |    |
@@ -212,7 +212,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 0)
+move:   (1, 0) => K (2, 0)
 ______
 |   k|
 |    |
@@ -260,7 +260,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (1, 1)
+move:   (1, 0) => K (1, 1)
 ______
 |   k|
 | K  |
@@ -308,7 +308,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 1)
+move:   (1, 0) => K (2, 1)
 ______
 |   k|
 |    |
@@ -356,7 +356,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 1)
+move:   (1, 0) => K (0, 1)
 ______
 | K k|
 |    |
@@ -380,7 +380,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (0, 3)
+move:   (1, 3) => k (0, 3)
 ______
 |   k|
 |K   |
@@ -465,7 +465,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 0)
+move:   (1, 0) => K (0, 0)
 ______
 |K   |
 |    |
@@ -525,7 +525,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 0)
+move:   (1, 0) => K (2, 0)
 ______
 |    |
 |    |
@@ -573,7 +573,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (1, 1)
+move:   (1, 0) => K (1, 1)
 ______
 |    |
 | K  |
@@ -621,7 +621,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 1)
+move:   (1, 0) => K (2, 1)
 ______
 |    |
 |    |
@@ -669,7 +669,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 1)
+move:   (1, 0) => K (0, 1)
 ______
 | K  |
 |    |
@@ -693,7 +693,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (2, 3)
+move:   (1, 3) => k (2, 3)
 ______
 |    |
 |K   |
@@ -766,7 +766,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 0)
+move:   (1, 0) => K (0, 0)
 ______
 |K   |
 |  k |
@@ -826,7 +826,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 0)
+move:   (1, 0) => K (2, 0)
 ______
 |    |
 |  k |
@@ -874,7 +874,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (1, 1)
+move:   (1, 0) => K (1, 1)
 ______
 |    |
 | Kk |
@@ -922,7 +922,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 1)
+move:   (1, 0) => K (2, 1)
 ______
 |    |
 |  k |
@@ -970,7 +970,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 1)
+move:   (1, 0) => K (0, 1)
 ______
 | K  |
 |  k |
@@ -994,7 +994,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (1, 2)
+move:   (1, 3) => k (1, 2)
 ______
 |    |
 |K k |
@@ -1067,7 +1067,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 0)
+move:   (1, 0) => K (0, 0)
 ______
 |K k |
 |    |
@@ -1127,7 +1127,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 0)
+move:   (1, 0) => K (2, 0)
 ______
 |  k |
 |    |
@@ -1175,7 +1175,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (1, 1)
+move:   (1, 0) => K (1, 1)
 ______
 |  k |
 | K  |
@@ -1223,7 +1223,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 1)
+move:   (1, 0) => K (2, 1)
 ______
 |  k |
 |    |
@@ -1271,7 +1271,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 1)
+move:   (1, 0) => K (0, 1)
 ______
 | Kk |
 |    |
@@ -1295,7 +1295,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (0, 2)
+move:   (1, 3) => k (0, 2)
 ______
 |  k |
 |K   |
@@ -1368,7 +1368,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 0)
+move:   (1, 0) => K (0, 0)
 ______
 |K   |
 |    |
@@ -1428,7 +1428,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 0)
+move:   (1, 0) => K (2, 0)
 ______
 |    |
 |    |
@@ -1476,7 +1476,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (1, 1)
+move:   (1, 0) => K (1, 1)
 ______
 |    |
 | K  |
@@ -1524,7 +1524,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 1)
+move:   (1, 0) => K (2, 1)
 ______
 |    |
 |    |
@@ -1572,7 +1572,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 1)
+move:   (1, 0) => K (0, 1)
 ______
 | K  |
 |    |
@@ -1596,7 +1596,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (2, 2)
+move:   (1, 3) => k (2, 2)
 ______
 |    |
 |K   |
@@ -1620,7 +1620,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (1, 0)
+move:   (2, 0) => K (1, 0)
 ______
 |    |
 |K  k|
@@ -1706,7 +1706,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (2, 0)
+move:   (3, 0) => K (2, 0)
 ______
 |   k|
 |    |
@@ -1766,7 +1766,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (3, 1)
+move:   (3, 0) => K (3, 1)
 ______
 |   k|
 |    |
@@ -1790,7 +1790,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (2, 1)
+move:   (3, 0) => K (2, 1)
 ______
 |   k|
 |    |
@@ -1814,7 +1814,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (0, 3)
+move:   (1, 3) => k (0, 3)
 ______
 |   k|
 |    |
@@ -1875,7 +1875,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (2, 0)
+move:   (3, 0) => K (2, 0)
 ______
 |    |
 |    |
@@ -1935,7 +1935,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (3, 1)
+move:   (3, 0) => K (3, 1)
 ______
 |    |
 |    |
@@ -1959,7 +1959,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (2, 1)
+move:   (3, 0) => K (2, 1)
 ______
 |    |
 |    |
@@ -1983,7 +1983,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (2, 3)
+move:   (1, 3) => k (2, 3)
 ______
 |    |
 |    |
@@ -2032,7 +2032,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (2, 0)
+move:   (3, 0) => K (2, 0)
 ______
 |    |
 |  k |
@@ -2092,7 +2092,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (3, 1)
+move:   (3, 0) => K (3, 1)
 ______
 |    |
 |  k |
@@ -2116,7 +2116,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (2, 1)
+move:   (3, 0) => K (2, 1)
 ______
 |    |
 |  k |
@@ -2140,7 +2140,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (1, 2)
+move:   (1, 3) => k (1, 2)
 ______
 |    |
 |  k |
@@ -2189,7 +2189,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (2, 0)
+move:   (3, 0) => K (2, 0)
 ______
 |  k |
 |    |
@@ -2249,7 +2249,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (3, 1)
+move:   (3, 0) => K (3, 1)
 ______
 |  k |
 |    |
@@ -2273,7 +2273,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (2, 1)
+move:   (3, 0) => K (2, 1)
 ______
 |  k |
 |    |
@@ -2297,7 +2297,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (0, 2)
+move:   (1, 3) => k (0, 2)
 ______
 |  k |
 |    |
@@ -2346,7 +2346,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (2, 0)
+move:   (3, 0) => K (2, 0)
 ______
 |    |
 |    |
@@ -2406,7 +2406,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (3, 1)
+move:   (3, 0) => K (3, 1)
 ______
 |    |
 |    |
@@ -2430,7 +2430,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 0) =>   (2, 1)
+move:   (3, 0) => K (2, 1)
 ______
 |    |
 |    |
@@ -2454,7 +2454,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (2, 2)
+move:   (1, 3) => k (2, 2)
 ______
 |    |
 |    |
@@ -2478,7 +2478,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (3, 0)
+move:   (2, 0) => K (3, 0)
 ______
 |    |
 |   k|
@@ -2552,7 +2552,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (1, 1)
+move:   (2, 1) => K (1, 1)
 ______
 |   k|
 | K  |
@@ -2588,7 +2588,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (3, 1)
+move:   (2, 1) => K (3, 1)
 ______
 |   k|
 |    |
@@ -2612,7 +2612,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (2, 0)
+move:   (2, 1) => K (2, 0)
 ______
 |   k|
 |    |
@@ -2660,7 +2660,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (2, 2)
+move:   (2, 1) => K (2, 2)
 ______
 |   k|
 |    |
@@ -2708,7 +2708,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (1, 0)
+move:   (2, 1) => K (1, 0)
 ______
 |   k|
 |K   |
@@ -2756,7 +2756,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (3, 2)
+move:   (2, 1) => K (3, 2)
 ______
 |   k|
 |    |
@@ -2804,7 +2804,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (3, 0)
+move:   (2, 1) => K (3, 0)
 ______
 |   k|
 |    |
@@ -2852,7 +2852,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (1, 2)
+move:   (2, 1) => K (1, 2)
 ______
 |   k|
 |  K |
@@ -2876,7 +2876,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (0, 3)
+move:   (1, 3) => k (0, 3)
 ______
 |   k|
 |    |
@@ -2937,7 +2937,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (1, 1)
+move:   (2, 1) => K (1, 1)
 ______
 |    |
 | K  |
@@ -2973,7 +2973,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (3, 1)
+move:   (2, 1) => K (3, 1)
 ______
 |    |
 |    |
@@ -2997,7 +2997,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (2, 0)
+move:   (2, 1) => K (2, 0)
 ______
 |    |
 |    |
@@ -3045,7 +3045,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (2, 2)
+move:   (2, 1) => K (2, 2)
 ______
 |    |
 |    |
@@ -3093,7 +3093,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (1, 0)
+move:   (2, 1) => K (1, 0)
 ______
 |    |
 |K   |
@@ -3141,7 +3141,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (3, 2)
+move:   (2, 1) => K (3, 2)
 ______
 |    |
 |    |
@@ -3189,7 +3189,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (3, 0)
+move:   (2, 1) => K (3, 0)
 ______
 |    |
 |    |
@@ -3237,7 +3237,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (1, 2)
+move:   (2, 1) => K (1, 2)
 ______
 |    |
 |  K |
@@ -3261,7 +3261,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (2, 3)
+move:   (1, 3) => k (2, 3)
 ______
 |    |
 |    |
@@ -3310,7 +3310,7 @@ solve()
 turn: 1
 depth: 3
 res: -996
-move: k (1, 3) =>   (1, 2)
+move:   (1, 3) => k (1, 2)
 ______
 |    |
 |  k |
@@ -3359,7 +3359,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (1, 1)
+move:   (2, 1) => K (1, 1)
 ______
 |  k |
 | K  |
@@ -3395,7 +3395,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (3, 1)
+move:   (2, 1) => K (3, 1)
 ______
 |  k |
 |    |
@@ -3419,7 +3419,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (2, 0)
+move:   (2, 1) => K (2, 0)
 ______
 |  k |
 |    |
@@ -3467,7 +3467,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (2, 2)
+move:   (2, 1) => K (2, 2)
 ______
 |  k |
 |    |
@@ -3515,7 +3515,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (1, 0)
+move:   (2, 1) => K (1, 0)
 ______
 |  k |
 |K   |
@@ -3563,7 +3563,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (3, 2)
+move:   (2, 1) => K (3, 2)
 ______
 |  k |
 |    |
@@ -3611,7 +3611,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (3, 0)
+move:   (2, 1) => K (3, 0)
 ______
 |  k |
 |    |
@@ -3659,7 +3659,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (2, 1) =>   (1, 2)
+move:   (2, 1) => K (1, 2)
 ______
 |  k |
 |  K |
@@ -3683,7 +3683,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (0, 2)
+move:   (1, 3) => k (0, 2)
 ______
 |  k |
 |    |
@@ -3732,7 +3732,7 @@ solve()
 turn: 1
 depth: 3
 res: -996
-move: k (1, 3) =>   (2, 2)
+move:   (1, 3) => k (2, 2)
 ______
 |    |
 |    |
@@ -3756,7 +3756,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (2, 1)
+move:   (2, 0) => K (2, 1)
 ______
 |    |
 |   k|
@@ -3830,7 +3830,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 1)
+move:   (3, 1) => K (2, 1)
 ______
 |   k|
 |    |
@@ -3866,7 +3866,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (3, 0)
+move:   (3, 1) => K (3, 0)
 ______
 |   k|
 |    |
@@ -3890,7 +3890,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (3, 2)
+move:   (3, 1) => K (3, 2)
 ______
 |   k|
 |    |
@@ -3914,7 +3914,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 0)
+move:   (3, 1) => K (2, 0)
 ______
 |   k|
 |    |
@@ -3938,7 +3938,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 2)
+move:   (3, 1) => K (2, 2)
 ______
 |   k|
 |    |
@@ -3962,7 +3962,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (0, 3)
+move:   (1, 3) => k (0, 3)
 ______
 |   k|
 |    |
@@ -4023,7 +4023,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 1)
+move:   (3, 1) => K (2, 1)
 ______
 |    |
 |    |
@@ -4059,7 +4059,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (3, 0)
+move:   (3, 1) => K (3, 0)
 ______
 |    |
 |    |
@@ -4083,7 +4083,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (3, 2)
+move:   (3, 1) => K (3, 2)
 ______
 |    |
 |    |
@@ -4107,7 +4107,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 0)
+move:   (3, 1) => K (2, 0)
 ______
 |    |
 |    |
@@ -4131,7 +4131,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 2)
+move:   (3, 1) => K (2, 2)
 ______
 |    |
 |    |
@@ -4155,7 +4155,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (2, 3)
+move:   (1, 3) => k (2, 3)
 ______
 |    |
 |    |
@@ -4204,7 +4204,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 1)
+move:   (3, 1) => K (2, 1)
 ______
 |    |
 |  k |
@@ -4264,7 +4264,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (3, 0)
+move:   (3, 1) => K (3, 0)
 ______
 |    |
 |  k |
@@ -4312,7 +4312,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (3, 2)
+move:   (3, 1) => K (3, 2)
 ______
 |    |
 |  k |
@@ -4336,7 +4336,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 0)
+move:   (3, 1) => K (2, 0)
 ______
 |    |
 |  k |
@@ -4384,7 +4384,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 2)
+move:   (3, 1) => K (2, 2)
 ______
 |    |
 |  k |
@@ -4408,7 +4408,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (1, 2)
+move:   (1, 3) => k (1, 2)
 ______
 |    |
 |  k |
@@ -4457,7 +4457,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 1)
+move:   (3, 1) => K (2, 1)
 ______
 |  k |
 |    |
@@ -4493,7 +4493,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (3, 0)
+move:   (3, 1) => K (3, 0)
 ______
 |  k |
 |    |
@@ -4517,7 +4517,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (3, 2)
+move:   (3, 1) => K (3, 2)
 ______
 |  k |
 |    |
@@ -4541,7 +4541,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 0)
+move:   (3, 1) => K (2, 0)
 ______
 |  k |
 |    |
@@ -4565,7 +4565,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (3, 1) =>   (2, 2)
+move:   (3, 1) => K (2, 2)
 ______
 |  k |
 |    |
@@ -4589,7 +4589,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (0, 2)
+move:   (1, 3) => k (0, 2)
 ______
 |  k |
 |    |
@@ -4638,7 +4638,7 @@ solve()
 turn: 1
 depth: 3
 res: -996
-move: k (1, 3) =>   (2, 2)
+move:   (1, 3) => k (2, 2)
 ______
 |    |
 |    |
@@ -4662,7 +4662,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (3, 1)
+move:   (2, 0) => K (3, 1)
 ______
 |    |
 |   k|
@@ -4736,7 +4736,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (0, 1)
+move:   (1, 1) => K (0, 1)
 ______
 | K k|
 |    |
@@ -4772,7 +4772,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (2, 1)
+move:   (1, 1) => K (2, 1)
 ______
 |   k|
 |    |
@@ -4796,7 +4796,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (1, 0)
+move:   (1, 1) => K (1, 0)
 ______
 |   k|
 |K   |
@@ -4820,7 +4820,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (1, 2)
+move:   (1, 1) => K (1, 2)
 ______
 |   k|
 |  K |
@@ -4844,7 +4844,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (0, 0)
+move:   (1, 1) => K (0, 0)
 ______
 |K  k|
 |    |
@@ -4868,7 +4868,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (2, 2)
+move:   (1, 1) => K (2, 2)
 ______
 |   k|
 |    |
@@ -4892,7 +4892,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (2, 0)
+move:   (1, 1) => K (2, 0)
 ______
 |   k|
 |    |
@@ -4940,7 +4940,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (0, 2)
+move:   (1, 1) => K (0, 2)
 ______
 |  Kk|
 |    |
@@ -4964,7 +4964,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (0, 3)
+move:   (1, 3) => k (0, 3)
 ______
 |   k|
 | K  |
@@ -5025,7 +5025,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (0, 1)
+move:   (1, 1) => K (0, 1)
 ______
 | K  |
 |    |
@@ -5061,7 +5061,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (2, 1)
+move:   (1, 1) => K (2, 1)
 ______
 |    |
 |    |
@@ -5085,7 +5085,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (1, 0)
+move:   (1, 1) => K (1, 0)
 ______
 |    |
 |K   |
@@ -5109,7 +5109,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (1, 2)
+move:   (1, 1) => K (1, 2)
 ______
 |    |
 |  K |
@@ -5133,7 +5133,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (0, 0)
+move:   (1, 1) => K (0, 0)
 ______
 |K   |
 |    |
@@ -5157,7 +5157,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (2, 2)
+move:   (1, 1) => K (2, 2)
 ______
 |    |
 |    |
@@ -5181,7 +5181,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (2, 0)
+move:   (1, 1) => K (2, 0)
 ______
 |    |
 |    |
@@ -5229,7 +5229,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 1) =>   (0, 2)
+move:   (1, 1) => K (0, 2)
 ______
 |  K |
 |    |
@@ -5253,7 +5253,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 3) =>   (2, 3)
+move:   (1, 3) => k (2, 3)
 ______
 |    |
 | K  |
@@ -5302,7 +5302,7 @@ solve()
 turn: 1
 depth: 3
 res: -996
-move: k (1, 3) =>   (1, 2)
+move:   (1, 3) => k (1, 2)
 ______
 |    |
 | Kk |
@@ -5351,7 +5351,7 @@ solve()
 turn: 1
 depth: 3
 res: -996
-move: k (1, 3) =>   (0, 2)
+move:   (1, 3) => k (0, 2)
 ______
 |  k |
 | K  |
@@ -5400,7 +5400,7 @@ solve()
 turn: 1
 depth: 3
 res: -996
-move: k (1, 3) =>   (2, 2)
+move:   (1, 3) => k (2, 2)
 ______
 |    |
 | K  |
@@ -5424,7 +5424,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (1, 1)
+move:   (2, 0) => K (1, 1)
 ______
 |    |
 | K k|
@@ -5448,7 +5448,7 @@ solve()
 turn: 1
 depth: 1
 res: 0
-move: k (0, 3) =>   (1, 3)
+move:   (0, 3) => k (1, 3)
 ______
 |    |
 |   k|
@@ -5509,7 +5509,7 @@ solved[]
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (1, 0)
+move:   (2, 0) => K (1, 0)
 ______
 |  k |
 |K   |
@@ -5545,7 +5545,7 @@ solved[]
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (3, 0)
+move:   (2, 0) => K (3, 0)
 ______
 |  k |
 |    |
@@ -5569,7 +5569,7 @@ solved[]
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (2, 1)
+move:   (2, 0) => K (2, 1)
 ______
 |  k |
 |    |
@@ -5593,7 +5593,7 @@ solved[]
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (3, 1)
+move:   (2, 0) => K (3, 1)
 ______
 |  k |
 |    |
@@ -5617,7 +5617,7 @@ solved[]
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (1, 1)
+move:   (2, 0) => K (1, 1)
 ______
 |  k |
 | K  |
@@ -5641,7 +5641,7 @@ solve()
 turn: 1
 depth: 1
 res: 0
-move: k (0, 3) =>   (0, 2)
+move:   (0, 3) => k (0, 2)
 ______
 |  k |
 |    |
@@ -5715,7 +5715,7 @@ solved[]
 turn: 1
 depth: 3
 res: 0
-move: k (1, 2) =>   (0, 2)
+move:   (1, 2) => k (0, 2)
 ______
 |  k |
 |K   |
@@ -5751,7 +5751,7 @@ solved[]
 turn: 1
 depth: 3
 res: 0
-move: k (1, 2) =>   (2, 2)
+move:   (1, 2) => k (2, 2)
 ______
 |    |
 |K   |
@@ -5800,7 +5800,7 @@ solve()
 turn: 1
 depth: 3
 res: -996
-move: k (1, 2) =>   (1, 1)
+move:   (1, 2) => k (1, 1)
 ______
 |    |
 |Kk  |
@@ -5873,7 +5873,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 0)
+move:   (1, 0) => K (0, 0)
 ______
 |K   |
 |   k|
@@ -5933,7 +5933,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 0)
+move:   (1, 0) => K (2, 0)
 ______
 |    |
 |   k|
@@ -5957,7 +5957,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (1, 1)
+move:   (1, 0) => K (1, 1)
 ______
 |    |
 | K k|
@@ -5981,7 +5981,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (2, 1)
+move:   (1, 0) => K (2, 1)
 ______
 |    |
 |   k|
@@ -6029,7 +6029,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: K (1, 0) =>   (0, 1)
+move:   (1, 0) => K (0, 1)
 ______
 | K  |
 |   k|
@@ -6053,7 +6053,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: k (1, 2) =>   (1, 3)
+move:   (1, 2) => k (1, 3)
 ______
 |    |
 |K  k|
@@ -6102,7 +6102,7 @@ solve()
 turn: 1
 depth: 3
 res: -996
-move: k (1, 2) =>   (0, 1)
+move:   (1, 2) => k (0, 1)
 ______
 | k  |
 |K   |
@@ -6126,7 +6126,7 @@ solved[]
 turn: 1
 depth: 3
 res: 0
-move: k (1, 2) =>   (2, 3)
+move:   (1, 2) => k (2, 3)
 ______
 |    |
 |K   |
@@ -6175,7 +6175,7 @@ solve()
 turn: 1
 depth: 3
 res: -996
-move: k (1, 2) =>   (2, 1)
+move:   (1, 2) => k (2, 1)
 ______
 |    |
 |K   |
@@ -6199,7 +6199,7 @@ solved[]
 turn: 1
 depth: 3
 res: 0
-move: k (1, 2) =>   (0, 3)
+move:   (1, 2) => k (0, 3)
 ______
 |   k|
 |K   |
@@ -6223,7 +6223,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (1, 0)
+move:   (2, 0) => K (1, 0)
 ______
 |    |
 |K k |
@@ -6259,7 +6259,7 @@ solved[]
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (3, 0)
+move:   (2, 0) => K (3, 0)
 ______
 |    |
 |  k |
@@ -6283,7 +6283,7 @@ solved[]
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (2, 1)
+move:   (2, 0) => K (2, 1)
 ______
 |    |
 |  k |
@@ -6307,7 +6307,7 @@ solved[]
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (3, 1)
+move:   (2, 0) => K (3, 1)
 ______
 |    |
 |  k |
@@ -6331,7 +6331,7 @@ solved[]
 turn: 0
 depth: 2
 res: 0
-move: K (2, 0) =>   (1, 1)
+move:   (2, 0) => K (1, 1)
 ______
 |    |
 | Kk |
@@ -6355,7 +6355,7 @@ solve()
 turn: 1
 depth: 1
 res: 0
-move: k (0, 3) =>   (1, 2)
+move:   (0, 3) => k (1, 2)
 ______
 |    |
 |  k |
@@ -6379,7 +6379,7 @@ solve()
 turn: 0
 depth: 0
 res: 0
-move: K (3, 0) =>   (2, 0)
+move:   (3, 0) => K (2, 0)
 ______
 |   k|
 |    |
@@ -6415,7 +6415,7 @@ solved[]
 turn: 0
 depth: 0
 res: 0
-move: K (3, 0) =>   (3, 1)
+move:   (3, 0) => K (3, 1)
 ______
 |   k|
 |    |
@@ -6439,7 +6439,7 @@ solved[]
 turn: 0
 depth: 0
 res: 0
-move: K (3, 0) =>   (2, 1)
+move:   (3, 0) => K (2, 1)
 ______
 |   k|
 |    |
@@ -6486,7 +6486,7 @@ after move
 turn: 1
 depth: 0
 res: 0
-move: K (3, 0) =>   (2, 0)
+move:   (3, 0) => K (2, 0)
 ______
 |   k|
 |    |
@@ -6510,7 +6510,7 @@ after move
 turn: 0
 depth: 0
 res: 0
-move: k (0, 3) =>   (1, 3)
+move:   (0, 3) => k (1, 3)
 ______
 |    |
 |   k|
@@ -6534,7 +6534,7 @@ after move
 turn: 1
 depth: 0
 res: 0
-move: K (2, 0) =>   (1, 0)
+move:   (2, 0) => K (1, 0)
 ______
 |    |
 |K  k|
@@ -6558,7 +6558,7 @@ after move
 turn: 0
 depth: 0
 res: 0
-move: k (1, 3) =>   (0, 3)
+move:   (1, 3) => k (0, 3)
 ______
 |   k|
 |K   |
@@ -6582,7 +6582,7 @@ after move
 turn: 1
 depth: 0
 res: 0
-move: K (1, 0) =>   (0, 0)
+move:   (1, 0) => K (0, 0)
 ______
 |K  k|
 |    |

@@ -152,7 +152,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (0, 0)
+move:   (1, 0) => R (0, 0)
 ______
 |R  r|
 |    |
@@ -212,7 +212,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (2, 0)
+move:   (1, 0) => R (2, 0)
 ______
 |   r|
 |    |
@@ -260,7 +260,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (1, 1)
+move:   (1, 0) => R (1, 1)
 ______
 |   r|
 | R  |
@@ -284,7 +284,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (1, 3) =>   (0, 3)
+move:   (1, 3) => r (0, 3)
 ______
 |   r|
 |R   |
@@ -369,7 +369,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (0, 0)
+move:   (1, 0) => R (0, 0)
 ______
 |R   |
 |    |
@@ -429,7 +429,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (2, 0)
+move:   (1, 0) => R (2, 0)
 ______
 |    |
 |    |
@@ -477,7 +477,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (1, 1)
+move:   (1, 0) => R (1, 1)
 ______
 |    |
 | R  |
@@ -501,7 +501,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (1, 3) =>   (2, 3)
+move:   (1, 3) => r (2, 3)
 ______
 |    |
 |R   |
@@ -574,7 +574,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (0, 0)
+move:   (1, 0) => R (0, 0)
 ______
 |R   |
 |  r |
@@ -634,7 +634,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (2, 0)
+move:   (1, 0) => R (2, 0)
 ______
 |    |
 |  r |
@@ -682,7 +682,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (1, 1)
+move:   (1, 0) => R (1, 1)
 ______
 |    |
 | Rr |
@@ -706,7 +706,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (1, 3) =>   (1, 2)
+move:   (1, 3) => r (1, 2)
 ______
 |    |
 |R r |
@@ -730,7 +730,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: R (2, 0) =>   (1, 0)
+move:   (2, 0) => R (1, 0)
 ______
 |    |
 |R  r|
@@ -816,7 +816,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (3, 0) =>   (2, 0)
+move:   (3, 0) => R (2, 0)
 ______
 |   r|
 |    |
@@ -876,7 +876,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (3, 0) =>   (3, 1)
+move:   (3, 0) => R (3, 1)
 ______
 |   r|
 |    |
@@ -900,7 +900,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (1, 3) =>   (0, 3)
+move:   (1, 3) => r (0, 3)
 ______
 |   r|
 |    |
@@ -961,7 +961,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (3, 0) =>   (2, 0)
+move:   (3, 0) => R (2, 0)
 ______
 |    |
 |    |
@@ -1021,7 +1021,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (3, 0) =>   (3, 1)
+move:   (3, 0) => R (3, 1)
 ______
 |    |
 |    |
@@ -1045,7 +1045,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (1, 3) =>   (2, 3)
+move:   (1, 3) => r (2, 3)
 ______
 |    |
 |    |
@@ -1094,7 +1094,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (3, 0) =>   (2, 0)
+move:   (3, 0) => R (2, 0)
 ______
 |    |
 |  r |
@@ -1154,7 +1154,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (3, 0) =>   (3, 1)
+move:   (3, 0) => R (3, 1)
 ______
 |    |
 |  r |
@@ -1178,7 +1178,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (1, 3) =>   (1, 2)
+move:   (1, 3) => r (1, 2)
 ______
 |    |
 |  r |
@@ -1202,7 +1202,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: R (2, 0) =>   (3, 0)
+move:   (2, 0) => R (3, 0)
 ______
 |    |
 |   r|
@@ -1276,7 +1276,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (1, 1)
+move:   (2, 1) => R (1, 1)
 ______
 |   r|
 | R  |
@@ -1312,7 +1312,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (3, 1)
+move:   (2, 1) => R (3, 1)
 ______
 |   r|
 |    |
@@ -1336,7 +1336,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (2, 0)
+move:   (2, 1) => R (2, 0)
 ______
 |   r|
 |    |
@@ -1384,7 +1384,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (2, 2)
+move:   (2, 1) => R (2, 2)
 ______
 |   r|
 |    |
@@ -1408,7 +1408,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (1, 3) =>   (0, 3)
+move:   (1, 3) => r (0, 3)
 ______
 |   r|
 |    |
@@ -1469,7 +1469,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (1, 1)
+move:   (2, 1) => R (1, 1)
 ______
 |    |
 | R  |
@@ -1505,7 +1505,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (3, 1)
+move:   (2, 1) => R (3, 1)
 ______
 |    |
 |    |
@@ -1529,7 +1529,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (2, 0)
+move:   (2, 1) => R (2, 0)
 ______
 |    |
 |    |
@@ -1577,7 +1577,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (2, 2)
+move:   (2, 1) => R (2, 2)
 ______
 |    |
 |    |
@@ -1601,7 +1601,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (1, 3) =>   (2, 3)
+move:   (1, 3) => r (2, 3)
 ______
 |    |
 |    |
@@ -1650,7 +1650,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (1, 1)
+move:   (2, 1) => R (1, 1)
 ______
 |    |
 | Rr |
@@ -1686,7 +1686,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (3, 1)
+move:   (2, 1) => R (3, 1)
 ______
 |    |
 |  r |
@@ -1710,7 +1710,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (2, 0)
+move:   (2, 1) => R (2, 0)
 ______
 |    |
 |  r |
@@ -1758,7 +1758,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (2, 2)
+move:   (2, 1) => R (2, 2)
 ______
 |    |
 |  r |
@@ -1782,7 +1782,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (1, 3) =>   (1, 2)
+move:   (1, 3) => r (1, 2)
 ______
 |    |
 |  r |
@@ -1806,7 +1806,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: R (2, 0) =>   (2, 1)
+move:   (2, 0) => R (2, 1)
 ______
 |    |
 |   r|
@@ -1830,7 +1830,7 @@ solve()
 turn: 1
 depth: 1
 res: 0
-move: r (0, 3) =>   (1, 3)
+move:   (0, 3) => r (1, 3)
 ______
 |    |
 |   r|
@@ -1916,7 +1916,7 @@ solved[]
 turn: 1
 depth: 3
 res: 0
-move: r (0, 2) =>   (1, 2)
+move:   (0, 2) => r (1, 2)
 ______
 |    |
 |R r |
@@ -2001,7 +2001,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (0, 0)
+move:   (1, 0) => R (0, 0)
 ______
 |Rr  |
 |    |
@@ -2061,7 +2061,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (2, 0)
+move:   (1, 0) => R (2, 0)
 ______
 | r  |
 |    |
@@ -2109,7 +2109,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (1, 0) =>   (1, 1)
+move:   (1, 0) => R (1, 1)
 ______
 | r  |
 | R  |
@@ -2133,7 +2133,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (0, 2) =>   (0, 1)
+move:   (0, 2) => r (0, 1)
 ______
 | r  |
 |R   |
@@ -2157,7 +2157,7 @@ solved[]
 turn: 1
 depth: 3
 res: 0
-move: r (0, 2) =>   (0, 3)
+move:   (0, 2) => r (0, 3)
 ______
 |   r|
 |R   |
@@ -2181,7 +2181,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: R (2, 0) =>   (1, 0)
+move:   (2, 0) => R (1, 0)
 ______
 |  r |
 |R   |
@@ -2242,7 +2242,7 @@ solved[]
 turn: 1
 depth: 3
 res: 0
-move: r (0, 2) =>   (1, 2)
+move:   (0, 2) => r (1, 2)
 ______
 |    |
 |  r |
@@ -2303,7 +2303,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (3, 0) =>   (2, 0)
+move:   (3, 0) => R (2, 0)
 ______
 | r  |
 |    |
@@ -2363,7 +2363,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (3, 0) =>   (3, 1)
+move:   (3, 0) => R (3, 1)
 ______
 | r  |
 |    |
@@ -2387,7 +2387,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (0, 2) =>   (0, 1)
+move:   (0, 2) => r (0, 1)
 ______
 | r  |
 |    |
@@ -2411,7 +2411,7 @@ solved[]
 turn: 1
 depth: 3
 res: 0
-move: r (0, 2) =>   (0, 3)
+move:   (0, 2) => r (0, 3)
 ______
 |   r|
 |    |
@@ -2435,7 +2435,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: R (2, 0) =>   (3, 0)
+move:   (2, 0) => R (3, 0)
 ______
 |  r |
 |    |
@@ -2484,7 +2484,7 @@ solved[]
 turn: 1
 depth: 3
 res: 0
-move: r (0, 2) =>   (1, 2)
+move:   (0, 2) => r (1, 2)
 ______
 |    |
 |  r |
@@ -2545,7 +2545,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (1, 1)
+move:   (2, 1) => R (1, 1)
 ______
 | r  |
 | R  |
@@ -2581,7 +2581,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (3, 1)
+move:   (2, 1) => R (3, 1)
 ______
 | r  |
 |    |
@@ -2605,7 +2605,7 @@ solved[]
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (2, 0)
+move:   (2, 1) => R (2, 0)
 ______
 | r  |
 |    |
@@ -2653,7 +2653,7 @@ solve()
 turn: 0
 depth: 4
 res: 0
-move: R (2, 1) =>   (2, 2)
+move:   (2, 1) => R (2, 2)
 ______
 | r  |
 |    |
@@ -2677,7 +2677,7 @@ solve()
 turn: 1
 depth: 3
 res: 0
-move: r (0, 2) =>   (0, 1)
+move:   (0, 2) => r (0, 1)
 ______
 | r  |
 |    |
@@ -2701,7 +2701,7 @@ solved[]
 turn: 1
 depth: 3
 res: 0
-move: r (0, 2) =>   (0, 3)
+move:   (0, 2) => r (0, 3)
 ______
 |   r|
 |    |
@@ -2725,7 +2725,7 @@ solve()
 turn: 0
 depth: 2
 res: 0
-move: R (2, 0) =>   (2, 1)
+move:   (2, 0) => R (2, 1)
 ______
 |  r |
 |    |
@@ -2749,7 +2749,7 @@ solve()
 turn: 1
 depth: 1
 res: 0
-move: r (0, 3) =>   (0, 2)
+move:   (0, 3) => r (0, 2)
 ______
 |  r |
 |    |
@@ -2773,7 +2773,7 @@ solve()
 turn: 0
 depth: 0
 res: 0
-move: R (3, 0) =>   (2, 0)
+move:   (3, 0) => R (2, 0)
 ______
 |   r|
 |    |
@@ -2809,7 +2809,7 @@ solved[]
 turn: 0
 depth: 0
 res: 0
-move: R (3, 0) =>   (3, 1)
+move:   (3, 0) => R (3, 1)
 ______
 |   r|
 |    |
@@ -2856,7 +2856,7 @@ after move
 turn: 1
 depth: 0
 res: 0
-move: R (3, 0) =>   (2, 0)
+move:   (3, 0) => R (2, 0)
 ______
 |   r|
 |    |
@@ -2880,7 +2880,7 @@ after move
 turn: 0
 depth: 0
 res: 0
-move: r (0, 3) =>   (1, 3)
+move:   (0, 3) => r (1, 3)
 ______
 |    |
 |   r|
@@ -2904,7 +2904,7 @@ after move
 turn: 1
 depth: 0
 res: 0
-move: R (2, 0) =>   (1, 0)
+move:   (2, 0) => R (1, 0)
 ______
 |    |
 |R  r|
@@ -2928,7 +2928,7 @@ after move
 turn: 0
 depth: 0
 res: 0
-move: r (1, 3) =>   (0, 3)
+move:   (1, 3) => r (0, 3)
 ______
 |   r|
 |R   |
@@ -2952,7 +2952,7 @@ after move
 turn: 1
 depth: 0
 res: 0
-move: R (1, 0) =>   (0, 0)
+move:   (1, 0) => R (0, 0)
 ______
 |R  r|
 |    |

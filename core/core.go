@@ -191,7 +191,7 @@ func (c *Core) move(depth, nextTurn int, moves []Move) int {
 	for _, move := range moves {
 		if move.To.What == 'k' || move.To.What == 'K' {
 			res = c.maxInt - depth
-			fmt.Fprintf(c.writer, "\nres: %d\n", res)
+			c.print(depth, res)
 			return res
 		}
 		c.print(depth, res)

@@ -89,6 +89,8 @@ func TestSolve(t *testing.T) {
 		var out bytes.Buffer
 		core := New(&out, config)
 		core.clearTerminal = "\n------\n"
+		core.maxInt = 1000
+		core.minInt = -1000
 		if in.board != nil {
 			core.board = in.board
 		}

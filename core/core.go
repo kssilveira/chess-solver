@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"fmt"
 	"io"
+	"math"
 	"time"
 )
 
@@ -34,6 +35,8 @@ type Core struct {
 	board         [][]byte
 	turn          int
 	clearTerminal string
+	maxInt        int
+	minInt        int
 }
 
 const (
@@ -80,7 +83,7 @@ func New(writer io.Writer, config Config) *Core {
 		[]byte("   p"),
 		[]byte("P   "),
 		[]byte("KRNB"),
-	}, clearTerminal: "\033[H\033[2J"}
+	}, clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt, minInt: math.MinInt}
 }
 
 // Solve solves the board.
@@ -88,16 +91,16 @@ func (c *Core) Solve() {
 	c.solve(0 /* depth */)
 }
 
-func (c *Core) solve(depth int) {
+func (c *Core) solve(depth int) int {
 	c.print(depth)
 	time.Sleep(c.config.SleepDuration)
 	fmt.Fprint(c.writer, c.clearTerminal)
 	if depth >= c.config.MaxDepth {
-		return
+		return c.minInt
 	}
 	nextTurn := (c.turn % 2) + 1
 	moves := c.moves(nextTurn)
-	c.move(depth, nextTurn, moves)
+	return c.move(depth, nextTurn, moves)
 }
 
 func (c *Core) print(depth int) {
@@ -153,16 +156,26 @@ func (c *Core) deltas(nextTurn, i, j int) []Move {
 	return moves
 }
 
-func (c *Core) move(depth, nextTurn int, moves []Move) {
+func (c *Core) move(depth, nextTurn int, moves []Move) int {
+	res := c.minInt
 	for _, move := range moves {
+		if move.To.What == 'k' || move.To.What == 'K' {
+			res = c.maxInt - depth
+			fmt.Fprintf(c.writer, "\nres: %d\n", res)
+			return res
+		}
 		c.print(depth)
 		c.board[move.To.X][move.To.Y] = c.board[move.From.X][move.From.Y]
 		c.board[move.From.X][move.From.Y] = ' '
 		prevTurn := c.turn
 		c.turn = nextTurn
-		c.solve(depth + 1)
+		next := -c.solve(depth + 1)
+		if next > res {
+			res = next
+		}
 		c.turn = prevTurn
 		c.board[move.To.X][move.To.Y] = move.To.What
 		c.board[move.From.X][move.From.Y] = move.From.What
 	}
+	return res
 }

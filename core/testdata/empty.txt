@@ -3,8 +3,6 @@ after move
 turn: 0
 depth: 0
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |    |
 |    |

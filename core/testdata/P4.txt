@@ -3,8 +3,6 @@ after move
 turn: 0
 depth: 0
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |p   |
 |    |
@@ -30,8 +28,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |p   |
 |    |
@@ -57,8 +53,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |    |
 |p   |
@@ -84,8 +78,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |    |
 |p  P|
@@ -111,8 +103,6 @@ after move
 turn: 0
 depth: 4
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |    |
 |   P|
@@ -138,8 +128,6 @@ after move
 turn: 1
 depth: 5
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |   P|
 |    |
@@ -184,20 +172,6 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 0
-depth: 4
-res: 0
-alpha: 0
-beta: 1000
-move: P (1, 3) =>   (0, 3)
-______
-|    |
-|   P|
-|p   |
-|    |
-‾‾‾‾‾‾
-
 final res
 turn: 0
 depth: 4
@@ -234,20 +208,6 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 3
-res: 0
-alpha: 0
-beta: 1000
-move: p (1, 0) =>   (2, 0)
-______
-|    |
-|p  P|
-|    |
-|    |
-‾‾‾‾‾‾
-
 final res
 turn: 1
 depth: 3
@@ -284,20 +244,6 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 0
-depth: 2
-res: 0
-alpha: 0
-beta: 1000
-move: P (2, 3) =>   (1, 3)
-______
-|    |
-|p   |
-|   P|
-|    |
-‾‾‾‾‾‾
-
 final res
 turn: 0
 depth: 2
@@ -334,20 +280,6 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 1
-res: 0
-alpha: 0
-beta: 1000
-move: p (0, 0) =>   (1, 0)
-______
-|p   |
-|    |
-|   P|
-|    |
-‾‾‾‾‾‾
-
 final res
 turn: 1
 depth: 1
@@ -376,20 +308,6 @@ updated res
 turn: 0
 depth: 0
 res: 0
-move: P (3, 3) =>   (2, 3)
-______
-|p   |
-|    |
-|    |
-|   P|
-‾‾‾‾‾‾
-
-updated alpha
-turn: 0
-depth: 0
-res: 0
-alpha: 0
-beta: 1000
 move: P (3, 3) =>   (2, 3)
 ______
 |p   |

@@ -35,8 +35,6 @@ type Config struct {
 type PrintConfig struct {
 	Move          Move
 	ClearTerminal bool
-	Alpha         int
-	Beta          int
 }
 
 // Core contains the core logic.
@@ -114,12 +112,12 @@ func New(writer io.Writer, config Config) *Core {
 func (c *Core) Solve() {
 	c.depth = 0
 	c.turn = 0
-	c.solve(c.minInt, c.maxInt)
+	c.solve()
 	c.show()
 }
 
-func (c *Core) solve(alpha, beta int) int {
-	c.print("after move", c.minInt, PrintConfig{ClearTerminal: true, Alpha: alpha, Beta: beta})
+func (c *Core) solve() int {
+	c.print("after move", c.minInt, PrintConfig{ClearTerminal: true})
 	if c.depth >= c.config.MaxDepth {
 		res := 0
 		c.print("max depth", res, PrintConfig{})
@@ -128,7 +126,7 @@ func (c *Core) solve(alpha, beta int) int {
 	nextTurn := (c.turn + 1) % 2
 	moves := c.moves(nextTurn)
 	moves = c.sort(moves)
-	return c.move(nextTurn, moves, alpha, beta)
+	return c.move(nextTurn, moves)
 }
 
 func (c *Core) print(message string, res int, cfg PrintConfig) {
@@ -139,10 +137,6 @@ func (c *Core) print(message string, res int, cfg PrintConfig) {
 	fmt.Fprintf(c.writer, "turn: %d\n", c.turn)
 	fmt.Fprintf(c.writer, "depth: %d\n", c.depth)
 	fmt.Fprintf(c.writer, "res: %d\n", res)
-	if cfg.Alpha != 0 || cfg.Beta != 0 {
-		fmt.Fprintf(c.writer, "alpha: %d\n", cfg.Alpha)
-		fmt.Fprintf(c.writer, "beta: %d\n", cfg.Beta)
-	}
 	if cfg.Move != (Move{}) {
 		fmt.Fprintf(c.writer, "move: %s (%d, %d) => %s (%d, %d)\n", string(cfg.Move.From.What), cfg.Move.From.X, cfg.Move.From.Y, string(cfg.Move.To.What), cfg.Move.To.X, cfg.Move.To.Y)
 	}
@@ -220,7 +214,7 @@ func (c *Core) sort(moves []Move) []Move {
 	return moves
 }
 
-func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
+func (c *Core) move(nextTurn int, moves []Move) int {
 	res := c.minInt
 	resMove := Move{}
 	if len(moves) == 0 {
@@ -247,7 +241,7 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 			prevTurn := c.turn
 			c.turn = nextTurn
 			c.depth++
-			next = -c.solve(-beta, -alpha)
+			next = -c.solve()
 			c.depth--
 			c.turn = prevTurn
 			c.print("solve()", next, PrintConfig{Move: move})
@@ -262,14 +256,6 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 			res = next
 			resMove = move
 			c.print("updated res", res, PrintConfig{Move: resMove})
-		}
-		if next > alpha {
-			alpha = next
-			c.print("updated alpha", next, PrintConfig{Move: move, Alpha: alpha, Beta: beta})
-		}
-		if alpha >= beta {
-			c.print("not pruned", next, PrintConfig{Move: move, Alpha: alpha, Beta: beta})
-			// break
 		}
 	}
 	c.print("final res", res, PrintConfig{Move: resMove})

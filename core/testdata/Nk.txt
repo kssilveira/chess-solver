@@ -3,8 +3,6 @@ after move
 turn: 0
 depth: 0
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |k R |
 |    |
@@ -30,8 +28,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |k   |
 |  R |
@@ -57,8 +53,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |    |
 |k R |
@@ -104,20 +98,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 1
-res: -998
-alpha: -998
-beta: 1000
-move: k (0, 0) =>   (1, 0)
-______
-|k   |
-|  R |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -134,8 +114,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: -1000
-beta: 998
 ______
 | k  |
 |  R |
@@ -161,8 +139,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 1000
 ______
 | kR |
 |    |
@@ -207,20 +183,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 0
-depth: 2
-res: 0
-alpha: 0
-beta: 998
-move: R (1, 2) =>   (0, 2)
-______
-| k  |
-|  R |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
 before move
 turn: 0
 depth: 2
@@ -237,8 +199,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k  |
 |    |
@@ -287,8 +247,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k  |
 | R  |
@@ -337,8 +295,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k  |
 |   R|
@@ -387,8 +343,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k  |
 |R R |
@@ -437,8 +391,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k  |
 |  R |
@@ -487,8 +439,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k  |
 | RR |
@@ -537,8 +487,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k  |
 |  R |
@@ -587,8 +535,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k  |
 |  R |
@@ -657,20 +603,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 1
-res: 0
-alpha: 0
-beta: 1000
-move: k (0, 0) =>   (0, 1)
-______
-|k   |
-|  R |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -687,8 +619,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |    |
 | kR |
@@ -750,20 +680,6 @@ updated res
 turn: 0
 depth: 0
 res: 0
-move: R (0, 2) =>   (1, 2)
-______
-|k R |
-|    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-updated alpha
-turn: 0
-depth: 0
-res: 0
-alpha: 0
-beta: 1000
 move: R (0, 2) =>   (1, 2)
 ______
 |k R |
@@ -788,8 +704,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |kR  |
 |    |
@@ -815,8 +729,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 1000
 ______
 | k  |
 |    |
@@ -842,8 +754,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 | k  |
 |R   |
@@ -904,8 +814,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 | k  |
 |    |
@@ -954,8 +862,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 | k  |
 | R  |
@@ -1004,8 +910,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 | k  |
 |    |
@@ -1054,8 +958,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 | k  |
 |    |
@@ -1104,8 +1006,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 | k  |
 |  N |
@@ -1174,30 +1074,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) => R (0, 1)
-______
-|kR  |
-|    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-not pruned
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) => R (0, 1)
-______
-|kR  |
-|    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -1247,18 +1123,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-not pruned
-turn: 1
-depth: 1
-res: -998
-move: k (0, 0) =>   (1, 0)
-______
-|kR  |
-|    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -1304,18 +1168,6 @@ move: k (0, 0) =>   (1, 1)
 ______
 | R  |
 | k  |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-not pruned
-turn: 1
-depth: 1
-res: -998
-move: k (0, 0) =>   (1, 1)
-______
-|kR  |
-|    |
 |RR  |
 |   N|
 ‾‾‾‾‾‾
@@ -1360,8 +1212,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |k  R|
 |    |
@@ -1387,8 +1237,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 1000
 ______
 |   R|
 |k   |
@@ -1434,20 +1282,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 1
-res: -998
-alpha: -998
-beta: 0
-move: k (0, 0) =>   (1, 0)
-______
-|k  R|
-|    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -1464,8 +1298,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 998
 ______
 | k R|
 |    |
@@ -1551,8 +1383,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k R|
 |R   |
@@ -1601,8 +1431,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k R|
 |    |
@@ -1651,8 +1479,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k R|
 | R  |
@@ -1701,8 +1527,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k R|
 |    |
@@ -1751,8 +1575,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k R|
 |    |
@@ -1801,8 +1623,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | k R|
 |  N |
@@ -1871,30 +1691,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) =>   (0, 1)
-______
-|k  R|
-|    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-not pruned
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) =>   (0, 1)
-______
-|k  R|
-|    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -1944,18 +1740,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-not pruned
-turn: 1
-depth: 1
-res: -998
-move: k (0, 0) =>   (1, 1)
-______
-|k  R|
-|    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
 final res
 turn: 1
 depth: 1
@@ -1996,8 +1780,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |k R |
 |R   |
@@ -2023,8 +1805,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 1000
 ______
 |  R |
 |k   |
@@ -2050,8 +1830,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |    |
 |k R |
@@ -2112,8 +1890,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 | R  |
 |k   |
@@ -2162,8 +1938,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |   R|
 |k   |
@@ -2212,8 +1986,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |kR  |
@@ -2262,8 +2034,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |k   |
@@ -2312,8 +2082,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |k   |
@@ -2362,8 +2130,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |k   |
@@ -2412,8 +2178,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |k N |
@@ -2471,30 +2235,6 @@ ______
 ‾‾‾‾‾‾
 
 updated res
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) => R (1, 0)
-______
-|k R |
-|R   |
-| R  |
-|   N|
-‾‾‾‾‾‾
-
-updated alpha
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) => R (1, 0)
-______
-|k R |
-|R   |
-| R  |
-|   N|
-‾‾‾‾‾‾
-
-not pruned
 turn: 1
 depth: 1
 res: 0
@@ -2555,18 +2295,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-not pruned
-turn: 1
-depth: 1
-res: -998
-move: k (0, 0) =>   (0, 1)
-______
-|k R |
-|R   |
-| R  |
-|   N|
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -2616,18 +2344,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-not pruned
-turn: 1
-depth: 1
-res: -998
-move: k (0, 0) =>   (1, 1)
-______
-|k R |
-|R   |
-| R  |
-|   N|
-‾‾‾‾‾‾
-
 final res
 turn: 1
 depth: 1
@@ -2668,8 +2384,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |k R |
 |    |
@@ -2695,8 +2409,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 1000
 ______
 |  R |
 |k   |
@@ -2722,8 +2434,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |    |
 |k R |
@@ -2784,8 +2494,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 | R  |
 |k   |
@@ -2834,8 +2542,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |   R|
 |k   |
@@ -2884,8 +2590,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |kR  |
@@ -2934,8 +2638,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |k   |
@@ -2984,8 +2686,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |k   |
@@ -3034,8 +2734,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |k   |
@@ -3084,8 +2782,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |k   |
@@ -3134,8 +2830,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |k   |
@@ -3184,8 +2878,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |k N |
@@ -3243,30 +2935,6 @@ ______
 ‾‾‾‾‾‾
 
 updated res
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) =>   (1, 0)
-______
-|k R |
-|    |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-updated alpha
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) =>   (1, 0)
-______
-|k R |
-|    |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-not pruned
 turn: 1
 depth: 1
 res: 0
@@ -3327,18 +2995,6 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-not pruned
-turn: 1
-depth: 1
-res: -998
-move: k (0, 0) =>   (0, 1)
-______
-|k R |
-|    |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -3388,18 +3044,6 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-not pruned
-turn: 1
-depth: 1
-res: -998
-move: k (0, 0) =>   (1, 1)
-______
-|k R |
-|    |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
 final res
 turn: 1
 depth: 1
@@ -3440,8 +3084,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |k R |
 | R  |
@@ -3467,8 +3109,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 1000
 ______
 |  R |
 | k  |
@@ -3494,8 +3134,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |    |
 | kR |
@@ -3556,8 +3194,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 | R  |
 | k  |
@@ -3606,8 +3242,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |   R|
 | k  |
@@ -3656,8 +3290,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 |Rk  |
@@ -3706,8 +3338,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 | k  |
@@ -3756,8 +3386,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 | k  |
@@ -3806,8 +3434,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 | kN |
@@ -3856,8 +3482,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |  R |
 | k  |
@@ -3915,30 +3539,6 @@ ______
 ‾‾‾‾‾‾
 
 updated res
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) => R (1, 1)
-______
-|k R |
-| R  |
-|R   |
-|   N|
-‾‾‾‾‾‾
-
-updated alpha
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) => R (1, 1)
-______
-|k R |
-| R  |
-|R   |
-|   N|
-‾‾‾‾‾‾
-
-not pruned
 turn: 1
 depth: 1
 res: 0
@@ -3995,18 +3595,6 @@ move: k (0, 0) =>   (1, 0)
 ______
 |  R |
 |kR  |
-|R   |
-|   N|
-‾‾‾‾‾‾
-
-not pruned
-turn: 1
-depth: 1
-res: -998
-move: k (0, 0) =>   (1, 0)
-______
-|k R |
-| R  |
 |R   |
 |   N|
 ‾‾‾‾‾‾
@@ -4060,18 +3648,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-not pruned
-turn: 1
-depth: 1
-res: -998
-move: k (0, 0) =>   (0, 1)
-______
-|k R |
-| R  |
-|R   |
-|   N|
-‾‾‾‾‾‾
-
 final res
 turn: 1
 depth: 1
@@ -4112,8 +3688,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |k R |
 |    |
@@ -4139,8 +3713,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 1000
 ______
 |  R |
 |k   |
@@ -4186,20 +3758,6 @@ ______
 | R N|
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 1
-res: -998
-alpha: -998
-beta: 0
-move: k (0, 0) =>   (1, 0)
-______
-|k R |
-|    |
-|R   |
-| R N|
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -4216,8 +3774,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 998
 ______
 | kR |
 |    |
@@ -4267,8 +3823,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 998
 ______
 |  R |
 | k  |
@@ -4294,8 +3848,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |    |
 | kR |
@@ -4356,8 +3908,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | R  |
 | k  |
@@ -4406,8 +3956,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |   R|
 | k  |
@@ -4456,8 +4004,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 |Rk  |
@@ -4506,8 +4052,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | k  |
@@ -4556,8 +4100,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | k  |
@@ -4606,8 +4148,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | k  |
@@ -4656,8 +4196,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | k  |
@@ -4706,8 +4244,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | k  |
@@ -4756,8 +4292,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | kN |
@@ -4806,8 +4340,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | k  |
@@ -4865,30 +4397,6 @@ ______
 ‾‾‾‾‾‾
 
 updated res
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) =>   (1, 1)
-______
-|k R |
-|    |
-|R   |
-| R N|
-‾‾‾‾‾‾
-
-updated alpha
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) =>   (1, 1)
-______
-|k R |
-|    |
-|R   |
-| R N|
-‾‾‾‾‾‾
-
-not pruned
 turn: 1
 depth: 1
 res: 0
@@ -4940,8 +4448,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |k R |
 |    |
@@ -4967,8 +4473,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 1000
 ______
 |  R |
 |k   |
@@ -5014,20 +4518,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 1
-res: -998
-alpha: -998
-beta: 0
-move: k (0, 0) =>   (1, 0)
-______
-|k R |
-|    |
-|R R |
-|   N|
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -5044,8 +4534,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 998
 ______
 | kR |
 |    |
@@ -5095,8 +4583,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 998
 ______
 |  R |
 | k  |
@@ -5122,8 +4608,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |    |
 | kR |
@@ -5184,8 +4668,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 | R  |
 | k  |
@@ -5234,8 +4716,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |   R|
 | k  |
@@ -5284,8 +4764,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 |Rk  |
@@ -5334,8 +4812,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | k  |
@@ -5384,8 +4860,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | k  |
@@ -5434,8 +4908,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | kR |
@@ -5532,8 +5004,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | k  |
@@ -5582,8 +5052,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | kN |
@@ -5632,8 +5100,6 @@ after move
 turn: 1
 depth: 3
 res: -1000
-alpha: -998
-beta: 0
 ______
 |  R |
 | k  |
@@ -5702,30 +5168,6 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) =>   (1, 1)
-______
-|k R |
-|    |
-|R R |
-|   N|
-‾‾‾‾‾‾
-
-not pruned
-turn: 1
-depth: 1
-res: 0
-move: k (0, 0) =>   (1, 1)
-______
-|k R |
-|    |
-|R R |
-|   N|
-‾‾‾‾‾‾
-
 final res
 turn: 1
 depth: 1
@@ -5766,8 +5208,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |k R |
 |  N |
@@ -5793,8 +5233,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 1000
 ______
 |  R |
 |k N |
@@ -5840,20 +5278,6 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 1
-depth: 1
-res: -998
-alpha: -998
-beta: 0
-move: k (0, 0) =>   (1, 0)
-______
-|k R |
-|  N |
-|RR  |
-|    |
-‾‾‾‾‾‾
-
 before move
 turn: 1
 depth: 1
@@ -5870,8 +5294,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 998
 ______
 | kR |
 |  N |
@@ -5921,8 +5343,6 @@ after move
 turn: 0
 depth: 2
 res: -1000
-alpha: 0
-beta: 998
 ______
 |  R |
 | kN |
@@ -5984,20 +5404,6 @@ updated res
 turn: 0
 depth: 0
 res: 998
-move: N (3, 3) =>   (1, 2)
-______
-|k R |
-|    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-updated alpha
-turn: 0
-depth: 0
-res: 998
-alpha: 998
-beta: 1000
 move: N (3, 3) =>   (1, 2)
 ______
 |k R |

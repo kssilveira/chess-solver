@@ -3,8 +3,6 @@ after move
 turn: 0
 depth: 0
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |xxx |
 | P  |
@@ -30,8 +28,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 1000
 ______
 |xxP |
 |    |
@@ -76,20 +72,6 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-updated alpha
-turn: 0
-depth: 0
-res: 0
-alpha: 0
-beta: 1000
-move: P (1, 1) => x (0, 2)
-______
-|xxx |
-| P  |
-|    |
-|    |
-‾‾‾‾‾‾
-
 before move
 turn: 0
 depth: 0
@@ -106,8 +88,6 @@ after move
 turn: 1
 depth: 1
 res: -1000
-alpha: -1000
-beta: 0
 ______
 |Pxx |
 |    |

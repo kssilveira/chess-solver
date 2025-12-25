@@ -213,6 +213,17 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+pruned
+depth: 3
+res: 0
+move: p (1, 2) =>   (2, 2)
+______
+|    |
+| Pp |
+|    |
+|    |
+‾‾‾‾‾‾
+
 final res
 depth: 3
 res: 0

@@ -191,6 +191,17 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
+pruned
+depth: 4
+res: 0
+move: N (0, 0) =>   (2, 1)
+______
+|Nxn |
+|    |
+|    |
+|  X |
+‾‾‾‾‾‾
+
 final res
 depth: 4
 res: 0
@@ -269,6 +280,17 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
+pruned
+depth: 4
+res: 0
+move: N (0, 0) =>   (2, 1)
+______
+|Nx  |
+|   n|
+|    |
+|  X |
+‾‾‾‾‾‾
+
 final res
 depth: 4
 res: 0
@@ -337,6 +359,17 @@ ______
 ‾‾‾‾‾‾
 
 updated res
+depth: 4
+res: 0
+move: N (0, 0) =>   (2, 1)
+______
+|Nx  |
+|    |
+|    |
+|  Xn|
+‾‾‾‾‾‾
+
+pruned
 depth: 4
 res: 0
 move: N (0, 0) =>   (2, 1)
@@ -525,337 +558,15 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
-before move
+pruned
 depth: 3
 res: 0
-move: n (2, 1) =>   (0, 2)
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
 |Nn  |
 |  X |
-‾‾‾‾‾‾
-
-after move
-depth: 4
-res: -1000
-______
-| xn |
-|    |
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-before move
-depth: 4
-res: -1000
-move: N (2, 0) => x (0, 1)
-______
-| xn |
-|    |
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-after move
-depth: 5
-res: -1000
-______
-| Nn |
-|    |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 5
-res: 0
-______
-| Nn |
-|    |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: N (2, 0) => x (0, 1)
-______
-| xn |
-|    |
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-before move
-depth: 4
-res: 0
-move: N (2, 0) =>   (1, 2)
-______
-| xn |
-|    |
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-after move
-depth: 5
-res: -1000
-______
-| xn |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 5
-res: 0
-______
-| xn |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-final res
-depth: 4
-res: 0
-move: N (2, 0) => x (0, 1)
-______
-| xn |
-|    |
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-before move
-depth: 3
-res: 0
-move: n (2, 1) =>   (1, 3)
-______
-| x  |
-|    |
-|Nn  |
-|  X |
-‾‾‾‾‾‾
-
-after move
-depth: 4
-res: -1000
-______
-| x  |
-|   n|
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-before move
-depth: 4
-res: -1000
-move: N (2, 0) => x (0, 1)
-______
-| x  |
-|   n|
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-after move
-depth: 5
-res: -1000
-______
-| N  |
-|   n|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 5
-res: 0
-______
-| N  |
-|   n|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: N (2, 0) => x (0, 1)
-______
-| x  |
-|   n|
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-before move
-depth: 4
-res: 0
-move: N (2, 0) =>   (1, 2)
-______
-| x  |
-|   n|
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-after move
-depth: 5
-res: -1000
-______
-| x  |
-|  Nn|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 5
-res: 0
-______
-| x  |
-|  Nn|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-final res
-depth: 4
-res: 0
-move: N (2, 0) => x (0, 1)
-______
-| x  |
-|   n|
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-before move
-depth: 3
-res: 0
-move: n (2, 1) =>   (3, 3)
-______
-| x  |
-|    |
-|Nn  |
-|  X |
-‾‾‾‾‾‾
-
-after move
-depth: 4
-res: -1000
-______
-| x  |
-|    |
-|N   |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-before move
-depth: 4
-res: -1000
-move: N (2, 0) => x (0, 1)
-______
-| x  |
-|    |
-|N   |
-|  Xn|
-‾‾‾‾‾‾
-
-after move
-depth: 5
-res: -1000
-______
-| N  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 5
-res: 0
-______
-| N  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: N (2, 0) => x (0, 1)
-______
-| x  |
-|    |
-|N   |
-|  Xn|
-‾‾‾‾‾‾
-
-before move
-depth: 4
-res: 0
-move: N (2, 0) =>   (1, 2)
-______
-| x  |
-|    |
-|N   |
-|  Xn|
-‾‾‾‾‾‾
-
-after move
-depth: 5
-res: -1000
-______
-| x  |
-|  N |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 5
-res: 0
-______
-| x  |
-|  N |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-final res
-depth: 4
-res: 0
-move: N (2, 0) => x (0, 1)
-______
-| x  |
-|    |
-|N   |
-|  Xn|
 ‾‾‾‾‾‾
 
 final res
@@ -992,271 +703,15 @@ ______
 | NX |
 ‾‾‾‾‾‾
 
-before move
+pruned
 depth: 3
 res: 0
-move: n (2, 1) =>   (0, 2)
+move: n (2, 1) =>   (0, 0)
 ______
 | x  |
 |    |
 | n  |
 | NX |
-‾‾‾‾‾‾
-
-after move
-depth: 4
-res: -1000
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-------
-
-before move
-depth: 4
-res: -1000
-move: N (3, 1) =>   (1, 0)
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-after move
-depth: 5
-res: -1000
-______
-| xn |
-|N   |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 5
-res: 0
-______
-| xn |
-|N   |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-before move
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 2)
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-final res
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-before move
-depth: 3
-res: 0
-move: n (2, 1) =>   (1, 3)
-______
-| x  |
-|    |
-| n  |
-| NX |
-‾‾‾‾‾‾
-
-after move
-depth: 4
-res: -1000
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-------
-
-before move
-depth: 4
-res: -1000
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-after move
-depth: 5
-res: -1000
-______
-| x  |
-|N  n|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 5
-res: 0
-______
-| x  |
-|N  n|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-before move
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 2)
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-final res
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-before move
-depth: 3
-res: 0
-move: n (2, 1) =>   (3, 3)
-______
-| x  |
-|    |
-| n  |
-| NX |
-‾‾‾‾‾‾
-
-after move
-depth: 4
-res: -1000
-______
-| x  |
-|    |
-|    |
-| NXn|
-‾‾‾‾‾‾
-
-------
-
-before move
-depth: 4
-res: -1000
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|    |
-|    |
-| NXn|
-‾‾‾‾‾‾
-
-after move
-depth: 5
-res: -1000
-______
-| x  |
-|N   |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-max depth
-depth: 5
-res: 0
-______
-| x  |
-|N   |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|    |
-|    |
-| NXn|
-‾‾‾‾‾‾
-
-before move
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 2)
-______
-| x  |
-|    |
-|    |
-| NXn|
-‾‾‾‾‾‾
-
-final res
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|    |
-|    |
-| NXn|
 ‾‾‾‾‾‾
 
 final res
@@ -1337,171 +792,14 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-before move
+pruned
 depth: 3
 res: 0
-move: n (2, 1) =>   (0, 0)
+move: n (2, 1) => N (3, 3)
 ______
 | x  |
 |    |
 | n  |
-|  XN|
-‾‾‾‾‾‾
-
-after move
-depth: 4
-res: -1000
-______
-|nx  |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-------
-
-before move
-depth: 4
-res: -1000
-move: N (3, 3) =>   (1, 2)
-______
-|nx  |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: N (3, 3) =>   (1, 2)
-______
-|nx  |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-final res
-depth: 4
-res: 0
-move: N (3, 3) =>   (1, 2)
-______
-|nx  |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-before move
-depth: 3
-res: 0
-move: n (2, 1) =>   (0, 2)
-______
-| x  |
-|    |
-| n  |
-|  XN|
-‾‾‾‾‾‾
-
-after move
-depth: 4
-res: -1000
-______
-| xn |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-------
-
-before move
-depth: 4
-res: -1000
-move: N (3, 3) =>   (1, 2)
-______
-| xn |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: N (3, 3) =>   (1, 2)
-______
-| xn |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-final res
-depth: 4
-res: 0
-move: N (3, 3) =>   (1, 2)
-______
-| xn |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-before move
-depth: 3
-res: 0
-move: n (2, 1) =>   (1, 3)
-______
-| x  |
-|    |
-| n  |
-|  XN|
-‾‾‾‾‾‾
-
-after move
-depth: 4
-res: -1000
-______
-| x  |
-|   n|
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-------
-
-before move
-depth: 4
-res: -1000
-move: N (3, 3) =>   (1, 2)
-______
-| x  |
-|   n|
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-updated res
-depth: 4
-res: 0
-move: N (3, 3) =>   (1, 2)
-______
-| x  |
-|   n|
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-final res
-depth: 4
-res: 0
-move: N (3, 3) =>   (1, 2)
-______
-| x  |
-|   n|
-|    |
 |  XN|
 ‾‾‾‾‾‾
 

@@ -765,70 +765,13 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-before move
+pruned
 depth: 1
 res: 0
-move: k (0, 0) =>   (1, 0)
+move: k (0, 0) => R (0, 1)
 ______
 |kR  |
 |    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-| R  |
-|k   |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-------
-
-dead king
-depth: 2
-res: 998
-move: R (2, 0) => k (1, 0)
-______
-| R  |
-|k   |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
-move: k (0, 0) =>   (1, 1)
-______
-|kR  |
-|    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-| R  |
-| k  |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-------
-
-dead king
-depth: 2
-res: 998
-move: R (2, 1) => k (1, 1)
-______
-| R  |
-| k  |
 |RR  |
 |   N|
 ‾‾‾‾‾‾
@@ -1188,36 +1131,13 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-before move
+pruned
 depth: 1
 res: 0
-move: k (0, 0) =>   (1, 1)
+move: k (0, 0) =>   (0, 1)
 ______
 |k  R|
 |    |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-|   R|
-| k  |
-|RR  |
-|   N|
-‾‾‾‾‾‾
-
-------
-
-dead king
-depth: 2
-res: 998
-move: R (2, 1) => k (1, 1)
-______
-|   R|
-| k  |
 |RR  |
 |   N|
 ‾‾‾‾‾‾
@@ -1576,70 +1496,13 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-before move
+pruned
 depth: 1
 res: 0
-move: k (0, 0) =>   (0, 1)
+move: k (0, 0) => R (1, 0)
 ______
 |k R |
 |R   |
-| R  |
-|   N|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-| kR |
-|R   |
-| R  |
-|   N|
-‾‾‾‾‾‾
-
-------
-
-dead king
-depth: 2
-res: 998
-move: R (0, 2) => k (0, 1)
-______
-| kR |
-|R   |
-| R  |
-|   N|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
-move: k (0, 0) =>   (1, 1)
-______
-|k R |
-|R   |
-| R  |
-|   N|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-|  R |
-|Rk  |
-| R  |
-|   N|
-‾‾‾‾‾‾
-
-------
-
-dead king
-depth: 2
-res: 998
-move: R (2, 1) => k (1, 1)
-______
-|  R |
-|Rk  |
 | R  |
 |   N|
 ‾‾‾‾‾‾
@@ -2064,70 +1927,13 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-before move
+pruned
 depth: 1
 res: 0
-move: k (0, 0) =>   (0, 1)
+move: k (0, 0) =>   (1, 0)
 ______
 |k R |
 |    |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-| kR |
-|    |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-------
-
-dead king
-depth: 2
-res: 998
-move: R (0, 2) => k (0, 1)
-______
-| kR |
-|    |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
-move: k (0, 0) =>   (1, 1)
-______
-|k R |
-|    |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-|  R |
-| k  |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-------
-
-dead king
-depth: 2
-res: 998
-move: R (2, 1) => k (1, 1)
-______
-|  R |
-| k  |
 | R  |
 |R  N|
 ‾‾‾‾‾‾
@@ -2486,69 +2292,12 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-before move
+pruned
 depth: 1
 res: 0
-move: k (0, 0) =>   (1, 0)
+move: k (0, 0) => R (1, 1)
 ______
 |k R |
-| R  |
-|R   |
-|   N|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-|  R |
-|kR  |
-|R   |
-|   N|
-‾‾‾‾‾‾
-
-------
-
-dead king
-depth: 2
-res: 998
-move: R (2, 0) => k (1, 0)
-______
-|  R |
-|kR  |
-|R   |
-|   N|
-‾‾‾‾‾‾
-
-before move
-depth: 1
-res: 0
-move: k (0, 0) =>   (0, 1)
-______
-|k R |
-| R  |
-|R   |
-|   N|
-‾‾‾‾‾‾
-
-after move
-depth: 2
-res: -1000
-______
-| kR |
-| R  |
-|R   |
-|   N|
-‾‾‾‾‾‾
-
-------
-
-dead king
-depth: 2
-res: 998
-move: R (1, 1) => k (0, 1)
-______
-| kR |
 | R  |
 |R   |
 |   N|
@@ -3086,6 +2835,17 @@ ______
 | R N|
 ‾‾‾‾‾‾
 
+pruned
+depth: 1
+res: 0
+move: k (0, 0) =>   (1, 1)
+______
+|k R |
+|    |
+|R   |
+| R N|
+‾‾‾‾‾‾
+
 final res
 depth: 1
 res: 0
@@ -3597,6 +3357,17 @@ ______
 ‾‾‾‾‾‾
 
 updated res
+depth: 1
+res: 0
+move: k (0, 0) =>   (1, 1)
+______
+|k R |
+|    |
+|R R |
+|   N|
+‾‾‾‾‾‾
+
+pruned
 depth: 1
 res: 0
 move: k (0, 0) =>   (1, 1)

@@ -95,7 +95,7 @@ func New(writer io.Writer, config Config) *Core {
 		[]byte("   p"),
 		[]byte("P   "),
 		[]byte("KRNB"),
-	}, visited: []map[string]int{{}, {}}, solved: []map[string]int{{}, {}}, clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt, minInt: math.MinInt}
+	}, visited: []map[string]int{{}, {}}, solved: []map[string]int{{}, {}}, clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt - 1, minInt: math.MinInt + 1}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
 			res.board[i] = []byte(row)
@@ -107,10 +107,10 @@ func New(writer io.Writer, config Config) *Core {
 // Solve solves the board.
 func (c *Core) Solve() {
 	c.depth = 0
-	c.solve()
+	c.solve(c.minInt, c.maxInt)
 }
 
-func (c *Core) solve() int {
+func (c *Core) solve(alpha, beta int) int {
 	c.print("after move", c.minInt, PrintConfig{ClearTerminal: true})
 	if c.depth >= c.config.MaxDepth {
 		res := 0
@@ -120,7 +120,7 @@ func (c *Core) solve() int {
 	nextTurn := (c.turn + 1) % 2
 	moves := c.moves(nextTurn)
 	moves = c.sort(moves)
-	return c.move(nextTurn, moves)
+	return c.move(nextTurn, moves, alpha, beta)
 }
 
 func (c *Core) print(message string, res int, cfg PrintConfig) {
@@ -207,7 +207,7 @@ func (c *Core) sort(moves []Move) []Move {
 	return moves
 }
 
-func (c *Core) move(nextTurn int, moves []Move) int {
+func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 	res := c.minInt
 	resMove := Move{}
 	if len(moves) == 0 {
@@ -233,7 +233,7 @@ func (c *Core) move(nextTurn int, moves []Move) int {
 			prevTurn := c.turn
 			c.turn = nextTurn
 			c.depth++
-			next = -c.solve()
+			next = -c.solve(-beta, -alpha)
 			c.depth--
 			c.turn = prevTurn
 			c.solved[c.turn][key] = next
@@ -245,6 +245,13 @@ func (c *Core) move(nextTurn int, moves []Move) int {
 			res = next
 			resMove = move
 			c.print("updated res", res, PrintConfig{Move: resMove})
+		}
+		if next > alpha {
+			alpha = next
+		}
+		if alpha >= beta {
+			c.print("pruned", res, PrintConfig{Move: resMove})
+			break
 		}
 	}
 	c.print("final res", res, PrintConfig{Move: resMove})

@@ -48,7 +48,7 @@ type Core struct {
 	minInt        int
 	visited       []map[string]int
 	solved        []map[string]int
-	solvedRes     []map[string]Move
+	solvedMove    []map[string]Move
 	depth         int
 }
 
@@ -98,7 +98,7 @@ func New(writer io.Writer, config Config) *Core {
 		[]byte("KRNB"),
 	},
 		visited: []map[string]int{{}, {}},
-		solved:  []map[string]int{{}, {}}, solvedRes: []map[string]Move{{}, {}},
+		solved:  []map[string]int{{}, {}}, solvedMove: []map[string]Move{{}, {}},
 		clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt - 1, minInt: math.MinInt + 1}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
@@ -241,7 +241,7 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) int {
 			c.depth--
 			c.turn = prevTurn
 			c.solved[c.turn][key] = next
-			c.solvedRes[c.turn][key] = move
+			c.solvedMove[c.turn][key] = move
 		}
 		c.visited[c.turn][key]--
 		c.board[move.To.X][move.To.Y] = move.To.What

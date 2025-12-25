@@ -207,7 +207,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -231,7 +231,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 932572
@@ -279,7 +279,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 2
 res: 981548
@@ -353,7 +353,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -377,7 +377,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -401,7 +401,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 2
 res: 926662
@@ -425,7 +425,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 2
 res: 926662
@@ -499,7 +499,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -999994
@@ -523,7 +523,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -927786
@@ -600,7 +600,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 2
 res: 0
@@ -650,7 +650,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -674,7 +674,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -698,7 +698,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -722,7 +722,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -746,7 +746,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -770,7 +770,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -794,7 +794,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -882,7 +882,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1048,7 +1048,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solve()
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1084,7 +1084,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1108,7 +1108,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1132,7 +1132,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1156,7 +1156,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1180,7 +1180,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1204,7 +1204,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1292,7 +1292,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -999142
@@ -1330,7 +1330,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -999990
@@ -1368,7 +1368,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -999990
@@ -1406,7 +1406,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -999990
@@ -1468,7 +1468,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 0
 res: 939320
@@ -1518,7 +1518,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 0
 res: 0
@@ -1632,7 +1632,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1680,7 +1680,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1704,7 +1704,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 2
 res: 939320
@@ -1740,7 +1740,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1764,7 +1764,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1788,7 +1788,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1876,7 +1876,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -941606
@@ -1941,7 +1941,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -1991,7 +1991,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2029,7 +2029,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2067,7 +2067,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2105,7 +2105,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2143,7 +2143,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2181,7 +2181,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2219,7 +2219,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2321,7 +2321,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -967462
@@ -2359,7 +2359,7 @@ ______
 |RR N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -941606
@@ -2448,7 +2448,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -962792
@@ -2525,7 +2525,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2561,7 +2561,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2585,7 +2585,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2609,7 +2609,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2633,7 +2633,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 2
 res: 939320
@@ -2669,7 +2669,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2693,7 +2693,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2717,7 +2717,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2832,7 +2832,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2882,7 +2882,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2920,7 +2920,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2958,7 +2958,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -2996,7 +2996,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -3034,7 +3034,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -3072,7 +3072,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -3110,7 +3110,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 2
 res: 0
@@ -3212,7 +3212,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -889170
@@ -3250,7 +3250,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 1
 depth: 1
 res: -981086
@@ -3312,7 +3312,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 0
 res: 0
@@ -3336,7 +3336,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 0
 res: 946276
@@ -3386,7 +3386,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 0
 res: 926398
@@ -3410,7 +3410,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] upper
 turn: 0
 depth: 0
 res: 0
@@ -3460,7 +3460,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 946276
+res: 123456789
 move: R (3, 0) =>   (2, 0)
 ______
 |  R |
@@ -3474,7 +3474,7 @@ ______
 before move
 turn: 1
 depth: 0
-res: 946276
+res: 123456789
 move: k (1, 0) =>   (0, 0)
 ______
 |  R |
@@ -3486,7 +3486,7 @@ ______
 after move
 turn: 0
 depth: 0
-res: -946276
+res: 123456789
 move: k (1, 0) =>   (0, 0)
 ______
 |k R |
@@ -3500,7 +3500,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: -946276
+res: 123456789
 move: N (3, 3) =>   (1, 2)
 ______
 |k R |
@@ -3512,7 +3512,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 946276
+res: 123456789
 move: N (3, 3) =>   (1, 2)
 ______
 |k R |
@@ -3526,7 +3526,7 @@ ______
 before move
 turn: 1
 depth: 0
-res: 946276
+res: 123456789
 move: k (0, 0) =>   (1, 0)
 ______
 |k R |
@@ -3538,7 +3538,7 @@ ______
 after move
 turn: 0
 depth: 0
-res: -946276
+res: 123456789
 move: k (0, 0) =>   (1, 0)
 ______
 |  R |

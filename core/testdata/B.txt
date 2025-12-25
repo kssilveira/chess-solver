@@ -1039,7 +1039,7 @@ ______
 |  B |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -1282,7 +1282,7 @@ ______
 |  B |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -1379,7 +1379,7 @@ ______
 |  B |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -1548,7 +1548,7 @@ ______
 |  B |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -1770,7 +1770,7 @@ ______
 |B   |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -1891,7 +1891,7 @@ ______
 |B   |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -2000,7 +2000,7 @@ ______
 |B   |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -2109,7 +2109,7 @@ ______
 |B   |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -2343,7 +2343,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 0
+res: 123456789
 move: B (3, 0) =>   (2, 1)
 ______
 |   b|
@@ -2357,7 +2357,7 @@ ______
 before move
 turn: 1
 depth: 0
-res: 0
+res: 123456789
 move: b (0, 3) =>   (1, 2)
 ______
 |   b|
@@ -2369,7 +2369,7 @@ ______
 after move
 turn: 0
 depth: 0
-res: 0
+res: 123456789
 move: b (0, 3) =>   (1, 2)
 ______
 |    |
@@ -2383,7 +2383,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 0
+res: 123456789
 move: B (2, 1) => b (1, 2)
 ______
 |    |
@@ -2395,7 +2395,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 0
+res: 123456789
 move: B (2, 1) => b (1, 2)
 ______
 |    |

@@ -1589,7 +1589,7 @@ ______
 | NX |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -1770,7 +1770,7 @@ ______
 | NX |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -1939,7 +1939,7 @@ ______
 | NX |
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -2108,7 +2108,7 @@ ______
 | NXn|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -2342,7 +2342,7 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -2451,7 +2451,7 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -2560,7 +2560,7 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 4
 res: 0
@@ -2794,7 +2794,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 0
+res: 123456789
 move: N (3, 3) =>   (1, 2)
 ______
 |nx  |
@@ -2808,7 +2808,7 @@ ______
 before move
 turn: 1
 depth: 0
-res: 0
+res: 123456789
 move: n (0, 0) =>   (2, 1)
 ______
 |nx  |
@@ -2820,7 +2820,7 @@ ______
 after move
 turn: 0
 depth: 0
-res: 0
+res: 123456789
 move: n (0, 0) =>   (2, 1)
 ______
 | x  |
@@ -2834,7 +2834,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 0
+res: 123456789
 move: N (1, 2) =>   (0, 0)
 ______
 | x  |
@@ -2846,7 +2846,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 0
+res: 123456789
 move: N (1, 2) =>   (0, 0)
 ______
 |Nx  |
@@ -2860,7 +2860,7 @@ ______
 before move
 turn: 1
 depth: 0
-res: 0
+res: 123456789
 move: n (2, 1) => N (0, 0)
 ______
 |Nx  |
@@ -2872,7 +2872,7 @@ ______
 after move
 turn: 0
 depth: 0
-res: 0
+res: 123456789
 move: n (2, 1) => N (0, 0)
 ______
 |nx  |

@@ -1487,7 +1487,7 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 2
 res: 0
@@ -1523,7 +1523,7 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 2
 res: 0
@@ -5480,7 +5480,7 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 2
 res: 0
@@ -5504,7 +5504,7 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
-solved[]
+solved[] exact
 turn: 0
 depth: 2
 res: 0
@@ -6044,7 +6044,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 998
+res: 123456789
 move: N (3, 3) =>   (1, 2)
 ______
 |k R |
@@ -6058,7 +6058,7 @@ ______
 before move
 turn: 1
 depth: 0
-res: 998
+res: 123456789
 move: k (0, 0) =>   (1, 0)
 ______
 |k R |
@@ -6070,7 +6070,7 @@ ______
 after move
 turn: 0
 depth: 0
-res: -998
+res: 123456789
 move: k (0, 0) =>   (1, 0)
 ______
 |  R |

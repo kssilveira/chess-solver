@@ -482,7 +482,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 0
+res: 123456789
 move: P (3, 1) =>   (2, 1)
 ______
 |  p |
@@ -496,7 +496,7 @@ ______
 before move
 turn: 1
 depth: 0
-res: 0
+res: 123456789
 move: p (0, 2) =>   (1, 2)
 ______
 |  p |
@@ -508,7 +508,7 @@ ______
 after move
 turn: 0
 depth: 0
-res: 0
+res: 123456789
 move: p (0, 2) =>   (1, 2)
 ______
 |    |
@@ -522,7 +522,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 0
+res: 123456789
 move: P (2, 1) => p (1, 2)
 ______
 |    |
@@ -534,7 +534,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 0
+res: 123456789
 move: P (2, 1) => p (1, 2)
 ______
 |    |

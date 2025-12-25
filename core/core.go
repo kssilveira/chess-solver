@@ -49,7 +49,7 @@ type Core struct {
 	maxInt        int
 	minInt        int
 	visited       []map[string]int
-	solved        []map[string]Result
+	solved        [][]map[string]Result
 	solvedMove    []map[string]Move
 	depth         int
 }
@@ -112,7 +112,7 @@ func New(writer io.Writer, config Config) *Core {
 		[]byte("KRNB"),
 	},
 		visited: []map[string]int{{}, {}},
-		solved:  []map[string]Result{{}, {}}, solvedMove: []map[string]Move{{}, {}},
+		solved:  [][]map[string]Result{{{}, {}, {}}, {{}, {}, {}}}, solvedMove: []map[string]Move{{}, {}},
 		clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt - 1, minInt: math.MinInt + 1}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
@@ -253,12 +253,15 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) Result {
 		key := string(bytes.Join(c.board, nil))
 		c.visited[c.turn][key]++
 		next := 0
-		if nextResult, ok := c.solved[c.turn][key]; ok &&
-			(nextResult.Kind == resultExact ||
-				(nextResult.Kind == resultLowerBound && nextResult.Value >= beta) ||
-				(nextResult.Kind == resultUpperBound && nextResult.Value <= alpha)) {
+		if nextResult, ok := c.solved[c.turn][resultExact][key]; ok {
 			next = nextResult.Value
-			c.print("solved[]", next, PrintConfig{Move: move})
+			c.print("solved[] exact", next, PrintConfig{Move: move})
+		} else if nextResult, ok := c.solved[c.turn][resultLowerBound][key]; ok && nextResult.Value >= beta {
+			next = nextResult.Value
+			c.print("solved[] lower", next, PrintConfig{Move: move})
+		} else if nextResult, ok := c.solved[c.turn][resultUpperBound][key]; ok && nextResult.Value <= alpha {
+			next = nextResult.Value
+			c.print("solved[] upper", next, PrintConfig{Move: move})
 		} else if c.visited[c.turn][key] < 3 {
 			prevTurn := c.turn
 			c.turn = nextTurn
@@ -269,7 +272,7 @@ func (c *Core) move(nextTurn int, moves []Move, alpha, beta int) Result {
 			c.depth--
 			c.turn = prevTurn
 			c.print("solve()", next, PrintConfig{Move: move})
-			c.solved[c.turn][key] = nextResult
+			c.solved[c.turn][nextResult.Kind][key] = nextResult
 		} else {
 			c.print("repeated", next, PrintConfig{Move: move})
 		}
@@ -317,8 +320,6 @@ func (c *Core) show() {
 		c.board[move.From.X][move.From.Y] = ' '
 		// c.depth++
 		key = string(bytes.Join(c.board, nil))
-		result := c.solved[c.turn][key]
-		res = result.Value
 		c.turn = (c.turn + 1) % 2
 		c.print("after move", res, PrintConfig{Move: move, ClearTerminal: true})
 	}

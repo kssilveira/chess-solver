@@ -132,3 +132,26 @@ func TestSolve(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkSolve(b *testing.B) {
+	inputs := []struct {
+		name  string
+		board [][]byte
+	}{
+		{name: "default"},
+	}
+	for _, in := range inputs {
+		config := Config{MaxDepth: 5, MaxPrintDepth: -1}
+		var out bytes.Buffer
+		core := New(&out, config)
+		core.clearTerminal = ""
+		if in.board != nil {
+			core.board = in.board
+		}
+		b.Run(in.name, func(b *testing.B) {
+			for b.Loop() {
+				core.Solve()
+			}
+		})
+	}
+}

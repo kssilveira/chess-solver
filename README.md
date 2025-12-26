@@ -10,6 +10,7 @@ $ go run main.go --board="KRNB,N   ,    ,   k" | tee core/testdata/play.txt
 
 See example game on [core/testdata/play.txt](core/testdata/play.txt):
 
+```
 - play starts moving the King (K)
 
 |KRNB|
@@ -24,7 +25,6 @@ ______
 |    |
 |   k|
 ‾‾‾‾‾‾
-
 - Knight (N) sacrifice
 ______
 |   B|
@@ -67,6 +67,7 @@ ______
 | N k|
 | K  |
 ‾‾‾‾‾‾
+```
 
 ## Benchmark
 
@@ -77,4 +78,4 @@ $ go tool pprof cpu.txt
 $ go tool pprof mem.txt
 ```
 
-See history of benchmark improvements for [benchmark.txt](commits/main/core/testdata/benchmark.txt) and [benchstat.txt](commits/main/core/testdata/benchstat.txt).
+See history of benchmark improvements for [benchmark.txt](https://github.com/kssilveira/chess-solver/commits/main/core/testdata/benchmark.txt) and [benchstat.txt](https://github.com/kssilveira/chess-solver/commits/main/core/testdata/benchstat.txt).

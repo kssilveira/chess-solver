@@ -28,7 +28,27 @@ func NewMove(fx, fy, tx, ty Move, isKing, isCapture bool) Move {
 
 // Get gets coordinates.
 func (m Move) Get() (int8, int8, int8, int8) {
-	return int8(m & 0b11), int8((m & 0b1100) >> 2), int8((m & 0b110000) >> 4), int8((m & 0b11000000) >> 6)
+	return m.FromX(), m.FromY(), m.ToX(), m.ToY()
+}
+
+// FromX returns from x.
+func (m Move) FromX() int8 {
+	return int8(m & 0b11)
+}
+
+// FromY returns from y.
+func (m Move) FromY() int8 {
+	return int8((m & 0b1100) >> 2)
+}
+
+// ToX returns to x.
+func (m Move) ToX() int8 {
+	return int8((m & 0b110000) >> 4)
+}
+
+// ToY returns to y.
+func (m Move) ToY() int8 {
+	return int8((m & 0b11000000) >> 6)
 }
 
 // IsKing returns is king.
@@ -75,12 +95,7 @@ type Core struct {
 type State struct {
 	Moves      []Move
 	Value      int
-	MoveIndex  int
-	Move       Move
-	FromX      int8
-	FromY      int8
-	ToX        int8
-	ToY        int8
+	MoveIndex  int8
 	What       byte
 	Next       int
 	NextResult int
@@ -277,28 +292,26 @@ func (c *Core) move(state *State) {
 		}
 		return
 	}
-	for state.MoveIndex = 0; state.MoveIndex < len(state.Moves); state.MoveIndex++ {
-		state.Move = state.Moves[state.MoveIndex]
-		if state.Move.IsKing() {
+	for state.MoveIndex = 0; state.MoveIndex < int8(len(state.Moves)); state.MoveIndex++ {
+		if state.Moves[state.MoveIndex].IsKing() {
 			state.Value = c.maxInt - c.depth
 			if c.config.EnablePrint {
-				c.print("dead king", state.Value, PrintConfig{Move: state.Move})
+				c.print("dead king", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 			return
 		}
 		if c.config.EnablePrint {
-			c.print("before move", state.Value, PrintConfig{Move: state.Move})
+			c.print("before move", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
 		}
-		state.FromX, state.FromY, state.ToX, state.ToY = state.Move.Get()
-		state.What = c.board[state.ToX][state.ToY]
-		c.board[state.ToX][state.ToY] = c.board[state.FromX][state.FromY]
-		c.board[state.FromX][state.FromY] = ' '
+		state.What = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
+		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()]
+		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = ' '
 		c.visited[c.turn][c.board]++
 		state.Next = 0
 		if state.NextResult, state.OK = c.solved[c.turn][c.board]; state.OK {
 			state.Next = state.NextResult
 			if c.config.EnablePrint {
-				c.print("solved[]", state.Next, PrintConfig{Move: state.Move})
+				c.print("solved[]", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 		} else if c.visited[c.turn][c.board] < 3 {
 			c.turn = int8((c.turn + 1) % 2)
@@ -308,22 +321,22 @@ func (c *Core) move(state *State) {
 			c.depth--
 			c.turn = int8((c.turn + 1) % 2)
 			if c.config.EnablePrint {
-				c.print("solve()", state.Next, PrintConfig{Move: state.Move})
+				c.print("solve()", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 			c.solved[c.turn][c.board] = state.Next
 		} else {
 			if c.config.EnablePrint {
-				c.print("repeated", state.Next, PrintConfig{Move: state.Move})
+				c.print("repeated", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 		}
 		c.visited[c.turn][c.board]--
-		c.board[state.FromX][state.FromY] = c.board[state.ToX][state.ToY]
-		c.board[state.ToX][state.ToY] = state.What
+		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
+		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = state.What
 		if state.Next > state.Value {
 			state.Value = state.Next
-			c.solvedMove[c.turn][c.board] = state.Move
+			c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
 			if c.config.EnablePrint {
-				c.print("updated res", state.Value, PrintConfig{Move: state.Move})
+				c.print("updated res", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 		}
 	}

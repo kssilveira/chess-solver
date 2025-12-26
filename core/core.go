@@ -348,6 +348,7 @@ func (c *Core) move(state *State) {
 }
 
 func (c *Core) show() {
+	c.config.MaxPrintDepth = 0
 	res := int8(123)
 	c.print("show", res, PrintConfig{})
 	visited := []map[[4][4]byte]interface{}{{}, {}}
@@ -365,7 +366,7 @@ func (c *Core) show() {
 		fx, fy, tx, ty := move.Get()
 		c.board[tx][ty] = c.board[fx][fy]
 		c.board[fx][fy] = ' '
-		// c.depth++
+		c.depth++
 		res = c.solved[c.turn][c.board]
 		c.turn = (c.turn + 1) % 2
 		c.print("after move", res, PrintConfig{Move: move})
@@ -374,6 +375,7 @@ func (c *Core) show() {
 
 // Play plays a game agains the solution.
 func (c *Core) Play() {
+	c.config.MaxPrintDepth = 0
 	res := int8(123)
 	c.print("play", res, PrintConfig{})
 	c.turn = 0
@@ -392,7 +394,7 @@ func (c *Core) Play() {
 		fx, fy, tx, ty := move.Get()
 		c.board[tx][ty] = c.board[fx][fy]
 		c.board[fx][fy] = ' '
-		// c.depth++
+		c.depth++
 		res = c.solved[c.turn][c.board]
 		c.print("after move", res, PrintConfig{Move: move})
 

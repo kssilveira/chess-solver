@@ -49,7 +49,7 @@ ______
 
 after move
 turn: 1
-depth: 0
+depth: 1
 res: 0
 move:   (2, 1) => K (1, 2)
 ______

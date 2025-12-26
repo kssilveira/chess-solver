@@ -1,0 +1,454 @@
+
+after move
+turn: 0
+depth: 0
+res: -1
+______
+|KRNB|
+|N   |
+|    |
+|   k|
+‾‾‾‾‾‾
+[H[2J
+before move
+turn: 0
+depth: 0
+res: -1
+move: K (0, 0) =>   (1, 1)
+______
+|KRNB|
+|N   |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 1
+res: -1
+______
+| RNB|
+|NK  |
+|    |
+|   k|
+‾‾‾‾‾‾
+[H[2J
+before move
+turn: 1
+depth: 1
+res: -1
+move: k (3, 3) =>   (2, 3)
+______
+| RNB|
+|NK  |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: -1
+move:   (3, 3) => k (2, 3)
+______
+| RNB|
+|NK  |
+|   k|
+|    |
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: -1
+move: k (3, 3) =>   (3, 2)
+______
+| RNB|
+|NK  |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: -1
+move:   (3, 3) => k (3, 2)
+______
+| RNB|
+|NK  |
+|    |
+|  k |
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: -1
+move: k (3, 3) =>   (2, 2)
+______
+| RNB|
+|NK  |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: -1
+move:   (3, 3) => k (2, 2)
+______
+| RNB|
+|NK  |
+|  k |
+|    |
+‾‾‾‾‾‾
+
+final res
+turn: 1
+depth: 1
+res: -1
+move: k (3, 3) =>   (2, 3)
+______
+| RNB|
+|NK  |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 0
+res: 1
+move:   (0, 0) => K (1, 1)
+______
+| RNB|
+|NK  |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 0
+res: 1
+move: K (0, 0) =>   (1, 1)
+______
+|KRNB|
+|N   |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+final res
+turn: 0
+depth: 0
+res: 1
+move: K (0, 0) =>   (1, 1)
+______
+|KRNB|
+|N   |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+play
+turn: 0
+depth: 0
+res: 123
+______
+|KRNB|
+|N   |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 123
+move: K (0, 0) =>   (1, 1)
+______
+|KRNB|
+|N   |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 1
+res: 1
+move:   (0, 0) => K (1, 1)
+______
+| RNB|
+|NK  |
+|    |
+|   k|
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 1
+res: 1
+move: R (0, 1) =>   (0, 0)
+______
+| RNB|
+|NK  |
+|    |
+|  k |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: 1
+move:   (0, 1) => R (0, 0)
+______
+|R NB|
+|NK  |
+|    |
+|  k |
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 2
+res: 1
+move: N (0, 2) =>   (2, 1)
+______
+|R NB|
+|NK  |
+|    |
+|   k|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 3
+res: 1
+move:   (0, 2) => N (2, 1)
+______
+|R  B|
+|NK  |
+| N  |
+|   k|
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 3
+res: 1
+move: R (0, 0) =>   (0, 1)
+______
+|R  B|
+|NK  |
+| N  |
+|  k |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 4
+res: 1
+move:   (0, 0) => R (0, 1)
+______
+| R B|
+|NK  |
+| N  |
+|  k |
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 4
+res: 1
+move: R (0, 1) =>   (0, 2)
+______
+| R B|
+|NK  |
+| N k|
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 5
+res: 1
+move:   (0, 1) => R (0, 2)
+______
+|  RB|
+|NK  |
+| N k|
+|    |
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 5
+res: 1
+move: R (0, 2) =>   (1, 2)
+______
+|  RB|
+|NK  |
+| N  |
+|  k |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 6
+res: 1
+move:   (0, 2) => R (1, 2)
+______
+|   B|
+|NKR |
+| N  |
+|  k |
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 6
+res: 1
+move: N (1, 0) =>   (3, 1)
+______
+|   B|
+|NKR |
+| N k|
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 7
+res: 1
+move:   (1, 0) => N (3, 1)
+______
+|   B|
+| KR |
+| N k|
+| N  |
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 7
+res: 1
+move: K (1, 1) =>   (1, 0)
+______
+|   B|
+| KR |
+| N  |
+| Nk |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 8
+res: 1
+move:   (1, 1) => K (1, 0)
+______
+|   B|
+|K R |
+| N  |
+| Nk |
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 8
+res: 1
+move: R (1, 2) =>   (1, 3)
+______
+|   B|
+|K R |
+| N  |
+| k  |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 9
+res: 1
+move:   (1, 2) => R (1, 3)
+______
+|   B|
+|K  R|
+| N  |
+| k  |
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 9
+res: 1
+move: K (1, 0) =>   (2, 0)
+______
+|   B|
+|K  R|
+| N  |
+|  k |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 10
+res: 1
+move:   (1, 0) => K (2, 0)
+______
+|   B|
+|   R|
+|KN  |
+|  k |
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 10
+res: 1
+move: R (1, 3) =>   (2, 3)
+______
+|   B|
+|   R|
+|KNk |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 11
+res: 1
+move:   (1, 3) => R (2, 3)
+______
+|   B|
+|    |
+|KNkR|
+|    |
+‾‾‾‾‾‾
+> 
+before move
+turn: 0
+depth: 11
+res: 1
+move: K (2, 0) =>   (3, 1)
+______
+|   B|
+|    |
+|KN k|
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 12
+res: 1
+move:   (2, 0) => K (3, 1)
+______
+|   B|
+|    |
+| N k|
+| K  |
+‾‾‾‾‾‾
+> 

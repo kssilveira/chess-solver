@@ -2830,7 +2830,7 @@ ______
 
 after move
 turn: 1
-depth: 0
+depth: 1
 res: 0
 move:   (3, 0) => R (2, 0)
 ______
@@ -2842,7 +2842,7 @@ ______
 
 before move
 turn: 1
-depth: 0
+depth: 1
 res: 0
 move: r (0, 3) =>   (1, 3)
 ______
@@ -2854,7 +2854,7 @@ ______
 
 after move
 turn: 0
-depth: 0
+depth: 2
 res: 0
 move:   (0, 3) => r (1, 3)
 ______
@@ -2866,7 +2866,7 @@ ______
 
 before move
 turn: 0
-depth: 0
+depth: 2
 res: 0
 move: R (2, 0) =>   (1, 0)
 ______
@@ -2878,7 +2878,7 @@ ______
 
 after move
 turn: 1
-depth: 0
+depth: 3
 res: 0
 move:   (2, 0) => R (1, 0)
 ______
@@ -2890,7 +2890,7 @@ ______
 
 before move
 turn: 1
-depth: 0
+depth: 3
 res: 0
 move: r (1, 3) =>   (0, 3)
 ______
@@ -2902,7 +2902,7 @@ ______
 
 after move
 turn: 0
-depth: 0
+depth: 4
 res: 0
 move:   (1, 3) => r (0, 3)
 ______
@@ -2914,7 +2914,7 @@ ______
 
 before move
 turn: 0
-depth: 0
+depth: 4
 res: 0
 move: R (1, 0) =>   (0, 0)
 ______
@@ -2926,7 +2926,7 @@ ______
 
 after move
 turn: 1
-depth: 0
+depth: 5
 res: 0
 move:   (1, 0) => R (0, 0)
 ______

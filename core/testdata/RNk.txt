@@ -341,7 +341,7 @@ ______
 
 after move
 turn: 1
-depth: 0
+depth: 1
 res: 1
 move:   (0, 2) => R (1, 2)
 ______
@@ -353,7 +353,7 @@ ______
 
 before move
 turn: 1
-depth: 0
+depth: 1
 res: 1
 move: k (1, 0) => R (2, 1)
 ______
@@ -365,7 +365,7 @@ ______
 
 after move
 turn: 0
-depth: 0
+depth: 2
 res: -1
 move:   (1, 0) => k (2, 1)
 ______
@@ -377,7 +377,7 @@ ______
 
 before move
 turn: 0
-depth: 0
+depth: 2
 res: -1
 move: N (3, 3) => k (2, 1)
 ______
@@ -389,7 +389,7 @@ ______
 
 after move
 turn: 1
-depth: 0
+depth: 3
 res: 0
 move:   (3, 3) => N (2, 1)
 ______

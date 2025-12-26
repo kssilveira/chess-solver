@@ -667,31 +667,7 @@ ______
 |    |
 ‾‾‾‾‾‾
 
-after move
-turn: 1
-depth: 5
-res: -1000
-______
-|   b|
-|    |
-| B  |
-|    |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-|   b|
-|    |
-| B  |
-|    |
-‾‾‾‾‾‾
-
-solve()
+repeated
 turn: 0
 depth: 4
 res: 0
@@ -1284,7 +1260,7 @@ ______
 |  B |
 ‾‾‾‾‾‾
 
-solved[]
+repeated
 turn: 0
 depth: 4
 res: 0
@@ -1733,7 +1709,7 @@ ______
 |B   |
 ‾‾‾‾‾‾
 
-solved[]
+repeated
 turn: 0
 depth: 4
 res: 0

@@ -217,3 +217,27 @@ ______
 |K   |
 |  k |
 ‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 0
+res: -999
+move: k (1, 1) => K (2, 0)
+______
+|    |
+| k  |
+|K   |
+|  k |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 0
+res: 0
+move:   (1, 1) => k (2, 0)
+______
+|    |
+|    |
+|k   |
+|  k |
+‾‾‾‾‾‾

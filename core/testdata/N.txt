@@ -632,31 +632,7 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
-after move
-turn: 1
-depth: 5
-res: -1000
-______
-|nx  |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-|nx  |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-solve()
+repeated
 turn: 0
 depth: 4
 res: 0
@@ -1321,7 +1297,7 @@ ______
 | NX |
 ‾‾‾‾‾‾
 
-solved[]
+repeated
 turn: 0
 depth: 4
 res: 0
@@ -1914,7 +1890,7 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-solved[]
+repeated
 turn: 0
 depth: 4
 res: 0

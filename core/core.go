@@ -85,7 +85,7 @@ type Core struct {
 	clearTerminal string
 	maxInt        int
 	minInt        int
-	visited       []map[[4][4]byte]int8
+	visited       []map[[4][4]byte]interface{}
 	solved        []map[[4][4]byte]int
 	solvedMove    []map[[4][4]byte]Move
 	depth         int
@@ -145,7 +145,7 @@ func New(writer io.Writer, config Config) *Core {
 		[4]byte([]byte("P   ")),
 		[4]byte([]byte("KRNB")),
 	},
-		visited: []map[[4][4]byte]int8{{}, {}},
+		visited: []map[[4][4]byte]interface{}{{}, {}},
 		solved:  []map[[4][4]byte]int{{}, {}}, solvedMove: []map[[4][4]byte]Move{{}, {}},
 		clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt - 10, minInt: -(math.MaxInt - 10)}
 	if len(config.Board) > 1 {
@@ -293,6 +293,7 @@ func (c *Core) move(state *State) {
 	for state.MoveIndex = 0; state.MoveIndex < int8(len(state.Moves)); state.MoveIndex++ {
 		if state.Moves[state.MoveIndex].IsKing() {
 			state.Value = c.maxInt - c.depth
+			c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
 			if c.config.EnablePrint {
 				c.print("dead king", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
@@ -304,14 +305,14 @@ func (c *Core) move(state *State) {
 		state.What = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
 		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()]
 		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = ' '
-		c.visited[c.turn][c.board]++
 		state.Next = 0
 		if _, ok := c.solved[c.turn][c.board]; ok {
 			state.Next = c.solved[c.turn][c.board]
 			if c.config.EnablePrint {
 				c.print("solved[]", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
-		} else if c.visited[c.turn][c.board] < 3 {
+		} else if _, ok := c.visited[c.turn][c.board]; !ok {
+			c.visited[c.turn][c.board] = struct{}{}
 			c.turn = int8((c.turn + 1) % 2)
 			c.depth++
 			nextState := c.solve()
@@ -327,7 +328,6 @@ func (c *Core) move(state *State) {
 				c.print("repeated", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 		}
-		c.visited[c.turn][c.board]--
 		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
 		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = state.What
 		if state.Next > state.Value {
@@ -336,7 +336,13 @@ func (c *Core) move(state *State) {
 			if c.config.EnablePrint {
 				c.print("updated res", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
+			if state.Value == c.maxInt {
+				break
+			}
 		}
+	}
+	if state.Value == c.minInt {
+		c.solvedMove[c.turn][c.board] = state.Moves[0]
 	}
 	if c.config.EnablePrint {
 		c.print("final res", state.Value, PrintConfig{Move: c.solvedMove[c.turn][c.board]})

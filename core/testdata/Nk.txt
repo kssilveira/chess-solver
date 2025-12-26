@@ -5482,3 +5482,27 @@ ______
 |RR  |
 |    |
 ‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: -998
+move: R (2, 0) => k (1, 0)
+______
+|  R |
+|k N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 0
+res: 0
+move:   (2, 0) => R (1, 0)
+______
+|  R |
+|R N |
+| R  |
+|    |
+‾‾‾‾‾‾

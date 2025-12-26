@@ -8,7 +8,7 @@ Solver for the [tinyhouse chess variant](https://www.chess.com/variants/tinyhous
 $ go run main.go --board="KRNB,N   ,    ,   k" | tee core/testdata/play.txt
 ```
 
-See example game on (core/testdata/play.txt)[core/testdata/play.txt].
+See example game on [core/testdata/play.txt](core/testdata/play.txt).
 
 ## Benchmark
 

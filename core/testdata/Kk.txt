@@ -2,7 +2,7 @@
 after move
 turn: 0
 depth: 0
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -15,7 +15,7 @@ ______
 dead king
 turn: 0
 depth: 0
-res: 1000
+res: 1
 move: K (2, 1) => k (1, 2)
 ______
 |    |
@@ -27,7 +27,7 @@ ______
 show
 turn: 0
 depth: 0
-res: 123456789
+res: 123
 ______
 |    |
 |  k |
@@ -38,7 +38,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 123456789
+res: 123
 move: K (2, 1) => k (1, 2)
 ______
 |    |

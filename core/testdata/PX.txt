@@ -2,7 +2,7 @@
 after move
 turn: 0
 depth: 0
-res: -1000
+res: -1
 ______
 |xxx |
 | P  |
@@ -15,7 +15,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: -1000
+res: -1
 move: P (1, 1) => x (0, 2)
 ______
 |xxx |
@@ -27,7 +27,7 @@ ______
 after move
 turn: 1
 depth: 1
-res: -1000
+res: -1
 ______
 |xxP |
 |    |
@@ -87,7 +87,7 @@ ______
 after move
 turn: 1
 depth: 1
-res: -1000
+res: -1
 ______
 |Pxx |
 |    |
@@ -135,7 +135,7 @@ ______
 show
 turn: 0
 depth: 0
-res: 123456789
+res: 123
 ______
 |xxx |
 | P  |
@@ -146,7 +146,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 123456789
+res: 123
 move: P (1, 1) => x (0, 2)
 ______
 |xxx |

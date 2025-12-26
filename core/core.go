@@ -5,7 +5,6 @@ import (
 	"bytes"
 	"fmt"
 	"io"
-	"math"
 	"slices"
 	"time"
 )
@@ -83,18 +82,16 @@ type Core struct {
 	board         [4][4]byte
 	turn          int8
 	clearTerminal string
-	maxInt        int
-	minInt        int
 	visited       []map[[4][4]byte]interface{}
-	solved        []map[[4][4]byte]int
+	solved        []map[[4][4]byte]int8
 	solvedMove    []map[[4][4]byte]Move
 	depth         int
 }
 
 // State contains the recursion state.
 type State struct {
-	Value     int
-	Next      int
+	Value     int8
+	Next      int8
 	MoveIndex int8
 	What      byte
 	Moves     []Move
@@ -146,8 +143,8 @@ func New(writer io.Writer, config Config) *Core {
 		[4]byte([]byte("KRNB")),
 	},
 		visited: []map[[4][4]byte]interface{}{{}, {}},
-		solved:  []map[[4][4]byte]int{{}, {}}, solvedMove: []map[[4][4]byte]Move{{}, {}},
-		clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt - 10, minInt: -(math.MaxInt - 10)}
+		solved:  []map[[4][4]byte]int8{{}, {}}, solvedMove: []map[[4][4]byte]Move{{}, {}},
+		clearTerminal: "\033[H\033[2J"}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
 			res.board[i] = [4]byte([]byte(row))
@@ -169,7 +166,7 @@ func (c *Core) Solve() {
 func (c *Core) solve() *State {
 	state := &State{}
 	if c.config.EnablePrint {
-		c.print("after move", c.minInt, PrintConfig{ClearTerminal: true})
+		c.print("after move", -1, PrintConfig{ClearTerminal: true})
 	}
 	if c.config.MaxDepth >= 0 && c.depth >= c.config.MaxDepth {
 		state.Value = 0
@@ -185,7 +182,7 @@ func (c *Core) solve() *State {
 	return state
 }
 
-func (c *Core) print(message string, res int, cfg PrintConfig) {
+func (c *Core) print(message string, res int8, cfg PrintConfig) {
 	if c.config.MaxPrintDepth != 0 && c.depth > c.config.MaxPrintDepth {
 		return
 	}
@@ -282,7 +279,7 @@ func (c *Core) sort(moves *[]Move) {
 }
 
 func (c *Core) move(state *State) {
-	state.Value = c.minInt
+	state.Value = -1
 	if len(state.Moves) == 0 {
 		state.Value = 0
 		if c.config.EnablePrint {
@@ -292,7 +289,7 @@ func (c *Core) move(state *State) {
 	}
 	for state.MoveIndex = 0; state.MoveIndex < int8(len(state.Moves)); state.MoveIndex++ {
 		if state.Moves[state.MoveIndex].IsKing() {
-			state.Value = c.maxInt
+			state.Value = 1
 			c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
 			if c.config.EnablePrint {
 				c.print("dead king", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
@@ -336,12 +333,12 @@ func (c *Core) move(state *State) {
 			if c.config.EnablePrint {
 				c.print("updated res", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
-			if state.Value == c.maxInt {
+			if state.Value == 1 {
 				break
 			}
 		}
 	}
-	if state.Value == c.minInt {
+	if state.Value == -1 {
 		c.solvedMove[c.turn][c.board] = state.Moves[0]
 	}
 	if c.config.EnablePrint {
@@ -350,7 +347,7 @@ func (c *Core) move(state *State) {
 }
 
 func (c *Core) show() {
-	res := 123456789
+	res := int8(123)
 	c.print("show", res, PrintConfig{})
 	visited := []map[[4][4]byte]interface{}{{}, {}}
 	for {

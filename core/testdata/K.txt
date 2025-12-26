@@ -2,7 +2,7 @@
 after move
 turn: 0
 depth: 0
-res: -1000
+res: -1
 ______
 |   k|
 |    |
@@ -15,7 +15,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: -1000
+res: -1
 move: K (3, 0) =>   (2, 0)
 ______
 |   k|
@@ -27,7 +27,7 @@ ______
 after move
 turn: 1
 depth: 1
-res: -1000
+res: -1
 ______
 |   k|
 |    |
@@ -40,7 +40,7 @@ ______
 before move
 turn: 1
 depth: 1
-res: -1000
+res: -1
 move: k (0, 3) =>   (1, 3)
 ______
 |   k|
@@ -52,7 +52,7 @@ ______
 after move
 turn: 0
 depth: 2
-res: -1000
+res: -1
 ______
 |    |
 |   k|
@@ -65,7 +65,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: -1000
+res: -1
 move: K (2, 0) =>   (1, 0)
 ______
 |    |
@@ -77,7 +77,7 @@ ______
 after move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 ______
 |    |
 |K  k|
@@ -90,7 +90,7 @@ ______
 before move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move: k (1, 3) =>   (0, 3)
 ______
 |    |
@@ -102,7 +102,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |   k|
 |K   |
@@ -115,7 +115,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (1, 0) =>   (0, 0)
 ______
 |   k|
@@ -127,7 +127,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |K  k|
 |    |
@@ -211,7 +211,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |   k|
 | K  |
@@ -259,7 +259,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |   k|
 |    |
@@ -307,7 +307,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | K k|
 |    |
@@ -391,7 +391,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |K   |
@@ -404,7 +404,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (1, 0) =>   (0, 0)
 ______
 |    |
@@ -416,7 +416,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |K   |
 |    |
@@ -476,7 +476,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -524,7 +524,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 | K  |
@@ -572,7 +572,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -620,7 +620,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | K  |
 |    |
@@ -692,7 +692,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |K k |
@@ -705,7 +705,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (1, 0) =>   (0, 0)
 ______
 |    |
@@ -717,7 +717,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |K   |
 |  k |
@@ -777,7 +777,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -825,7 +825,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 | Kk |
@@ -873,7 +873,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -921,7 +921,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | K  |
 |  k |
@@ -993,7 +993,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |  k |
 |K   |
@@ -1006,7 +1006,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (1, 0) =>   (0, 0)
 ______
 |  k |
@@ -1018,7 +1018,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |K k |
 |    |
@@ -1078,7 +1078,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  k |
 |    |
@@ -1126,7 +1126,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  k |
 | K  |
@@ -1174,7 +1174,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  k |
 |    |
@@ -1222,7 +1222,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | Kk |
 |    |
@@ -1294,7 +1294,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |K   |
@@ -1307,7 +1307,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (1, 0) =>   (0, 0)
 ______
 |    |
@@ -1319,7 +1319,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |K   |
 |    |
@@ -1379,7 +1379,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -1427,7 +1427,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 | K  |
@@ -1475,7 +1475,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -1523,7 +1523,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | K  |
 |    |
@@ -1631,7 +1631,7 @@ ______
 after move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 ______
 |    |
 |   k|
@@ -1644,7 +1644,7 @@ ______
 before move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move: k (1, 3) =>   (0, 3)
 ______
 |    |
@@ -1656,7 +1656,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |   k|
 |    |
@@ -1669,7 +1669,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (3, 0) =>   (2, 0)
 ______
 |   k|
@@ -1717,7 +1717,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |   k|
 |    |
@@ -1825,7 +1825,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -1838,7 +1838,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (3, 0) =>   (2, 0)
 ______
 |    |
@@ -1886,7 +1886,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -1982,7 +1982,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -1995,7 +1995,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (3, 0) =>   (2, 0)
 ______
 |    |
@@ -2043,7 +2043,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -2139,7 +2139,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |  k |
 |    |
@@ -2152,7 +2152,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (3, 0) =>   (2, 0)
 ______
 |  k |
@@ -2200,7 +2200,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  k |
 |    |
@@ -2296,7 +2296,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -2309,7 +2309,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (3, 0) =>   (2, 0)
 ______
 |    |
@@ -2357,7 +2357,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -2477,7 +2477,7 @@ ______
 after move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 ______
 |    |
 |   k|
@@ -2490,7 +2490,7 @@ ______
 before move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move: k (1, 3) =>   (0, 3)
 ______
 |    |
@@ -2502,7 +2502,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |   k|
 |    |
@@ -2515,7 +2515,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (2, 1) =>   (1, 1)
 ______
 |   k|
@@ -2611,7 +2611,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |   k|
 |    |
@@ -2659,7 +2659,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |   k|
 |K   |
@@ -2707,7 +2707,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |   k|
 |    |
@@ -2755,7 +2755,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |   k|
 |    |
@@ -2803,7 +2803,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |   k|
 |  K |
@@ -2887,7 +2887,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -2900,7 +2900,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (2, 1) =>   (1, 1)
 ______
 |    |
@@ -2996,7 +2996,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -3044,7 +3044,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |K   |
@@ -3092,7 +3092,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -3140,7 +3140,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -3188,7 +3188,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |  K |
@@ -3260,7 +3260,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -3273,7 +3273,7 @@ ______
 dead king
 turn: 0
 depth: 4
-res: 1000
+res: 1
 move: K (2, 1) => k (1, 2)
 ______
 |    |
@@ -3285,7 +3285,7 @@ ______
 solve()
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move:   (1, 3) => k (1, 2)
 ______
 |    |
@@ -3309,7 +3309,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |  k |
 |    |
@@ -3322,7 +3322,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (2, 1) =>   (1, 1)
 ______
 |  k |
@@ -3418,7 +3418,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  k |
 |    |
@@ -3466,7 +3466,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  k |
 |K   |
@@ -3514,7 +3514,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  k |
 |    |
@@ -3562,7 +3562,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  k |
 |    |
@@ -3610,7 +3610,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  k |
 |  K |
@@ -3682,7 +3682,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -3695,7 +3695,7 @@ ______
 dead king
 turn: 0
 depth: 4
-res: 1000
+res: 1
 move: K (2, 1) => k (2, 2)
 ______
 |    |
@@ -3707,7 +3707,7 @@ ______
 solve()
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move:   (1, 3) => k (2, 2)
 ______
 |    |
@@ -3755,7 +3755,7 @@ ______
 after move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 ______
 |    |
 |   k|
@@ -3768,7 +3768,7 @@ ______
 before move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move: k (1, 3) =>   (0, 3)
 ______
 |    |
@@ -3780,7 +3780,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |   k|
 |    |
@@ -3793,7 +3793,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (3, 1) =>   (2, 1)
 ______
 |   k|
@@ -3973,7 +3973,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -3986,7 +3986,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (3, 1) =>   (2, 1)
 ______
 |    |
@@ -4154,7 +4154,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -4167,7 +4167,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (3, 1) =>   (2, 1)
 ______
 |    |
@@ -4215,7 +4215,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -4263,7 +4263,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -4335,7 +4335,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -4407,7 +4407,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |  k |
 |    |
@@ -4420,7 +4420,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (3, 1) =>   (2, 1)
 ______
 |  k |
@@ -4588,7 +4588,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |    |
@@ -4601,7 +4601,7 @@ ______
 dead king
 turn: 0
 depth: 4
-res: 1000
+res: 1
 move: K (3, 1) => k (2, 2)
 ______
 |    |
@@ -4613,7 +4613,7 @@ ______
 solve()
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move:   (1, 3) => k (2, 2)
 ______
 |    |
@@ -4661,7 +4661,7 @@ ______
 after move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 ______
 |    |
 | K k|
@@ -4674,7 +4674,7 @@ ______
 before move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move: k (1, 3) =>   (0, 3)
 ______
 |    |
@@ -4686,7 +4686,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |   k|
 | K  |
@@ -4699,7 +4699,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (1, 1) =>   (0, 1)
 ______
 |   k|
@@ -4891,7 +4891,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  Kk|
 |    |
@@ -4975,7 +4975,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 | K  |
@@ -4988,7 +4988,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (1, 1) =>   (0, 1)
 ______
 |    |
@@ -5180,7 +5180,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |  K |
 |    |
@@ -5252,7 +5252,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 | Kk |
@@ -5265,7 +5265,7 @@ ______
 dead king
 turn: 0
 depth: 4
-res: 1000
+res: 1
 move: K (1, 1) => k (1, 2)
 ______
 |    |
@@ -5277,7 +5277,7 @@ ______
 solve()
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move:   (1, 3) => k (1, 2)
 ______
 |    |
@@ -5301,7 +5301,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |  k |
 | K  |
@@ -5314,7 +5314,7 @@ ______
 dead king
 turn: 0
 depth: 4
-res: 1000
+res: 1
 move: K (1, 1) => k (0, 2)
 ______
 |  k |
@@ -5326,7 +5326,7 @@ ______
 solve()
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move:   (1, 3) => k (0, 2)
 ______
 |  k |
@@ -5350,7 +5350,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 | K  |
@@ -5363,7 +5363,7 @@ ______
 dead king
 turn: 0
 depth: 4
-res: 1000
+res: 1
 move: K (1, 1) => k (2, 2)
 ______
 |    |
@@ -5375,7 +5375,7 @@ ______
 solve()
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move:   (1, 3) => k (2, 2)
 ______
 |    |
@@ -5459,7 +5459,7 @@ ______
 after move
 turn: 0
 depth: 2
-res: -1000
+res: -1
 ______
 |  k |
 |    |
@@ -5472,7 +5472,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: -1000
+res: -1
 move: K (2, 0) =>   (1, 0)
 ______
 |  k |
@@ -5640,7 +5640,7 @@ ______
 after move
 turn: 0
 depth: 2
-res: -1000
+res: -1
 ______
 |    |
 |  k |
@@ -5653,7 +5653,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: -1000
+res: -1
 move: K (2, 0) =>   (1, 0)
 ______
 |    |
@@ -5665,7 +5665,7 @@ ______
 after move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 ______
 |    |
 |K k |
@@ -5678,7 +5678,7 @@ ______
 before move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move: k (1, 2) =>   (0, 2)
 ______
 |    |
@@ -5750,7 +5750,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |Kk  |
@@ -5763,7 +5763,7 @@ ______
 dead king
 turn: 0
 depth: 4
-res: 1000
+res: 1
 move: K (1, 0) => k (1, 1)
 ______
 |    |
@@ -5775,7 +5775,7 @@ ______
 solve()
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move:   (1, 2) => k (1, 1)
 ______
 |    |
@@ -5799,7 +5799,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |K  k|
@@ -5812,7 +5812,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: K (1, 0) =>   (0, 0)
 ______
 |    |
@@ -5824,7 +5824,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |K   |
 |   k|
@@ -5884,7 +5884,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |    |
 |   k|
@@ -5980,7 +5980,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | K  |
 |   k|
@@ -6052,7 +6052,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 | k  |
 |K   |
@@ -6065,7 +6065,7 @@ ______
 dead king
 turn: 0
 depth: 4
-res: 1000
+res: 1
 move: K (1, 0) => k (0, 1)
 ______
 | k  |
@@ -6077,7 +6077,7 @@ ______
 solve()
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move:   (1, 2) => k (0, 1)
 ______
 | k  |
@@ -6125,7 +6125,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |    |
 |K   |
@@ -6138,7 +6138,7 @@ ______
 dead king
 turn: 0
 depth: 4
-res: 1000
+res: 1
 move: K (1, 0) => k (2, 1)
 ______
 |    |
@@ -6150,7 +6150,7 @@ ______
 solve()
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move:   (1, 2) => k (2, 1)
 ______
 |    |
@@ -6438,7 +6438,7 @@ ______
 show
 turn: 0
 depth: 0
-res: 123456789
+res: 123
 ______
 |   k|
 |    |
@@ -6449,7 +6449,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 123456789
+res: 123
 move: K (3, 0) =>   (2, 0)
 ______
 |   k|

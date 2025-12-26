@@ -2,7 +2,7 @@
 after move
 turn: 0
 depth: 0
-res: -1000000
+res: -1
 ______
 |  R |
 |k   |
@@ -15,7 +15,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: -1000000
+res: -1
 move: R (0, 2) =>   (1, 2)
 ______
 |  R |
@@ -27,7 +27,7 @@ ______
 after move
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 ______
 |    |
 |k R |
@@ -40,7 +40,7 @@ ______
 before move
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move: k (1, 0) => R (2, 1)
 ______
 |    |
@@ -52,7 +52,7 @@ ______
 after move
 turn: 0
 depth: 2
-res: -1000000
+res: -1
 ______
 |    |
 |  R |
@@ -65,7 +65,7 @@ ______
 dead king
 turn: 0
 depth: 2
-res: 1000000
+res: 1
 move: N (3, 3) => k (2, 1)
 ______
 |    |
@@ -77,7 +77,7 @@ ______
 solve()
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move:   (1, 0) => k (2, 1)
 ______
 |    |
@@ -89,7 +89,7 @@ ______
 before move
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move: k (1, 0) =>   (0, 0)
 ______
 |    |
@@ -101,7 +101,7 @@ ______
 after move
 turn: 0
 depth: 2
-res: -1000000
+res: -1
 ______
 |k   |
 |  R |
@@ -114,7 +114,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: -1000000
+res: -1
 move: R (1, 2) =>   (0, 2)
 ______
 |k   |
@@ -126,7 +126,7 @@ ______
 solve()
 turn: 0
 depth: 2
-res: 1000000
+res: 1
 move:   (1, 2) => R (0, 2)
 ______
 |k R |
@@ -138,7 +138,7 @@ ______
 updated res
 turn: 0
 depth: 2
-res: 1000000
+res: 1
 move: R (1, 2) =>   (0, 2)
 ______
 |k   |
@@ -150,7 +150,7 @@ ______
 final res
 turn: 0
 depth: 2
-res: 1000000
+res: 1
 move: R (1, 2) =>   (0, 2)
 ______
 |k   |
@@ -162,7 +162,7 @@ ______
 solve()
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move:   (1, 0) => k (0, 0)
 ______
 |k   |
@@ -174,7 +174,7 @@ ______
 before move
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move: k (1, 0) =>   (2, 0)
 ______
 |    |
@@ -186,7 +186,7 @@ ______
 after move
 turn: 0
 depth: 2
-res: -1000000
+res: -1
 ______
 |    |
 |  R |
@@ -199,7 +199,7 @@ ______
 dead king
 turn: 0
 depth: 2
-res: 1000000
+res: 1
 move: R (3, 0) => k (2, 0)
 ______
 |    |
@@ -211,7 +211,7 @@ ______
 solve()
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move:   (1, 0) => k (2, 0)
 ______
 |    |
@@ -223,7 +223,7 @@ ______
 before move
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move: k (1, 0) =>   (1, 1)
 ______
 |    |
@@ -235,7 +235,7 @@ ______
 solved[]
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move:   (1, 0) => k (1, 1)
 ______
 |    |
@@ -247,7 +247,7 @@ ______
 before move
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move: k (1, 0) =>   (0, 1)
 ______
 |    |
@@ -259,7 +259,7 @@ ______
 solved[]
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move:   (1, 0) => k (0, 1)
 ______
 | k  |
@@ -271,7 +271,7 @@ ______
 final res
 turn: 1
 depth: 1
-res: -1000000
+res: -1
 move: k (1, 0) => R (2, 1)
 ______
 |    |
@@ -283,7 +283,7 @@ ______
 solve()
 turn: 0
 depth: 0
-res: 1000000
+res: 1
 move:   (0, 2) => R (1, 2)
 ______
 |    |
@@ -295,7 +295,7 @@ ______
 updated res
 turn: 0
 depth: 0
-res: 1000000
+res: 1
 move: R (0, 2) =>   (1, 2)
 ______
 |  R |
@@ -307,7 +307,7 @@ ______
 final res
 turn: 0
 depth: 0
-res: 1000000
+res: 1
 move: R (0, 2) =>   (1, 2)
 ______
 |  R |
@@ -319,7 +319,7 @@ ______
 show
 turn: 0
 depth: 0
-res: 123456789
+res: 123
 ______
 |  R |
 |k   |
@@ -330,7 +330,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 123456789
+res: 123
 move: R (0, 2) =>   (1, 2)
 ______
 |  R |
@@ -342,7 +342,7 @@ ______
 after move
 turn: 1
 depth: 0
-res: 1000000
+res: 1
 move:   (0, 2) => R (1, 2)
 ______
 |    |
@@ -354,7 +354,7 @@ ______
 before move
 turn: 1
 depth: 0
-res: 1000000
+res: 1
 move: k (1, 0) => R (2, 1)
 ______
 |    |
@@ -366,7 +366,7 @@ ______
 after move
 turn: 0
 depth: 0
-res: -1000000
+res: -1
 move:   (1, 0) => k (2, 1)
 ______
 |    |
@@ -378,7 +378,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: -1000000
+res: -1
 move: N (3, 3) => k (2, 1)
 ______
 |    |

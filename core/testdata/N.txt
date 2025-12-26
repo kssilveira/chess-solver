@@ -2,7 +2,7 @@
 after move
 turn: 0
 depth: 0
-res: -1000
+res: -1
 ______
 |nx  |
 |    |
@@ -15,7 +15,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: -1000
+res: -1
 move: N (3, 3) =>   (1, 2)
 ______
 |nx  |
@@ -27,7 +27,7 @@ ______
 after move
 turn: 1
 depth: 1
-res: -1000
+res: -1
 ______
 |nx  |
 |  N |
@@ -40,7 +40,7 @@ ______
 before move
 turn: 1
 depth: 1
-res: -1000
+res: -1
 move: n (0, 0) =>   (2, 1)
 ______
 |nx  |
@@ -52,7 +52,7 @@ ______
 after move
 turn: 0
 depth: 2
-res: -1000
+res: -1
 ______
 | x  |
 |  N |
@@ -65,7 +65,7 @@ ______
 before move
 turn: 0
 depth: 2
-res: -1000
+res: -1
 move: N (1, 2) =>   (0, 0)
 ______
 | x  |
@@ -77,7 +77,7 @@ ______
 after move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 ______
 |Nx  |
 |    |
@@ -90,7 +90,7 @@ ______
 before move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move: n (2, 1) => N (0, 0)
 ______
 |Nx  |
@@ -102,7 +102,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |nx  |
 |    |
@@ -162,7 +162,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |Nxn |
 |    |
@@ -175,7 +175,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (0, 0) =>   (2, 1)
 ______
 |Nxn |
@@ -187,7 +187,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | xn |
 |    |
@@ -271,7 +271,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |Nx  |
 |   n|
@@ -284,7 +284,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (0, 0) =>   (2, 1)
 ______
 |Nx  |
@@ -296,7 +296,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | x  |
 |   n|
@@ -380,7 +380,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |Nx  |
 |    |
@@ -393,7 +393,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (0, 0) =>   (2, 1)
 ______
 |Nx  |
@@ -405,7 +405,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | x  |
 |    |
@@ -525,7 +525,7 @@ ______
 after move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 ______
 | x  |
 |    |
@@ -538,7 +538,7 @@ ______
 before move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move: n (2, 1) =>   (0, 0)
 ______
 | x  |
@@ -550,7 +550,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |nx  |
 |    |
@@ -563,7 +563,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (2, 0) => x (0, 1)
 ______
 |nx  |
@@ -575,7 +575,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |nN  |
 |    |
@@ -695,7 +695,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 | xn |
 |    |
@@ -708,7 +708,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (2, 0) => x (0, 1)
 ______
 | xn |
@@ -720,7 +720,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | Nn |
 |    |
@@ -780,7 +780,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | xn |
 |  N |
@@ -852,7 +852,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 | x  |
 |   n|
@@ -865,7 +865,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (2, 0) => x (0, 1)
 ______
 | x  |
@@ -877,7 +877,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | N  |
 |   n|
@@ -937,7 +937,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | x  |
 |  Nn|
@@ -1009,7 +1009,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 | x  |
 |    |
@@ -1022,7 +1022,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (2, 0) => x (0, 1)
 ______
 | x  |
@@ -1034,7 +1034,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | N  |
 |    |
@@ -1094,7 +1094,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | x  |
 |  N |
@@ -1190,7 +1190,7 @@ ______
 after move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 ______
 | x  |
 |    |
@@ -1203,7 +1203,7 @@ ______
 before move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move: n (2, 1) =>   (0, 0)
 ______
 | x  |
@@ -1215,7 +1215,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |nx  |
 |    |
@@ -1228,7 +1228,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (3, 1) =>   (1, 0)
 ______
 |nx  |
@@ -1240,7 +1240,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 |nx  |
 |N   |
@@ -1360,7 +1360,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 | xn |
 |    |
@@ -1373,7 +1373,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (3, 1) =>   (1, 0)
 ______
 | xn |
@@ -1385,7 +1385,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | xn |
 |N   |
@@ -1493,7 +1493,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 | x  |
 |   n|
@@ -1506,7 +1506,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (3, 1) =>   (1, 0)
 ______
 | x  |
@@ -1518,7 +1518,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | x  |
 |N  n|
@@ -1626,7 +1626,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 | x  |
 |    |
@@ -1639,7 +1639,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (3, 1) =>   (1, 0)
 ______
 | x  |
@@ -1651,7 +1651,7 @@ ______
 after move
 turn: 1
 depth: 5
-res: -1000
+res: -1
 ______
 | x  |
 |N   |
@@ -1783,7 +1783,7 @@ ______
 after move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 ______
 | x  |
 |    |
@@ -1796,7 +1796,7 @@ ______
 before move
 turn: 1
 depth: 3
-res: -1000
+res: -1
 move: n (2, 1) => N (3, 3)
 ______
 | x  |
@@ -1808,7 +1808,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 | x  |
 |    |
@@ -1868,7 +1868,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 |nx  |
 |    |
@@ -1881,7 +1881,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (3, 3) =>   (1, 2)
 ______
 |nx  |
@@ -1953,7 +1953,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 | xn |
 |    |
@@ -1966,7 +1966,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (3, 3) =>   (1, 2)
 ______
 | xn |
@@ -2038,7 +2038,7 @@ ______
 after move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 ______
 | x  |
 |   n|
@@ -2051,7 +2051,7 @@ ______
 before move
 turn: 0
 depth: 4
-res: -1000
+res: -1
 move: N (3, 3) =>   (1, 2)
 ______
 | x  |
@@ -2219,7 +2219,7 @@ ______
 show
 turn: 0
 depth: 0
-res: 123456789
+res: 123
 ______
 |nx  |
 |    |
@@ -2230,7 +2230,7 @@ ______
 before move
 turn: 0
 depth: 0
-res: 123456789
+res: 123
 move: N (3, 3) =>   (1, 2)
 ______
 |nx  |

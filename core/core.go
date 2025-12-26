@@ -93,13 +93,11 @@ type Core struct {
 
 // State contains the recursion state.
 type State struct {
-	Moves      []Move
-	Value      int
-	MoveIndex  int8
-	What       byte
-	Next       int
-	NextResult int
-	OK         bool
+	Value     int
+	Next      int
+	MoveIndex int8
+	What      byte
+	Moves     []Move
 }
 
 const (
@@ -308,8 +306,8 @@ func (c *Core) move(state *State) {
 		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = ' '
 		c.visited[c.turn][c.board]++
 		state.Next = 0
-		if state.NextResult, state.OK = c.solved[c.turn][c.board]; state.OK {
-			state.Next = state.NextResult
+		if _, ok := c.solved[c.turn][c.board]; ok {
+			state.Next = c.solved[c.turn][c.board]
 			if c.config.EnablePrint {
 				c.print("solved[]", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}

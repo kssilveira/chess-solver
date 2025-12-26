@@ -67,6 +67,7 @@ type Config struct {
 	Board         []string
 	MaxPrintDepth int
 	EnablePrint   bool
+	EnableShow    bool
 }
 
 // PrintConfig contains print configuration.
@@ -158,7 +159,7 @@ func (c *Core) Solve() {
 	c.depth = 0
 	c.turn = 0
 	c.solve()
-	if c.config.EnablePrint {
+	if c.config.EnablePrint && c.config.EnableShow {
 		c.show()
 	}
 }
@@ -368,5 +369,36 @@ func (c *Core) show() {
 		res = c.solved[c.turn][c.board]
 		c.turn = (c.turn + 1) % 2
 		c.print("after move", res, PrintConfig{Move: move})
+	}
+}
+
+// Play plays a game agains the solution.
+func (c *Core) Play() {
+	res := int8(123)
+	c.print("play", res, PrintConfig{})
+	c.turn = 0
+	visited := []map[[4][4]byte]interface{}{{}, {}}
+	for {
+		if _, ok := visited[c.turn][c.board]; ok {
+			break
+		}
+		visited[c.turn][c.board] = true
+		move := c.solvedMove[c.turn][c.board]
+		if move == 0 {
+			break
+		}
+		c.print("before move", res, PrintConfig{Move: move})
+
+		fx, fy, tx, ty := move.Get()
+		c.board[tx][ty] = c.board[fx][fy]
+		c.board[fx][fy] = ' '
+		// c.depth++
+		res = c.solved[c.turn][c.board]
+		c.print("after move", res, PrintConfig{Move: move})
+
+		fmt.Printf("> ")
+		fmt.Scanf("%d%d%d%d", &fx, &fy, &tx, &ty)
+		c.board[tx][ty] = c.board[fx][fy]
+		c.board[fx][fy] = ' '
 	}
 }

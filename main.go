@@ -22,4 +22,5 @@ func main() {
 		EnablePrint: true,
 	})
 	core.Solve()
+	core.Play()
 }

@@ -352,7 +352,12 @@ func (c *Core) move(state *State) {
 func (c *Core) show() {
 	res := 123456789
 	c.print("show", res, PrintConfig{})
+	visited := []map[[4][4]byte]interface{}{{}, {}}
 	for {
+		if _, ok := visited[c.turn][c.board]; ok {
+			break
+		}
+		visited[c.turn][c.board] = true
 		move := c.solvedMove[c.turn][c.board]
 		if move == 0 {
 			break

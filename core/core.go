@@ -147,7 +147,7 @@ func New(writer io.Writer, config Config) *Core {
 	},
 		visited: []map[[4][4]byte]int8{{}, {}},
 		solved:  []map[[4][4]byte]int{{}, {}}, solvedMove: []map[[4][4]byte]Move{{}, {}},
-		clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt - 1, minInt: math.MinInt + 1}
+		clearTerminal: "\033[H\033[2J", maxInt: math.MaxInt - 10, minInt: -(math.MaxInt - 10)}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
 			res.board[i] = [4]byte([]byte(row))
@@ -346,7 +346,7 @@ func (c *Core) move(state *State) {
 func (c *Core) show() {
 	res := 123456789
 	c.print("show", res, PrintConfig{})
-	for i := 0; i < 10; i++ {
+	for {
 		move := c.solvedMove[c.turn][c.board]
 		if move == 0 {
 			break

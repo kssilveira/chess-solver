@@ -13,6 +13,7 @@ import (
 // Move contains a move.
 type Move int16
 
+// NewMove creates a new move.
 func NewMove(fx, fy, tx, ty Move, isKing, isCapture bool) Move {
 	res := Move(0)
 	res |= (fx & 0b11) | ((fy & 0b11) << 2) | ((tx & 0b11) << 4) | ((ty & 0b11) << 6)
@@ -25,14 +26,17 @@ func NewMove(fx, fy, tx, ty Move, isKing, isCapture bool) Move {
 	return res
 }
 
+// Get gets coordinates.
 func (m Move) Get() (Move, Move, Move, Move) {
 	return m & 0b11, (m & 0b1100) >> 2, (m & 0b110000) >> 4, (m & 0b11000000) >> 6
 }
 
+// IsKing returns is king.
 func (m Move) IsKing() bool {
 	return m&(1<<8) != 0
 }
 
+// IsCapture returns is capture.
 func (m Move) IsCapture() bool {
 	return m&(1<<9) != 0
 }

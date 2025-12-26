@@ -27,8 +27,8 @@ func NewMove(fx, fy, tx, ty Move, isKing, isCapture bool) Move {
 }
 
 // Get gets coordinates.
-func (m Move) Get() (Move, Move, Move, Move) {
-	return m & 0b11, (m & 0b1100) >> 2, (m & 0b110000) >> 4, (m & 0b11000000) >> 6
+func (m Move) Get() (int8, int8, int8, int8) {
+	return int8(m & 0b11), int8((m & 0b1100) >> 2), int8((m & 0b110000) >> 4), int8((m & 0b11000000) >> 6)
 }
 
 // IsKing returns is king.
@@ -69,6 +69,22 @@ type Core struct {
 	solved        []map[[4][4]byte]int
 	solvedMove    []map[[4][4]byte]Move
 	depth         int
+}
+
+// State contains the recursion state.
+type State struct {
+	Moves      []Move
+	Value      int
+	MoveIndex  int
+	Move       Move
+	FromX      int8
+	FromY      int8
+	ToX        int8
+	ToY        int8
+	What       byte
+	Next       int
+	NextResult int
+	OK         bool
 }
 
 const (
@@ -137,22 +153,23 @@ func (c *Core) Solve() {
 	}
 }
 
-func (c *Core) solve() int {
+func (c *Core) solve() *State {
+	state := &State{}
 	if c.config.EnablePrint {
 		c.print("after move", c.minInt, PrintConfig{ClearTerminal: true})
 	}
-	if c.depth >= c.config.MaxDepth {
-		res := 0
+	if c.config.MaxDepth >= 0 && c.depth >= c.config.MaxDepth {
+		state.Value = 0
 		if c.config.EnablePrint {
-			c.print("max depth", res, PrintConfig{})
+			c.print("max depth", state.Value, PrintConfig{})
 		}
-		return res
+		return state
 	}
-	nextTurn := int8((c.turn + 1) % 2)
-	moves := make([]Move, 0, 10)
-	c.moves(&moves, nextTurn)
-	c.sort(&moves)
-	return c.move(nextTurn, moves)
+	state.Moves = make([]Move, 0, 10)
+	c.moves(&state.Moves)
+	c.sort(&state.Moves)
+	c.move(state)
+	return state
 }
 
 func (c *Core) print(message string, res int, cfg PrintConfig) {
@@ -176,7 +193,7 @@ func (c *Core) print(message string, res int, cfg PrintConfig) {
 	}
 }
 
-func (c *Core) what(x, y Move) string {
+func (c *Core) what(x, y int8) string {
 	return string(c.board[x][y])
 }
 
@@ -192,19 +209,19 @@ func toBytes(board [4][4]byte) [][]byte {
 	return res
 }
 
-func (c *Core) moves(moves *[]Move, nextTurn int8) {
+func (c *Core) moves(moves *[]Move) {
 	for i := int8(0); i < 4; i++ {
 		for j := int8(0); j < 4; j++ {
 			piece := c.board[i][j]
 			if colors[piece] != c.turn {
 				continue
 			}
-			c.deltas(moves, nextTurn, i, j)
+			c.deltas(moves, i, j)
 		}
 	}
 }
 
-func (c *Core) deltas(moves *[]Move, nextTurn, i, j int8) {
+func (c *Core) deltas(moves *[]Move, i, j int8) {
 	piece := c.board[i][j]
 	for _, delta := range deltas[piece] {
 		kind := int8(0)
@@ -216,6 +233,7 @@ func (c *Core) deltas(moves *[]Move, nextTurn, i, j int8) {
 		if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
 			continue
 		}
+		nextTurn := int8((c.turn + 1) % 2)
 		if (kind == deltaDefault || kind == deltaOtherEmpty) && c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
 			continue
 		}
@@ -250,68 +268,68 @@ func (c *Core) sort(moves *[]Move) {
 	})
 }
 
-func (c *Core) move(nextTurn int8, moves []Move) int {
-	res := c.minInt
-	if len(moves) == 0 {
-		res = 0
+func (c *Core) move(state *State) {
+	state.Value = c.minInt
+	if len(state.Moves) == 0 {
+		state.Value = 0
 		if c.config.EnablePrint {
-			c.print("stalemate", res, PrintConfig{})
+			c.print("stalemate", state.Value, PrintConfig{})
 		}
-		return res
+		return
 	}
-	for _, move := range moves {
-		if move.IsKing() {
-			res = c.maxInt - c.depth
+	for state.MoveIndex = 0; state.MoveIndex < len(state.Moves); state.MoveIndex++ {
+		state.Move = state.Moves[state.MoveIndex]
+		if state.Move.IsKing() {
+			state.Value = c.maxInt - c.depth
 			if c.config.EnablePrint {
-				c.print("dead king", res, PrintConfig{Move: move})
+				c.print("dead king", state.Value, PrintConfig{Move: state.Move})
 			}
-			return res
+			return
 		}
 		if c.config.EnablePrint {
-			c.print("before move", res, PrintConfig{Move: move})
+			c.print("before move", state.Value, PrintConfig{Move: state.Move})
 		}
-		fx, fy, tx, ty := move.Get()
-		what := c.board[tx][ty]
-		c.board[tx][ty] = c.board[fx][fy]
-		c.board[fx][fy] = ' '
+		state.FromX, state.FromY, state.ToX, state.ToY = state.Move.Get()
+		state.What = c.board[state.ToX][state.ToY]
+		c.board[state.ToX][state.ToY] = c.board[state.FromX][state.FromY]
+		c.board[state.FromX][state.FromY] = ' '
 		c.visited[c.turn][c.board]++
-		next := 0
-		if nextResult, ok := c.solved[c.turn][c.board]; ok {
-			next = nextResult
+		state.Next = 0
+		if state.NextResult, state.OK = c.solved[c.turn][c.board]; state.OK {
+			state.Next = state.NextResult
 			if c.config.EnablePrint {
-				c.print("solved[]", next, PrintConfig{Move: move})
+				c.print("solved[]", state.Next, PrintConfig{Move: state.Move})
 			}
 		} else if c.visited[c.turn][c.board] < 3 {
-			prevTurn := c.turn
-			c.turn = nextTurn
+			c.turn = int8((c.turn + 1) % 2)
 			c.depth++
-			next = -c.solve()
+			nextState := c.solve()
+			state.Next = -nextState.Value
 			c.depth--
-			c.turn = prevTurn
+			c.turn = int8((c.turn + 1) % 2)
 			if c.config.EnablePrint {
-				c.print("solve()", next, PrintConfig{Move: move})
+				c.print("solve()", state.Next, PrintConfig{Move: state.Move})
 			}
-			c.solved[c.turn][c.board] = next
+			c.solved[c.turn][c.board] = state.Next
 		} else {
 			if c.config.EnablePrint {
-				c.print("repeated", next, PrintConfig{Move: move})
+				c.print("repeated", state.Next, PrintConfig{Move: state.Move})
 			}
 		}
 		c.visited[c.turn][c.board]--
-		c.board[fx][fy] = c.board[tx][ty]
-		c.board[tx][ty] = what
-		if next > res {
-			res = next
-			c.solvedMove[c.turn][c.board] = move
+		c.board[state.FromX][state.FromY] = c.board[state.ToX][state.ToY]
+		c.board[state.ToX][state.ToY] = state.What
+		if state.Next > state.Value {
+			state.Value = state.Next
+			c.solvedMove[c.turn][c.board] = state.Move
 			if c.config.EnablePrint {
-				c.print("updated res", res, PrintConfig{Move: move})
+				c.print("updated res", state.Value, PrintConfig{Move: state.Move})
 			}
 		}
 	}
 	if c.config.EnablePrint {
-		c.print("final res", res, PrintConfig{Move: c.solvedMove[c.turn][c.board]})
+		c.print("final res", state.Value, PrintConfig{Move: c.solvedMove[c.turn][c.board]})
 	}
-	return res
 }
 
 func (c *Core) show() {

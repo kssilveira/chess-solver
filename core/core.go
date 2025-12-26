@@ -292,7 +292,7 @@ func (c *Core) move(state *State) {
 	}
 	for state.MoveIndex = 0; state.MoveIndex < int8(len(state.Moves)); state.MoveIndex++ {
 		if state.Moves[state.MoveIndex].IsKing() {
-			state.Value = c.maxInt - c.depth
+			state.Value = c.maxInt
 			c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
 			if c.config.EnablePrint {
 				c.print("dead king", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})

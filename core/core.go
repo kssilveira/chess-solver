@@ -180,7 +180,11 @@ func (c *Core) solve() *State {
 		}
 		return state
 	}
-	state.Moves = make([]Move, 0, 10)
+	if cap(state.Moves) == 0 {
+		state.Moves = make([]Move, 0, 10)
+	} else {
+		state.Moves = state.Moves[:0]
+	}
 	c.moves(&state.Moves)
 	c.sort(&state.Moves)
 	c.move(state)

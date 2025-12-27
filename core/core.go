@@ -292,15 +292,13 @@ func (c *Core) doMove(move move.Move, res, depth, turn int) byte {
 		c.print("before move", res, depth, turn, printconfig.PrintConfig{Move: move})
 	}
 	what := c.board[move.ToX()][move.ToY()]
-	c.board[move.ToX()][move.ToY()] =
-		c.board[move.FromX()][move.FromY()]
+	c.board[move.ToX()][move.ToY()] = c.board[move.FromX()][move.FromY()]
 	c.board[move.FromX()][move.FromY()] = ' '
 	return what
 }
 
 func (c *Core) undoMove(move move.Move, what byte) {
-	c.board[move.FromX()][move.FromY()] =
-		c.board[move.ToX()][move.ToY()]
+	c.board[move.FromX()][move.FromY()] = c.board[move.ToX()][move.ToY()]
 	c.board[move.ToX()][move.ToY()] = what
 }
 

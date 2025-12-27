@@ -11,7 +11,6 @@ import (
 	"github.com/kssilveira/chess-solver/config"
 	"github.com/kssilveira/chess-solver/move"
 	"github.com/kssilveira/chess-solver/printconfig"
-	"github.com/kssilveira/chess-solver/state"
 )
 
 // Core contains the core logic.
@@ -22,10 +21,9 @@ type Core struct {
 	turn          int8
 	clearTerminal string
 	visited       []map[[4][4]byte]interface{}
-	solved        []map[[4][4]byte]int8
+	solved        []map[[4][4]byte]int
 	solvedMove    []map[[4][4]byte]move.Move
 	depth         int
-	states        []*state.State
 }
 
 const (
@@ -74,7 +72,7 @@ func New(writer io.Writer, config config.Config) *Core {
 		[4]byte([]byte("KRNB")),
 	},
 		visited: []map[[4][4]byte]interface{}{{}, {}},
-		solved:  []map[[4][4]byte]int8{{}, {}}, solvedMove: []map[[4][4]byte]move.Move{{}, {}},
+		solved:  []map[[4][4]byte]int{{}, {}}, solvedMove: []map[[4][4]byte]move.Move{{}, {}},
 		clearTerminal: "\033[H\033[2J"}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
@@ -94,34 +92,26 @@ func (c *Core) Solve() {
 	}
 }
 
-func (c *Core) solve() {
+func (c *Core) solve() int {
 	if c.config.PrintDepth && c.depth%100000 == 0 {
 		fmt.Fprintf(c.writer, "%d\n", c.depth)
-	}
-	if len(c.states) == c.depth {
-		c.states = append(c.states, &state.State{})
 	}
 	if c.config.EnablePrint {
 		c.print("after move", -1, printconfig.PrintConfig{ClearTerminal: true})
 	}
 	if c.config.MaxDepth >= 0 && c.depth >= c.config.MaxDepth {
-		c.states[c.depth].Value = 0
+		res := 0
 		if c.config.EnablePrint {
-			c.print("max depth", c.states[c.depth].Value, printconfig.PrintConfig{})
+			c.print("max depth", res, printconfig.PrintConfig{})
 		}
-		return
+		return res
 	}
-	if cap(c.states[c.depth].Moves) == 0 {
-		c.states[c.depth].Moves = make([]move.Move, 0, 10)
-	} else {
-		c.states[c.depth].Moves = c.states[c.depth].Moves[:0]
-	}
-	c.moves()
-	c.sort()
-	c.move()
+	moves := c.moves()
+	c.sort(moves)
+	return c.move(moves)
 }
 
-func (c *Core) print(message string, res int8, cfg printconfig.PrintConfig) {
+func (c *Core) print(message string, res int, cfg printconfig.PrintConfig) {
 	if c.config.MaxPrintDepth != 0 && c.depth > c.config.MaxPrintDepth {
 		return
 	}
@@ -161,19 +151,22 @@ func toBytes(board [4][4]byte) [][]byte {
 	return res
 }
 
-func (c *Core) moves() {
+func (c *Core) moves() []move.Move {
+	var res []move.Move
 	for i := int8(0); i < 4; i++ {
 		for j := int8(0); j < 4; j++ {
 			piece := c.board[i][j]
 			if colors[piece] != c.turn {
 				continue
 			}
-			c.deltas(i, j)
+			res = append(res, c.deltas(i, j)...)
 		}
 	}
+	return res
 }
 
-func (c *Core) deltas(i, j int8) {
+func (c *Core) deltas(i, j int8) []move.Move {
+	var moves []move.Move
 	piece := c.board[i][j]
 	for _, delta := range deltas[piece] {
 		kind := int8(0)
@@ -199,17 +192,18 @@ func (c *Core) deltas(i, j int8) {
 		if kind == deltaOtherEmpty && c.board[i+delta[3]][j+delta[4]] != ' ' {
 			continue
 		}
-		c.states[c.depth].Moves = append(
-			c.states[c.depth].Moves,
+		moves = append(
+			moves,
 			move.NewMove(
 				move.Move(i), move.Move(j), move.Move(ni), move.Move(nj),
 				c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K',
 				c.board[ni][nj] != ' '))
 	}
+	return moves
 }
 
-func (c *Core) sort() {
-	slices.SortFunc(c.states[c.depth].Moves, func(i, j move.Move) int {
+func (c *Core) sort(moves []move.Move) {
+	slices.SortFunc(moves, func(i, j move.Move) int {
 		if i.IsKing() {
 			return -1
 		}
@@ -226,150 +220,148 @@ func (c *Core) sort() {
 	})
 }
 
-func (c *Core) move() {
-	c.states[c.depth].Value = -1
-	if c.staleMate() {
-		return
+func (c *Core) move(moves []move.Move) int {
+	res := -1
+	if res, ok := c.staleMate(moves); ok {
+		return res
 	}
-	for c.states[c.depth].MoveIndex = 0; c.states[c.depth].MoveIndex < int8(len(c.states[c.depth].Moves)); c.states[c.depth].MoveIndex++ {
-		if c.deadKing() {
-			return
+	for _, move := range moves {
+		if res, ok := c.deadKing(move); ok {
+			return res
 		}
-		c.doMove()
-		c.states[c.depth].Next = 0
-		if c.states[c.depth].Next, c.states[c.depth].OK = c.solved[c.turn][c.board]; c.states[c.depth].OK {
+		what := c.doMove(move, res)
+		next := 0
+		ok := false
+		if next, ok = c.solved[c.turn][c.board]; ok {
 			if c.config.EnablePrint {
-				c.print("solved[]", c.states[c.depth].Next, printconfig.PrintConfig{Move: c.states[c.depth].Moves[c.states[c.depth].MoveIndex]})
+				c.print("solved[]", next, printconfig.PrintConfig{Move: move})
 			}
-		} else if _, c.states[c.depth].OK = c.visited[c.turn][c.board]; !c.states[c.depth].OK {
+		} else if _, ok = c.visited[c.turn][c.board]; !ok {
 			c.visited[c.turn][c.board] = struct{}{}
 			c.turn = int8((c.turn + 1) % 2)
 			c.depth++
-			c.solve()
+			next = -c.solve()
 			c.depth--
-			c.states[c.depth].Next = -c.states[c.depth+1].Value
 			c.turn = int8((c.turn + 1) % 2)
-			c.solved[c.turn][c.board] = c.states[c.depth].Next
+			c.solved[c.turn][c.board] = next
 			if c.config.EnablePrint {
-				c.print("solve()", c.states[c.depth].Next, printconfig.PrintConfig{Move: c.states[c.depth].Moves[c.states[c.depth].MoveIndex]})
+				c.print("solve()", next, printconfig.PrintConfig{Move: move})
 			}
 		} else {
 			if c.config.EnablePrint {
-				c.print("repeated", c.states[c.depth].Next, printconfig.PrintConfig{Move: c.states[c.depth].Moves[c.states[c.depth].MoveIndex]})
+				c.print("repeated", next, printconfig.PrintConfig{Move: move})
 			}
 		}
-		c.undoMove()
-		if c.updateValue() {
+		c.undoMove(move, what)
+		if c.updateValue(&res, next, move) {
 			break
 		}
 	}
-	if c.states[c.depth].Value == -1 {
-		c.solvedMove[c.turn][c.board] = c.states[c.depth].Moves[0]
+	if res == -1 {
+		c.solvedMove[c.turn][c.board] = moves[0]
 	}
 	if c.config.EnablePrint {
-		c.print("final res", c.states[c.depth].Value, printconfig.PrintConfig{Move: c.solvedMove[c.turn][c.board]})
+		c.print("final res", res, printconfig.PrintConfig{Move: c.solvedMove[c.turn][c.board]})
 	}
+	return res
 }
 
-func (c *Core) staleMate() bool {
-	if len(c.states[c.depth].Moves) != 0 {
+func (c *Core) staleMate(moves []move.Move) (int, bool) {
+	if len(moves) != 0 {
+		return 0, false
+	}
+	res := 0
+	if c.config.EnablePrint {
+		c.print("stalemate", res, printconfig.PrintConfig{})
+	}
+	return res, true
+}
+
+func (c *Core) deadKing(move move.Move) (int, bool) {
+	if !move.IsKing() {
+		return 0, false
+	}
+	res := 1
+	c.solvedMove[c.turn][c.board] = move
+	if c.config.EnablePrint {
+		c.print("dead king", res, printconfig.PrintConfig{Move: move})
+	}
+	return res, true
+}
+
+func (c *Core) doMove(move move.Move, res int) byte {
+	if c.config.EnablePrint {
+		c.print("before move", res, printconfig.PrintConfig{Move: move})
+	}
+	what := c.board[move.ToX()][move.ToY()]
+	c.board[move.ToX()][move.ToY()] =
+		c.board[move.FromX()][move.FromY()]
+	c.board[move.FromX()][move.FromY()] = ' '
+	return what
+}
+
+func (c *Core) undoMove(move move.Move, what byte) {
+	c.board[move.FromX()][move.FromY()] =
+		c.board[move.ToX()][move.ToY()]
+	c.board[move.ToX()][move.ToY()] = what
+}
+
+func (c *Core) updateValue(res *int, next int, move move.Move) bool {
+	if next <= *res {
 		return false
 	}
-	c.states[c.depth].Value = 0
+	*res = next
+	c.solvedMove[c.turn][c.board] = move
 	if c.config.EnablePrint {
-		c.print("stalemate", c.states[c.depth].Value, printconfig.PrintConfig{})
+		c.print("updated res", *res, printconfig.PrintConfig{Move: move})
 	}
-	return true
-}
-
-func (c *Core) deadKing() bool {
-	if !c.states[c.depth].Moves[c.states[c.depth].MoveIndex].IsKing() {
-		return false
-	}
-	c.states[c.depth].Value = 1
-	c.solvedMove[c.turn][c.board] = c.states[c.depth].Moves[c.states[c.depth].MoveIndex]
-	if c.config.EnablePrint {
-		c.print("dead king", c.states[c.depth].Value, printconfig.PrintConfig{Move: c.states[c.depth].Moves[c.states[c.depth].MoveIndex]})
-	}
-	return true
-}
-
-func (c *Core) doMove() {
-	if c.config.EnablePrint {
-		c.print("before move", c.states[c.depth].Value, printconfig.PrintConfig{Move: c.states[c.depth].Moves[c.states[c.depth].MoveIndex]})
-	}
-	c.states[c.depth].What = c.board[c.states[c.depth].Moves[c.states[c.depth].MoveIndex].ToX()][c.states[c.depth].Moves[c.states[c.depth].MoveIndex].ToY()]
-	c.board[c.states[c.depth].Moves[c.states[c.depth].MoveIndex].ToX()][c.states[c.depth].Moves[c.states[c.depth].MoveIndex].ToY()] =
-		c.board[c.states[c.depth].Moves[c.states[c.depth].MoveIndex].FromX()][c.states[c.depth].Moves[c.states[c.depth].MoveIndex].FromY()]
-	c.board[c.states[c.depth].Moves[c.states[c.depth].MoveIndex].FromX()][c.states[c.depth].Moves[c.states[c.depth].MoveIndex].FromY()] = ' '
-}
-
-func (c *Core) undoMove() {
-	c.board[c.states[c.depth].Moves[c.states[c.depth].MoveIndex].FromX()][c.states[c.depth].Moves[c.states[c.depth].MoveIndex].FromY()] =
-		c.board[c.states[c.depth].Moves[c.states[c.depth].MoveIndex].ToX()][c.states[c.depth].Moves[c.states[c.depth].MoveIndex].ToY()]
-	c.board[c.states[c.depth].Moves[c.states[c.depth].MoveIndex].ToX()][c.states[c.depth].Moves[c.states[c.depth].MoveIndex].ToY()] = c.states[c.depth].What
-}
-
-func (c *Core) updateValue() bool {
-	if c.states[c.depth].Next <= c.states[c.depth].Value {
-		return false
-	}
-	c.states[c.depth].Value = c.states[c.depth].Next
-	c.solvedMove[c.turn][c.board] = c.states[c.depth].Moves[c.states[c.depth].MoveIndex]
-	if c.config.EnablePrint {
-		c.print("updated res", c.states[c.depth].Value, printconfig.PrintConfig{Move: c.states[c.depth].Moves[c.states[c.depth].MoveIndex]})
-	}
-	return c.states[c.depth].Value == 1
+	return *res == 1
 }
 
 func (c *Core) show() {
 	c.config.MaxPrintDepth = 0
-	res := int8(123)
+	res := 123
 	c.print("show", res, printconfig.PrintConfig{})
 	visited := []map[[4][4]byte]interface{}{{}, {}}
 	c.depth = 0
-	c.states = nil
 	for {
 		if _, ok := visited[c.turn][c.board]; ok {
 			break
 		}
 		visited[c.turn][c.board] = true
-		mv := c.solvedMove[c.turn][c.board]
-		if mv == 0 {
+		move := c.solvedMove[c.turn][c.board]
+		if move == 0 {
 			break
 		}
-		c.states = append(c.states, &state.State{Value: res, Moves: []move.Move{mv}})
-		c.doMove()
+		c.doMove(move, res)
 		c.depth++
 		res = c.solved[c.turn][c.board]
 		c.turn = (c.turn + 1) % 2
-		c.print("after move", res, printconfig.PrintConfig{Move: mv})
+		c.print("after move", res, printconfig.PrintConfig{Move: move})
 	}
 }
 
 // Play plays a game agains the solution.
 func (c *Core) Play() {
 	c.config.MaxPrintDepth = 0
-	res := int8(123)
+	res := 123
 	c.print("play", res, printconfig.PrintConfig{})
 	c.turn = 0
 	visited := []map[[4][4]byte]interface{}{{}, {}}
 	c.depth = 0
-	c.states = nil
 	for {
 		if _, ok := visited[c.turn][c.board]; ok {
 			break
 		}
 		visited[c.turn][c.board] = true
-		mv := c.solvedMove[c.turn][c.board]
-		if mv == 0 {
+		move := c.solvedMove[c.turn][c.board]
+		if move == 0 {
 			break
 		}
-		c.states = append(c.states, &state.State{Value: res, Moves: []move.Move{mv}})
-		c.doMove()
+		c.doMove(move, res)
 		c.depth++
 		res = c.solved[c.turn][c.board]
-		c.print("after move", res, printconfig.PrintConfig{Move: mv})
+		c.print("after move", res, printconfig.PrintConfig{Move: move})
 
 		fmt.Printf("> ")
 		var fx, fy, tx, ty int

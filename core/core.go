@@ -23,8 +23,6 @@ type Core struct {
 	solved        []map[[4][4]byte]int
 	solvedMove    []map[[4][4]byte]move.Move
 	allMoves      [][]move.Move
-	turn          int
-	depth         int
 }
 
 const (
@@ -85,9 +83,7 @@ func New(writer io.Writer, config config.Config) *Core {
 
 // Solve solves the board.
 func (c *Core) Solve() {
-	c.depth = 0
-	c.turn = 0
-	res := c.solve()
+	res := c.solve(0, 0)
 	fmt.Fprintf(c.writer, "\nmax depth: %d\n", len(c.allMoves))
 	fmt.Fprintf(c.writer, "overall res: %d\n", res)
 	if c.config.EnablePrint && c.config.EnableShow {
@@ -95,40 +91,40 @@ func (c *Core) Solve() {
 	}
 }
 
-func (c *Core) solve() int {
-	if c.config.PrintDepth && c.depth%100000 == 0 {
-		fmt.Fprintf(c.writer, "%d\n", c.depth)
+func (c *Core) solve(depth, turn int) int {
+	if c.config.PrintDepth && depth%100000 == 0 {
+		fmt.Fprintf(c.writer, "%d\n", depth)
 	}
 	if c.config.EnablePrint {
-		c.print("after move", -1, printconfig.PrintConfig{ClearTerminal: true})
+		c.print("after move", -1, depth, turn, printconfig.PrintConfig{ClearTerminal: true})
 	}
-	if c.config.MaxDepth >= 0 && c.depth >= c.config.MaxDepth {
+	if c.config.MaxDepth >= 0 && depth >= c.config.MaxDepth {
 		res := 0
 		if c.config.EnablePrint {
-			c.print("max depth", res, printconfig.PrintConfig{})
+			c.print("max depth", res, depth, turn, printconfig.PrintConfig{})
 		}
 		return res
 	}
-	if len(c.allMoves) == c.depth {
+	if len(c.allMoves) == depth {
 		c.allMoves = append(c.allMoves, make([]move.Move, 0, 10))
 	}
-	moves := c.allMoves[c.depth]
+	moves := c.allMoves[depth]
 	if len(moves) > 0 {
 		moves = moves[:0]
 	}
-	c.moves(&moves)
+	c.moves(&moves, turn)
 	c.sort(moves)
-	return c.move(moves)
+	return c.move(moves, depth, turn)
 }
 
-func (c *Core) print(message string, res int, cfg printconfig.PrintConfig) {
-	if c.config.MaxPrintDepth != 0 && c.depth > c.config.MaxPrintDepth {
+func (c *Core) print(message string, value, depth, turn int, cfg printconfig.PrintConfig) {
+	if c.config.MaxPrintDepth != 0 && depth > c.config.MaxPrintDepth {
 		return
 	}
 	fmt.Fprintf(c.writer, "\n%s\n", message)
-	fmt.Fprintf(c.writer, "turn: %d\n", c.turn)
-	fmt.Fprintf(c.writer, "depth: %d\n", c.depth)
-	fmt.Fprintf(c.writer, "res: %d\n", res)
+	fmt.Fprintf(c.writer, "turn: %d\n", turn)
+	fmt.Fprintf(c.writer, "depth: %d\n", depth)
+	fmt.Fprintf(c.writer, "res: %d\n", value)
 	if cfg.Move != 0 {
 		fx, fy, tx, ty := cfg.Move.Get()
 		fmt.Fprintf(
@@ -161,19 +157,19 @@ func toBytes(board [4][4]byte) [][]byte {
 	return res
 }
 
-func (c *Core) moves(moves *[]move.Move) {
+func (c *Core) moves(moves *[]move.Move, turn int) {
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
 			piece := c.board[i][j]
-			if colors[piece] != c.turn {
+			if colors[piece] != turn {
 				continue
 			}
-			c.deltas(moves, i, j)
+			c.deltas(moves, turn, i, j)
 		}
 	}
 }
 
-func (c *Core) deltas(moves *[]move.Move, i, j int) {
+func (c *Core) deltas(moves *[]move.Move, turn, i, j int) {
 	piece := c.board[i][j]
 	for _, delta := range deltas[piece] {
 		kind := 0
@@ -185,7 +181,7 @@ func (c *Core) deltas(moves *[]move.Move, i, j int) {
 		if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
 			continue
 		}
-		nextTurn := (c.turn + 1) % 2
+		nextTurn := (turn + 1) % 2
 		if (kind == deltaDefault || kind == deltaOtherEmpty) &&
 			c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
 			continue
@@ -226,78 +222,74 @@ func (c *Core) sort(moves []move.Move) {
 	})
 }
 
-func (c *Core) move(moves []move.Move) int {
+func (c *Core) move(moves []move.Move, depth, turn int) int {
 	res := -1
-	if res, ok := c.staleMate(moves); ok {
+	if res, ok := c.staleMate(moves, depth, turn); ok {
 		return res
 	}
 	for _, move := range moves {
-		if res, ok := c.deadKing(move); ok {
+		if res, ok := c.deadKing(move, depth, turn); ok {
 			return res
 		}
-		what := c.doMove(move, res)
+		what := c.doMove(move, res, depth, turn)
 		next := 0
 		ok := false
-		if next, ok = c.solved[c.turn][c.board]; ok {
+		if next, ok = c.solved[turn][c.board]; ok {
 			if c.config.EnablePrint {
-				c.print("solved[]", next, printconfig.PrintConfig{Move: move})
+				c.print("solved[]", next, depth, turn, printconfig.PrintConfig{Move: move})
 			}
-		} else if _, ok = c.visited[c.turn][c.board]; !ok {
-			c.visited[c.turn][c.board] = struct{}{}
-			c.turn = (c.turn + 1) % 2
-			c.depth++
-			next = -c.solve()
-			c.depth--
-			c.turn = (c.turn + 1) % 2
-			c.solved[c.turn][c.board] = next
+		} else if _, ok = c.visited[turn][c.board]; !ok {
+			c.visited[turn][c.board] = struct{}{}
+			next = -c.solve(depth+1, (turn+1)%2)
+			c.solved[turn][c.board] = next
 			if c.config.EnablePrint {
-				c.print("solve()", next, printconfig.PrintConfig{Move: move})
+				c.print("solve()", next, depth, turn, printconfig.PrintConfig{Move: move})
 			}
 		} else {
 			if c.config.EnablePrint {
-				c.print("repeated", next, printconfig.PrintConfig{Move: move})
+				c.print("repeated", next, depth, turn, printconfig.PrintConfig{Move: move})
 			}
 		}
 		c.undoMove(move, what)
-		if c.updateValue(&res, next, move) {
+		if c.updateValue(&res, next, move, depth, turn) {
 			break
 		}
 	}
 	if res == -1 {
-		c.solvedMove[c.turn][c.board] = moves[0]
+		c.solvedMove[turn][c.board] = moves[0]
 	}
 	if c.config.EnablePrint {
-		c.print("final res", res, printconfig.PrintConfig{Move: c.solvedMove[c.turn][c.board]})
+		c.print("final res", res, depth, turn, printconfig.PrintConfig{Move: c.solvedMove[turn][c.board]})
 	}
 	return res
 }
 
-func (c *Core) staleMate(moves []move.Move) (int, bool) {
+func (c *Core) staleMate(moves []move.Move, depth, turn int) (int, bool) {
 	if len(moves) != 0 {
 		return 0, false
 	}
 	res := 0
 	if c.config.EnablePrint {
-		c.print("stalemate", res, printconfig.PrintConfig{})
+		c.print("stalemate", res, depth, turn, printconfig.PrintConfig{})
 	}
 	return res, true
 }
 
-func (c *Core) deadKing(move move.Move) (int, bool) {
+func (c *Core) deadKing(move move.Move, depth, turn int) (int, bool) {
 	if !move.IsKing() {
 		return 0, false
 	}
 	res := 1
-	c.solvedMove[c.turn][c.board] = move
+	c.solvedMove[turn][c.board] = move
 	if c.config.EnablePrint {
-		c.print("dead king", res, printconfig.PrintConfig{Move: move})
+		c.print("dead king", res, depth, turn, printconfig.PrintConfig{Move: move})
 	}
 	return res, true
 }
 
-func (c *Core) doMove(move move.Move, res int) byte {
+func (c *Core) doMove(move move.Move, res, depth, turn int) byte {
 	if c.config.EnablePrint {
-		c.print("before move", res, printconfig.PrintConfig{Move: move})
+		c.print("before move", res, depth, turn, printconfig.PrintConfig{Move: move})
 	}
 	what := c.board[move.ToX()][move.ToY()]
 	c.board[move.ToX()][move.ToY()] =
@@ -312,14 +304,14 @@ func (c *Core) undoMove(move move.Move, what byte) {
 	c.board[move.ToX()][move.ToY()] = what
 }
 
-func (c *Core) updateValue(res *int, next int, move move.Move) bool {
+func (c *Core) updateValue(res *int, next int, move move.Move, depth, turn int) bool {
 	if next <= *res {
 		return false
 	}
 	*res = next
-	c.solvedMove[c.turn][c.board] = move
+	c.solvedMove[turn][c.board] = move
 	if c.config.EnablePrint {
-		c.print("updated res", *res, printconfig.PrintConfig{Move: move})
+		c.print("updated res", *res, depth, turn, printconfig.PrintConfig{Move: move})
 	}
 	return *res == 1
 }
@@ -327,23 +319,24 @@ func (c *Core) updateValue(res *int, next int, move move.Move) bool {
 func (c *Core) show() {
 	c.config.MaxPrintDepth = 0
 	res := 123
-	c.print("show", res, printconfig.PrintConfig{})
 	visited := []map[[4][4]byte]interface{}{{}, {}}
-	c.depth = 0
+	depth := 0
+	turn := 0
+	c.print("show", res, depth, turn, printconfig.PrintConfig{})
 	for {
-		if _, ok := visited[c.turn][c.board]; ok {
+		if _, ok := visited[turn][c.board]; ok {
 			break
 		}
-		visited[c.turn][c.board] = true
-		move := c.solvedMove[c.turn][c.board]
+		visited[turn][c.board] = true
+		move := c.solvedMove[turn][c.board]
 		if move == 0 {
 			break
 		}
-		c.doMove(move, res)
-		res = c.solved[c.turn][c.board]
-		c.depth++
-		c.turn = (c.turn + 1) % 2
-		c.print("after move", res, printconfig.PrintConfig{Move: move})
+		c.doMove(move, res, depth, turn)
+		res = c.solved[turn][c.board]
+		depth++
+		turn = (turn + 1) % 2
+		c.print("after move", res, depth, turn, printconfig.PrintConfig{Move: move})
 	}
 }
 
@@ -351,23 +344,23 @@ func (c *Core) show() {
 func (c *Core) Play() {
 	c.config.MaxPrintDepth = 0
 	res := 123
-	c.print("play", res, printconfig.PrintConfig{})
-	c.turn = 0
+	turn := 0
 	visited := []map[[4][4]byte]interface{}{{}, {}}
-	c.depth = 0
+	depth := 0
+	c.print("play", res, depth, turn, printconfig.PrintConfig{})
 	for {
-		if _, ok := visited[c.turn][c.board]; ok {
+		if _, ok := visited[turn][c.board]; ok {
 			break
 		}
-		visited[c.turn][c.board] = true
-		move := c.solvedMove[c.turn][c.board]
+		visited[turn][c.board] = true
+		move := c.solvedMove[turn][c.board]
 		if move == 0 {
 			break
 		}
-		c.doMove(move, res)
-		c.depth++
-		res = c.solved[c.turn][c.board]
-		c.print("after move", res, printconfig.PrintConfig{Move: move})
+		c.doMove(move, res, depth, turn)
+		depth++
+		res = c.solved[turn][c.board]
+		c.print("after move", res, depth, turn, printconfig.PrintConfig{Move: move})
 
 		fmt.Printf("> ")
 		var fx, fy, tx, ty int

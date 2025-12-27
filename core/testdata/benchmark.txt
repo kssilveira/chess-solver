@@ -2,11 +2,11 @@ goos: linux
 goarch: amd64
 pkg: github.com/kssilveira/chess-solver/core
 cpu: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
-BenchmarkSolve/default-16         	  574105	      2090 ns/op	       1 B/op	       0 allocs/op
-BenchmarkSolve/default-16         	  545646	      2171 ns/op	       0 B/op	       0 allocs/op
-BenchmarkSolve/default-16         	  570117	      2108 ns/op	       0 B/op	       0 allocs/op
-BenchmarkSolve/default-16         	  615028	      2099 ns/op	       0 B/op	       0 allocs/op
-BenchmarkSolve/default-16         	  583332	      2233 ns/op	       0 B/op	       0 allocs/op
-BenchmarkSolve/default-16         	  602955	      2166 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSolve/default-16         	  542142	      2200 ns/op	      63 B/op	       0 allocs/op
+BenchmarkSolve/default-16         	  546565	      2195 ns/op	      61 B/op	       0 allocs/op
+BenchmarkSolve/default-16         	  569713	      2234 ns/op	     117 B/op	       0 allocs/op
+BenchmarkSolve/default-16         	  545908	      2159 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSolve/default-16         	  557500	      2292 ns/op	     240 B/op	       0 allocs/op
+BenchmarkSolve/default-16         	  559750	      2136 ns/op	       0 B/op	       0 allocs/op
 PASS
-ok  	github.com/kssilveira/chess-solver/core	13.268s
+ok  	github.com/kssilveira/chess-solver/core	11.879s

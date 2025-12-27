@@ -4,12 +4,13 @@ pkg: github.com/kssilveira/chess-solver/core
 cpu: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
                  │ /dev/fd/63  │ core/testdata/benchmark.txt  │
                  │   sec/op    │   sec/op     vs base         │
-Solve/default-16   2.172µ ± 6%   2.137µ ± 4%  ~ (p=0.240 n=6)
+Solve/default-16   2.137µ ± 4%   2.198µ ± 4%  ~ (p=0.132 n=6)
 
-                 │ /dev/fd/63 │   core/testdata/benchmark.txt    │
-                 │    B/op    │   B/op    vs base                │
-Solve/default-16   24.00 ± 4%   0.00 ± ?  -100.00% (p=0.002 n=6)
+                 │ /dev/fd/63 │ core/testdata/benchmark.txt │
+                 │    B/op    │    B/op     vs base         │
+Solve/default-16     0.00 ± ?    62.00 ± ?  ~ (p=0.061 n=6)
 
-                 │ /dev/fd/63 │    core/testdata/benchmark.txt     │
-                 │ allocs/op  │ allocs/op   vs base                │
-Solve/default-16   1.000 ± 0%   0.000 ± 0%  -100.00% (p=0.002 n=6)
+                 │ /dev/fd/63 │  core/testdata/benchmark.txt  │
+                 │ allocs/op  │ allocs/op   vs base           │
+Solve/default-16   0.000 ± 0%   0.000 ± 0%  ~ (p=1.000 n=6) ¹
+¹ all samples are equal

@@ -4,11 +4,10 @@ declare -a boards=(
 	"b  k,   p,P   ,KRNB"
 	"br k,   p,P   ,KRNB"
 	"brnk,   p,P   ,KRNB"
-	"brnk,   p,P   ,KRNB"
 )
 
 for board in "${boards[@]}"
 do
 	echo -e "\nboard: '${board}'"
-	time go run main.go --board="${board}" --enable_play=false --max_print_depth=-1 --print_depth=false
+	time go run main.go --board="${board}" --enable_play=false --max_print_depth=-1 --print_depth=true --max_depth=2900000
 done

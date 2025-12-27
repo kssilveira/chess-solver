@@ -7,58 +7,9 @@ import (
 	"io"
 	"slices"
 	"time"
+
+	"github.com/kssilveira/chess-solver/move"
 )
-
-// Move contains a move.
-type Move int16
-
-// NewMove creates a new move.
-func NewMove(fx, fy, tx, ty Move, isKing, isCapture bool) Move {
-	res := Move(0)
-	res |= (fx & 0b11) | ((fy & 0b11) << 2) | ((tx & 0b11) << 4) | ((ty & 0b11) << 6)
-	if isKing {
-		res |= 1 << 8
-	}
-	if isCapture {
-		res |= 1 << 9
-	}
-	return res
-}
-
-// Get gets coordinates.
-func (m Move) Get() (int8, int8, int8, int8) {
-	return m.FromX(), m.FromY(), m.ToX(), m.ToY()
-}
-
-// FromX returns from x.
-func (m Move) FromX() int8 {
-	return int8(m & 0b11)
-}
-
-// FromY returns from y.
-func (m Move) FromY() int8 {
-	return int8((m & 0b1100) >> 2)
-}
-
-// ToX returns to x.
-func (m Move) ToX() int8 {
-	return int8((m & 0b110000) >> 4)
-}
-
-// ToY returns to y.
-func (m Move) ToY() int8 {
-	return int8((m & 0b11000000) >> 6)
-}
-
-// IsKing returns is king.
-func (m Move) IsKing() bool {
-	return m&(1<<8) != 0
-}
-
-// IsCapture returns is capture.
-func (m Move) IsCapture() bool {
-	return m&(1<<9) != 0
-}
 
 // Config contains configuration.
 type Config struct {
@@ -73,7 +24,7 @@ type Config struct {
 
 // PrintConfig contains print configuration.
 type PrintConfig struct {
-	Move          Move
+	Move          move.Move
 	ClearTerminal bool
 }
 
@@ -86,7 +37,7 @@ type Core struct {
 	clearTerminal string
 	visited       []map[[4][4]byte]interface{}
 	solved        []map[[4][4]byte]int8
-	solvedMove    []map[[4][4]byte]Move
+	solvedMove    []map[[4][4]byte]move.Move
 	depth         int
 	states        []*State
 }
@@ -97,7 +48,7 @@ type State struct {
 	Next      int8
 	MoveIndex int8
 	What      byte
-	Moves     []Move
+	Moves     []move.Move
 }
 
 const (
@@ -146,7 +97,7 @@ func New(writer io.Writer, config Config) *Core {
 		[4]byte([]byte("KRNB")),
 	},
 		visited: []map[[4][4]byte]interface{}{{}, {}},
-		solved:  []map[[4][4]byte]int8{{}, {}}, solvedMove: []map[[4][4]byte]Move{{}, {}},
+		solved:  []map[[4][4]byte]int8{{}, {}}, solvedMove: []map[[4][4]byte]move.Move{{}, {}},
 		clearTerminal: "\033[H\033[2J"}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {
@@ -185,7 +136,7 @@ func (c *Core) solve() *State {
 		return state
 	}
 	if cap(state.Moves) == 0 {
-		state.Moves = make([]Move, 0, 10)
+		state.Moves = make([]move.Move, 0, 10)
 	} else {
 		state.Moves = state.Moves[:0]
 	}
@@ -232,7 +183,7 @@ func toBytes(board [4][4]byte) [][]byte {
 	return res
 }
 
-func (c *Core) moves(moves *[]Move) {
+func (c *Core) moves(moves *[]move.Move) {
 	for i := int8(0); i < 4; i++ {
 		for j := int8(0); j < 4; j++ {
 			piece := c.board[i][j]
@@ -244,7 +195,7 @@ func (c *Core) moves(moves *[]Move) {
 	}
 }
 
-func (c *Core) deltas(moves *[]Move, i, j int8) {
+func (c *Core) deltas(moves *[]move.Move, i, j int8) {
 	piece := c.board[i][j]
 	for _, delta := range deltas[piece] {
 		kind := int8(0)
@@ -269,12 +220,12 @@ func (c *Core) deltas(moves *[]Move, i, j int8) {
 		if kind == deltaOtherEmpty && c.board[i+delta[3]][j+delta[4]] != ' ' {
 			continue
 		}
-		*moves = append(*moves, NewMove(Move(i), Move(j), Move(ni), Move(nj), c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K', c.board[ni][nj] != ' '))
+		*moves = append(*moves, move.NewMove(move.Move(i), move.Move(j), move.Move(ni), move.Move(nj), c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K', c.board[ni][nj] != ' '))
 	}
 }
 
-func (c *Core) sort(moves *[]Move) {
-	slices.SortFunc(*moves, func(i, j Move) int {
+func (c *Core) sort(moves *[]move.Move) {
+	slices.SortFunc(*moves, func(i, j move.Move) int {
 		if i.IsKing() {
 			return -1
 		}

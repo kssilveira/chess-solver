@@ -106,7 +106,8 @@ func (c *Core) solve() int {
 		}
 		return res
 	}
-	moves := c.moves()
+	moves := make([]move.Move, 0, 10)
+	c.moves(&moves)
 	c.sort(moves)
 	return c.move(moves)
 }
@@ -151,22 +152,19 @@ func toBytes(board [4][4]byte) [][]byte {
 	return res
 }
 
-func (c *Core) moves() []move.Move {
-	var res []move.Move
+func (c *Core) moves(moves *[]move.Move) {
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
 			piece := c.board[i][j]
 			if colors[piece] != c.turn {
 				continue
 			}
-			res = append(res, c.deltas(i, j)...)
+			c.deltas(moves, i, j)
 		}
 	}
-	return res
 }
 
-func (c *Core) deltas(i, j int) []move.Move {
-	var moves []move.Move
+func (c *Core) deltas(moves *[]move.Move, i, j int) {
 	piece := c.board[i][j]
 	for _, delta := range deltas[piece] {
 		kind := 0
@@ -192,14 +190,13 @@ func (c *Core) deltas(i, j int) []move.Move {
 		if kind == deltaOtherEmpty && c.board[i+delta[3]][j+delta[4]] != ' ' {
 			continue
 		}
-		moves = append(
-			moves,
+		*moves = append(
+			*moves,
 			move.NewMove(
 				move.Move(i), move.Move(j), move.Move(ni), move.Move(nj),
 				c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K',
 				c.board[ni][nj] != ' '))
 	}
-	return moves
 }
 
 func (c *Core) sort(moves []move.Move) {

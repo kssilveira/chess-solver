@@ -18,13 +18,13 @@ type Core struct {
 	writer        io.Writer
 	config        config.Config
 	board         [4][4]byte
-	turn          int
 	clearTerminal string
 	visited       []map[[4][4]byte]interface{}
 	solved        []map[[4][4]byte]int
 	solvedMove    []map[[4][4]byte]move.Move
-	depth         int
 	allMoves      [][]move.Move
+	turn          int
+	depth         int
 }
 
 const (
@@ -87,9 +87,9 @@ func New(writer io.Writer, config config.Config) *Core {
 func (c *Core) Solve() {
 	c.depth = 0
 	c.turn = 0
-	c.solve()
+	res := c.solve()
 	fmt.Fprintf(c.writer, "\nmax depth: %d\n", len(c.allMoves))
-	c.printOverallRes()
+	fmt.Fprintf(c.writer, "overall res: %d\n", res)
 	if c.config.EnablePrint && c.config.EnableShow {
 		c.show()
 	}
@@ -322,14 +322,6 @@ func (c *Core) updateValue(res *int, next int, move move.Move) bool {
 		c.print("updated res", *res, printconfig.PrintConfig{Move: move})
 	}
 	return *res == 1
-}
-
-func (c *Core) printOverallRes() {
-	move := c.solvedMove[c.turn][c.board]
-	what := c.doMove(move, 123)
-	res := c.solved[c.turn][c.board]
-	c.undoMove(move, what)
-	fmt.Fprintf(c.writer, "\noverall res: %d\n", res)
 }
 
 func (c *Core) show() {

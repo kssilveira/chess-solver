@@ -172,19 +172,6 @@ ______
 ‾‾‾‾‾‾
 
 max depth: 2
-
-before move
-turn: 0
-depth: 0
-res: 123
-move: K (3, 0) =>   (2, 0)
-______
-|    |
-| k  |
-|    |
-|K k |
-‾‾‾‾‾‾
-
 overall res: -1
 
 show

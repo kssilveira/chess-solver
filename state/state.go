@@ -9,5 +9,6 @@ type State struct {
 	Next      int8
 	MoveIndex int8
 	What      byte
+	OK        bool
 	Moves     []move.Move
 }

@@ -18,28 +18,28 @@ func NewMove(fx, fy, tx, ty Move, isKing, isCapture bool) Move {
 }
 
 // Get gets coordinates.
-func (m Move) Get() (int8, int8, int8, int8) {
+func (m Move) Get() (int, int, int, int) {
 	return m.FromX(), m.FromY(), m.ToX(), m.ToY()
 }
 
 // FromX returns from x.
-func (m Move) FromX() int8 {
-	return int8(m & 0b11)
+func (m Move) FromX() int {
+	return int(m & 0b11)
 }
 
 // FromY returns from y.
-func (m Move) FromY() int8 {
-	return int8((m & 0b1100) >> 2)
+func (m Move) FromY() int {
+	return int((m & 0b1100) >> 2)
 }
 
 // ToX returns to x.
-func (m Move) ToX() int8 {
-	return int8((m & 0b110000) >> 4)
+func (m Move) ToX() int {
+	return int((m & 0b110000) >> 4)
 }
 
 // ToY returns to y.
-func (m Move) ToY() int8 {
-	return int8((m & 0b11000000) >> 6)
+func (m Move) ToY() int {
+	return int((m & 0b11000000) >> 6)
 }
 
 // IsKing returns is king.

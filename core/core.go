@@ -18,7 +18,7 @@ type Core struct {
 	writer        io.Writer
 	config        config.Config
 	board         [4][4]byte
-	turn          int8
+	turn          int
 	clearTerminal string
 	visited       []map[[4][4]byte]interface{}
 	solved        []map[[4][4]byte]int
@@ -34,27 +34,27 @@ const (
 )
 
 var (
-	colors = map[byte]int8{
+	colors = map[byte]int{
 		byte(' '): -1,
 		byte('P'): 0, byte('K'): 0, byte('R'): 0, byte('N'): 0, byte('B'): 0, byte('X'): 0,
 		byte('p'): 1, byte('k'): 1, byte('r'): 1, byte('n'): 1, byte('b'): 1, byte('x'): 1,
 	}
-	deltas = map[byte][][]int8{
-		byte('P'): [][]int8{{-1, 0, deltaEmpty}, {-1, -1, deltaEnemy}, {-1, 1, deltaEnemy}},
-		byte('R'): [][]int8{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
-		byte('B'): [][]int8{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		byte('K'): [][]int8{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		byte('N'): [][]int8{
+	deltas = map[byte][][]int{
+		byte('P'): [][]int{{-1, 0, deltaEmpty}, {-1, -1, deltaEnemy}, {-1, 1, deltaEnemy}},
+		byte('R'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
+		byte('B'): [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		byte('K'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		byte('N'): [][]int{
 			{-2, -1, deltaOtherEmpty, -1, 0}, {-2, 1, deltaOtherEmpty, -1, 0},
 			{-1, -2, deltaOtherEmpty, 0, -1}, {1, -2, deltaOtherEmpty, 0, -1},
 			{2, -1, deltaOtherEmpty, 1, 0}, {2, 1, deltaOtherEmpty, 1, 0},
 			{-1, 2, deltaOtherEmpty, 0, 1}, {1, 2, deltaOtherEmpty, 0, 1},
 		},
-		byte('p'): [][]int8{{1, 0, deltaEmpty}, {1, -1, deltaEnemy}, {1, 1, deltaEnemy}},
-		byte('r'): [][]int8{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
-		byte('b'): [][]int8{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		byte('k'): [][]int8{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		byte('n'): [][]int8{
+		byte('p'): [][]int{{1, 0, deltaEmpty}, {1, -1, deltaEnemy}, {1, 1, deltaEnemy}},
+		byte('r'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
+		byte('b'): [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		byte('k'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		byte('n'): [][]int{
 			{-2, -1, deltaOtherEmpty, -1, 0}, {-2, 1, deltaOtherEmpty, -1, 0},
 			{-1, -2, deltaOtherEmpty, 0, -1}, {1, -2, deltaOtherEmpty, 0, -1},
 			{2, -1, deltaOtherEmpty, 1, 0}, {2, 1, deltaOtherEmpty, 1, 0},
@@ -135,7 +135,7 @@ func (c *Core) print(message string, res int, cfg printconfig.PrintConfig) {
 	}
 }
 
-func (c *Core) what(x, y int8) string {
+func (c *Core) what(x, y int) string {
 	return string(c.board[x][y])
 }
 
@@ -153,8 +153,8 @@ func toBytes(board [4][4]byte) [][]byte {
 
 func (c *Core) moves() []move.Move {
 	var res []move.Move
-	for i := int8(0); i < 4; i++ {
-		for j := int8(0); j < 4; j++ {
+	for i := 0; i < 4; i++ {
+		for j := 0; j < 4; j++ {
 			piece := c.board[i][j]
 			if colors[piece] != c.turn {
 				continue
@@ -165,11 +165,11 @@ func (c *Core) moves() []move.Move {
 	return res
 }
 
-func (c *Core) deltas(i, j int8) []move.Move {
+func (c *Core) deltas(i, j int) []move.Move {
 	var moves []move.Move
 	piece := c.board[i][j]
 	for _, delta := range deltas[piece] {
-		kind := int8(0)
+		kind := 0
 		if len(delta) > 2 {
 			kind = delta[2]
 		}
@@ -178,7 +178,7 @@ func (c *Core) deltas(i, j int8) []move.Move {
 		if ni < 0 || ni >= 4 || nj < 0 || nj >= 4 {
 			continue
 		}
-		nextTurn := int8((c.turn + 1) % 2)
+		nextTurn := (c.turn + 1) % 2
 		if (kind == deltaDefault || kind == deltaOtherEmpty) &&
 			c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
 			continue
@@ -238,11 +238,11 @@ func (c *Core) move(moves []move.Move) int {
 			}
 		} else if _, ok = c.visited[c.turn][c.board]; !ok {
 			c.visited[c.turn][c.board] = struct{}{}
-			c.turn = int8((c.turn + 1) % 2)
+			c.turn = (c.turn + 1) % 2
 			c.depth++
 			next = -c.solve()
 			c.depth--
-			c.turn = int8((c.turn + 1) % 2)
+			c.turn = (c.turn + 1) % 2
 			c.solved[c.turn][c.board] = next
 			if c.config.EnablePrint {
 				c.print("solve()", next, printconfig.PrintConfig{Move: move})

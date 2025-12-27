@@ -118,7 +118,7 @@ func (c *Core) solve() *state.State {
 		state.Moves = state.Moves[:0]
 	}
 	c.moves(&state.Moves)
-	c.sort(&state.Moves)
+	sort(&state.Moves)
 	c.move(state)
 	return state
 }
@@ -201,7 +201,7 @@ func (c *Core) deltas(moves *[]move.Move, i, j int8) {
 	}
 }
 
-func (c *Core) sort(moves *[]move.Move) {
+func sort(moves *[]move.Move) {
 	slices.SortFunc(*moves, func(i, j move.Move) int {
 		if i.IsKing() {
 			return -1

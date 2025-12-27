@@ -24,6 +24,7 @@ type Core struct {
 	solved        []map[[4][4]byte]int
 	solvedMove    []map[[4][4]byte]move.Move
 	depth         int
+	allMoves      [][]move.Move
 }
 
 const (
@@ -106,7 +107,13 @@ func (c *Core) solve() int {
 		}
 		return res
 	}
-	moves := make([]move.Move, 0, 10)
+	if len(c.allMoves) == c.depth {
+		c.allMoves = append(c.allMoves, make([]move.Move, 0, 10))
+	}
+	moves := c.allMoves[c.depth]
+	if len(moves) > 0 {
+		moves = moves[:0]
+	}
 	c.moves(&moves)
 	c.sort(moves)
 	return c.move(moves)

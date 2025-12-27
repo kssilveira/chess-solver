@@ -12,3 +12,9 @@ user	0m6.220s
 sys	0m0.199s
 
 board: 'b  k,   p,P   ,KRNB'
+
+real	2m11.113s
+user	2m14.089s
+sys	0m1.551s
+
+board: 'br k,   p,P   ,KRNB'

@@ -264,9 +264,7 @@ func (c *Core) move(state *state.State) {
 				c.print("repeated", state.Next, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 		}
-		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] =
-			c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
-		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = state.What
+		c.undoMove(state)
 		if state.Next > state.Value {
 			state.Value = state.Next
 			c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
@@ -314,6 +312,12 @@ func (c *Core) doMove(state *state.State) {
 	c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] =
 		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()]
 	c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = ' '
+}
+
+func (c *Core) undoMove(state *state.State) {
+	c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] =
+		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
+	c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = state.What
 }
 
 func (c *Core) show() {

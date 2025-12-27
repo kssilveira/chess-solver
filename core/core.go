@@ -89,6 +89,7 @@ func (c *Core) Solve() {
 	c.turn = 0
 	c.solve()
 	fmt.Fprintf(c.writer, "\nmax depth: %d\n", len(c.allMoves))
+	c.printOverallRes()
 	if c.config.EnablePrint && c.config.EnableShow {
 		c.show()
 	}
@@ -323,6 +324,14 @@ func (c *Core) updateValue(res *int, next int, move move.Move) bool {
 	return *res == 1
 }
 
+func (c *Core) printOverallRes() {
+	move := c.solvedMove[c.turn][c.board]
+	what := c.doMove(move, 123)
+	res := c.solved[c.turn][c.board]
+	c.undoMove(move, what)
+	fmt.Fprintf(c.writer, "\noverall res: %d\n", res)
+}
+
 func (c *Core) show() {
 	c.config.MaxPrintDepth = 0
 	res := 123
@@ -340,9 +349,6 @@ func (c *Core) show() {
 		}
 		c.doMove(move, res)
 		res = c.solved[c.turn][c.board]
-		if c.depth == 0 {
-			fmt.Fprintf(c.writer, "\noverall res: %d\n", res)
-		}
 		c.depth++
 		c.turn = (c.turn + 1) % 2
 		c.print("after move", res, printconfig.PrintConfig{Move: move})

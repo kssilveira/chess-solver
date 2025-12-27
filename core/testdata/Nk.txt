@@ -5366,6 +5366,20 @@ ______
 
 max depth: 3
 
+before move
+turn: 0
+depth: 0
+res: 123
+move: N (3, 3) =>   (1, 2)
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+overall res: 1
+
 show
 turn: 0
 depth: 0
@@ -5388,8 +5402,6 @@ ______
 |RR  |
 |   N|
 ‾‾‾‾‾‾
-
-overall res: 1
 
 after move
 turn: 1

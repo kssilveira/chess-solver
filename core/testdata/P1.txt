@@ -330,6 +330,20 @@ ______
 
 max depth: 5
 
+before move
+turn: 0
+depth: 0
+res: 123
+move: P (3, 0) =>   (2, 0)
+______
+|   p|
+|    |
+|    |
+|P   |
+‾‾‾‾‾‾
+
+overall res: 0
+
 show
 turn: 0
 depth: 0
@@ -352,8 +366,6 @@ ______
 |    |
 |P   |
 ‾‾‾‾‾‾
-
-overall res: 0
 
 after move
 turn: 1

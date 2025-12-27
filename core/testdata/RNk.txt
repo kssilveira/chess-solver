@@ -318,6 +318,20 @@ ______
 
 max depth: 50599
 
+before move
+turn: 0
+depth: 0
+res: 123
+move: R (0, 2) =>   (1, 2)
+______
+|  R |
+|k   |
+| R  |
+|R  N|
+‾‾‾‾‾‾
+
+overall res: 1
+
 show
 turn: 0
 depth: 0
@@ -340,8 +354,6 @@ ______
 | R  |
 |R  N|
 ‾‾‾‾‾‾
-
-overall res: 1
 
 after move
 turn: 1

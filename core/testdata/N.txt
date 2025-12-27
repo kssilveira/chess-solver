@@ -2218,6 +2218,20 @@ ______
 
 max depth: 5
 
+before move
+turn: 0
+depth: 0
+res: 123
+move: N (3, 3) =>   (1, 2)
+______
+|nx  |
+|    |
+|    |
+|  XN|
+‾‾‾‾‾‾
+
+overall res: 0
+
 show
 turn: 0
 depth: 0
@@ -2240,8 +2254,6 @@ ______
 |    |
 |  XN|
 ‾‾‾‾‾‾
-
-overall res: 0
 
 after move
 turn: 1

@@ -230,16 +230,11 @@ func sort(moves *[]move.Move) {
 
 func (c *Core) move(state *state.State) {
 	state.Value = -1
-	if c.stalemate(state) {
+	if c.staleMate(state) {
 		return
 	}
 	for state.MoveIndex = 0; state.MoveIndex < int8(len(state.Moves)); state.MoveIndex++ {
-		if state.Moves[state.MoveIndex].IsKing() {
-			state.Value = 1
-			c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
-			if c.config.EnablePrint {
-				c.print("dead king", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
-			}
+		if c.deadKing(state) {
 			return
 		}
 		if c.config.EnablePrint {
@@ -294,13 +289,25 @@ func (c *Core) move(state *state.State) {
 	}
 }
 
-func (c *Core) stalemate(state *state.State) bool {
+func (c *Core) staleMate(state *state.State) bool {
 	if len(state.Moves) != 0 {
 		return false
 	}
 	state.Value = 0
 	if c.config.EnablePrint {
 		c.print("stalemate", state.Value, printconfig.PrintConfig{})
+	}
+	return true
+}
+
+func (c *Core) deadKing(state *state.State) bool {
+	if !state.Moves[state.MoveIndex].IsKing() {
+		return false
+	}
+	state.Value = 1
+	c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
+	if c.config.EnablePrint {
+		c.print("dead king", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 	}
 	return true
 }

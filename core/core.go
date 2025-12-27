@@ -359,20 +359,17 @@ func (c *Core) Play() {
 			break
 		}
 		visited[c.turn][c.board] = true
-		move := c.solvedMove[c.turn][c.board]
-		if move == 0 {
+		mv := c.solvedMove[c.turn][c.board]
+		if mv == 0 {
 			break
 		}
-		c.print("before move", res, printconfig.PrintConfig{Move: move})
-
-		fx, fy, tx, ty := move.Get()
-		c.board[tx][ty] = c.board[fx][fy]
-		c.board[fx][fy] = ' '
+		c.doMove(&state.State{Value: res, Moves: []move.Move{mv}})
 		c.depth++
 		res = c.solved[c.turn][c.board]
-		c.print("after move", res, printconfig.PrintConfig{Move: move})
+		c.print("after move", res, printconfig.PrintConfig{Move: mv})
 
 		fmt.Printf("> ")
+		var fx, fy, tx, ty int
 		fmt.Scanf("%d%d%d%d", &fx, &fy, &tx, &ty)
 		c.board[tx][ty] = c.board[fx][fy]
 		c.board[fx][fy] = ' '

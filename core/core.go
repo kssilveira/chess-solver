@@ -8,19 +8,9 @@ import (
 	"slices"
 	"time"
 
+	"github.com/kssilveira/chess-solver/config"
 	"github.com/kssilveira/chess-solver/move"
 )
-
-// Config contains configuration.
-type Config struct {
-	MaxDepth      int
-	SleepDuration time.Duration
-	Board         []string
-	MaxPrintDepth int
-	EnablePrint   bool
-	EnableShow    bool
-	PrintDepth    bool
-}
 
 // PrintConfig contains print configuration.
 type PrintConfig struct {
@@ -31,7 +21,7 @@ type PrintConfig struct {
 // Core contains the core logic.
 type Core struct {
 	writer        io.Writer
-	config        Config
+	config        config.Config
 	board         [4][4]byte
 	turn          int8
 	clearTerminal string
@@ -89,7 +79,7 @@ var (
 )
 
 // New creates a new core.
-func New(writer io.Writer, config Config) *Core {
+func New(writer io.Writer, config config.Config) *Core {
 	res := &Core{writer: writer, config: config, board: [4][4]byte{
 		[4]byte([]byte("bnrk")),
 		[4]byte([]byte("   p")),

@@ -5,6 +5,8 @@ import (
 	"os"
 	"path/filepath"
 	"testing"
+
+	"github.com/kssilveira/chess-solver/config"
 )
 
 func TestSolve(t *testing.T) {
@@ -107,7 +109,7 @@ func TestSolve(t *testing.T) {
 		}},
 	}
 	for _, in := range inputs {
-		config := Config{MaxDepth: 5, MaxPrintDepth: 5, EnablePrint: true, EnableShow: true}
+		config := config.Config{MaxDepth: 5, MaxPrintDepth: 5, EnablePrint: true, EnableShow: true}
 		if in.maxDepth != 0 {
 			config.MaxDepth = in.maxDepth
 		}
@@ -134,7 +136,7 @@ func BenchmarkSolve(b *testing.B) {
 		{name: "default"},
 	}
 	for _, in := range inputs {
-		config := Config{MaxDepth: 5, MaxPrintDepth: -1}
+		config := config.Config{MaxDepth: 5, MaxPrintDepth: -1}
 		var out bytes.Buffer
 		core := New(&out, config)
 		b.Run(in.name, func(b *testing.B) {

@@ -7,6 +7,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/kssilveira/chess-solver/config"
 	"github.com/kssilveira/chess-solver/core"
 )
 
@@ -17,7 +18,7 @@ func main() {
 	maxPrintDepth := flag.Int("max_print_depth", 1, "max depth")
 	enablePlay := flag.Bool("enable_play", true, "enable play")
 	flag.Parse()
-	core := core.New(os.Stdout, core.Config{
+	core := core.New(os.Stdout, config.Config{
 		MaxDepth: *maxDepth, SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth, PrintDepth: true,
 		Board:       strings.Split(*board, ","),
 		EnablePrint: true,

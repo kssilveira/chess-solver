@@ -237,9 +237,6 @@ func (c *Core) move(state *state.State) {
 		if c.deadKing(state) {
 			return
 		}
-		if c.config.EnablePrint {
-			c.print("before move", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
-		}
 		c.doMove(state)
 		state.Next = 0
 		if _, ok := c.solved[c.turn][c.board]; ok {
@@ -255,10 +252,10 @@ func (c *Core) move(state *state.State) {
 			state.Next = -nextState.Value
 			c.depth--
 			c.turn = int8((c.turn + 1) % 2)
+			c.solved[c.turn][c.board] = state.Next
 			if c.config.EnablePrint {
 				c.print("solve()", state.Next, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
-			c.solved[c.turn][c.board] = state.Next
 		} else {
 			if c.config.EnablePrint {
 				c.print("repeated", state.Next, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
@@ -301,6 +298,9 @@ func (c *Core) deadKing(state *state.State) bool {
 }
 
 func (c *Core) doMove(state *state.State) {
+	if c.config.EnablePrint {
+		c.print("before move", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
+	}
 	state.What = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
 	c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] =
 		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()]
@@ -340,7 +340,6 @@ func (c *Core) show() {
 			break
 		}
 		c.print("before move", res, printconfig.PrintConfig{Move: move})
-
 		fx, fy, tx, ty := move.Get()
 		c.board[tx][ty] = c.board[fx][fy]
 		c.board[fx][fy] = ' '

@@ -133,7 +133,10 @@ func (c *Core) print(message string, res int8, cfg printconfig.PrintConfig) {
 	fmt.Fprintf(c.writer, "res: %d\n", res)
 	if cfg.Move != 0 {
 		fx, fy, tx, ty := cfg.Move.Get()
-		fmt.Fprintf(c.writer, "move: %s (%d, %d) => %s (%d, %d)\n", c.what(fx, fy), fx, fy, c.what(tx, ty), tx, ty)
+		fmt.Fprintf(
+			c.writer,
+			"move: %s (%d, %d) => %s (%d, %d)\n",
+			c.what(fx, fy), fx, fy, c.what(tx, ty), tx, ty)
 	}
 	fmt.Fprintln(c.writer, "______")
 	fmt.Fprintln(c.writer, "|"+string(bytes.Join(toBytes(c.board), []byte("|\n|")))+"|")
@@ -185,7 +188,8 @@ func (c *Core) deltas(moves *[]move.Move, i, j int8) {
 			continue
 		}
 		nextTurn := int8((c.turn + 1) % 2)
-		if (kind == deltaDefault || kind == deltaOtherEmpty) && c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
+		if (kind == deltaDefault || kind == deltaOtherEmpty) &&
+			c.board[ni][nj] != ' ' && colors[c.board[ni][nj]] != nextTurn {
 			continue
 		}
 		if kind == deltaEmpty && c.board[ni][nj] != ' ' {
@@ -197,7 +201,12 @@ func (c *Core) deltas(moves *[]move.Move, i, j int8) {
 		if kind == deltaOtherEmpty && c.board[i+delta[3]][j+delta[4]] != ' ' {
 			continue
 		}
-		*moves = append(*moves, move.NewMove(move.Move(i), move.Move(j), move.Move(ni), move.Move(nj), c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K', c.board[ni][nj] != ' '))
+		*moves = append(
+			*moves,
+			move.NewMove(
+				move.Move(i), move.Move(j), move.Move(ni), move.Move(nj),
+				c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K',
+				c.board[ni][nj] != ' '))
 	}
 }
 
@@ -241,7 +250,8 @@ func (c *Core) move(state *state.State) {
 			c.print("before move", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 		}
 		state.What = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
-		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()]
+		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] =
+			c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()]
 		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = ' '
 		state.Next = 0
 		if _, ok := c.solved[c.turn][c.board]; ok {
@@ -266,7 +276,8 @@ func (c *Core) move(state *state.State) {
 				c.print("repeated", state.Next, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 		}
-		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
+		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] =
+			c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
 		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = state.What
 		if state.Next > state.Value {
 			state.Value = state.Next

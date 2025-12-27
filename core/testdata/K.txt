@@ -6435,6 +6435,8 @@ ______
 |K   |
 ‾‾‾‾‾‾
 
+max depth: 5
+
 show
 turn: 0
 depth: 0

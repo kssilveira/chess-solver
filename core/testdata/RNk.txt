@@ -316,6 +316,8 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
+max depth: 50599
+
 show
 turn: 0
 depth: 0

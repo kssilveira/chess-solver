@@ -171,6 +171,8 @@ ______
 |K k |
 ‾‾‾‾‾‾
 
+max depth: 2
+
 show
 turn: 0
 depth: 0

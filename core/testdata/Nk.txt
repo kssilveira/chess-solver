@@ -5364,6 +5364,8 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
+max depth: 3
+
 show
 turn: 0
 depth: 0

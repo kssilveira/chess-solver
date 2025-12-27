@@ -88,6 +88,7 @@ func (c *Core) Solve() {
 	c.depth = 0
 	c.turn = 0
 	c.solve()
+	fmt.Fprintf(c.writer, "\nmax depth: %d\n", len(c.allMoves))
 	if c.config.EnablePrint && c.config.EnableShow {
 		c.show()
 	}

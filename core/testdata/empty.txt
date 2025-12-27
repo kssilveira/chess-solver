@@ -23,6 +23,8 @@ ______
 |    |
 ‾‾‾‾‾‾
 
+max depth: 1
+
 show
 turn: 0
 depth: 0

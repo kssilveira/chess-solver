@@ -200,8 +200,10 @@ func (c *Core) Play() {
 }
 
 func (c *Core) CanVisit(turn int8, board [4][4]byte) bool {
-	c.visitedMutex.Lock()
-	defer c.visitedMutex.Unlock()
+	if c.config.NumSolvers > 1 {
+		c.visitedMutex.Lock()
+		defer c.visitedMutex.Unlock()
+	}
 	_, ok := c.visited[turn][board]
 	if ok {
 		return false
@@ -211,27 +213,35 @@ func (c *Core) CanVisit(turn int8, board [4][4]byte) bool {
 }
 
 func (c *Core) GetSolved(turn int8, board [4][4]byte) (int8, bool) {
-	c.solvedMutex.Lock()
-	defer c.solvedMutex.Unlock()
+	if c.config.NumSolvers > 1 {
+		c.solvedMutex.Lock()
+		defer c.solvedMutex.Unlock()
+	}
 	res, ok := c.solved[turn][board]
 	return res, ok
 }
 
 func (c *Core) SetSolved(turn int8, board [4][4]byte, value int8) {
-	c.solvedMutex.Lock()
-	defer c.solvedMutex.Unlock()
+	if c.config.NumSolvers > 1 {
+		c.solvedMutex.Lock()
+		defer c.solvedMutex.Unlock()
+	}
 	c.solved[turn][board] = value
 }
 
 func (c *Core) GetSolvedMove(turn int8, board [4][4]byte) Move {
-	c.solvedMoveMutex.Lock()
-	defer c.solvedMoveMutex.Unlock()
+	if c.config.NumSolvers > 1 {
+		c.solvedMoveMutex.Lock()
+		defer c.solvedMoveMutex.Unlock()
+	}
 	return c.solvedMove[turn][board]
 }
 
 func (c *Core) SetSolvedMove(turn int8, board [4][4]byte, value Move) {
-	c.solvedMoveMutex.Lock()
-	defer c.solvedMoveMutex.Unlock()
+	if c.config.NumSolvers > 1 {
+		c.solvedMoveMutex.Lock()
+		defer c.solvedMoveMutex.Unlock()
+	}
 	c.solvedMove[turn][board] = value
 }
 

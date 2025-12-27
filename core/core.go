@@ -265,15 +265,8 @@ func (c *Core) move(state *state.State) {
 			}
 		}
 		c.undoMove(state)
-		if state.Next > state.Value {
-			state.Value = state.Next
-			c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
-			if c.config.EnablePrint {
-				c.print("updated res", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
-			}
-			if state.Value == 1 {
-				break
-			}
+		if c.updateValue(state) {
+			break
 		}
 	}
 	if state.Value == -1 {
@@ -318,6 +311,18 @@ func (c *Core) undoMove(state *state.State) {
 	c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] =
 		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
 	c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = state.What
+}
+
+func (c *Core) updateValue(state *state.State) bool {
+	if state.Next <= state.Value {
+		return false
+	}
+	state.Value = state.Next
+	c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
+	if c.config.EnablePrint {
+		c.print("updated res", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
+	}
+	return state.Value == 1
 }
 
 func (c *Core) show() {

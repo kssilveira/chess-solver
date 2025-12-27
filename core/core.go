@@ -87,6 +87,7 @@ type Core struct {
 	solved        []map[[4][4]byte]int8
 	solvedMove    []map[[4][4]byte]Move
 	depth         int
+	states        []*State
 }
 
 // State contains the recursion state.
@@ -165,7 +166,10 @@ func (c *Core) Solve() {
 }
 
 func (c *Core) solve() *State {
-	state := &State{}
+	if len(c.states) == c.depth {
+		c.states = append(c.states, &State{})
+	}
+	state := c.states[c.depth]
 	if c.config.EnablePrint {
 		c.print("after move", -1, PrintConfig{ClearTerminal: true})
 	}

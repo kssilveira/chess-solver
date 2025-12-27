@@ -1,0 +1,14 @@
+
+board: '   k,    ,P   ,KRNB'
+
+real	0m3.918s
+user	0m4.192s
+sys	0m0.204s
+
+board: '   k,   p,P   ,KRNB'
+
+real	0m5.787s
+user	0m6.220s
+sys	0m0.199s
+
+board: 'b  k,   p,P   ,KRNB'

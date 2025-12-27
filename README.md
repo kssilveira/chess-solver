@@ -69,6 +69,14 @@ ______
 ‾‾‾‾‾‾
 ```
 
+## Solve a list of boards
+
+```bash
+$ ./all.sh |& tee core/testdata/all.txt
+```
+
+See partial times on [core/testdata/all.txt](core/testdata/all.txt).
+
 ## Benchmark
 
 ```bash

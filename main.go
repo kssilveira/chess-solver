@@ -17,9 +17,10 @@ func main() {
 	board := flag.String("board", "", "board")
 	maxPrintDepth := flag.Int("max_print_depth", 1, "max depth")
 	enablePlay := flag.Bool("enable_play", true, "enable play")
+	printDepth := flag.Bool("print_depth", true, "print depth")
 	flag.Parse()
 	core := core.New(os.Stdout, config.Config{
-		MaxDepth: *maxDepth, SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth, PrintDepth: true,
+		MaxDepth: *maxDepth, SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth, PrintDepth: *printDepth,
 		Board:       strings.Split(*board, ","),
 		EnablePrint: true,
 	})

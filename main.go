@@ -18,7 +18,7 @@ func main() {
 	enablePlay := flag.Bool("enable_play", true, "enable play")
 	flag.Parse()
 	core := core.New(os.Stdout, core.Config{
-		MaxDepth: *maxDepth, SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth,
+		MaxDepth: *maxDepth, SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth, PrintDepth: true,
 		Board:       strings.Split(*board, ","),
 		EnablePrint: true,
 	})

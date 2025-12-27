@@ -68,6 +68,7 @@ type Config struct {
 	MaxPrintDepth int
 	EnablePrint   bool
 	EnableShow    bool
+	PrintDepth    bool
 }
 
 // PrintConfig contains print configuration.
@@ -166,6 +167,9 @@ func (c *Core) Solve() {
 }
 
 func (c *Core) solve() *State {
+	if c.config.PrintDepth && c.depth%100000 == 0 {
+		fmt.Fprintf(c.writer, "%d\n", c.depth)
+	}
 	if len(c.states) == c.depth {
 		c.states = append(c.states, &State{})
 	}

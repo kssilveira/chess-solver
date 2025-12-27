@@ -240,10 +240,7 @@ func (c *Core) move(state *state.State) {
 		if c.config.EnablePrint {
 			c.print("before move", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 		}
-		state.What = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
-		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] =
-			c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()]
-		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = ' '
+		c.doMove(state)
 		state.Next = 0
 		if _, ok := c.solved[c.turn][c.board]; ok {
 			state.Next = c.solved[c.turn][c.board]
@@ -310,6 +307,13 @@ func (c *Core) deadKing(state *state.State) bool {
 		c.print("dead king", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 	}
 	return true
+}
+
+func (c *Core) doMove(state *state.State) {
+	state.What = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
+	c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] =
+		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()]
+	c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = ' '
 }
 
 func (c *Core) show() {

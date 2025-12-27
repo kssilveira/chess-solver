@@ -230,11 +230,7 @@ func sort(moves *[]move.Move) {
 
 func (c *Core) move(state *state.State) {
 	state.Value = -1
-	if len(state.Moves) == 0 {
-		state.Value = 0
-		if c.config.EnablePrint {
-			c.print("stalemate", state.Value, printconfig.PrintConfig{})
-		}
+	if c.stalemate(state) {
 		return
 	}
 	for state.MoveIndex = 0; state.MoveIndex < int8(len(state.Moves)); state.MoveIndex++ {
@@ -296,6 +292,17 @@ func (c *Core) move(state *state.State) {
 	if c.config.EnablePrint {
 		c.print("final res", state.Value, printconfig.PrintConfig{Move: c.solvedMove[c.turn][c.board]})
 	}
+}
+
+func (c *Core) stalemate(state *state.State) bool {
+	if len(state.Moves) != 0 {
+		return false
+	}
+	state.Value = 0
+	if c.config.EnablePrint {
+		c.print("stalemate", state.Value, printconfig.PrintConfig{})
+	}
+	return true
 }
 
 func (c *Core) show() {

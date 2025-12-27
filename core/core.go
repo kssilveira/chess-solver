@@ -156,6 +156,9 @@ func New(writer io.Writer, config Config) *Core {
 		[4]byte([]byte("P   ")),
 		[4]byte([]byte("KRNB")),
 	}
+	if config.NumSolvers == 0 {
+		config.NumSolvers = 1
+	}
 	res := &Core{writer: writer, config: config,
 		visited: []map[[4][4]byte]interface{}{{}, {}},
 		solved:  []map[[4][4]byte]int8{{}, {}}, solvedMove: []map[[4][4]byte]Move{{}, {}},
@@ -164,9 +167,6 @@ func New(writer io.Writer, config Config) *Core {
 		for i, row := range config.Board {
 			board[i] = [4]byte([]byte(row))
 		}
-	}
-	if config.NumSolvers == 0 {
-		config.NumSolvers = 1
 	}
 	for i := int8(0); i < config.NumSolvers; i++ {
 		solver := &Solver{core: res, index: i, board: board}
@@ -177,13 +177,17 @@ func New(writer io.Writer, config Config) *Core {
 
 // Solve solves the board.
 func (c *Core) Solve() {
-	var wg sync.WaitGroup
-	for _, solver := range c.solvers {
-		wg.Go(func() {
-			solver.Solve()
-		})
+	if c.config.NumSolvers == 1 {
+		c.solvers[0].Solve()
+	} else {
+		var wg sync.WaitGroup
+		for _, solver := range c.solvers {
+			wg.Go(func() {
+				solver.Solve()
+			})
+		}
+		wg.Wait()
 	}
-	wg.Wait()
 	if c.config.EnablePrint && c.config.EnableShow {
 		c.solvers[0].show()
 	}

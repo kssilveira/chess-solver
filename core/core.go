@@ -81,15 +81,16 @@ type PrintConfig struct {
 
 // Core contains the core logic.
 type Core struct {
-	config        Config
-	clearTerminal string
-
-	writer     io.Writer
-	visited    []map[[4][4]byte]interface{}
-	solved     []map[[4][4]byte]int8
-	solvedMove []map[[4][4]byte]Move
-
-	solvers []*Solver
+	config          Config
+	clearTerminal   string
+	writer          io.Writer
+	visitedMutex    sync.RWMutex
+	visited         []map[[4][4]byte]interface{}
+	solvedMutex     sync.RWMutex
+	solved          []map[[4][4]byte]int8
+	solvedMoveMutex sync.RWMutex
+	solvedMove      []map[[4][4]byte]Move
+	solvers         []*Solver
 }
 
 // Solver contains one solver.
@@ -196,6 +197,42 @@ func (c *Core) Solve() {
 // Play plays a game agains the solution.
 func (c *Core) Play() {
 	c.solvers[0].Play()
+}
+
+func (c *Core) CanVisit(turn int8, board [4][4]byte) bool {
+	c.visitedMutex.Lock()
+	defer c.visitedMutex.Unlock()
+	_, ok := c.visited[turn][board]
+	if ok {
+		return false
+	}
+	c.visited[turn][board] = struct{}{}
+	return true
+}
+
+func (c *Core) GetSolved(turn int8, board [4][4]byte) (int8, bool) {
+	c.solvedMutex.Lock()
+	defer c.solvedMutex.Unlock()
+	res, ok := c.solved[turn][board]
+	return res, ok
+}
+
+func (c *Core) SetSolved(turn int8, board [4][4]byte, value int8) {
+	c.solvedMutex.Lock()
+	defer c.solvedMutex.Unlock()
+	c.solved[turn][board] = value
+}
+
+func (c *Core) GetSolvedMove(turn int8, board [4][4]byte) Move {
+	c.solvedMoveMutex.Lock()
+	defer c.solvedMoveMutex.Unlock()
+	return c.solvedMove[turn][board]
+}
+
+func (c *Core) SetSolvedMove(turn int8, board [4][4]byte, value Move) {
+	c.solvedMoveMutex.Lock()
+	defer c.solvedMoveMutex.Unlock()
+	c.solvedMove[turn][board] = value
 }
 
 func (s *Solver) Solve() *State {
@@ -335,7 +372,7 @@ func (s *Solver) move(state *State) {
 	for state.MoveIndex = 0; state.MoveIndex < int8(len(state.Moves)); state.MoveIndex++ {
 		if state.Moves[state.MoveIndex].IsKing() {
 			state.Value = 1
-			s.core.solvedMove[s.turn][s.board] = state.Moves[state.MoveIndex]
+			s.core.SetSolvedMove(s.turn, s.board, state.Moves[state.MoveIndex])
 			if s.core.config.EnablePrint {
 				s.print("dead king", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
@@ -348,13 +385,12 @@ func (s *Solver) move(state *State) {
 		s.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = s.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()]
 		s.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = ' '
 		state.Next = 0
-		if _, ok := s.core.solved[s.turn][s.board]; ok {
-			state.Next = s.core.solved[s.turn][s.board]
+		ok := false
+		if state.Next, ok = s.core.GetSolved(s.turn, s.board); ok {
 			if s.core.config.EnablePrint {
 				s.print("solved[]", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
-		} else if _, ok := s.core.visited[s.turn][s.board]; !ok {
-			s.core.visited[s.turn][s.board] = struct{}{}
+		} else if s.core.CanVisit(s.turn, s.board) {
 			s.turn = int8((s.turn + 1) % 2)
 			s.depth++
 			nextState := s.Solve()
@@ -364,7 +400,7 @@ func (s *Solver) move(state *State) {
 			if s.core.config.EnablePrint {
 				s.print("solve()", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
-			s.core.solved[s.turn][s.board] = state.Next
+			s.core.SetSolved(s.turn, s.board, state.Next)
 		} else {
 			if s.core.config.EnablePrint {
 				s.print("repeated", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
@@ -374,7 +410,7 @@ func (s *Solver) move(state *State) {
 		s.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = state.What
 		if state.Next > state.Value {
 			state.Value = state.Next
-			s.core.solvedMove[s.turn][s.board] = state.Moves[state.MoveIndex]
+			s.core.SetSolvedMove(s.turn, s.board, state.Moves[state.MoveIndex])
 			if s.core.config.EnablePrint {
 				s.print("updated res", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
@@ -384,10 +420,10 @@ func (s *Solver) move(state *State) {
 		}
 	}
 	if state.Value == -1 {
-		s.core.solvedMove[s.turn][s.board] = state.Moves[0]
+		s.core.SetSolvedMove(s.turn, s.board, state.Moves[0])
 	}
 	if s.core.config.EnablePrint {
-		s.print("final res", state.Value, PrintConfig{Move: s.core.solvedMove[s.turn][s.board]})
+		s.print("final res", state.Value, PrintConfig{Move: s.core.GetSolvedMove(s.turn, s.board)})
 	}
 }
 

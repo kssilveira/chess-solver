@@ -108,7 +108,7 @@ func TestSolve(t *testing.T) {
 		},
 	}
 	for _, in := range inputs {
-		config := Config{MaxDepth: 5, MaxPrintDepth: 5, EnablePrint: true, EnableShow: true}
+		config := Config{MaxDepth: 5, MaxPrintDepth: 5, EnablePrint: true, EnableShow: true, NumSolvers: 1}
 		if in.name != "default" {
 			config.Board = strings.Split(in.board, ",")
 		}

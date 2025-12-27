@@ -10,13 +10,8 @@ import (
 
 	"github.com/kssilveira/chess-solver/config"
 	"github.com/kssilveira/chess-solver/move"
+	"github.com/kssilveira/chess-solver/printconfig"
 )
-
-// PrintConfig contains print configuration.
-type PrintConfig struct {
-	Move          move.Move
-	ClearTerminal bool
-}
 
 // Core contains the core logic.
 type Core struct {
@@ -116,12 +111,12 @@ func (c *Core) solve() *State {
 	}
 	state := c.states[c.depth]
 	if c.config.EnablePrint {
-		c.print("after move", -1, PrintConfig{ClearTerminal: true})
+		c.print("after move", -1, printconfig.PrintConfig{ClearTerminal: true})
 	}
 	if c.config.MaxDepth >= 0 && c.depth >= c.config.MaxDepth {
 		state.Value = 0
 		if c.config.EnablePrint {
-			c.print("max depth", state.Value, PrintConfig{})
+			c.print("max depth", state.Value, printconfig.PrintConfig{})
 		}
 		return state
 	}
@@ -136,7 +131,7 @@ func (c *Core) solve() *State {
 	return state
 }
 
-func (c *Core) print(message string, res int8, cfg PrintConfig) {
+func (c *Core) print(message string, res int8, cfg printconfig.PrintConfig) {
 	if c.config.MaxPrintDepth != 0 && c.depth > c.config.MaxPrintDepth {
 		return
 	}
@@ -237,7 +232,7 @@ func (c *Core) move(state *State) {
 	if len(state.Moves) == 0 {
 		state.Value = 0
 		if c.config.EnablePrint {
-			c.print("stalemate", state.Value, PrintConfig{})
+			c.print("stalemate", state.Value, printconfig.PrintConfig{})
 		}
 		return
 	}
@@ -246,12 +241,12 @@ func (c *Core) move(state *State) {
 			state.Value = 1
 			c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
 			if c.config.EnablePrint {
-				c.print("dead king", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
+				c.print("dead king", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 			return
 		}
 		if c.config.EnablePrint {
-			c.print("before move", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
+			c.print("before move", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 		}
 		state.What = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
 		c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()] = c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()]
@@ -260,7 +255,7 @@ func (c *Core) move(state *State) {
 		if _, ok := c.solved[c.turn][c.board]; ok {
 			state.Next = c.solved[c.turn][c.board]
 			if c.config.EnablePrint {
-				c.print("solved[]", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
+				c.print("solved[]", state.Next, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 		} else if _, ok := c.visited[c.turn][c.board]; !ok {
 			c.visited[c.turn][c.board] = struct{}{}
@@ -271,12 +266,12 @@ func (c *Core) move(state *State) {
 			c.depth--
 			c.turn = int8((c.turn + 1) % 2)
 			if c.config.EnablePrint {
-				c.print("solve()", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
+				c.print("solve()", state.Next, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 			c.solved[c.turn][c.board] = state.Next
 		} else {
 			if c.config.EnablePrint {
-				c.print("repeated", state.Next, PrintConfig{Move: state.Moves[state.MoveIndex]})
+				c.print("repeated", state.Next, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 		}
 		c.board[state.Moves[state.MoveIndex].FromX()][state.Moves[state.MoveIndex].FromY()] = c.board[state.Moves[state.MoveIndex].ToX()][state.Moves[state.MoveIndex].ToY()]
@@ -285,7 +280,7 @@ func (c *Core) move(state *State) {
 			state.Value = state.Next
 			c.solvedMove[c.turn][c.board] = state.Moves[state.MoveIndex]
 			if c.config.EnablePrint {
-				c.print("updated res", state.Value, PrintConfig{Move: state.Moves[state.MoveIndex]})
+				c.print("updated res", state.Value, printconfig.PrintConfig{Move: state.Moves[state.MoveIndex]})
 			}
 			if state.Value == 1 {
 				break
@@ -296,14 +291,14 @@ func (c *Core) move(state *State) {
 		c.solvedMove[c.turn][c.board] = state.Moves[0]
 	}
 	if c.config.EnablePrint {
-		c.print("final res", state.Value, PrintConfig{Move: c.solvedMove[c.turn][c.board]})
+		c.print("final res", state.Value, printconfig.PrintConfig{Move: c.solvedMove[c.turn][c.board]})
 	}
 }
 
 func (c *Core) show() {
 	c.config.MaxPrintDepth = 0
 	res := int8(123)
-	c.print("show", res, PrintConfig{})
+	c.print("show", res, printconfig.PrintConfig{})
 	visited := []map[[4][4]byte]interface{}{{}, {}}
 	for {
 		if _, ok := visited[c.turn][c.board]; ok {
@@ -314,7 +309,7 @@ func (c *Core) show() {
 		if move == 0 {
 			break
 		}
-		c.print("before move", res, PrintConfig{Move: move})
+		c.print("before move", res, printconfig.PrintConfig{Move: move})
 
 		fx, fy, tx, ty := move.Get()
 		c.board[tx][ty] = c.board[fx][fy]
@@ -322,7 +317,7 @@ func (c *Core) show() {
 		c.depth++
 		res = c.solved[c.turn][c.board]
 		c.turn = (c.turn + 1) % 2
-		c.print("after move", res, PrintConfig{Move: move})
+		c.print("after move", res, printconfig.PrintConfig{Move: move})
 	}
 }
 
@@ -330,7 +325,7 @@ func (c *Core) show() {
 func (c *Core) Play() {
 	c.config.MaxPrintDepth = 0
 	res := int8(123)
-	c.print("play", res, PrintConfig{})
+	c.print("play", res, printconfig.PrintConfig{})
 	c.turn = 0
 	visited := []map[[4][4]byte]interface{}{{}, {}}
 	for {
@@ -342,14 +337,14 @@ func (c *Core) Play() {
 		if move == 0 {
 			break
 		}
-		c.print("before move", res, PrintConfig{Move: move})
+		c.print("before move", res, printconfig.PrintConfig{Move: move})
 
 		fx, fy, tx, ty := move.Get()
 		c.board[tx][ty] = c.board[fx][fy]
 		c.board[fx][fy] = ' '
 		c.depth++
 		res = c.solved[c.turn][c.board]
-		c.print("after move", res, PrintConfig{Move: move})
+		c.print("after move", res, printconfig.PrintConfig{Move: move})
 
 		fmt.Printf("> ")
 		fmt.Scanf("%d%d%d%d", &fx, &fy, &tx, &ty)

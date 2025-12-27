@@ -200,22 +200,29 @@ func (c *Core) Play() {
 }
 
 func (c *Core) CanVisit(turn int8, board [4][4]byte) bool {
-	if c.config.NumSolvers > 1 {
-		c.visitedMutex.Lock()
-		defer c.visitedMutex.Unlock()
+	if c.config.NumSolvers == 1 {
+		if _, ok := c.visited[turn][board]; ok {
+			return false
+		}
+		c.visited[turn][board] = struct{}{}
+		return true
 	}
+	c.visitedMutex.RLock()
 	_, ok := c.visited[turn][board]
+	c.visitedMutex.RUnlock()
 	if ok {
 		return false
 	}
+	c.visitedMutex.Lock()
 	c.visited[turn][board] = struct{}{}
+	c.visitedMutex.Unlock()
 	return true
 }
 
 func (c *Core) GetSolved(turn int8, board [4][4]byte) (int8, bool) {
 	if c.config.NumSolvers > 1 {
-		c.solvedMutex.Lock()
-		defer c.solvedMutex.Unlock()
+		c.solvedMutex.RLock()
+		defer c.solvedMutex.RUnlock()
 	}
 	res, ok := c.solved[turn][board]
 	return res, ok
@@ -231,8 +238,8 @@ func (c *Core) SetSolved(turn int8, board [4][4]byte, value int8) {
 
 func (c *Core) GetSolvedMove(turn int8, board [4][4]byte) Move {
 	if c.config.NumSolvers > 1 {
-		c.solvedMoveMutex.Lock()
-		defer c.solvedMoveMutex.Unlock()
+		c.solvedMoveMutex.RLock()
+		defer c.solvedMoveMutex.RUnlock()
 	}
 	return c.solvedMove[turn][board]
 }
@@ -380,6 +387,9 @@ func (s *Solver) move(state *State) {
 		return
 	}
 	for state.MoveIndex = 0; state.MoveIndex < int8(len(state.Moves)); state.MoveIndex++ {
+		if s.depth == 0 && (state.MoveIndex%s.core.config.NumSolvers != s.index) {
+			continue
+		}
 		if state.Moves[state.MoveIndex].IsKing() {
 			state.Value = 1
 			s.core.SetSolvedMove(s.turn, s.board, state.Moves[state.MoveIndex])

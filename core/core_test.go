@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
 	"testing"
 )
@@ -135,7 +136,7 @@ func BenchmarkSolve(b *testing.B) {
 		{name: "default"},
 	}
 	for _, in := range inputs {
-		config := Config{MaxDepth: 5, MaxPrintDepth: -1}
+		config := Config{MaxDepth: 5, MaxPrintDepth: -1, NumSolvers: int8(runtime.GOMAXPROCS(0))}
 		var out bytes.Buffer
 		core := New(&out, config)
 		b.Run(in.name, func(b *testing.B) {

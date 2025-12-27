@@ -2830,6 +2830,8 @@ ______
 |R   |
 ‾‾‾‾‾‾
 
+overall res: 0
+
 after move
 turn: 1
 depth: 1

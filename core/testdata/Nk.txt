@@ -5389,6 +5389,8 @@ ______
 |   N|
 ‾‾‾‾‾‾
 
+overall res: 1
+
 after move
 turn: 1
 depth: 1

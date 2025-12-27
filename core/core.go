@@ -339,8 +339,11 @@ func (c *Core) show() {
 			break
 		}
 		c.doMove(move, res)
-		c.depth++
 		res = c.solved[c.turn][c.board]
+		if c.depth == 0 {
+			fmt.Fprintf(c.writer, "\noverall res: %d\n", res)
+		}
+		c.depth++
 		c.turn = (c.turn + 1) % 2
 		c.print("after move", res, printconfig.PrintConfig{Move: move})
 	}

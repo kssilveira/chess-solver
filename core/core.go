@@ -11,6 +11,7 @@ import (
 	"github.com/kssilveira/chess-solver/config"
 	"github.com/kssilveira/chess-solver/move"
 	"github.com/kssilveira/chess-solver/printconfig"
+	"github.com/kssilveira/chess-solver/state"
 )
 
 // Core contains the core logic.
@@ -24,16 +25,7 @@ type Core struct {
 	solved        []map[[4][4]byte]int8
 	solvedMove    []map[[4][4]byte]move.Move
 	depth         int
-	states        []*State
-}
-
-// State contains the recursion state.
-type State struct {
-	Value     int8
-	Next      int8
-	MoveIndex int8
-	What      byte
-	Moves     []move.Move
+	states        []*state.State
 }
 
 const (
@@ -102,12 +94,12 @@ func (c *Core) Solve() {
 	}
 }
 
-func (c *Core) solve() *State {
+func (c *Core) solve() *state.State {
 	if c.config.PrintDepth && c.depth%100000 == 0 {
 		fmt.Fprintf(c.writer, "%d\n", c.depth)
 	}
 	if len(c.states) == c.depth {
-		c.states = append(c.states, &State{})
+		c.states = append(c.states, &state.State{})
 	}
 	state := c.states[c.depth]
 	if c.config.EnablePrint {
@@ -227,7 +219,7 @@ func (c *Core) sort(moves *[]move.Move) {
 	})
 }
 
-func (c *Core) move(state *State) {
+func (c *Core) move(state *state.State) {
 	state.Value = -1
 	if len(state.Moves) == 0 {
 		state.Value = 0

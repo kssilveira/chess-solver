@@ -126,7 +126,7 @@ func (c *Core) Solve() {
 
 // State contains the recursion state.
 type State struct {
-	Moves    [25]move.Move
+	Moves    [100]move.Move
 	NumMoves int
 	Move     move.Move
 	Value    int

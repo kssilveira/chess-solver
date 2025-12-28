@@ -15,10 +15,10 @@ import (
 
 // Core contains the core logic.
 type Core struct {
-	writer        io.Writer
 	config        config.Config
-	board         [4][4]byte
 	clearTerminal string
+	writer        io.Writer
+	board         [4][4]byte
 	visited       []map[[4][4]byte]interface{}
 	solved        []map[[4][4]byte]int
 	solvedMove    []map[[4][4]byte]move.Move
@@ -83,12 +83,10 @@ func New(writer io.Writer, config config.Config) *Core {
 // Solve solves the board.
 func (c *Core) Solve() {
 	res, maxDepth := c.solve()
-	if c.config.EnablePrint {
-		fmt.Fprintf(c.writer, "\nmax depth: %d\n", maxDepth)
-		fmt.Fprintf(c.writer, "overall res: %d\n", res)
-		if c.config.EnableShow {
-			c.show()
-		}
+	fmt.Fprintf(c.writer, "\nmax depth: %d\n", maxDepth)
+	fmt.Fprintf(c.writer, "overall res: %d\n", res)
+	if c.config.EnableShow {
+		c.show()
 	}
 }
 
@@ -117,7 +115,7 @@ func (c *Core) solve() (int, int) {
 				fmt.Fprintf(c.writer, "max depth: %d\n", maxDepth)
 			}
 		}
-		if c.config.EnablePrint && state.Index == 0 {
+		if state.Index == 0 {
 			c.print("after move", -1, depth, turn, printconfig.PrintConfig{ClearTerminal: true})
 		}
 		if res, ok := c.staleMate(state.Moves, depth, turn); ok {
@@ -136,13 +134,9 @@ func (c *Core) solve() (int, int) {
 			state.Next = 0
 			ok := false
 			if state.Next, ok = c.solved[turn][c.board]; ok {
-				if c.config.EnablePrint {
-					c.print("solved[]", state.Next, depth, turn, printconfig.PrintConfig{Move: state.Move})
-				}
+				c.print("solved[]", state.Next, depth, turn, printconfig.PrintConfig{Move: state.Move})
 			} else if _, ok = c.visited[turn][c.board]; ok {
-				if c.config.EnablePrint {
-					c.print("repeated", state.Next, depth, turn, printconfig.PrintConfig{Move: state.Move})
-				}
+				c.print("repeated", state.Next, depth, turn, printconfig.PrintConfig{Move: state.Move})
 			} else {
 				c.visited[turn][c.board] = struct{}{}
 				c.call(&stack)
@@ -154,9 +148,7 @@ func (c *Core) solve() (int, int) {
 		if state.Value == -1 {
 			c.solvedMove[turn][c.board] = state.Moves[0]
 		}
-		if c.config.EnablePrint {
-			c.print("final res", state.Value, depth, turn, printconfig.PrintConfig{Move: c.solvedMove[turn][c.board]})
-		}
+		c.print("final res", state.Value, depth, turn, printconfig.PrintConfig{Move: c.solvedMove[turn][c.board]})
 		overall = c.doReturn(&stack)
 	}
 	return overall, maxDepth + 1
@@ -187,9 +179,7 @@ func (c *Core) doReturn(stack *[]State) int {
 
 	c.solved[turn][c.board] = next
 	state.Next = next
-	if c.config.EnablePrint {
-		c.print("solve()", next, depth, turn, printconfig.PrintConfig{Move: state.Move})
-	}
+	c.print("solve()", next, depth, turn, printconfig.PrintConfig{Move: state.Move})
 	c.afterReturn(*stack)
 	return state.Value
 }
@@ -316,9 +306,7 @@ func (c *Core) staleMate(moves []move.Move, depth, turn int) (int, bool) {
 		return 0, false
 	}
 	res := 0
-	if c.config.EnablePrint {
-		c.print("stalemate", res, depth, turn, printconfig.PrintConfig{})
-	}
+	c.print("stalemate", res, depth, turn, printconfig.PrintConfig{})
 	return res, true
 }
 
@@ -328,16 +316,12 @@ func (c *Core) deadKing(move move.Move, depth, turn int) (int, bool) {
 	}
 	res := 1
 	c.solvedMove[turn][c.board] = move
-	if c.config.EnablePrint {
-		c.print("dead king", res, depth, turn, printconfig.PrintConfig{Move: move})
-	}
+	c.print("dead king", res, depth, turn, printconfig.PrintConfig{Move: move})
 	return res, true
 }
 
 func (c *Core) doMove(move move.Move, res, depth, turn int) byte {
-	if c.config.EnablePrint {
-		c.print("before move", res, depth, turn, printconfig.PrintConfig{Move: move})
-	}
+	c.print("before move", res, depth, turn, printconfig.PrintConfig{Move: move})
 	what := c.board[move.ToX()][move.ToY()]
 	c.board[move.ToX()][move.ToY()] = c.board[move.FromX()][move.FromY()]
 	c.board[move.FromX()][move.FromY()] = ' '
@@ -355,9 +339,7 @@ func (c *Core) updateValue(res *int, next int, move move.Move, depth, turn int) 
 	}
 	*res = next
 	c.solvedMove[turn][c.board] = move
-	if c.config.EnablePrint {
-		c.print("updated res", *res, depth, turn, printconfig.PrintConfig{Move: move})
-	}
+	c.print("updated res", *res, depth, turn, printconfig.PrintConfig{Move: move})
 	return *res == 1
 }
 

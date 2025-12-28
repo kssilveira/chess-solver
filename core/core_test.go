@@ -107,7 +107,7 @@ func TestSolve(t *testing.T) {
 		}},
 	}
 	for _, in := range inputs {
-		config := config.Config{MaxPrintDepth: 5, EnablePrint: true, EnableShow: true}
+		config := config.Config{MaxPrintDepth: 5, EnableShow: true}
 		if in.maxPrintDepth != 0 {
 			config.MaxPrintDepth = in.maxPrintDepth
 		}

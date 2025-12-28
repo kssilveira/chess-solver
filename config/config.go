@@ -8,7 +8,6 @@ type Config struct {
 	SleepDuration time.Duration
 	Board         []string
 	MaxPrintDepth int
-	EnablePrint   bool
 	EnableShow    bool
 	PrintDepth    bool
 }

@@ -20,8 +20,7 @@ func main() {
 	flag.Parse()
 	core := core.New(os.Stdout, config.Config{
 		SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth, PrintDepth: *printDepth,
-		Board:       strings.Split(*board, ","),
-		EnablePrint: true,
+		Board: strings.Split(*board, ","),
 	})
 	core.Solve()
 	if *enablePlay {

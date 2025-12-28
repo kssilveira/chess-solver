@@ -33,31 +33,39 @@ const (
 
 var (
 	colors = map[byte]int{
-		byte(' '): -1,
-		byte('P'): 0, byte('K'): 0, byte('R'): 0, byte('N'): 0, byte('B'): 0, byte('X'): 0,
-		byte('p'): 1, byte('k'): 1, byte('r'): 1, byte('n'): 1, byte('b'): 1, byte('x'): 1,
+		' ': -1,
+		'P': 0, 'K': 0, 'R': 0, 'N': 0, 'B': 0, 'X': 0,
+		'p': 1, 'k': 1, 'r': 1, 'n': 1, 'b': 1, 'x': 1,
 	}
 	deltas = map[byte][][]int{
-		byte('P'): [][]int{{-1, 0, deltaEmpty}, {-1, -1, deltaEnemy}, {-1, 1, deltaEnemy}},
-		byte('R'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
-		byte('B'): [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		byte('K'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		byte('N'): [][]int{
+		'P': [][]int{{-1, 0, deltaEmpty}, {-1, -1, deltaEnemy}, {-1, 1, deltaEnemy}},
+		'R': [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
+		'B': [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		'K': [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		'N': [][]int{
 			{-2, -1, deltaOtherEmpty, -1, 0}, {-2, 1, deltaOtherEmpty, -1, 0},
 			{-1, -2, deltaOtherEmpty, 0, -1}, {1, -2, deltaOtherEmpty, 0, -1},
 			{2, -1, deltaOtherEmpty, 1, 0}, {2, 1, deltaOtherEmpty, 1, 0},
 			{-1, 2, deltaOtherEmpty, 0, 1}, {1, 2, deltaOtherEmpty, 0, 1},
 		},
-		byte('p'): [][]int{{1, 0, deltaEmpty}, {1, -1, deltaEnemy}, {1, 1, deltaEnemy}},
-		byte('r'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
-		byte('b'): [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		byte('k'): [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		byte('n'): [][]int{
+		'p': [][]int{{1, 0, deltaEmpty}, {1, -1, deltaEnemy}, {1, 1, deltaEnemy}},
+		'r': [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
+		'b': [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		'k': [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		'n': [][]int{
 			{-2, -1, deltaOtherEmpty, -1, 0}, {-2, 1, deltaOtherEmpty, -1, 0},
 			{-1, -2, deltaOtherEmpty, 0, -1}, {1, -2, deltaOtherEmpty, 0, -1},
 			{2, -1, deltaOtherEmpty, 1, 0}, {2, 1, deltaOtherEmpty, 1, 0},
 			{-1, 2, deltaOtherEmpty, 0, 1}, {1, 2, deltaOtherEmpty, 0, 1},
 		},
+	}
+	promos = map[byte][]byte{
+		'p': {'r', 'b', 'n'},
+		'P': {'R', 'B', 'N'},
+	}
+	undoPromos = map[byte]byte{
+		'r': 'p', 'b': 'p', 'n': 'p',
+		'R': 'P', 'B': 'P', 'N': 'P',
 	}
 )
 
@@ -308,12 +316,18 @@ func (c *Core) deltas(moves *[]move.Move, turn, i, j int) {
 		if kind == deltaOtherEmpty && c.board[i+delta[3]][j+delta[4]] != ' ' {
 			continue
 		}
-		*moves = append(
-			*moves,
-			move.NewMove(
-				move.Move(i), move.Move(j), move.Move(ni), move.Move(nj),
-				c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K',
-				c.board[ni][nj] != ' '))
+		move := move.NewMove(
+			move.Move(i), move.Move(j), move.Move(ni), move.Move(nj),
+			c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K',
+			c.board[ni][nj] != ' ')
+		if (ni == 0 && piece == 'P') || (ni == 3 && piece == 'p') {
+			move.SetPromotion(1)
+			*moves = append(*moves, move)
+			move.SetPromotion(2)
+			*moves = append(*moves, move)
+			move.SetPromotion(3)
+		}
+		*moves = append(*moves, move)
 	}
 }
 
@@ -359,12 +373,22 @@ func (c *Core) doMove(move move.Move, res, depth, turn int) byte {
 	what := c.board[move.ToX()][move.ToY()]
 	c.board[move.ToX()][move.ToY()] = c.board[move.FromX()][move.FromY()]
 	c.board[move.FromX()][move.FromY()] = ' '
+	promotion := move.Promotion()
+	if promotion == 0 {
+		return what
+	}
+	c.board[move.ToX()][move.ToY()] = promos[c.board[move.ToX()][move.ToY()]][promotion-1]
 	return what
 }
 
 func (c *Core) undoMove(move move.Move, what byte) {
 	c.board[move.FromX()][move.FromY()] = c.board[move.ToX()][move.ToY()]
 	c.board[move.ToX()][move.ToY()] = what
+	promotion := move.Promotion()
+	if promotion == 0 {
+		return
+	}
+	c.board[move.FromX()][move.FromY()] = undoPromos[c.board[move.FromX()][move.FromY()]]
 }
 
 func (c *Core) updateValue(res *int, next int, move move.Move, depth, turn int) bool {

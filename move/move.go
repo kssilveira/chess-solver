@@ -17,6 +17,12 @@ func NewMove(fx, fy, tx, ty Move, isKing, isCapture bool) Move {
 	return res
 }
 
+// SetPromotion sets promotion.
+func (m *Move) SetPromotion(promotion Move) {
+	*m &= ^(0b11 << 10)
+	*m |= (promotion & 0b11) << 10
+}
+
 // Get gets coordinates.
 func (m Move) Get() (int, int, int, int) {
 	return m.FromX(), m.FromY(), m.ToX(), m.ToY()
@@ -50,4 +56,9 @@ func (m Move) IsKing() bool {
 // IsCapture returns is capture.
 func (m Move) IsCapture() bool {
 	return m&(1<<9) != 0
+}
+
+// Promotion returns promotion.
+func (m Move) Promotion() int {
+	return int((m & 0b110000000000) >> 10)
 }

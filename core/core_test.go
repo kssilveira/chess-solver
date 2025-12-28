@@ -105,6 +105,24 @@ func TestSolve(t *testing.T) {
 			[4]byte([]byte(" R  ")),
 			[4]byte([]byte("R  N")),
 		}},
+		{name: "PkR", board: [4][4]byte{
+			[4]byte([]byte("k   ")),
+			[4]byte([]byte("xxP ")),
+			[4]byte([]byte("    ")),
+			[4]byte([]byte("    ")),
+		}},
+		{name: "PkN", board: [4][4]byte{
+			[4]byte([]byte("    ")),
+			[4]byte([]byte(" xP ")),
+			[4]byte([]byte("kx  ")),
+			[4]byte([]byte("xx  ")),
+		}},
+		{name: "PkB", board: [4][4]byte{
+			[4]byte([]byte("    ")),
+			[4]byte([]byte("x P ")),
+			[4]byte([]byte("kx  ")),
+			[4]byte([]byte("xx  ")),
+		}},
 	}
 	for _, in := range inputs {
 		config := config.Config{MaxPrintDepth: 5, EnableShow: true}

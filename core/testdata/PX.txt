@@ -29,7 +29,7 @@ turn: 1
 depth: 1
 res: -1
 ______
-|xxP |
+|xxN |
 |    |
 |    |
 |    |
@@ -42,7 +42,7 @@ turn: 1
 depth: 1
 res: 0
 ______
-|xxP |
+|xxN |
 |    |
 |    |
 |    |
@@ -52,9 +52,9 @@ solve()
 turn: 0
 depth: 0
 res: 0
-move:   (1, 1) => P (0, 2)
+move:   (1, 1) => N (0, 2)
 ______
-|xxP |
+|xxN |
 |    |
 |    |
 |    |
@@ -76,6 +76,102 @@ before move
 turn: 0
 depth: 0
 res: 0
+move: P (1, 1) => x (0, 2)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 1
+res: -1
+______
+|xxB |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+stalemate
+turn: 1
+depth: 1
+res: 0
+______
+|xxB |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 0
+res: 0
+move:   (1, 1) => B (0, 2)
+______
+|xxB |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 2)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 1
+res: -1
+______
+|xxR |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+stalemate
+turn: 1
+depth: 1
+res: 0
+______
+|xxR |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 0
+res: 0
+move:   (1, 1) => R (0, 2)
+______
+|xxR |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
 move: P (1, 1) => x (0, 0)
 ______
 |xxx |
@@ -89,7 +185,7 @@ turn: 1
 depth: 1
 res: -1
 ______
-|Pxx |
+|Nxx |
 |    |
 |    |
 |    |
@@ -102,7 +198,7 @@ turn: 1
 depth: 1
 res: 0
 ______
-|Pxx |
+|Nxx |
 |    |
 |    |
 |    |
@@ -112,9 +208,105 @@ solve()
 turn: 0
 depth: 0
 res: 0
-move:   (1, 1) => P (0, 0)
+move:   (1, 1) => N (0, 0)
 ______
-|Pxx |
+|Nxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 0)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 1
+res: -1
+______
+|Bxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+stalemate
+turn: 1
+depth: 1
+res: 0
+______
+|Bxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 0
+res: 0
+move:   (1, 1) => B (0, 0)
+______
+|Bxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 0
+move: P (1, 1) => x (0, 0)
+______
+|xxx |
+| P  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 1
+res: -1
+______
+|Rxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+stalemate
+turn: 1
+depth: 1
+res: 0
+______
+|Rxx |
+|    |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 0
+res: 0
+move:   (1, 1) => R (0, 0)
+______
+|Rxx |
 |    |
 |    |
 |    |
@@ -162,9 +354,9 @@ after move
 turn: 1
 depth: 1
 res: 0
-move:   (1, 1) => P (0, 2)
+move:   (1, 1) => N (0, 2)
 ______
-|xxP |
+|xxN |
 |    |
 |    |
 |    |

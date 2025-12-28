@@ -1,0 +1,221 @@
+
+after move
+turn: 0
+depth: 0
+res: -1
+______
+|k   |
+|xxP |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 0
+depth: 0
+res: -1
+move: P (1, 2) =>   (0, 2)
+______
+|k   |
+|xxP |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 1
+res: -1
+______
+|k R |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 1
+depth: 1
+res: -1
+move: k (0, 0) =>   (0, 1)
+______
+|k R |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1
+______
+| kR |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+------
+
+dead king
+turn: 0
+depth: 2
+res: 1
+move: R (0, 2) => k (0, 1)
+______
+| kR |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: -1
+move:   (0, 0) => k (0, 1)
+______
+| kR |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+turn: 1
+depth: 1
+res: -1
+move: k (0, 0) =>   (0, 1)
+______
+|k R |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 0
+res: 1
+move:   (1, 2) => R (0, 2)
+______
+|k R |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 0
+res: 1
+move: P (1, 2) =>   (0, 2)
+______
+|k   |
+|xxP |
+|    |
+|    |
+‾‾‾‾‾‾
+
+final res
+turn: 0
+depth: 0
+res: 1
+move: P (1, 2) =>   (0, 2)
+______
+|k   |
+|xxP |
+|    |
+|    |
+‾‾‾‾‾‾
+
+max depth: 3
+overall res: 1
+
+show
+turn: 0
+depth: 0
+res: 123
+______
+|k   |
+|xxP |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 0
+res: 123
+move: P (1, 2) =>   (0, 2)
+______
+|k   |
+|xxP |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 1
+res: 1
+move:   (1, 2) => R (0, 2)
+______
+|k R |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: 1
+move: k (0, 0) =>   (0, 1)
+______
+|k R |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1
+move:   (0, 0) => k (0, 1)
+______
+| kR |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+before move
+turn: 0
+depth: 2
+res: -1
+move: R (0, 2) => k (0, 1)
+______
+| kR |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾
+
+after move
+turn: 1
+depth: 3
+res: 0
+move:   (0, 2) => R (0, 1)
+______
+| R  |
+|xx  |
+|    |
+|    |
+‾‾‾‾‾‾

@@ -134,7 +134,7 @@ func (c *Core) solve() (int, int) {
 		numVisited := len(c.visited[0])
 		if numVisited > maxVisited {
 			maxVisited = numVisited
-			if c.config.PrintDepth && maxVisited%1000000 == 0 {
+			if c.config.PrintDepth && maxVisited%10000000 == 0 {
 				fmt.Fprintf(c.writer, "max visited: %d\n", maxVisited)
 			}
 		}

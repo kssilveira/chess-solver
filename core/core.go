@@ -384,7 +384,7 @@ func (c *Core) doMove(move move.Move, res, depth, turn int) byte {
 	c.board[move.ToX()][move.ToY()] = c.board[move.FromX()][move.FromY()]
 	c.board[move.FromX()][move.FromY()] = ' '
 	if move.IsCapture() && !move.IsKing() && what != 'x' && what != 'X' {
-		// c.board[deadX[what]][deadY[what]]++
+		c.board[deadX[what]][deadY[what]]++
 	}
 	promotion := move.Promotion()
 	if promotion == 0 {
@@ -398,7 +398,7 @@ func (c *Core) undoMove(move move.Move, what byte) {
 	c.board[move.FromX()][move.FromY()] = c.board[move.ToX()][move.ToY()]
 	c.board[move.ToX()][move.ToY()] = what
 	if move.IsCapture() && !move.IsKing() && what != 'x' && what != 'X' {
-		// c.board[deadX[what]][deadY[what]]--
+		c.board[deadX[what]][deadY[what]]--
 	}
 	promotion := move.Promotion()
 	if promotion == 0 {

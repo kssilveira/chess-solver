@@ -121,16 +121,16 @@ func (c *Core) solve(depth, turn int) int {
 			if c.config.EnablePrint {
 				c.print("solved[]", next, depth, turn, printconfig.PrintConfig{Move: move})
 			}
-		} else if _, ok = c.visited[turn][c.board]; !ok {
+		} else if _, ok = c.visited[turn][c.board]; ok {
+			if c.config.EnablePrint {
+				c.print("repeated", next, depth, turn, printconfig.PrintConfig{Move: move})
+			}
+		} else {
 			c.visited[turn][c.board] = struct{}{}
 			next = -c.solve(depth+1, (turn+1)%2)
 			c.solved[turn][c.board] = next
 			if c.config.EnablePrint {
 				c.print("solve()", next, depth, turn, printconfig.PrintConfig{Move: move})
-			}
-		} else {
-			if c.config.EnablePrint {
-				c.print("repeated", next, depth, turn, printconfig.PrintConfig{Move: move})
 			}
 		}
 		c.undoMove(move, what)

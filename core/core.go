@@ -38,21 +38,21 @@ var (
 		'p': 1, 'k': 1, 'r': 1, 'n': 1, 'b': 1, 'x': 1,
 	}
 	deltas = map[byte][][]int{
-		'P': [][]int{{-1, 0, deltaEmpty}, {-1, -1, deltaEnemy}, {-1, 1, deltaEnemy}},
-		'R': [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
-		'B': [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		'K': [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		'N': [][]int{
+		'P': {{-1, 0, deltaEmpty}, {-1, -1, deltaEnemy}, {-1, 1, deltaEnemy}},
+		'R': {{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
+		'B': {{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		'K': {{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		'N': {
 			{-2, -1, deltaOtherEmpty, -1, 0}, {-2, 1, deltaOtherEmpty, -1, 0},
 			{-1, -2, deltaOtherEmpty, 0, -1}, {1, -2, deltaOtherEmpty, 0, -1},
 			{2, -1, deltaOtherEmpty, 1, 0}, {2, 1, deltaOtherEmpty, 1, 0},
 			{-1, 2, deltaOtherEmpty, 0, 1}, {1, 2, deltaOtherEmpty, 0, 1},
 		},
-		'p': [][]int{{1, 0, deltaEmpty}, {1, -1, deltaEnemy}, {1, 1, deltaEnemy}},
-		'r': [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
-		'b': [][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		'k': [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
-		'n': [][]int{
+		'p': {{1, 0, deltaEmpty}, {1, -1, deltaEnemy}, {1, 1, deltaEnemy}},
+		'r': {{-1, 0}, {1, 0}, {0, -1}, {0, 1}},
+		'b': {{-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		'k': {{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {1, 1}, {1, -1}, {-1, 1}},
+		'n': {
 			{-2, -1, deltaOtherEmpty, -1, 0}, {-2, 1, deltaOtherEmpty, -1, 0},
 			{-1, -2, deltaOtherEmpty, 0, -1}, {1, -2, deltaOtherEmpty, 0, -1},
 			{2, -1, deltaOtherEmpty, 1, 0}, {2, 1, deltaOtherEmpty, 1, 0},
@@ -60,12 +60,20 @@ var (
 		},
 	}
 	promos = map[byte][]byte{
-		'p': {'r', 'b', 'n'},
 		'P': {'R', 'B', 'N'},
+		'p': {'r', 'b', 'n'},
 	}
 	undoPromos = map[byte]byte{
-		'r': 'p', 'b': 'p', 'n': 'p',
 		'R': 'P', 'B': 'P', 'N': 'P',
+		'r': 'p', 'b': 'p', 'n': 'p',
+	}
+	deadX = map[byte]int{
+		'R': 4, 'B': 4, 'N': 4, 'P': 4,
+		'r': 5, 'b': 5, 'n': 5, 'p': 5,
+	}
+	deadY = map[byte]int{
+		'R': 0, 'B': 1, 'N': 2, 'P': 3,
+		'r': 0, 'b': 1, 'n': 2, 'p': 3,
 	}
 )
 
@@ -375,6 +383,9 @@ func (c *Core) doMove(move move.Move, res, depth, turn int) byte {
 	what := c.board[move.ToX()][move.ToY()]
 	c.board[move.ToX()][move.ToY()] = c.board[move.FromX()][move.FromY()]
 	c.board[move.FromX()][move.FromY()] = ' '
+	if move.IsCapture() && !move.IsKing() && what != 'x' && what != 'X' {
+		// c.board[deadX[what]][deadY[what]]++
+	}
 	promotion := move.Promotion()
 	if promotion == 0 {
 		return what
@@ -386,6 +397,9 @@ func (c *Core) doMove(move move.Move, res, depth, turn int) byte {
 func (c *Core) undoMove(move move.Move, what byte) {
 	c.board[move.FromX()][move.FromY()] = c.board[move.ToX()][move.ToY()]
 	c.board[move.ToX()][move.ToY()] = what
+	if move.IsCapture() && !move.IsKing() && what != 'x' && what != 'X' {
+		// c.board[deadX[what]][deadY[what]]--
+	}
 	promotion := move.Promotion()
 	if promotion == 0 {
 		return

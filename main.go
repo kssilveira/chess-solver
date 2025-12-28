@@ -30,12 +30,12 @@ func main() {
 			{Board: "   k,    ,P   ,KR  "},
 			{Board: "   k,    ,P   ,KR  ", EnablePromotion: true},
 			{Board: "   k,    ,P   ,KR  ", EnableDrop: true},
-			//x {Board: "   k,    ,P   ,KR  ", EnablePromotion: true, EnableDrop: true},
-			//x {Board: "   k,    ,P   ,KRNB"},
-			// {Board: "   k,    ,P   ,KRNB", EnablePromotion: true},
-			//x {Board: "   k,   p,P   ,KRNB"},
-			// {Board: "   k,   p,P   ,KRNB", EnablePromotion: true},
-			// {Board: "b  k,   p,P   ,KRNB"},
+			{Board: "   k,    ,P   ,KR  ", EnablePromotion: true, EnableDrop: true},
+			{Board: "   k,    ,P   ,KRNB"},
+			{Board: "   k,    ,P   ,KRNB", EnablePromotion: true},
+			{Board: "   k,   p,P   ,KRNB"},
+			{Board: "   k,   p,P   ,KRNB", EnablePromotion: true},
+			{Board: "b  k,   p,P   ,KRNB"},
 		})
 		return
 	}

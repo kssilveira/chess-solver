@@ -235,7 +235,8 @@ func BenchmarkSolve(b *testing.B) {
 			[4]byte([]byte("   N")),
 			[4]byte([]byte("0000")),
 			[4]byte([]byte("0000")),
-		}}}
+		},
+	}}
 	for _, in := range inputs {
 		config := config.Config{MaxPrintDepth: -1}
 		b.Run(in.name, func(b *testing.B) {
@@ -258,7 +259,8 @@ func TestRunAll(t *testing.T) {
 			{Board: "   k,    ,P   ,K   "},
 			{Board: "   k,    ,P   ,K   ", EnablePromotion: true},
 			{Board: "   k,    ,P   ,K   ", EnableDrop: true},
-		}}}
+		},
+	}}
 	for _, in := range inputs {
 		var out bytes.Buffer
 		RunAll(&out, in.configs)

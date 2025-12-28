@@ -102,7 +102,7 @@ func (c *Core) Solve() {
 
 // State contains the recursion state.
 type State struct {
-	Moves    [15]move.Move
+	Moves    [20]move.Move
 	NumMoves int
 	Move     move.Move
 	Value    int
@@ -120,6 +120,7 @@ func (c *Core) solve() (int, int) {
 	c.call(&stack)
 	overall := -1
 	maxDepth := 0
+	maxVisited := 0
 	for len(stack) > 0 {
 		depth := len(stack) - 1
 		turn := depth % 2
@@ -128,6 +129,13 @@ func (c *Core) solve() (int, int) {
 			maxDepth = depth
 			if c.config.PrintDepth && maxDepth%1000000 == 0 {
 				fmt.Fprintf(c.writer, "max depth: %d\n", maxDepth)
+			}
+		}
+		numVisited := len(c.visited[0])
+		if numVisited > maxVisited {
+			maxVisited = numVisited
+			if c.config.PrintDepth && maxVisited%1000000 == 0 {
+				fmt.Fprintf(c.writer, "max visited: %d\n", maxVisited)
 			}
 		}
 		if state.Index == 0 {

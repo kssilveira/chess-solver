@@ -14,11 +14,11 @@ import (
 func main() {
 	sleepDuration := flag.Duration("sleep_duration", 0*time.Second, "sleep duration")
 	board := flag.String("board", "", "board")
-	maxPrintDepth := flag.Int("max_print_depth", 1, "max depth")
-	enablePlay := flag.Bool("enable_play", true, "enable play")
+	maxPrintDepth := flag.Int("max_print_depth", -1, "max depth")
+	enablePlay := flag.Bool("enable_play", false, "enable play")
 	printDepth := flag.Bool("print_depth", true, "print depth")
-	enablePromotion := flag.Bool("enable_promotion", true, "enable promotion")
-	enableDrop := flag.Bool("enable_drop", true, "enable drop")
+	enablePromotion := flag.Bool("enable_promotion", false, "enable promotion")
+	enableDrop := flag.Bool("enable_drop", false, "enable drop")
 	flag.Parse()
 	core := core.New(os.Stdout, config.Config{
 		SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth, PrintDepth: *printDepth,

@@ -1,21 +1,14 @@
-declare -a boards=(
-	"   k,    ,P   ,KRNB"
-	"   k,   p,P   ,KRNB"
-	"b  k,   p,P   ,KRNB"
-	"br k,   p,P   ,KRNB"
-	"brnk,   p,P   ,KRNB"
-)
+set -o xtrace
 
-declare -a promotions=(
-	"false"
-	"true"
-)
+time go run main.go --board='   k,    ,P   ,KR  '
+time go run main.go --board='   k,    ,P   ,KR  ' --enable_promotion=true
+time go run main.go --board='   k,    ,P   ,KR  ' --enable_drop=true
+time go run main.go --board='   k,    ,P   ,KR  ' --enable_promotion=true --enable_drop=true
 
-for board in "${boards[@]}"
-do
-	for promotion in "${promotions[@]}"
-	do
-		echo -e "\n--board='${board}' --enable_promotion=${promotion}"
-		time go run main.go --board="${board}" --enable_play=false --max_print_depth=-1 --print_depth=true --enable_promotion="${promotion}"
-	done
-done
+time go run main.go --board='   k,    ,P   ,KRNB'
+time go run main.go --board='   k,    ,P   ,KRNB' --enable_promotion=true
+
+time go run main.go --board='   k,   p,P   ,KRNB'
+time go run main.go --board='   k,   p,P   ,KRNB' --enable_promotion=true
+
+time go run main.go --board='b  k,   p,P   ,KRNB'

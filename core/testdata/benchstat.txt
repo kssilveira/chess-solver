@@ -4,11 +4,11 @@ pkg: github.com/kssilveira/chess-solver/core
 cpu: 11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
             │  /dev/fd/63   │  core/testdata/benchmark.txt   │
             │    sec/op     │    sec/op      vs base         │
-Solve/Nk-16   1.859µ ± 236%   1.841µ ± 275%  ~ (p=0.699 n=6)
+Solve/Nk-16   1.841µ ± 275%   1.840µ ± 197%  ~ (p=0.818 n=6)
 
-            │  /dev/fd/63   │  core/testdata/benchmark.txt  │
-            │     B/op      │     B/op      vs base         │
-Solve/Nk-16   105.50 ± 437%   97.50 ± 523%  ~ (p=1.000 n=6)
+            │  /dev/fd/63  │  core/testdata/benchmark.txt  │
+            │     B/op     │     B/op      vs base         │
+Solve/Nk-16   97.50 ± 523%   95.00 ± 403%  ~ (p=0.922 n=6)
 
             │ /dev/fd/63 │  core/testdata/benchmark.txt  │
             │ allocs/op  │ allocs/op   vs base           │

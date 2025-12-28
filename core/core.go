@@ -106,7 +106,45 @@ func (c *Core) solve(depth, turn int) int {
 		moves = moves[:0]
 	}
 	c.moves(&moves, turn)
-	return c.move(moves, depth, turn)
+	res := -1
+	if res, ok := c.staleMate(moves, depth, turn); ok {
+		return res
+	}
+	for _, move := range moves {
+		if res, ok := c.deadKing(move, depth, turn); ok {
+			return res
+		}
+		what := c.doMove(move, res, depth, turn)
+		next := 0
+		ok := false
+		if next, ok = c.solved[turn][c.board]; ok {
+			if c.config.EnablePrint {
+				c.print("solved[]", next, depth, turn, printconfig.PrintConfig{Move: move})
+			}
+		} else if _, ok = c.visited[turn][c.board]; !ok {
+			c.visited[turn][c.board] = struct{}{}
+			next = -c.solve(depth+1, (turn+1)%2)
+			c.solved[turn][c.board] = next
+			if c.config.EnablePrint {
+				c.print("solve()", next, depth, turn, printconfig.PrintConfig{Move: move})
+			}
+		} else {
+			if c.config.EnablePrint {
+				c.print("repeated", next, depth, turn, printconfig.PrintConfig{Move: move})
+			}
+		}
+		c.undoMove(move, what)
+		if c.updateValue(&res, next, move, depth, turn) {
+			break
+		}
+	}
+	if res == -1 {
+		c.solvedMove[turn][c.board] = moves[0]
+	}
+	if c.config.EnablePrint {
+		c.print("final res", res, depth, turn, printconfig.PrintConfig{Move: c.solvedMove[turn][c.board]})
+	}
+	return res
 }
 
 func (c *Core) print(message string, value, depth, turn int, cfg printconfig.PrintConfig) {
@@ -213,48 +251,6 @@ func (c *Core) sort(moves []move.Move) {
 		}
 		return 0
 	})
-}
-
-func (c *Core) move(moves []move.Move, depth, turn int) int {
-	res := -1
-	if res, ok := c.staleMate(moves, depth, turn); ok {
-		return res
-	}
-	for _, move := range moves {
-		if res, ok := c.deadKing(move, depth, turn); ok {
-			return res
-		}
-		what := c.doMove(move, res, depth, turn)
-		next := 0
-		ok := false
-		if next, ok = c.solved[turn][c.board]; ok {
-			if c.config.EnablePrint {
-				c.print("solved[]", next, depth, turn, printconfig.PrintConfig{Move: move})
-			}
-		} else if _, ok = c.visited[turn][c.board]; !ok {
-			c.visited[turn][c.board] = struct{}{}
-			next = -c.solve(depth+1, (turn+1)%2)
-			c.solved[turn][c.board] = next
-			if c.config.EnablePrint {
-				c.print("solve()", next, depth, turn, printconfig.PrintConfig{Move: move})
-			}
-		} else {
-			if c.config.EnablePrint {
-				c.print("repeated", next, depth, turn, printconfig.PrintConfig{Move: move})
-			}
-		}
-		c.undoMove(move, what)
-		if c.updateValue(&res, next, move, depth, turn) {
-			break
-		}
-	}
-	if res == -1 {
-		c.solvedMove[turn][c.board] = moves[0]
-	}
-	if c.config.EnablePrint {
-		c.print("final res", res, depth, turn, printconfig.PrintConfig{Move: c.solvedMove[turn][c.board]})
-	}
-	return res
 }
 
 func (c *Core) staleMate(moves []move.Move, depth, turn int) (int, bool) {

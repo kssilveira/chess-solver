@@ -106,7 +106,6 @@ func (c *Core) solve(depth, turn int) int {
 		moves = moves[:0]
 	}
 	c.moves(&moves, turn)
-	c.sort(moves)
 	return c.move(moves, depth, turn)
 }
 
@@ -160,6 +159,7 @@ func (c *Core) moves(moves *[]move.Move, turn int) {
 			c.deltas(moves, turn, i, j)
 		}
 	}
+	c.sort(*moves)
 }
 
 func (c *Core) deltas(moves *[]move.Move, turn, i, j int) {

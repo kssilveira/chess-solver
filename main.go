@@ -27,17 +27,14 @@ func doRunAll() {
 	}
 	buffers := []*bytes.Buffer{}
 	var wg sync.WaitGroup
-	for _, cfg := range configs {
+	for _, config := range configs {
 		var buffer bytes.Buffer
 		buffers = append(buffers, &buffer)
-		wg.Go(func(config config.Config, buffer *bytes.Buffer) func() {
-			return func() {
-				config.MaxPrintDepth = -1
-				core := core.New(buffer, config)
-				// core := core.New(os.Stdout, config)
-				core.Solve()
-			}
-		}(cfg, &buffer))
+		wg.Go(func() {
+			config.MaxPrintDepth = -1
+			core := core.New(&buffer, config)
+			core.Solve()
+		})
 	}
 	wg.Wait()
 	for i, config := range configs {

@@ -1,0 +1,15 @@
+
+--board='   k,    ,P   ,K   '
+
+max depth: 260
+overall res: 0
+
+--board='   k,    ,P   ,K   ' --enable_promotion
+
+max depth: 2683
+overall res: 0
+
+--board='   k,    ,P   ,K   ' --enable_drop
+
+max depth: 5369
+overall res: 0

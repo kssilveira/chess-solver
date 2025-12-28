@@ -136,11 +136,11 @@ func BenchmarkSolve(b *testing.B) {
 	}
 	for _, in := range inputs {
 		config := config.Config{MaxPrintDepth: -1}
-		var out bytes.Buffer
-		core := New(&out, config)
-		core.board = in.board
 		b.Run(in.name, func(b *testing.B) {
 			for b.Loop() {
+				var out bytes.Buffer
+				core := New(&out, config)
+				core.board = in.board
 				core.Solve()
 			}
 		})

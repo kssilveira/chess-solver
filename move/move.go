@@ -23,6 +23,11 @@ func (m *Move) SetPromotion(promotion Move) {
 	*m |= (promotion & 0b11) << 10
 }
 
+// SetDrop sets drop.
+func (m *Move) SetDrop() {
+	*m |= 1 << 12
+}
+
 // Get gets coordinates.
 func (m Move) Get() (int, int, int, int) {
 	return m.FromX(), m.FromY(), m.ToX(), m.ToY()
@@ -61,4 +66,9 @@ func (m Move) IsCapture() bool {
 // Promotion returns promotion.
 func (m Move) Promotion() int {
 	return int((m & 0b110000000000) >> 10)
+}
+
+// IsDrop returns is drop.
+func (m Move) IsDrop() bool {
+	return (m&0b11000000000000)>>12 != 0
 }

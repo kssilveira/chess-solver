@@ -14,6 +14,7 @@ func TestSolve(t *testing.T) {
 		name          string
 		board         [6][4]byte
 		maxPrintDepth int
+		enableDrop    bool
 	}{
 		{name: "empty", board: [6][4]byte{
 			[4]byte([]byte("    ")),
@@ -159,9 +160,18 @@ func TestSolve(t *testing.T) {
 			[4]byte([]byte("0000")),
 			[4]byte([]byte("0000")),
 		}},
+		{name: "D1", board: [6][4]byte{
+			[4]byte([]byte("    ")),
+			[4]byte([]byte("    ")),
+			[4]byte([]byte("    ")),
+			[4]byte([]byte("    ")),
+			[4]byte([]byte("1111")),
+			[4]byte([]byte("1000")),
+		}},
 	}
 	for _, in := range inputs {
-		config := config.Config{MaxPrintDepth: 5, EnableShow: true, EnablePromotion: true}
+		config := config.Config{
+			MaxPrintDepth: 5, EnableShow: true, EnablePromotion: true, EnableDrop: in.enableDrop}
 		if in.maxPrintDepth != 0 {
 			config.MaxPrintDepth = in.maxPrintDepth
 		}

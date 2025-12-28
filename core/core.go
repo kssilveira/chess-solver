@@ -319,8 +319,9 @@ func (c *Core) moves(moves *[]move.Move, turn int) {
 				if c.config.EnablePromotion && ((i == 0 && piece == 'P') || (i == 3 && piece == 'p')) {
 					continue
 				}
-				*moves = append(
-					*moves, move.Move(4+turn), move.Move(index), move.Move(i), move.Move(j), 0, 0)
+				move := move.NewMove(move.Move(turn), move.Move(index), move.Move(i), move.Move(j), false, false)
+				move.SetDrop()
+				*moves = append(*moves, move)
 			}
 		}
 	}
@@ -382,6 +383,12 @@ func (c *Core) sort(moves []move.Move) {
 		if j.IsCapture() {
 			return 1
 		}
+		if i.IsDrop() {
+			return -1
+		}
+		if j.IsDrop() {
+			return 1
+		}
 		return 0
 	})
 }
@@ -408,8 +415,14 @@ func (c *Core) deadKing(move move.Move, depth, turn int) (int, bool) {
 func (c *Core) doMove(move move.Move, res, depth, turn int) byte {
 	c.print("before move", res, depth, turn, printconfig.PrintConfig{Move: move})
 	what := c.board[move.ToX()][move.ToY()]
-	c.board[move.ToX()][move.ToY()] = c.board[move.FromX()][move.FromY()]
-	c.board[move.FromX()][move.FromY()] = ' '
+	from := c.board[move.FromX()][move.FromY()]
+	if move.IsDrop() {
+		from = deadXY[move.FromX()][move.FromY()]
+		c.board[4+move.FromX()][move.FromY()]--
+	} else {
+		c.board[move.FromX()][move.FromY()] = ' '
+	}
+	c.board[move.ToX()][move.ToY()] = from
 	if move.IsCapture() && !move.IsKing() && what != 'x' && what != 'X' {
 		c.board[deadX[what]][deadY[what]]++
 	}
@@ -422,7 +435,11 @@ func (c *Core) doMove(move move.Move, res, depth, turn int) byte {
 }
 
 func (c *Core) undoMove(move move.Move, what byte) {
-	c.board[move.FromX()][move.FromY()] = c.board[move.ToX()][move.ToY()]
+	if move.IsDrop() {
+		c.board[4+move.FromX()][move.FromY()]++
+	} else {
+		c.board[move.FromX()][move.FromY()] = c.board[move.ToX()][move.ToY()]
+	}
 	c.board[move.ToX()][move.ToY()] = what
 	if move.IsCapture() && !move.IsKing() && what != 'x' && what != 'X' {
 		c.board[deadX[what]][deadY[what]]--

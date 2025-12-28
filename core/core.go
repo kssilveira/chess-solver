@@ -68,12 +68,16 @@ var (
 		'r': 'p', 'b': 'p', 'n': 'p',
 	}
 	deadX = map[byte]int{
-		'R': 4, 'B': 4, 'N': 4, 'P': 4,
-		'r': 5, 'b': 5, 'n': 5, 'p': 5,
+		'R': 5, 'B': 5, 'N': 5, 'P': 5,
+		'r': 4, 'b': 4, 'n': 4, 'p': 4,
 	}
 	deadY = map[byte]int{
 		'R': 0, 'B': 1, 'N': 2, 'P': 3,
 		'r': 0, 'b': 1, 'n': 2, 'p': 3,
+	}
+	deadXY = [][]byte{
+		[]byte("RBNP"),
+		[]byte("rbnp"),
 	}
 )
 
@@ -295,6 +299,29 @@ func (c *Core) moves(moves *[]move.Move, turn int) {
 				continue
 			}
 			c.deltas(moves, turn, i, j)
+		}
+	}
+	if !c.config.EnableDrop {
+		c.sort(*moves)
+		return
+	}
+	for index := 0; index < 4; index++ {
+		value := c.board[4+turn][index]
+		if value == '0' {
+			continue
+		}
+		piece := deadXY[turn][index]
+		for i := 0; i < 4; i++ {
+			for j := 0; j < 4; j++ {
+				if c.board[i][j] != ' ' {
+					continue
+				}
+				if c.config.EnablePromotion && ((i == 0 && piece == 'P') || (i == 3 && piece == 'p')) {
+					continue
+				}
+				*moves = append(
+					*moves, move.Move(4+turn), move.Move(index), move.Move(i), move.Move(j), 0, 0)
+			}
 		}
 	}
 	c.sort(*moves)

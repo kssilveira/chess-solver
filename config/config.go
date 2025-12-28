@@ -11,4 +11,5 @@ type Config struct {
 	EnableShow      bool
 	PrintDepth      bool
 	EnablePromotion bool
+	EnableDrop      bool
 }

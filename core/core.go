@@ -515,6 +515,7 @@ func (c *Core) Play() {
 	}
 }
 
+// RunAll runs all configs.
 func RunAll(writer io.Writer, configs []config.Config) {
 	buffers := []*bytes.Buffer{}
 	var wg sync.WaitGroup

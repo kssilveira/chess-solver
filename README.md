@@ -5,7 +5,7 @@ Solver for the [tinyhouse chess variant](https://www.chess.com/variants/tinyhous
 ## Play against the solution for a given board position
 
 ```bash
-$ go run main.go --board="KRNB,N   ,    ,   k" --enable_play=true | tee core/testdata/play.txt
+$ go run main.go --board="KRNB,N   ,    ,   k" --enable_play | tee core/testdata/play.txt
 ```
 
 See example game on [core/testdata/play.txt](core/testdata/play.txt):

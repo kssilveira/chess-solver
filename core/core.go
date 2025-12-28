@@ -112,7 +112,7 @@ func (c *Core) Solve() {
 
 // State contains the recursion state.
 type State struct {
-	Moves    [20]move.Move
+	Moves    [25]move.Move
 	NumMoves int
 	Move     move.Move
 	Value    int
@@ -320,7 +320,7 @@ func (c *Core) deltas(moves *[]move.Move, turn, i, j int) {
 			move.Move(i), move.Move(j), move.Move(ni), move.Move(nj),
 			c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K',
 			c.board[ni][nj] != ' ')
-		if (ni == 0 && piece == 'P') || (ni == 3 && piece == 'p') {
+		if c.config.EnablePromotion && ((ni == 0 && piece == 'P') || (ni == 3 && piece == 'p')) {
 			move.SetPromotion(1)
 			*moves = append(*moves, move)
 			move.SetPromotion(2)

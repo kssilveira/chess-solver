@@ -17,10 +17,12 @@ func main() {
 	maxPrintDepth := flag.Int("max_print_depth", 1, "max depth")
 	enablePlay := flag.Bool("enable_play", true, "enable play")
 	printDepth := flag.Bool("print_depth", true, "print depth")
+	enablePromotion := flag.Bool("enable_promotion", true, "enable promotion")
 	flag.Parse()
 	core := core.New(os.Stdout, config.Config{
 		SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth, PrintDepth: *printDepth,
-		Board: strings.Split(*board, ","),
+		EnablePromotion: *enablePromotion,
+		Board:           strings.Split(*board, ","),
 	})
 	core.Solve()
 	if *enablePlay {

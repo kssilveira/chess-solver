@@ -1,119 +1,59 @@
 
-board: '   k,    ,P   ,KRNB'
+board: '   k,    ,P   ,KRNB' --enable_promotion=false
 
 max depth: 91773
 overall res: 1
 
-real	0m3.072s
-user	0m3.231s
-sys	0m0.204s
+real	0m3.009s
+user	0m3.117s
+sys	0m0.210s
 
-board: '   k,   p,P   ,KRNB'
+board: '   k,    ,P   ,KRNB' --enable_promotion=true
+
+max depth: 192387
+overall res: 1
+
+real	0m16.533s
+user	0m16.892s
+sys	0m0.390s
+
+board: '   k,   p,P   ,KRNB' --enable_promotion=false
 
 max depth: 92367
 overall res: 1
 
-real	0m4.555s
-user	0m4.755s
-sys	0m0.171s
+real	0m4.544s
+user	0m4.719s
+sys	0m0.209s
 
-board: 'b  k,   p,P   ,KRNB'
+board: '   k,   p,P   ,KRNB' --enable_promotion=true
+
+max depth: 195653
+overall res: 1
+
+real	0m16.881s
+user	0m17.319s
+sys	0m0.299s
+
+board: 'b  k,   p,P   ,KRNB' --enable_promotion=false
 
 max depth: 390825
 overall res: 1
 
-real	1m51.581s
-user	1m53.113s
-sys	0m1.313s
+real	1m51.528s
+user	1m53.084s
+sys	0m1.191s
 
-board: 'br k,   p,P   ,KRNB'
+board: 'b  k,   p,P   ,KRNB' --enable_promotion=true
+visited: 10000000
+
+max depth: 549921
+overall res: 1
+
+real	2m28.180s
+user	2m30.572s
+sys	0m1.783s
+
+board: 'br k,   p,P   ,KRNB' --enable_promotion=false
 depth: 1000000
 visited: 10000000
-depth: 2000000
-depth: 3000000
-visited: 20000000
-depth: 4000000
-depth: 5000000
-visited: 30000000
-visited: 40000000
-visited: 50000000
-visited: 60000000
-visited: 70000000
-visited: 80000000
-visited: 90000000
-visited: 100000000
-visited: 110000000
-visited: 120000000
-visited: 130000000
-visited: 140000000
-visited: 150000000
-
-max depth: 5246185
-overall res: 0
-
-real	42m40.489s
-user	44m3.444s
-sys	0m50.793s
-
-board: 'brnk,   p,P   ,KRNB'
-depth: 1000000
-visited: 10000000
-depth: 2000000
-depth: 3000000
-depth: 4000000
-depth: 5000000
-visited: 20000000
-visited: 30000000
-visited: 40000000
-visited: 50000000
-visited: 60000000
-visited: 70000000
-depth: 6000000
-depth: 7000000
-visited: 80000000
-depth: 8000000
-depth: 9000000
-depth: 10000000
-visited: 90000000
-visited: 100000000
-visited: 110000000
-visited: 120000000
-visited: 130000000
-visited: 140000000
-visited: 150000000
-visited: 160000000
-visited: 170000000
-visited: 180000000
-visited: 190000000
-visited: 200000000
-visited: 210000000
-depth: 11000000
-depth: 12000000
-depth: 13000000
-depth: 14000000
-depth: 15000000
-depth: 16000000
-depth: 17000000
-depth: 18000000
-depth: 19000000
-visited: 220000000
-depth: 20000000
-depth: 21000000
-depth: 22000000
-depth: 23000000
-depth: 24000000
-depth: 25000000
-depth: 26000000
-depth: 27000000
-visited: 230000000
-depth: 28000000
-depth: 29000000
-depth: 30000000
-depth: 31000000
-depth: 32000000
-depth: 33000000
-depth: 34000000
-visited: 240000000
-depth: 35000000
-depth: 36000000
-depth: 37000000

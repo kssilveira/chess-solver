@@ -107,49 +107,50 @@ func (c *Core) solve() (int, int) {
 	maxDepth := 0
 	for len(stack) > 0 {
 		depth := len(stack) - 1
-		if depth > maxDepth {
-			maxDepth = depth
-		}
 		turn := depth % 2
 		state := &stack[depth]
-		moves := state.Moves
-		ok := false
+		if depth > maxDepth {
+			maxDepth = depth
+			if c.config.PrintDepth && maxDepth%100000 == 0 {
+				fmt.Fprintf(c.writer, "max depth: %d\n", maxDepth)
+			}
+		}
 		if c.config.EnablePrint && state.Index == 0 {
 			c.print("after move", -1, depth, turn, printconfig.PrintConfig{ClearTerminal: true})
 		}
-		if res, ok := c.staleMate(moves, depth, turn); ok {
+		if res, ok := c.staleMate(state.Moves, depth, turn); ok {
 			state.Value = res
 			overall = c.doReturn(&stack)
 			continue
 		}
-		if state.Index < len(moves) {
-			state.Move = moves[state.Index]
-			move := state.Move
-			if res, ok := c.deadKing(move, depth, turn); ok {
+		if state.Index < len(state.Moves) {
+			state.Move = state.Moves[state.Index]
+			if res, ok := c.deadKing(state.Move, depth, turn); ok {
 				state.Value = res
 				overall = c.doReturn(&stack)
 				continue
 			}
-			state.What = c.doMove(move, state.Value, depth, turn)
+			state.What = c.doMove(state.Move, state.Value, depth, turn)
 			state.Next = 0
+			ok := false
 			if state.Next, ok = c.solved[turn][c.board]; ok {
 				if c.config.EnablePrint {
-					c.print("solved[]", state.Next, depth, turn, printconfig.PrintConfig{Move: move})
+					c.print("solved[]", state.Next, depth, turn, printconfig.PrintConfig{Move: state.Move})
 				}
 			} else if _, ok = c.visited[turn][c.board]; ok {
 				if c.config.EnablePrint {
-					c.print("repeated", state.Next, depth, turn, printconfig.PrintConfig{Move: move})
+					c.print("repeated", state.Next, depth, turn, printconfig.PrintConfig{Move: state.Move})
 				}
 			} else {
 				c.visited[turn][c.board] = struct{}{}
 				c.call(&stack)
 				continue
 			}
-			c.afterReturn(&stack)
+			c.afterReturn(stack)
 			continue
 		}
 		if state.Value == -1 {
-			c.solvedMove[turn][c.board] = moves[0]
+			c.solvedMove[turn][c.board] = state.Moves[0]
 		}
 		if c.config.EnablePrint {
 			c.print("final res", state.Value, depth, turn, printconfig.PrintConfig{Move: c.solvedMove[turn][c.board]})
@@ -170,36 +171,33 @@ func (c *Core) call(stack *[]State) {
 
 func (c *Core) doReturn(stack *[]State) int {
 	depth := len(*stack) - 1
-	turn := depth % 2
 	state := &(*stack)[depth]
 
 	next := -state.Value
 
 	*stack = (*stack)[:depth]
 	depth = len(*stack) - 1
-	turn = depth % 2
+	turn := depth % 2
 	if depth < 0 {
 		return state.Value
 	}
 	state = &(*stack)[depth]
-	move := state.Move
 
 	c.solved[turn][c.board] = next
 	state.Next = next
 	if c.config.EnablePrint {
-		c.print("solve()", next, depth, turn, printconfig.PrintConfig{Move: move})
+		c.print("solve()", next, depth, turn, printconfig.PrintConfig{Move: state.Move})
 	}
-	c.afterReturn(stack)
+	c.afterReturn(*stack)
 	return state.Value
 }
 
-func (c *Core) afterReturn(stack *[]State) {
-	depth := len(*stack) - 1
+func (c *Core) afterReturn(stack []State) {
+	depth := len(stack) - 1
 	turn := depth % 2
-	state := &(*stack)[depth]
-	move := state.Move
-	c.undoMove(move, state.What)
-	if c.updateValue(&state.Value, state.Next, move, depth, turn) {
+	state := &stack[depth]
+	c.undoMove(state.Move, state.What)
+	if c.updateValue(&state.Value, state.Next, state.Move, depth, turn) {
 		state.Index = len(state.Moves)
 	}
 	state.Index++

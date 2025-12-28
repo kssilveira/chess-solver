@@ -69,8 +69,18 @@ func New(writer io.Writer, config config.Config) *Core {
 		[4]byte([]byte("P   ")),
 		[4]byte([]byte("KRNB")),
 	},
-		visited: []map[[4][4]byte]interface{}{{}, {}},
-		solved:  []map[[4][4]byte]int{{}, {}}, solvedMove: []map[[4][4]byte]move.Move{{}, {}},
+		visited: []map[[4][4]byte]interface{}{
+			make(map[[4][4]byte]interface{}, 100000),
+			make(map[[4][4]byte]interface{}, 100000),
+		},
+		solved: []map[[4][4]byte]int{
+			make(map[[4][4]byte]int, 100000),
+			make(map[[4][4]byte]int, 100000),
+		},
+		solvedMove: []map[[4][4]byte]move.Move{
+			make(map[[4][4]byte]move.Move, 100000),
+			make(map[[4][4]byte]move.Move, 100000),
+		},
 		clearTerminal: "\033[H\033[2J"}
 	if len(config.Board) > 1 {
 		for i, row := range config.Board {

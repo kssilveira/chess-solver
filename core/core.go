@@ -155,7 +155,7 @@ func (c *Core) solve() (int, int) {
 }
 
 func (c *Core) call(stack *[]State) {
-	*stack = append(*stack, State{Value: -1})
+	*stack = append(*stack, State{Value: -1, Moves: make([]move.Move, 0, 10)})
 	depth := len(*stack) - 1
 	turn := depth % 2
 	state := &(*stack)[depth]

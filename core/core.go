@@ -98,13 +98,6 @@ func (c *Core) solve(depth, turn int) int {
 	if c.config.EnablePrint {
 		c.print("after move", -1, depth, turn, printconfig.PrintConfig{ClearTerminal: true})
 	}
-	if c.config.MaxDepth >= 0 && depth >= c.config.MaxDepth {
-		res := 0
-		if c.config.EnablePrint {
-			c.print("max depth", res, depth, turn, printconfig.PrintConfig{})
-		}
-		return res
-	}
 	if len(c.allMoves) == depth {
 		c.allMoves = append(c.allMoves, make([]move.Move, 0, 10))
 	}

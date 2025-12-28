@@ -197,10 +197,47 @@ ______
 
 ------
 
-max depth
+before move
+turn: 1
+depth: 5
+res: -1
+move: p (2, 1) =>   (3, 1)
+______
+|  P |
+|    |
+| p  |
+|    |
+‾‾‾‾‾‾
+
+solve()
 turn: 1
 depth: 5
 res: 0
+move:   (2, 1) => p (3, 1)
+______
+|  P |
+|    |
+|    |
+| p  |
+‾‾‾‾‾‾
+
+updated res
+turn: 1
+depth: 5
+res: 0
+move: p (2, 1) =>   (3, 1)
+______
+|  P |
+|    |
+| p  |
+|    |
+‾‾‾‾‾‾
+
+final res
+turn: 1
+depth: 5
+res: 0
+move: p (2, 1) =>   (3, 1)
 ______
 |  P |
 |    |
@@ -376,7 +413,7 @@ ______
 |  P |
 ‾‾‾‾‾‾
 
-max depth: 5
+max depth: 7
 overall res: 0
 
 show

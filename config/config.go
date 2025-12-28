@@ -5,7 +5,6 @@ import "time"
 
 // Config contains configuration.
 type Config struct {
-	MaxDepth      int
 	SleepDuration time.Duration
 	Board         []string
 	MaxPrintDepth int

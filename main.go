@@ -12,7 +12,6 @@ import (
 )
 
 func main() {
-	maxDepth := flag.Int("max_depth", -1, "max depth")
 	sleepDuration := flag.Duration("sleep_duration", 0*time.Second, "sleep duration")
 	board := flag.String("board", "", "board")
 	maxPrintDepth := flag.Int("max_print_depth", 1, "max depth")
@@ -20,7 +19,7 @@ func main() {
 	printDepth := flag.Bool("print_depth", true, "print depth")
 	flag.Parse()
 	core := core.New(os.Stdout, config.Config{
-		MaxDepth: *maxDepth, SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth, PrintDepth: *printDepth,
+		SleepDuration: *sleepDuration, MaxPrintDepth: *maxPrintDepth, PrintDepth: *printDepth,
 		Board:       strings.Split(*board, ","),
 		EnablePrint: true,
 	})

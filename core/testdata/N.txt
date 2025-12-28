@@ -197,10 +197,71 @@ ______
 
 ------
 
-max depth
+before move
+turn: 1
+depth: 5
+res: -1
+move: n (0, 2) => N (2, 1)
+______
+| xn |
+|    |
+| N  |
+|  X |
+‾‾‾‾‾‾
+
+solve()
 turn: 1
 depth: 5
 res: 0
+move:   (0, 2) => n (2, 1)
+______
+| x  |
+|    |
+| n  |
+|  X |
+‾‾‾‾‾‾
+
+updated res
+turn: 1
+depth: 5
+res: 0
+move: n (0, 2) => N (2, 1)
+______
+| xn |
+|    |
+| N  |
+|  X |
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 5
+res: 0
+move: n (0, 2) =>   (2, 3)
+______
+| xn |
+|    |
+| N  |
+|  X |
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 5
+res: 0
+move:   (0, 2) => n (2, 3)
+______
+| x  |
+|    |
+| N n|
+|  X |
+‾‾‾‾‾‾
+
+final res
+turn: 1
+depth: 5
+res: 0
+move: n (0, 2) => N (2, 1)
 ______
 | xn |
 |    |
@@ -293,31 +354,7 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| x  |
-|   n|
-| N  |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| x  |
-|   n|
-| N  |
-|  X |
-‾‾‾‾‾‾
-
-solve()
+solved[]
 turn: 0
 depth: 4
 res: 0
@@ -377,92 +414,7 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
-after move
-turn: 0
-depth: 4
-res: -1
-______
-|Nx  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 0
-depth: 4
-res: -1
-move: N (0, 0) =>   (2, 1)
-______
-|Nx  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| x  |
-|    |
-| N  |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| x  |
-|    |
-| N  |
-|  Xn|
-‾‾‾‾‾‾
-
-solve()
-turn: 0
-depth: 4
-res: 0
-move:   (0, 0) => N (2, 1)
-______
-| x  |
-|    |
-| N  |
-|  Xn|
-‾‾‾‾‾‾
-
-updated res
-turn: 0
-depth: 4
-res: 0
-move: N (0, 0) =>   (2, 1)
-______
-|Nx  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-final res
-turn: 0
-depth: 4
-res: 0
-move: N (0, 0) =>   (2, 1)
-______
-|Nx  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-solve()
+solved[]
 turn: 1
 depth: 3
 res: 0
@@ -572,31 +524,7 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
-after move
-turn: 1
-depth: 5
-res: -1
-______
-|nN  |
-|    |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-|nN  |
-|    |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-solve()
+solved[]
 turn: 0
 depth: 4
 res: 0
@@ -692,140 +620,7 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
-after move
-turn: 0
-depth: 4
-res: -1
-______
-| xn |
-|    |
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 0
-depth: 4
-res: -1
-move: N (2, 0) => x (0, 1)
-______
-| xn |
-|    |
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| Nn |
-|    |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| Nn |
-|    |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-solve()
-turn: 0
-depth: 4
-res: 0
-move:   (2, 0) => N (0, 1)
-______
-| Nn |
-|    |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-updated res
-turn: 0
-depth: 4
-res: 0
-move: N (2, 0) => x (0, 1)
-______
-| xn |
-|    |
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-before move
-turn: 0
-depth: 4
-res: 0
-move: N (2, 0) =>   (1, 2)
-______
-| xn |
-|    |
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| xn |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| xn |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-solve()
-turn: 0
-depth: 4
-res: 0
-move:   (2, 0) => N (1, 2)
-______
-| xn |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-final res
-turn: 0
-depth: 4
-res: 0
-move: N (2, 0) => x (0, 1)
-______
-| xn |
-|    |
-|N   |
-|  X |
-‾‾‾‾‾‾
-
-solve()
+solved[]
 turn: 1
 depth: 3
 res: 0
@@ -874,31 +669,7 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| N  |
-|   n|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| N  |
-|   n|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-solve()
+solved[]
 turn: 0
 depth: 4
 res: 0
@@ -934,31 +705,7 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| x  |
-|  Nn|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| x  |
-|  Nn|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-solve()
+solved[]
 turn: 0
 depth: 4
 res: 0
@@ -1031,31 +778,7 @@ ______
 |  Xn|
 ‾‾‾‾‾‾
 
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| N  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| N  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-solve()
+solved[]
 turn: 0
 depth: 4
 res: 0
@@ -1091,31 +814,7 @@ ______
 |  Xn|
 ‾‾‾‾‾‾
 
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| x  |
-|  N |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| x  |
-|  N |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-solve()
+solved[]
 turn: 0
 depth: 4
 res: 0
@@ -1187,576 +886,7 @@ ______
 |  X |
 ‾‾‾‾‾‾
 
-after move
-turn: 1
-depth: 3
-res: -1
-______
-| x  |
-|    |
-| n  |
-| NX |
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 1
-depth: 3
-res: -1
-move: n (2, 1) =>   (0, 0)
-______
-| x  |
-|    |
-| n  |
-| NX |
-‾‾‾‾‾‾
-
-after move
-turn: 0
-depth: 4
-res: -1
-______
-|nx  |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 0
-depth: 4
-res: -1
-move: N (3, 1) =>   (1, 0)
-______
-|nx  |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-after move
-turn: 1
-depth: 5
-res: -1
-______
-|nx  |
-|N   |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-|nx  |
-|N   |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-solve()
-turn: 0
-depth: 4
-res: 0
-move:   (3, 1) => N (1, 0)
-______
-|nx  |
-|N   |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-updated res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-|nx  |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-before move
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 2)
-______
-|nx  |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-repeated
-turn: 0
-depth: 4
-res: 0
-move:   (3, 1) => N (1, 2)
-______
-|nx  |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-final res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-|nx  |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-solve()
-turn: 1
-depth: 3
-res: 0
-move:   (2, 1) => n (0, 0)
-______
-|nx  |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-updated res
-turn: 1
-depth: 3
-res: 0
-move: n (2, 1) =>   (0, 0)
-______
-| x  |
-|    |
-| n  |
-| NX |
-‾‾‾‾‾‾
-
-before move
-turn: 1
-depth: 3
-res: 0
-move: n (2, 1) =>   (0, 2)
-______
-| x  |
-|    |
-| n  |
-| NX |
-‾‾‾‾‾‾
-
-after move
-turn: 0
-depth: 4
-res: -1
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 0
-depth: 4
-res: -1
-move: N (3, 1) =>   (1, 0)
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| xn |
-|N   |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| xn |
-|N   |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-solve()
-turn: 0
-depth: 4
-res: 0
-move:   (3, 1) => N (1, 0)
-______
-| xn |
-|N   |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-updated res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-before move
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 2)
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
 solved[]
-turn: 0
-depth: 4
-res: 0
-move:   (3, 1) => N (1, 2)
-______
-| xn |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-final res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-solve()
-turn: 1
-depth: 3
-res: 0
-move:   (2, 1) => n (0, 2)
-______
-| xn |
-|    |
-|    |
-| NX |
-‾‾‾‾‾‾
-
-before move
-turn: 1
-depth: 3
-res: 0
-move: n (2, 1) =>   (1, 3)
-______
-| x  |
-|    |
-| n  |
-| NX |
-‾‾‾‾‾‾
-
-after move
-turn: 0
-depth: 4
-res: -1
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 0
-depth: 4
-res: -1
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| x  |
-|N  n|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| x  |
-|N  n|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-solve()
-turn: 0
-depth: 4
-res: 0
-move:   (3, 1) => N (1, 0)
-______
-| x  |
-|N  n|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-updated res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-before move
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 2)
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-solved[]
-turn: 0
-depth: 4
-res: 0
-move:   (3, 1) => N (1, 2)
-______
-| x  |
-|  Nn|
-|    |
-|  X |
-‾‾‾‾‾‾
-
-final res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-solve()
-turn: 1
-depth: 3
-res: 0
-move:   (2, 1) => n (1, 3)
-______
-| x  |
-|   n|
-|    |
-| NX |
-‾‾‾‾‾‾
-
-before move
-turn: 1
-depth: 3
-res: 0
-move: n (2, 1) =>   (3, 3)
-______
-| x  |
-|    |
-| n  |
-| NX |
-‾‾‾‾‾‾
-
-after move
-turn: 0
-depth: 4
-res: -1
-______
-| x  |
-|    |
-|    |
-| NXn|
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 0
-depth: 4
-res: -1
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|    |
-|    |
-| NXn|
-‾‾‾‾‾‾
-
-after move
-turn: 1
-depth: 5
-res: -1
-______
-| x  |
-|N   |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-max depth
-turn: 1
-depth: 5
-res: 0
-______
-| x  |
-|N   |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-solve()
-turn: 0
-depth: 4
-res: 0
-move:   (3, 1) => N (1, 0)
-______
-| x  |
-|N   |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-updated res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|    |
-|    |
-| NXn|
-‾‾‾‾‾‾
-
-before move
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 2)
-______
-| x  |
-|    |
-|    |
-| NXn|
-‾‾‾‾‾‾
-
-solved[]
-turn: 0
-depth: 4
-res: 0
-move:   (3, 1) => N (1, 2)
-______
-| x  |
-|  N |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-final res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 1) =>   (1, 0)
-______
-| x  |
-|    |
-|    |
-| NXn|
-‾‾‾‾‾‾
-
-solve()
-turn: 1
-depth: 3
-res: 0
-move:   (2, 1) => n (3, 3)
-______
-| x  |
-|    |
-|    |
-| NXn|
-‾‾‾‾‾‾
-
-final res
-turn: 1
-depth: 3
-res: 0
-move: n (2, 1) =>   (0, 0)
-______
-| x  |
-|    |
-| n  |
-| NX |
-‾‾‾‾‾‾
-
-solve()
 turn: 0
 depth: 2
 res: 0
@@ -1805,31 +935,7 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-after move
-turn: 0
-depth: 4
-res: -1
-______
-| x  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-------
-
-stalemate
-turn: 0
-depth: 4
-res: 0
-______
-| x  |
-|    |
-|    |
-|  Xn|
-‾‾‾‾‾‾
-
-solve()
+solved[]
 turn: 1
 depth: 3
 res: 0
@@ -1865,68 +971,7 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-after move
-turn: 0
-depth: 4
-res: -1
-______
-|nx  |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 0
-depth: 4
-res: -1
-move: N (3, 3) =>   (1, 2)
-______
-|nx  |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-repeated
-turn: 0
-depth: 4
-res: 0
-move:   (3, 3) => N (1, 2)
-______
-|nx  |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-updated res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 3) =>   (1, 2)
-______
-|nx  |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-final res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 3) =>   (1, 2)
-______
-|nx  |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-solve()
+solved[]
 turn: 1
 depth: 3
 res: 0
@@ -1950,68 +995,7 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-after move
-turn: 0
-depth: 4
-res: -1
-______
-| xn |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 0
-depth: 4
-res: -1
-move: N (3, 3) =>   (1, 2)
-______
-| xn |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
 solved[]
-turn: 0
-depth: 4
-res: 0
-move:   (3, 3) => N (1, 2)
-______
-| xn |
-|  N |
-|    |
-|  X |
-‾‾‾‾‾‾
-
-updated res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 3) =>   (1, 2)
-______
-| xn |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-final res
-turn: 0
-depth: 4
-res: 0
-move: N (3, 3) =>   (1, 2)
-______
-| xn |
-|    |
-|    |
-|  XN|
-‾‾‾‾‾‾
-
-solve()
 turn: 1
 depth: 3
 res: 0
@@ -2216,7 +1200,7 @@ ______
 |  XN|
 ‾‾‾‾‾‾
 
-max depth: 5
+max depth: 172
 overall res: 0
 
 show

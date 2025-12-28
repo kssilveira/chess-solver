@@ -13,10 +13,8 @@ func TestSolve(t *testing.T) {
 	inputs := []struct {
 		name          string
 		board         [4][4]byte
-		maxDepth      int
 		maxPrintDepth int
 	}{
-		{name: "default", maxDepth: 2},
 		{name: "empty", board: [4][4]byte{
 			[4]byte([]byte("    ")),
 			[4]byte([]byte("    ")),
@@ -95,13 +93,13 @@ func TestSolve(t *testing.T) {
 			[4]byte([]byte("    ")),
 			[4]byte([]byte("  XN")),
 		}},
-		{name: "Nk", maxDepth: 3, board: [4][4]byte{
+		{name: "Nk", board: [4][4]byte{
 			[4]byte([]byte("k R ")),
 			[4]byte([]byte("    ")),
 			[4]byte([]byte("RR  ")),
 			[4]byte([]byte("   N")),
 		}},
-		{name: "RNk", maxDepth: 500000, maxPrintDepth: 2, board: [4][4]byte{
+		{name: "RNk", maxPrintDepth: 2, board: [4][4]byte{
 			[4]byte([]byte("  R ")),
 			[4]byte([]byte("k   ")),
 			[4]byte([]byte(" R  ")),
@@ -109,19 +107,14 @@ func TestSolve(t *testing.T) {
 		}},
 	}
 	for _, in := range inputs {
-		config := config.Config{MaxDepth: 5, MaxPrintDepth: 5, EnablePrint: true, EnableShow: true}
-		if in.maxDepth != 0 {
-			config.MaxDepth = in.maxDepth
-		}
+		config := config.Config{MaxPrintDepth: 5, EnablePrint: true, EnableShow: true}
 		if in.maxPrintDepth != 0 {
 			config.MaxPrintDepth = in.maxPrintDepth
 		}
 		var out bytes.Buffer
 		core := New(&out, config)
 		core.clearTerminal = "\n------\n"
-		if in.name != "default" {
-			core.board = in.board
-		}
+		core.board = in.board
 		core.Solve()
 		if err := os.WriteFile(filepath.Join("testdata", in.name+".txt"), out.Bytes(), 0644); err != nil {
 			t.Errorf("Solve %v got err %v", in, err)
@@ -131,14 +124,21 @@ func TestSolve(t *testing.T) {
 
 func BenchmarkSolve(b *testing.B) {
 	inputs := []struct {
-		name string
+		name  string
+		board [4][4]byte
 	}{
-		{name: "default"},
+		{name: "Nk", board: [4][4]byte{
+			[4]byte([]byte("k R ")),
+			[4]byte([]byte("    ")),
+			[4]byte([]byte("RR  ")),
+			[4]byte([]byte("   N")),
+		}},
 	}
 	for _, in := range inputs {
-		config := config.Config{MaxDepth: 5, MaxPrintDepth: -1}
+		config := config.Config{MaxPrintDepth: -1}
 		var out bytes.Buffer
 		core := New(&out, config)
+		core.board = in.board
 		b.Run(in.name, func(b *testing.B) {
 			for b.Loop() {
 				core.Solve()

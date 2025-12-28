@@ -2,54 +2,13 @@
 package main
 
 import (
-	"bytes"
 	"flag"
-	"fmt"
 	"os"
-	"strings"
-	"sync"
 	"time"
 
 	"github.com/kssilveira/chess-solver/config"
 	"github.com/kssilveira/chess-solver/core"
 )
-
-func doRunAll() {
-	configs := []config.Config{
-		{Board: "   k,    ,P   ,KR  ", EnablePromotion: true},
-		{Board: "   k,    ,P   ,KR  ", EnableDrop: true},
-		{Board: "   k,    ,P   ,KR  ", EnablePromotion: true, EnableDrop: true},
-		{Board: "   k,    ,P   ,KRNB"},
-		// {Board: "   k,    ,P   ,KRNB", EnablePromotion: true},
-		{Board: "   k,   p,P   ,KRNB"},
-		// {Board: "   k,   p,P   ,KRNB", EnablePromotion: true},
-		// {Board: "b  k,   p,P   ,KRNB", EnablePromotion: true},
-	}
-	buffers := []*bytes.Buffer{}
-	var wg sync.WaitGroup
-	for _, config := range configs {
-		var buffer bytes.Buffer
-		buffers = append(buffers, &buffer)
-		wg.Go(func() {
-			config.MaxPrintDepth = -1
-			core := core.New(&buffer, config)
-			core.Solve()
-		})
-	}
-	wg.Wait()
-	for i, config := range configs {
-		desc := []string{
-			fmt.Sprintf("--board='%s'", config.Board),
-		}
-		if config.EnablePromotion {
-			desc = append(desc, "--enable_promotion")
-		}
-		if config.EnableDrop {
-			desc = append(desc, "--enable_drop")
-		}
-		fmt.Printf("\n%s\n%s", strings.Join(desc, " "), buffers[i].String())
-	}
-}
 
 func main() {
 	sleepDuration := flag.Duration("sleep_duration", 0*time.Second, "sleep duration")
@@ -67,7 +26,17 @@ func main() {
 		Board: *board,
 	}
 	if *runAll {
-		doRunAll()
+		core.RunAll(os.Stdout, []config.Config{
+			{Board: "   k,    ,P   ,KR  "},
+			{Board: "   k,    ,P   ,KR  ", EnablePromotion: true},
+			{Board: "   k,    ,P   ,KR  ", EnableDrop: true},
+			//x {Board: "   k,    ,P   ,KR  ", EnablePromotion: true, EnableDrop: true},
+			//x {Board: "   k,    ,P   ,KRNB"},
+			// {Board: "   k,    ,P   ,KRNB", EnablePromotion: true},
+			//x {Board: "   k,   p,P   ,KRNB"},
+			// {Board: "   k,   p,P   ,KRNB", EnablePromotion: true},
+			// {Board: "b  k,   p,P   ,KRNB"},
+		})
 		return
 	}
 	core := core.New(os.Stdout, cfg)

@@ -7,6 +7,7 @@ import (
 	"io"
 	"slices"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/kssilveira/chess-solver/config"
@@ -511,5 +512,32 @@ func (c *Core) Play() {
 		fmt.Scanf("%d%d%d%d", &fx, &fy, &tx, &ty)
 		c.board[tx][ty] = c.board[fx][fy]
 		c.board[fx][fy] = ' '
+	}
+}
+
+func RunAll(writer io.Writer, configs []config.Config) {
+	buffers := []*bytes.Buffer{}
+	var wg sync.WaitGroup
+	for _, config := range configs {
+		var buffer bytes.Buffer
+		buffers = append(buffers, &buffer)
+		wg.Go(func() {
+			config.MaxPrintDepth = -1
+			core := New(&buffer, config)
+			core.Solve()
+		})
+	}
+	wg.Wait()
+	for i, config := range configs {
+		desc := []string{
+			fmt.Sprintf("--board='%s'", config.Board),
+		}
+		if config.EnablePromotion {
+			desc = append(desc, "--enable_promotion")
+		}
+		if config.EnableDrop {
+			desc = append(desc, "--enable_drop")
+		}
+		fmt.Fprintf(writer, "\n%s\n%s", strings.Join(desc, " "), buffers[i].String())
 	}
 }

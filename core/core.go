@@ -62,7 +62,8 @@ var (
 			{-1, 2, deltaOtherEmpty, 0, 1}, {1, 2, deltaOtherEmpty, 0, 1},
 		},
 	}
-	promos = map[byte][]byte{
+	visitedStruct = struct{}{}
+	promos        = map[byte][]byte{
 		'P': {'R', 'B', 'N'},
 		'p': {'r', 'b', 'n'},
 	}
@@ -139,10 +140,6 @@ type State struct {
 	What     byte
 }
 
-var (
-	visitedStruct = struct{}{}
-)
-
 func (c *Core) solve() (int, int) {
 	stack := make([]State, 0, 100000)
 	c.call(&stack)
@@ -153,19 +150,8 @@ func (c *Core) solve() (int, int) {
 		depth := len(stack) - 1
 		turn := depth % 2
 		state := &stack[depth]
-		if depth > maxDepth {
-			maxDepth = depth
-			if c.config.PrintDepth && maxDepth%1000000 == 0 {
-				fmt.Fprintf(c.writer, "depth: %d\n", maxDepth)
-			}
-		}
-		numVisited := len(c.visited[0])
-		if numVisited > maxVisited {
-			maxVisited = numVisited
-			if c.config.PrintDepth && maxVisited%10000000 == 0 {
-				fmt.Fprintf(c.writer, "visited: %d\n", maxVisited)
-			}
-		}
+		c.updateMaxDepth(&maxDepth, depth)
+		c.updateMaxVisited(&maxVisited)
 		if state.Index == 0 {
 			c.print("after move", -1, depth, turn, printconfig.PrintConfig{ClearTerminal: true})
 		}
@@ -203,6 +189,25 @@ func (c *Core) solve() (int, int) {
 		overall = c.doReturn(&stack)
 	}
 	return overall, maxDepth + 1
+}
+
+func (c *Core) updateMaxDepth(maxDepth *int, depth int) {
+	if depth > *maxDepth {
+		*maxDepth = depth
+		if c.config.PrintDepth && *maxDepth%1000000 == 0 {
+			fmt.Fprintf(c.writer, "depth: %d\n", *maxDepth)
+		}
+	}
+}
+
+func (c *Core) updateMaxVisited(maxVisited *int) {
+	numVisited := len(c.visited[0])
+	if numVisited > *maxVisited {
+		*maxVisited = numVisited
+		if c.config.PrintDepth && *maxVisited%10000000 == 0 {
+			fmt.Fprintf(c.writer, "visited: %d\n", *maxVisited)
+		}
+	}
 }
 
 func (c *Core) call(stack *[]State) {

@@ -18,10 +18,10 @@ type Core struct {
 	config        config.Config
 	clearTerminal string
 	writer        io.Writer
-	board         [4][4]byte
-	visited       []map[[4][4]byte]interface{}
-	solved        []map[[4][4]byte]int
-	solvedMove    []map[[4][4]byte]move.Move
+	board         [6][4]byte
+	visited       []map[[6][4]byte]interface{}
+	solved        []map[[6][4]byte]int
+	solvedMove    []map[[6][4]byte]move.Move
 }
 
 const (
@@ -73,23 +73,25 @@ var (
 func New(writer io.Writer, config config.Config) *Core {
 	res := &Core{
 		writer: writer, config: config,
-		board: [4][4]byte{
+		board: [6][4]byte{
 			[4]byte([]byte("bnrk")),
 			[4]byte([]byte("   p")),
 			[4]byte([]byte("P   ")),
 			[4]byte([]byte("KRNB")),
+			[4]byte([]byte("0000")),
+			[4]byte([]byte("0000")),
 		},
-		visited: []map[[4][4]byte]interface{}{
-			make(map[[4][4]byte]interface{}, 100000),
-			make(map[[4][4]byte]interface{}, 100000),
+		visited: []map[[6][4]byte]interface{}{
+			make(map[[6][4]byte]interface{}, 100000),
+			make(map[[6][4]byte]interface{}, 100000),
 		},
-		solved: []map[[4][4]byte]int{
-			make(map[[4][4]byte]int, 100000),
-			make(map[[4][4]byte]int, 100000),
+		solved: []map[[6][4]byte]int{
+			make(map[[6][4]byte]int, 100000),
+			make(map[[6][4]byte]int, 100000),
 		},
-		solvedMove: []map[[4][4]byte]move.Move{
-			make(map[[4][4]byte]move.Move, 100000),
-			make(map[[4][4]byte]move.Move, 100000),
+		solvedMove: []map[[6][4]byte]move.Move{
+			make(map[[6][4]byte]move.Move, 100000),
+			make(map[[6][4]byte]move.Move, 100000),
 		},
 		clearTerminal: "\033[H\033[2J"}
 	if len(config.Board) > 1 {
@@ -265,7 +267,7 @@ func (c *Core) what(x, y int) string {
 	return string(c.board[x][y])
 }
 
-func toBytes(board [4][4]byte) [][]byte {
+func toBytes(board [6][4]byte) [][]byte {
 	res := [][]byte{}
 	for _, row := range board {
 		one := []byte{}
@@ -404,7 +406,7 @@ func (c *Core) updateValue(res *int, next int, move move.Move, depth, turn int) 
 func (c *Core) show() {
 	c.config.MaxPrintDepth = 0
 	res := 123
-	visited := []map[[4][4]byte]interface{}{{}, {}}
+	visited := []map[[6][4]byte]interface{}{{}, {}}
 	depth := 0
 	turn := 0
 	c.print("show", res, depth, turn, printconfig.PrintConfig{})
@@ -430,7 +432,7 @@ func (c *Core) Play() {
 	c.config.MaxPrintDepth = 0
 	res := 123
 	turn := 0
-	visited := []map[[4][4]byte]interface{}{{}, {}}
+	visited := []map[[6][4]byte]interface{}{{}, {}}
 	depth := 0
 	c.print("play", res, depth, turn, printconfig.PrintConfig{})
 	for {

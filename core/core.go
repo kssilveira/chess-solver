@@ -83,10 +83,12 @@ func New(writer io.Writer, config config.Config) *Core {
 // Solve solves the board.
 func (c *Core) Solve() {
 	res, maxDepth := c.solve()
-	fmt.Fprintf(c.writer, "\nmax depth: %d\n", maxDepth)
-	fmt.Fprintf(c.writer, "overall res: %d\n", res)
-	if c.config.EnablePrint && c.config.EnableShow {
-		c.show()
+	if c.config.EnablePrint {
+		fmt.Fprintf(c.writer, "\nmax depth: %d\n", maxDepth)
+		fmt.Fprintf(c.writer, "overall res: %d\n", res)
+		if c.config.EnableShow {
+			c.show()
+		}
 	}
 }
 
@@ -111,7 +113,7 @@ func (c *Core) solve() (int, int) {
 		state := &stack[depth]
 		if depth > maxDepth {
 			maxDepth = depth
-			if c.config.PrintDepth && maxDepth%100000 == 0 {
+			if c.config.PrintDepth && maxDepth%1000000 == 0 {
 				fmt.Fprintf(c.writer, "max depth: %d\n", maxDepth)
 			}
 		}

@@ -63,12 +63,14 @@ var (
 
 // New creates a new core.
 func New(writer io.Writer, config config.Config) *Core {
-	res := &Core{writer: writer, config: config, board: [4][4]byte{
-		[4]byte([]byte("bnrk")),
-		[4]byte([]byte("   p")),
-		[4]byte([]byte("P   ")),
-		[4]byte([]byte("KRNB")),
-	},
+	res := &Core{
+		writer: writer, config: config,
+		board: [4][4]byte{
+			[4]byte([]byte("bnrk")),
+			[4]byte([]byte("   p")),
+			[4]byte([]byte("P   ")),
+			[4]byte([]byte("KRNB")),
+		},
 		visited: []map[[4][4]byte]interface{}{
 			make(map[[4][4]byte]interface{}, 100000),
 			make(map[[4][4]byte]interface{}, 100000),
@@ -128,14 +130,14 @@ func (c *Core) solve() (int, int) {
 		if depth > maxDepth {
 			maxDepth = depth
 			if c.config.PrintDepth && maxDepth%1000000 == 0 {
-				fmt.Fprintf(c.writer, "max depth: %d\n", maxDepth)
+				fmt.Fprintf(c.writer, "depth: %d\n", maxDepth)
 			}
 		}
 		numVisited := len(c.visited[0])
 		if numVisited > maxVisited {
 			maxVisited = numVisited
 			if c.config.PrintDepth && maxVisited%10000000 == 0 {
-				fmt.Fprintf(c.writer, "max visited: %d\n", maxVisited)
+				fmt.Fprintf(c.writer, "visited: %d\n", maxVisited)
 			}
 		}
 		if state.Index == 0 {

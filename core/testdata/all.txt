@@ -4,35 +4,98 @@ board: '   k,    ,P   ,KRNB'
 max depth: 91773
 overall res: 1
 
-real	0m3.196s
-user	0m3.422s
-sys	0m0.178s
+real	0m3.072s
+user	0m3.231s
+sys	0m0.204s
 
 board: '   k,   p,P   ,KRNB'
 
 max depth: 92367
 overall res: 1
 
-real	0m4.717s
-user	0m4.875s
-sys	0m0.237s
+real	0m4.555s
+user	0m4.755s
+sys	0m0.171s
 
 board: 'b  k,   p,P   ,KRNB'
 
 max depth: 390825
 overall res: 1
 
-real	1m53.331s
-user	1m55.762s
-sys	0m1.295s
+real	1m51.581s
+user	1m53.113s
+sys	0m1.313s
 
 board: 'br k,   p,P   ,KRNB'
+depth: 1000000
+visited: 10000000
+depth: 2000000
+depth: 3000000
+visited: 20000000
+depth: 4000000
+depth: 5000000
+visited: 30000000
+visited: 40000000
+visited: 50000000
+visited: 60000000
+visited: 70000000
+visited: 80000000
+visited: 90000000
+visited: 100000000
+visited: 110000000
+visited: 120000000
+visited: 130000000
+visited: 140000000
+visited: 150000000
 
-max depth: 2000000
+max depth: 5246185
 overall res: 0
 
-real	39m33.051s
-user	40m51.565s
-sys	0m49.547s
+real	42m40.489s
+user	44m3.444s
+sys	0m50.793s
 
 board: 'brnk,   p,P   ,KRNB'
+depth: 1000000
+visited: 10000000
+depth: 2000000
+depth: 3000000
+depth: 4000000
+depth: 5000000
+visited: 20000000
+visited: 30000000
+visited: 40000000
+visited: 50000000
+visited: 60000000
+visited: 70000000
+depth: 6000000
+depth: 7000000
+visited: 80000000
+depth: 8000000
+depth: 9000000
+depth: 10000000
+visited: 90000000
+visited: 100000000
+visited: 110000000
+visited: 120000000
+visited: 130000000
+visited: 140000000
+visited: 150000000
+visited: 160000000
+visited: 170000000
+visited: 180000000
+visited: 190000000
+visited: 200000000
+visited: 210000000
+depth: 11000000
+depth: 12000000
+depth: 13000000
+depth: 14000000
+depth: 15000000
+depth: 16000000
+depth: 17000000
+depth: 18000000
+depth: 19000000
+visited: 220000000
+depth: 20000000
+depth: 21000000

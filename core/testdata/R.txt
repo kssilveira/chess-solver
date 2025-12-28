@@ -581,7 +581,7 @@ ______
 |R   |
 ‾‾‾‾‾‾
 
-max depth: 181
+max depth: 196
 overall res: 0
 
 show

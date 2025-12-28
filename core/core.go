@@ -134,7 +134,7 @@ func (c *Core) solve() (int, int) {
 		numVisited := len(c.visited[0])
 		if numVisited > maxVisited {
 			maxVisited = numVisited
-			if c.config.PrintDepth && maxVisited%10000000 == 0 {
+			if c.config.PrintDepth && maxVisited%1000000 == 0 {
 				fmt.Fprintf(c.writer, "max visited: %d\n", maxVisited)
 			}
 		}
@@ -153,8 +153,7 @@ func (c *Core) solve() (int, int) {
 				overall = c.doReturn(&stack)
 				continue
 			}
-			c.print("before move", state.Value, depth, turn, printconfig.PrintConfig{Move: state.Move})
-			state.What = c.doMove(state.Move)
+			state.What = c.doMove(state.Move, state.Value, depth, turn)
 			state.Next = 0
 			ok := false
 			if state.Next, ok = c.solved[turn][c.board]; ok {
@@ -189,7 +188,7 @@ func (c *Core) call(stack *[]State) {
 	state := &(*stack)[depth]
 
 	sharedMoves = sharedMoves[:0]
-	c.moves(&sharedMoves, 1, turn)
+	c.moves(&sharedMoves, turn)
 	for i, move := range sharedMoves {
 		state.Moves[i] = move
 	}
@@ -268,7 +267,7 @@ func toBytes(board [4][4]byte) [][]byte {
 	return res
 }
 
-func (c *Core) moves(moves *[]move.Move, depth, turn int) {
+func (c *Core) moves(moves *[]move.Move, turn int) {
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
 			piece := c.board[i][j]
@@ -276,27 +275,6 @@ func (c *Core) moves(moves *[]move.Move, depth, turn int) {
 				continue
 			}
 			c.deltas(moves, turn, i, j)
-		}
-	}
-	if depth == 0 {
-		c.sort(*moves)
-		return
-	}
-	for i, mv := range *moves {
-		if mv.IsKing() || mv.IsCapture() {
-			continue
-		}
-		what := c.doMove(mv)
-		nextMoves := []move.Move{}
-		c.moves(&nextMoves, depth-1, turn)
-		c.undoMove(mv, what)
-		for _, next := range nextMoves {
-			if next.IsKing() || next.NextIsKing() {
-				(*moves)[i].SetNextIsKing()
-			}
-			if next.IsCapture() || next.NextIsCapture() {
-				(*moves)[i].SetNextIsCapture()
-			}
 		}
 	}
 	c.sort(*moves)
@@ -351,18 +329,6 @@ func (c *Core) sort(moves []move.Move) {
 		if j.IsCapture() {
 			return 1
 		}
-		if i.NextIsKing() {
-			return -1
-		}
-		if j.NextIsKing() {
-			return 1
-		}
-		if i.NextIsCapture() {
-			return -1
-		}
-		if j.NextIsCapture() {
-			return 1
-		}
 		return 0
 	})
 }
@@ -386,7 +352,8 @@ func (c *Core) deadKing(move move.Move, depth, turn int) (int, bool) {
 	return res, true
 }
 
-func (c *Core) doMove(move move.Move) byte {
+func (c *Core) doMove(move move.Move, res, depth, turn int) byte {
+	c.print("before move", res, depth, turn, printconfig.PrintConfig{Move: move})
 	what := c.board[move.ToX()][move.ToY()]
 	c.board[move.ToX()][move.ToY()] = c.board[move.FromX()][move.FromY()]
 	c.board[move.FromX()][move.FromY()] = ' '
@@ -424,8 +391,7 @@ func (c *Core) show() {
 		if move == 0 {
 			break
 		}
-		c.print("before move", res, depth, turn, printconfig.PrintConfig{Move: move})
-		c.doMove(move)
+		c.doMove(move, res, depth, turn)
 		res = c.solved[turn][c.board]
 		depth++
 		turn = (turn + 1) % 2
@@ -450,8 +416,7 @@ func (c *Core) Play() {
 		if move == 0 {
 			break
 		}
-		c.print("before move", res, depth, turn, printconfig.PrintConfig{Move: move})
-		c.doMove(move)
+		c.doMove(move, res, depth, turn)
 		depth++
 		res = c.solved[turn][c.board]
 		c.print("after move", res, depth, turn, printconfig.PrintConfig{Move: move})

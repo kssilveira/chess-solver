@@ -16,7 +16,7 @@ before move
 turn: 0
 depth: 0
 res: -1
-move: K (3, 0) =>   (2, 1)
+move: K (3, 0) =>   (2, 0)
 ______
 |    |
 | k  |
@@ -31,7 +31,7 @@ res: -1
 ______
 |    |
 | k  |
-| K  |
+|K   |
 |  k |
 ‾‾‾‾‾‾
 
@@ -41,11 +41,11 @@ dead king
 turn: 1
 depth: 1
 res: 1
-move: k (3, 2) => K (2, 1)
+move: k (1, 1) => K (2, 0)
 ______
 |    |
 | k  |
-| K  |
+|K   |
 |  k |
 ‾‾‾‾‾‾
 
@@ -53,11 +53,11 @@ solve()
 turn: 0
 depth: 0
 res: -1
-move:   (3, 0) => K (2, 1)
+move:   (3, 0) => K (2, 0)
 ______
 |    |
 | k  |
-| K  |
+|K   |
 |  k |
 ‾‾‾‾‾‾
 
@@ -114,7 +114,7 @@ before move
 turn: 0
 depth: 0
 res: -1
-move: K (3, 0) =>   (2, 0)
+move: K (3, 0) =>   (2, 1)
 ______
 |    |
 | k  |
@@ -129,7 +129,7 @@ res: -1
 ______
 |    |
 | k  |
-|K   |
+| K  |
 |  k |
 ‾‾‾‾‾‾
 
@@ -139,11 +139,11 @@ dead king
 turn: 1
 depth: 1
 res: 1
-move: k (1, 1) => K (2, 0)
+move: k (1, 1) => K (2, 1)
 ______
 |    |
 | k  |
-|K   |
+| K  |
 |  k |
 ‾‾‾‾‾‾
 
@@ -151,11 +151,11 @@ solve()
 turn: 0
 depth: 0
 res: -1
-move:   (3, 0) => K (2, 0)
+move:   (3, 0) => K (2, 1)
 ______
 |    |
 | k  |
-|K   |
+| K  |
 |  k |
 ‾‾‾‾‾‾
 
@@ -163,7 +163,7 @@ final res
 turn: 0
 depth: 0
 res: -1
-move: K (3, 0) =>   (2, 1)
+move: K (3, 0) =>   (2, 0)
 ______
 |    |
 | k  |
@@ -189,7 +189,7 @@ before move
 turn: 0
 depth: 0
 res: 123
-move: K (3, 0) =>   (2, 1)
+move: K (3, 0) =>   (2, 0)
 ______
 |    |
 | k  |
@@ -201,11 +201,11 @@ after move
 turn: 1
 depth: 1
 res: -1
-move:   (3, 0) => K (2, 1)
+move:   (3, 0) => K (2, 0)
 ______
 |    |
 | k  |
-| K  |
+|K   |
 |  k |
 ‾‾‾‾‾‾
 
@@ -213,11 +213,11 @@ before move
 turn: 1
 depth: 1
 res: -1
-move: k (3, 2) => K (2, 1)
+move: k (1, 1) => K (2, 0)
 ______
 |    |
 | k  |
-| K  |
+|K   |
 |  k |
 ‾‾‾‾‾‾
 
@@ -225,10 +225,10 @@ after move
 turn: 0
 depth: 2
 res: 0
-move:   (3, 2) => k (2, 1)
+move:   (1, 1) => k (2, 0)
 ______
 |    |
-| k  |
-| k  |
 |    |
+|k   |
+|  k |
 ‾‾‾‾‾‾

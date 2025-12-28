@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"slices"
+	"strings"
 	"time"
 
 	"github.com/kssilveira/chess-solver/config"
@@ -22,6 +23,7 @@ type Core struct {
 	visited       []map[[6][4]byte]interface{}
 	solved        []map[[6][4]byte]int
 	solvedMove    []map[[6][4]byte]move.Move
+	sharedMoves   []move.Move
 }
 
 const (
@@ -105,9 +107,10 @@ func New(writer io.Writer, config config.Config) *Core {
 			make(map[[6][4]byte]move.Move, 100000),
 			make(map[[6][4]byte]move.Move, 100000),
 		},
+		sharedMoves:   make([]move.Move, 0, 15),
 		clearTerminal: "\033[H\033[2J"}
 	if len(config.Board) > 1 {
-		for i, row := range config.Board {
+		for i, row := range strings.Split(config.Board, ",") {
 			res.board[i] = [4]byte([]byte(row))
 		}
 	}
@@ -201,22 +204,18 @@ func (c *Core) solve() (int, int) {
 	return overall, maxDepth + 1
 }
 
-var (
-	sharedMoves = make([]move.Move, 0, 15)
-)
-
 func (c *Core) call(stack *[]State) {
 	*stack = append(*stack, State{Value: -1})
 	depth := len(*stack) - 1
 	turn := depth % 2
 	state := &(*stack)[depth]
 
-	sharedMoves = sharedMoves[:0]
-	c.moves(&sharedMoves, turn)
-	for i, move := range sharedMoves {
+	c.sharedMoves = c.sharedMoves[:0]
+	c.moves(&c.sharedMoves, turn)
+	for i, move := range c.sharedMoves {
 		state.Moves[i] = move
 	}
-	state.NumMoves = len(sharedMoves)
+	state.NumMoves = len(c.sharedMoves)
 }
 
 func (c *Core) doReturn(stack *[]State) int {

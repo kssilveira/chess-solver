@@ -1,72 +1,25 @@
-++ go run main.go '--board=   k,    ,P   ,KR  '
 
-max depth: 2729
-overall res: 1
-
-real	0m0.141s
-user	0m0.229s
-sys	0m0.144s
-++ go run main.go '--board=   k,    ,P   ,KR  ' --enable_promotion=true
+--board='   k,    ,P   ,KR  ' --enable_promotion
 
 max depth: 25461
 overall res: 1
 
-real	0m0.575s
-user	0m0.709s
-sys	0m0.104s
-++ go run main.go '--board=   k,    ,P   ,KR  ' --enable_drop=true
+--board='   k,    ,P   ,KR  ' --enable_drop
 
 max depth: 149158
 overall res: 0
 
-real	0m1.332s
-user	0m1.440s
-sys	0m0.138s
-++ go run main.go '--board=   k,    ,P   ,KR  ' --enable_promotion=true --enable_drop=true
+--board='   k,    ,P   ,KR  ' --enable_promotion --enable_drop
 
 max depth: 144463
 overall res: 1
 
-real	0m5.024s
-user	0m5.190s
-sys	0m0.224s
-++ go run main.go '--board=   k,    ,P   ,KRNB'
+--board='   k,    ,P   ,KRNB'
 
 max depth: 91773
 overall res: 1
 
-real	0m3.081s
-user	0m3.230s
-sys	0m0.184s
-++ go run main.go '--board=   k,    ,P   ,KRNB' --enable_promotion=true
-
-max depth: 192387
-overall res: 1
-
-real	0m21.996s
-user	0m22.381s
-sys	0m0.419s
-++ go run main.go '--board=   k,   p,P   ,KRNB'
+--board='   k,   p,P   ,KRNB'
 
 max depth: 92367
 overall res: 1
-
-real	0m4.844s
-user	0m5.010s
-sys	0m0.218s
-++ go run main.go '--board=   k,   p,P   ,KRNB' --enable_promotion=true
-
-max depth: 192789
-overall res: 1
-
-real	0m24.540s
-user	0m25.013s
-sys	0m0.543s
-++ go run main.go '--board=b  k,   p,P   ,KRNB'
-
-max depth: 390825
-overall res: 1
-
-real	1m55.958s
-user	1m57.542s
-sys	0m1.508s

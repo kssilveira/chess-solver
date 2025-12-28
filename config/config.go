@@ -6,7 +6,7 @@ import "time"
 // Config contains configuration.
 type Config struct {
 	SleepDuration   time.Duration
-	Board           []string
+	Board           string
 	MaxPrintDepth   int
 	EnableShow      bool
 	PrintDepth      bool

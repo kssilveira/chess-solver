@@ -16,7 +16,7 @@ before move
 turn: 0
 depth: 0
 res: -1
-move: R (0, 2) =>   (1, 2)
+move: R (3, 0) =>   (2, 0)
 ______
 |  R |
 |k   |
@@ -29,10 +29,10 @@ turn: 1
 depth: 1
 res: -1
 ______
-|    |
-|k R |
-| R  |
-|R  N|
+|  R |
+|k   |
+|RR  |
+|   N|
 ‾‾‾‾‾‾
 
 ------
@@ -43,10 +43,10 @@ depth: 1
 res: -1
 move: k (1, 0) => R (2, 1)
 ______
-|    |
-|k R |
-| R  |
-|R  N|
+|  R |
+|k   |
+|RR  |
+|   N|
 ‾‾‾‾‾‾
 
 after move
@@ -54,10 +54,10 @@ turn: 0
 depth: 2
 res: -1
 ______
-|    |
 |  R |
-| k  |
-|R  N|
+|    |
+|Rk  |
+|   N|
 ‾‾‾‾‾‾
 
 ------
@@ -68,10 +68,10 @@ depth: 2
 res: 1
 move: N (3, 3) => k (2, 1)
 ______
-|    |
 |  R |
-| k  |
-|R  N|
+|    |
+|Rk  |
+|   N|
 ‾‾‾‾‾‾
 
 solve()
@@ -80,22 +80,22 @@ depth: 1
 res: -1
 move:   (1, 0) => k (2, 1)
 ______
-|    |
 |  R |
-| k  |
-|R  N|
+|    |
+|Rk  |
+|   N|
 ‾‾‾‾‾‾
 
 before move
 turn: 1
 depth: 1
 res: -1
-move: k (1, 0) =>   (0, 0)
+move: k (1, 0) => R (2, 0)
 ______
-|    |
-|k R |
-| R  |
-|R  N|
+|  R |
+|k   |
+|RR  |
+|   N|
 ‾‾‾‾‾‾
 
 after move
@@ -103,95 +103,10 @@ turn: 0
 depth: 2
 res: -1
 ______
-|k   |
 |  R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-------
-
-before move
-turn: 0
-depth: 2
-res: -1
-move: R (1, 2) =>   (0, 2)
-______
-|k   |
-|  R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-solve()
-turn: 0
-depth: 2
-res: 1
-move:   (1, 2) => R (0, 2)
-______
-|k R |
 |    |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-updated res
-turn: 0
-depth: 2
-res: 1
-move: R (1, 2) =>   (0, 2)
-______
-|k   |
-|  R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-final res
-turn: 0
-depth: 2
-res: 1
-move: R (1, 2) =>   (0, 2)
-______
-|k   |
-|  R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-solve()
-turn: 1
-depth: 1
-res: -1
-move:   (1, 0) => k (0, 0)
-______
-|k   |
-|  R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-before move
-turn: 1
-depth: 1
-res: -1
-move: k (1, 0) =>   (2, 0)
-______
-|    |
-|k R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-after move
-turn: 0
-depth: 2
-res: -1
-______
-|    |
-|  R |
 |kR  |
-|R  N|
+|   N|
 ‾‾‾‾‾‾
 
 ------
@@ -200,12 +115,12 @@ dead king
 turn: 0
 depth: 2
 res: 1
-move: R (3, 0) => k (2, 0)
+move: R (2, 1) => k (2, 0)
 ______
-|    |
 |  R |
+|    |
 |kR  |
-|R  N|
+|   N|
 ‾‾‾‾‾‾
 
 solve()
@@ -214,34 +129,10 @@ depth: 1
 res: -1
 move:   (1, 0) => k (2, 0)
 ______
-|    |
 |  R |
+|    |
 |kR  |
-|R  N|
-‾‾‾‾‾‾
-
-before move
-turn: 1
-depth: 1
-res: -1
-move: k (1, 0) =>   (1, 1)
-______
-|    |
-|k R |
-| R  |
-|R  N|
-‾‾‾‾‾‾
-
-solved[]
-turn: 1
-depth: 1
-res: -1
-move:   (1, 0) => k (1, 1)
-______
-|    |
-| kR |
-| R  |
-|R  N|
+|   N|
 ‾‾‾‾‾‾
 
 before move
@@ -250,22 +141,181 @@ depth: 1
 res: -1
 move: k (1, 0) =>   (0, 1)
 ______
-|    |
-|k R |
-| R  |
-|R  N|
+|  R |
+|k   |
+|RR  |
+|   N|
 ‾‾‾‾‾‾
 
-solved[]
+after move
+turn: 0
+depth: 2
+res: -1
+______
+| kR |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+turn: 0
+depth: 2
+res: 1
+move: R (0, 2) => k (0, 1)
+______
+| kR |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+solve()
 turn: 1
 depth: 1
 res: -1
 move:   (1, 0) => k (0, 1)
 ______
-| k  |
+| kR |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: -1
+move: k (1, 0) =>   (1, 1)
+______
 |  R |
-| R  |
-|R  N|
+|k   |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1
+______
+|  R |
+| k  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+dead king
+turn: 0
+depth: 2
+res: 1
+move: R (2, 1) => k (1, 1)
+______
+|  R |
+| k  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: -1
+move:   (1, 0) => k (1, 1)
+______
+|  R |
+| k  |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+before move
+turn: 1
+depth: 1
+res: -1
+move: k (1, 0) =>   (0, 0)
+______
+|  R |
+|k   |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+after move
+turn: 0
+depth: 2
+res: -1
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+------
+
+before move
+turn: 0
+depth: 2
+res: -1
+move: N (3, 3) =>   (1, 2)
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+solve()
+turn: 0
+depth: 2
+res: 1
+move:   (3, 3) => N (1, 2)
+______
+|k R |
+|  N |
+|RR  |
+|    |
+‾‾‾‾‾‾
+
+updated res
+turn: 0
+depth: 2
+res: 1
+move: N (3, 3) =>   (1, 2)
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+final res
+turn: 0
+depth: 2
+res: 1
+move: N (3, 3) =>   (1, 2)
+______
+|k R |
+|    |
+|RR  |
+|   N|
+‾‾‾‾‾‾
+
+solve()
+turn: 1
+depth: 1
+res: -1
+move:   (1, 0) => k (0, 0)
+______
+|k R |
+|    |
+|RR  |
+|   N|
 ‾‾‾‾‾‾
 
 final res
@@ -274,29 +324,29 @@ depth: 1
 res: -1
 move: k (1, 0) => R (2, 1)
 ______
-|    |
-|k R |
-| R  |
-|R  N|
+|  R |
+|k   |
+|RR  |
+|   N|
 ‾‾‾‾‾‾
 
 solve()
 turn: 0
 depth: 0
 res: 1
-move:   (0, 2) => R (1, 2)
+move:   (3, 0) => R (2, 0)
 ______
-|    |
-|k R |
-| R  |
-|R  N|
+|  R |
+|k   |
+|RR  |
+|   N|
 ‾‾‾‾‾‾
 
 updated res
 turn: 0
 depth: 0
 res: 1
-move: R (0, 2) =>   (1, 2)
+move: R (3, 0) =>   (2, 0)
 ______
 |  R |
 |k   |
@@ -308,7 +358,7 @@ final res
 turn: 0
 depth: 0
 res: 1
-move: R (0, 2) =>   (1, 2)
+move: R (3, 0) =>   (2, 0)
 ______
 |  R |
 |k   |
@@ -316,7 +366,7 @@ ______
 |R  N|
 ‾‾‾‾‾‾
 
-max depth: 50599
+max depth: 5
 overall res: 1
 
 show
@@ -334,7 +384,7 @@ before move
 turn: 0
 depth: 0
 res: 123
-move: R (0, 2) =>   (1, 2)
+move: R (3, 0) =>   (2, 0)
 ______
 |  R |
 |k   |
@@ -346,12 +396,12 @@ after move
 turn: 1
 depth: 1
 res: 1
-move:   (0, 2) => R (1, 2)
+move:   (3, 0) => R (2, 0)
 ______
-|    |
-|k R |
-| R  |
-|R  N|
+|  R |
+|k   |
+|RR  |
+|   N|
 ‾‾‾‾‾‾
 
 before move
@@ -360,10 +410,10 @@ depth: 1
 res: 1
 move: k (1, 0) => R (2, 1)
 ______
-|    |
-|k R |
-| R  |
-|R  N|
+|  R |
+|k   |
+|RR  |
+|   N|
 ‾‾‾‾‾‾
 
 after move
@@ -372,10 +422,10 @@ depth: 2
 res: -1
 move:   (1, 0) => k (2, 1)
 ______
-|    |
 |  R |
-| k  |
-|R  N|
+|    |
+|Rk  |
+|   N|
 ‾‾‾‾‾‾
 
 before move
@@ -384,10 +434,10 @@ depth: 2
 res: -1
 move: N (3, 3) => k (2, 1)
 ______
-|    |
 |  R |
-| k  |
-|R  N|
+|    |
+|Rk  |
+|   N|
 ‾‾‾‾‾‾
 
 after move
@@ -396,8 +446,8 @@ depth: 3
 res: 0
 move:   (3, 3) => N (2, 1)
 ______
-|    |
 |  R |
-| N  |
-|R   |
+|    |
+|RN  |
+|    |
 ‾‾‾‾‾‾

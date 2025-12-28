@@ -51,3 +51,23 @@ func (m Move) IsKing() bool {
 func (m Move) IsCapture() bool {
 	return m&(1<<9) != 0
 }
+
+// SetNextIsKing set next is king.
+func (m *Move) SetNextIsKing() {
+	*m |= 1 << 10
+}
+
+// NextIsKing returns next is king.
+func (m Move) NextIsKing() bool {
+	return m&(1<<10) != 0
+}
+
+// SetNextIsCapture sets next is capture.
+func (m *Move) SetNextIsCapture() {
+	*m |= 1 << 11
+}
+
+// NextIsCapture returns next is capture.
+func (m Move) NextIsCapture() bool {
+	return m&(1<<11) != 0
+}

@@ -102,16 +102,21 @@ func (c *Core) Solve() {
 
 // State contains the recursion state.
 type State struct {
-	Moves []move.Move
-	Move  move.Move
-	Value int
-	Next  int
-	Index int
-	What  byte
+	Moves    [15]move.Move
+	NumMoves int
+	Move     move.Move
+	Value    int
+	Next     int
+	Index    int
+	What     byte
 }
 
+var (
+	visitedStruct = struct{}{}
+)
+
 func (c *Core) solve() (int, int) {
-	stack := []State{}
+	stack := make([]State, 0, 100000)
 	c.call(&stack)
 	overall := -1
 	maxDepth := 0
@@ -128,12 +133,12 @@ func (c *Core) solve() (int, int) {
 		if state.Index == 0 {
 			c.print("after move", -1, depth, turn, printconfig.PrintConfig{ClearTerminal: true})
 		}
-		if res, ok := c.staleMate(state.Moves, depth, turn); ok {
+		if res, ok := c.staleMate(state.NumMoves, depth, turn); ok {
 			state.Value = res
 			overall = c.doReturn(&stack)
 			continue
 		}
-		if state.Index < len(state.Moves) {
+		if state.Index < state.NumMoves {
 			state.Move = state.Moves[state.Index]
 			if res, ok := c.deadKing(state.Move, depth, turn); ok {
 				state.Value = res
@@ -148,7 +153,7 @@ func (c *Core) solve() (int, int) {
 			} else if _, ok = c.visited[turn][c.board]; ok {
 				c.print("repeated", state.Next, depth, turn, printconfig.PrintConfig{Move: state.Move})
 			} else {
-				c.visited[turn][c.board] = struct{}{}
+				c.visited[turn][c.board] = visitedStruct
 				c.call(&stack)
 				continue
 			}
@@ -164,13 +169,22 @@ func (c *Core) solve() (int, int) {
 	return overall, maxDepth + 1
 }
 
+var (
+	sharedMoves = make([]move.Move, 0, 15)
+)
+
 func (c *Core) call(stack *[]State) {
-	*stack = append(*stack, State{Value: -1, Moves: make([]move.Move, 0, 10)})
+	*stack = append(*stack, State{Value: -1})
 	depth := len(*stack) - 1
 	turn := depth % 2
 	state := &(*stack)[depth]
 
-	c.moves(&state.Moves, turn)
+	sharedMoves = sharedMoves[:0]
+	c.moves(&sharedMoves, turn)
+	for i, move := range sharedMoves {
+		state.Moves[i] = move
+	}
+	state.NumMoves = len(sharedMoves)
 }
 
 func (c *Core) doReturn(stack *[]State) int {
@@ -200,7 +214,7 @@ func (c *Core) afterReturn(stack []State) {
 	state := &stack[depth]
 	c.undoMove(state.Move, state.What)
 	if c.updateValue(&state.Value, state.Next, state.Move, depth, turn) {
-		state.Index = len(state.Moves)
+		state.Index = state.NumMoves
 	}
 	state.Index++
 }
@@ -311,8 +325,8 @@ func (c *Core) sort(moves []move.Move) {
 	})
 }
 
-func (c *Core) staleMate(moves []move.Move, depth, turn int) (int, bool) {
-	if len(moves) != 0 {
+func (c *Core) staleMate(moves, depth, turn int) (int, bool) {
+	if moves != 0 {
 		return 0, false
 	}
 	res := 0

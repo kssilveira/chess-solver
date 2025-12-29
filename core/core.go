@@ -183,9 +183,9 @@ func (c *Core) solve() (int, int) {
 			continue
 		}
 		if state.Value == -1 {
-			c.solvedMove[turn][c.board] = state.Moves[0]
+			c.solvedMove[(turn+1)%2][c.board] = state.Moves[0]
 		}
-		c.print("final res", state.Value, depth, turn, printconfig.PrintConfig{Move: c.solvedMove[turn][c.board]})
+		c.print("final res", state.Value, depth, turn, printconfig.PrintConfig{Move: c.solvedMove[(turn+1)%2][c.board]})
 		overall = c.doReturn(&stack)
 	}
 	return overall, maxDepth + 1
@@ -412,7 +412,7 @@ func (c *Core) deadKing(move move.Move, depth, turn int) (int, bool) {
 		return 0, false
 	}
 	res := 1
-	c.solvedMove[turn][c.board] = move
+	c.solvedMove[(turn+1)%2][c.board] = move
 	c.print("dead king", res, depth, turn, printconfig.PrintConfig{Move: move})
 	return res, true
 }
@@ -461,7 +461,7 @@ func (c *Core) updateValue(res *int, next int, move move.Move, depth, turn int) 
 		return false
 	}
 	*res = next
-	c.solvedMove[turn][c.board] = move
+	c.solvedMove[(turn+1)%2][c.board] = move
 	c.print("updated res", *res, depth, turn, printconfig.PrintConfig{Move: move})
 	return *res == 1
 }
@@ -478,7 +478,7 @@ func (c *Core) show() {
 			break
 		}
 		visited[turn][c.board] = true
-		move := c.solvedMove[turn][c.board]
+		move := c.solvedMove[(turn+1)%2][c.board]
 		if move == 0 {
 			break
 		}
@@ -503,7 +503,7 @@ func (c *Core) Play() {
 			break
 		}
 		visited[turn][c.board] = true
-		move := c.solvedMove[turn][c.board]
+		move := c.solvedMove[(turn+1)%2][c.board]
 		if move == 0 {
 			break
 		}

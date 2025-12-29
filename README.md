@@ -69,6 +69,8 @@ ______
 ‾‾‾‾‾‾
 ```
 
+![king (k) trapped](core/testdata/play.png)
+
 ## Solve a list of boards
 
 ```bash

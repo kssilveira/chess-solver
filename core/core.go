@@ -142,13 +142,11 @@ func (c *Core) solve() (int, int) {
 	maxDepth := 0
 	maxVisited := 0
 	for len(stack) > 0 {
-		depth := len(stack) - 1
-		turn := depth % 2
-		state := &stack[depth]
+		state, depth, turn := getState(stack)
 		c.updateMaxDepth(&maxDepth, depth)
 		c.updateMaxVisited(&maxVisited)
 		if state.Index == 0 {
-			c.print("after move", -1, depth, turn, printconfig.PrintConfig{ClearTerminal: true})
+			c.print("after move", state.Value, depth, turn, printconfig.PrintConfig{ClearTerminal: true})
 		}
 		if res, ok := c.staleMate(state.NumMoves, depth, turn); ok {
 			state.Value = res
@@ -188,6 +186,13 @@ func (c *Core) solve() (int, int) {
 	return overall, maxDepth + 1
 }
 
+func getState(stack []State) (*State, int, int) {
+	depth := len(stack) - 1
+	turn := depth % 2
+	state := &stack[depth]
+	return state, depth, turn
+}
+
 func (c *Core) updateMaxDepth(maxDepth *int, depth int) {
 	if depth > *maxDepth {
 		*maxDepth = depth
@@ -209,9 +214,7 @@ func (c *Core) updateMaxVisited(maxVisited *int) {
 
 func (c *Core) call(stack *[]State) {
 	*stack = append(*stack, State{Value: -1})
-	depth := len(*stack) - 1
-	turn := depth % 2
-	state := &(*stack)[depth]
+	state, _, turn := getState(*stack)
 
 	c.sharedMoves = c.sharedMoves[:0]
 	c.moves(&c.sharedMoves, turn)
@@ -222,18 +225,15 @@ func (c *Core) call(stack *[]State) {
 }
 
 func (c *Core) doReturn(stack *[]State) int {
-	depth := len(*stack) - 1
-	state := &(*stack)[depth]
+	state, depth, _ := getState(*stack)
 
 	next := -state.Value
 
 	*stack = (*stack)[:depth]
-	depth = len(*stack) - 1
-	turn := depth % 2
-	if depth < 0 {
+	if depth == 0 {
 		return state.Value
 	}
-	state = &(*stack)[depth]
+	state, depth, turn := getState(*stack)
 
 	memo := c.memo[turn][c.board]
 	memo.Value = next
@@ -245,9 +245,7 @@ func (c *Core) doReturn(stack *[]State) int {
 }
 
 func (c *Core) afterReturn(stack []State) {
-	depth := len(stack) - 1
-	turn := depth % 2
-	state := &stack[depth]
+	state, depth, turn := getState(stack)
 	c.undoMove(state.Move, state.What)
 	if c.updateValue(&state.Value, state.Next, state.Move, depth, turn) {
 		state.Index = state.NumMoves

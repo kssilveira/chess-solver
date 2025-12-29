@@ -321,7 +321,7 @@ func (c *Core) moves(moves *[]move.Move, turn int) {
 				if c.config.EnablePromotion && ((i == 0 && piece == 'P') || (i == 3 && piece == 'p')) {
 					continue
 				}
-				move := move.NewMove(move.Move(turn), move.Move(index), move.Move(i), move.Move(j), false, false)
+				move := move.NewMove(turn, index, i, j, false, false)
 				move.SetDrop()
 				*moves = append(*moves, move)
 			}
@@ -357,7 +357,7 @@ func (c *Core) deltas(moves *[]move.Move, turn, i, j int) {
 			continue
 		}
 		move := move.NewMove(
-			move.Move(i), move.Move(j), move.Move(ni), move.Move(nj),
+			i, j, ni, nj,
 			c.board[ni][nj] == 'k' || c.board[ni][nj] == 'K',
 			c.board[ni][nj] != ' ')
 		if c.config.EnablePromotion && ((ni == 0 && piece == 'P') || (ni == 3 && piece == 'p')) {
@@ -489,8 +489,9 @@ func (c *Core) show(fn func()) {
 		turn = (turn + 1) % 2
 		c.print("after move", res, depth, turn, printconfig.PrintConfig{Move: move})
 		if fn != nil {
-			turn = (turn + 1) % 2
 			fn()
+			turn = (turn + 1) % 2
+			c.print("after move", res, depth, turn, printconfig.PrintConfig{})
 		}
 	}
 }
@@ -501,8 +502,7 @@ func (c *Core) Play() {
 		fmt.Printf("> ")
 		var fx, fy, tx, ty int
 		fmt.Scanf("%d%d%d%d", &fx, &fy, &tx, &ty)
-		c.board[tx][ty] = c.board[fx][fy]
-		c.board[fx][fy] = ' '
+		c.doMove(move.NewMove(fx, fy, tx, ty, false, c.board[tx][ty] != ' '), 123, 123, 123)
 	})
 }
 

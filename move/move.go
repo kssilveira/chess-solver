@@ -5,9 +5,10 @@ package move
 type Move int16
 
 // NewMove creates a new move.
-func NewMove(fx, fy, tx, ty Move, isKing, isCapture bool) Move {
+func NewMove(fx, fy, tx, ty int, isKing, isCapture bool) Move {
 	res := Move(0)
-	res |= (fx & 0b11) | ((fy & 0b11) << 2) | ((tx & 0b11) << 4) | ((ty & 0b11) << 6)
+	res |= (Move(fx) & 0b11) | ((Move(fy) & 0b11) << 2) | ((Move(tx) & 0b11) << 4) |
+		((Move(ty) & 0b11) << 6)
 	if isKing {
 		res |= 1 << 8
 	}

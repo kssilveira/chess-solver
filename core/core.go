@@ -15,15 +15,19 @@ import (
 	"github.com/kssilveira/chess-solver/printconfig"
 )
 
+// Memo contains the memoized state.
+type Memo struct {
+	Value int
+	Move  move.Move
+}
+
 // Core contains the core logic.
 type Core struct {
 	config        config.Config
 	clearTerminal string
 	writer        io.Writer
 	board         [6][4]byte
-	visited       []map[[6][4]byte]interface{}
-	solved        []map[[6][4]byte]int
-	solvedMove    []map[[6][4]byte]move.Move
+	memo          []map[[6][4]byte]Memo
 	sharedMoves   []move.Move
 }
 
@@ -97,17 +101,9 @@ func New(writer io.Writer, config config.Config) *Core {
 			[4]byte([]byte("0000")),
 			[4]byte([]byte("0000")),
 		},
-		visited: []map[[6][4]byte]interface{}{
-			make(map[[6][4]byte]interface{}, 100000),
-			make(map[[6][4]byte]interface{}, 100000),
-		},
-		solved: []map[[6][4]byte]int{
-			make(map[[6][4]byte]int, 100000),
-			make(map[[6][4]byte]int, 100000),
-		},
-		solvedMove: []map[[6][4]byte]move.Move{
-			make(map[[6][4]byte]move.Move, 100000),
-			make(map[[6][4]byte]move.Move, 100000),
+		memo: []map[[6][4]byte]Memo{
+			make(map[[6][4]byte]Memo, 100000),
+			make(map[[6][4]byte]Memo, 100000),
 		},
 		sharedMoves:   make([]move.Move, 0, 15),
 		clearTerminal: "\033[H\033[2J"}
@@ -169,13 +165,13 @@ func (c *Core) solve() (int, int) {
 			}
 			state.What = c.doMove(state.Move, state.Value, depth, turn)
 			state.Next = 0
-			ok := false
-			if state.Next, ok = c.solved[turn][c.board]; ok {
+			if memo, ok := c.memo[turn][c.board]; ok && memo.Value != -2 {
+				state.Next = memo.Value
 				c.print("solved[]", state.Next, depth, turn, printconfig.PrintConfig{Move: state.Move})
-			} else if _, ok = c.visited[turn][c.board]; ok {
+			} else if _, ok := c.memo[turn][c.board]; ok {
 				c.print("repeated", state.Next, depth, turn, printconfig.PrintConfig{Move: state.Move})
 			} else {
-				c.visited[turn][c.board] = visitedStruct
+				c.memo[turn][c.board] = Memo{Value: -2}
 				c.call(&stack)
 				continue
 			}
@@ -183,9 +179,14 @@ func (c *Core) solve() (int, int) {
 			continue
 		}
 		if state.Value == -1 {
-			c.solvedMove[(turn+1)%2][c.board] = state.Moves[0]
+			memo, ok := c.memo[(turn+1)%2][c.board]
+			if !ok {
+				memo.Value = -2
+			}
+			memo.Move = state.Moves[0]
+			c.memo[(turn+1)%2][c.board] = memo
 		}
-		c.print("final res", state.Value, depth, turn, printconfig.PrintConfig{Move: c.solvedMove[(turn+1)%2][c.board]})
+		c.print("final res", state.Value, depth, turn, printconfig.PrintConfig{Move: c.memo[(turn+1)%2][c.board].Move})
 		overall = c.doReturn(&stack)
 	}
 	return overall, maxDepth + 1
@@ -201,7 +202,7 @@ func (c *Core) updateMaxDepth(maxDepth *int, depth int) {
 }
 
 func (c *Core) updateMaxVisited(maxVisited *int) {
-	numVisited := len(c.visited[0])
+	numVisited := len(c.memo[0])
 	if numVisited > *maxVisited {
 		*maxVisited = numVisited
 		if c.config.PrintDepth && *maxVisited%10000000 == 0 {
@@ -238,7 +239,9 @@ func (c *Core) doReturn(stack *[]State) int {
 	}
 	state = &(*stack)[depth]
 
-	c.solved[turn][c.board] = next
+	memo := c.memo[turn][c.board]
+	memo.Value = next
+	c.memo[turn][c.board] = memo
 	state.Next = next
 	c.print("solve()", next, depth, turn, printconfig.PrintConfig{Move: state.Move})
 	c.afterReturn(*stack)
@@ -412,7 +415,12 @@ func (c *Core) deadKing(move move.Move, depth, turn int) (int, bool) {
 		return 0, false
 	}
 	res := 1
-	c.solvedMove[(turn+1)%2][c.board] = move
+	memo, ok := c.memo[(turn+1)%2][c.board]
+	if !ok {
+		memo.Value = -2
+	}
+	memo.Move = move
+	c.memo[(turn+1)%2][c.board] = memo
 	c.print("dead king", res, depth, turn, printconfig.PrintConfig{Move: move})
 	return res, true
 }
@@ -461,7 +469,12 @@ func (c *Core) updateValue(res *int, next int, move move.Move, depth, turn int) 
 		return false
 	}
 	*res = next
-	c.solvedMove[(turn+1)%2][c.board] = move
+	memo, ok := c.memo[(turn+1)%2][c.board]
+	if !ok {
+		memo.Value = -2
+	}
+	memo.Move = move
+	c.memo[(turn+1)%2][c.board] = memo
 	c.print("updated res", *res, depth, turn, printconfig.PrintConfig{Move: move})
 	return *res == 1
 }
@@ -478,12 +491,12 @@ func (c *Core) show() {
 			break
 		}
 		visited[turn][c.board] = true
-		move := c.solvedMove[(turn+1)%2][c.board]
+		move := c.memo[(turn+1)%2][c.board].Move
 		if move == 0 {
 			break
 		}
 		c.doMove(move, res, depth, turn)
-		res = c.solved[turn][c.board]
+		res = c.memo[turn][c.board].Value
 		depth++
 		turn = (turn + 1) % 2
 		c.print("after move", res, depth, turn, printconfig.PrintConfig{Move: move})
@@ -503,13 +516,13 @@ func (c *Core) Play() {
 			break
 		}
 		visited[turn][c.board] = true
-		move := c.solvedMove[(turn+1)%2][c.board]
+		move := c.memo[(turn+1)%2][c.board].Move
 		if move == 0 {
 			break
 		}
 		c.doMove(move, res, depth, turn)
 		depth++
-		res = c.solved[turn][c.board]
+		res = c.memo[turn][c.board].Value
 		c.print("after move", res, depth, turn, printconfig.PrintConfig{Move: move})
 
 		fmt.Printf("> ")

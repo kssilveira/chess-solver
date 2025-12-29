@@ -66,8 +66,7 @@ var (
 			{-1, 2, deltaOtherEmpty, 0, 1}, {1, 2, deltaOtherEmpty, 0, 1},
 		},
 	}
-	visitedStruct = struct{}{}
-	promos        = map[byte][]byte{
+	promos = map[byte][]byte{
 		'P': {'R', 'B', 'N'},
 		'p': {'r', 'b', 'n'},
 	}
@@ -121,7 +120,7 @@ func (c *Core) Solve() {
 	fmt.Fprintf(c.writer, "\nmax depth: %d\n", maxDepth)
 	fmt.Fprintf(c.writer, "overall res: %d\n", res)
 	if c.config.EnableShow {
-		c.show()
+		c.show(nil)
 	}
 }
 
@@ -470,7 +469,7 @@ func (c *Core) updateValue(res *int, next int, move move.Move, depth, turn int) 
 	return *res == 1
 }
 
-func (c *Core) show() {
+func (c *Core) show(fn func()) {
 	c.config.MaxPrintDepth = 0
 	res := 123
 	visited := []map[[6][4]byte]interface{}{{}, {}}
@@ -487,41 +486,26 @@ func (c *Core) show() {
 			break
 		}
 		c.doMove(move, res, depth, turn)
-		res = c.memo[turn][c.board].Value
 		depth++
+		res = c.memo[turn][c.board].Value
 		turn = (turn + 1) % 2
 		c.print("after move", res, depth, turn, printconfig.PrintConfig{Move: move})
+		if fn != nil {
+			turn = (turn + 1) % 2
+			fn()
+		}
 	}
 }
 
 // Play plays a game agains the solution.
 func (c *Core) Play() {
-	c.config.MaxPrintDepth = 0
-	res := 123
-	turn := 0
-	visited := []map[[6][4]byte]interface{}{{}, {}}
-	depth := 0
-	c.print("play", res, depth, turn, printconfig.PrintConfig{})
-	for {
-		if _, ok := visited[turn][c.board]; ok {
-			break
-		}
-		visited[turn][c.board] = true
-		move := c.memo[(turn+1)%2][c.board].Move
-		if move == 0 {
-			break
-		}
-		c.doMove(move, res, depth, turn)
-		depth++
-		res = c.memo[turn][c.board].Value
-		c.print("after move", res, depth, turn, printconfig.PrintConfig{Move: move})
-
+	c.show(func() {
 		fmt.Printf("> ")
 		var fx, fy, tx, ty int
 		fmt.Scanf("%d%d%d%d", &fx, &fy, &tx, &ty)
 		c.board[tx][ty] = c.board[fx][fy]
 		c.board[fx][fy] = ' '
-	}
+	})
 }
 
 // RunAll runs all configs.

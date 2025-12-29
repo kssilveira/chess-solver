@@ -179,10 +179,7 @@ func (c *Core) solve() (int, int) {
 			continue
 		}
 		if state.Value == -1 {
-			memo, ok := c.memo[(turn+1)%2][c.board]
-			if !ok {
-				memo.Value = -2
-			}
+			memo := c.memo[(turn+1)%2][c.board]
 			memo.Move = state.Moves[0]
 			c.memo[(turn+1)%2][c.board] = memo
 		}
@@ -415,10 +412,7 @@ func (c *Core) deadKing(move move.Move, depth, turn int) (int, bool) {
 		return 0, false
 	}
 	res := 1
-	memo, ok := c.memo[(turn+1)%2][c.board]
-	if !ok {
-		memo.Value = -2
-	}
+	memo := c.memo[(turn+1)%2][c.board]
 	memo.Move = move
 	c.memo[(turn+1)%2][c.board] = memo
 	c.print("dead king", res, depth, turn, printconfig.PrintConfig{Move: move})
@@ -469,10 +463,7 @@ func (c *Core) updateValue(res *int, next int, move move.Move, depth, turn int) 
 		return false
 	}
 	*res = next
-	memo, ok := c.memo[(turn+1)%2][c.board]
-	if !ok {
-		memo.Value = -2
-	}
+	memo := c.memo[(turn+1)%2][c.board]
 	memo.Move = move
 	c.memo[(turn+1)%2][c.board] = memo
 	c.print("updated res", *res, depth, turn, printconfig.PrintConfig{Move: move})
